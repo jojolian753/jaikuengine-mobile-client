@@ -1,0 +1,9 @@
+1	outgoing lookup
+2	incoming lookup
+3	incoming lookup unread count
+4	incoming presence
+5	presence frozen
+6	status
+
+component support:
+1	contextserver component

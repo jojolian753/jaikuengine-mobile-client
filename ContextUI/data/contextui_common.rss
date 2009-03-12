@@ -1,0 +1,1515 @@
+#include "contextui.loc"
+#include <eikon.rh>
+#include "contextui.hrh"
+
+#include "concretedata.hrh"
+
+NAME CUOM
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf="ContextUI"; }
+
+#define SETTING_DEFINES_ONLY 1
+#include "cl_settings.h"
+#include "local_defaults.h"
+
+
+RESOURCE AVKON_VIEW r_errorinfo_view
+{
+    cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar=r_errorui_menubar;
+}
+
+RESOURCE MENU_BAR r_errorui_menubar
+{
+	titles=
+        {
+		MENU_TITLE { menu_pane=r_errorui_menu; txt="Error"; }
+        };
+}
+
+RESOURCE MENU_PANE r_errorui_menu
+{
+	items=
+        {
+        };
+}
+
+
+
+RESOURCE MENU_BAR r_settings_menubar_view
+{
+	titles=
+        {
+		MENU_TITLE { menu_pane=r_settings_view_menu; txt=CL_SETTINGS; }
+        };
+}
+
+RESOURCE AVKON_VIEW r_settings_view
+{
+        menubar=r_settings_menubar_view;  
+        cba=R_AVKON_SOFTKEYS_OPTIONS_DONE;    
+}
+
+RESOURCE MENU_PANE r_settings_view_menu
+{
+	items=
+        {
+		MENU_ITEM { command=EContextUICmdSettingsChange; txt = CL_MENU_CHANGE; }
+		,MENU_ITEM { command=EContextUICmdSettingsCancel; txt = CL_MENU_CANCEL; }
+#ifdef __DEV__
+		,MENU_ITEM { command=EContextUICmdResetUiState1;  txt = "Reset UI State"; }
+#endif 
+		,MENU_ITEM { command= EContextUICmdShutdown; txt = CL_EXIT; }
+        };
+}
+
+
+
+RESOURCE AVKON_SETTING_ITEM_LIST r_cl_settings_list
+{
+	flags= 0;
+	title = "Settings";
+	items =     
+        {
+// CONTEXT_LOG_SPECIFIC_OPTIONS
+		AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_IP_AP;
+			setting_page_resource = r_cl_setting_ap_list;
+			associated_resource = r_cl_setting_ap_list_content;
+			name = CL_IP_AP;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_OPTIONS_ENABLE;
+			setting_page_resource = r_cl_setting_options_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_OPTIONS_ENABLE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOGGING_ENABLE;
+			setting_page_resource = r_cl_setting_logging_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ENABLE_LOGGING;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOG_UPLOAD_ENABLE;
+			setting_page_resource = r_cl_setting_log_upload_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ENABLE_LOG_UPLOAD;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PRESENCE_ENABLE;
+			setting_page_resource = r_cl_setting_jabber_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_JABBER_ENABLE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_UPLOAD_URLBASE;
+			setting_page_resource = r_cl_setting_url;
+			name = CL_UPLOAD_URLBASE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_UPLOAD_SCRIPT;
+			setting_page_resource = r_cl_upload_script;
+			name = CL_UPLOAD_SCRIPT;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOCATIONSERVICE_ENABLE;
+			setting_page_resource = r_cl_setting_locationservice_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ENABLE_LOCATIONSERVICE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PROMPT_FOR_NAMES;
+			setting_page_resource = r_cl_setting_prompt_for_names;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ENABLE_NAMING;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_VIBRATE_ONLY;
+			setting_page_resource = r_cl_setting_vibrate_only;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_VIBRATE_ONLY;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_CALENDAR_SHARING;
+			setting_page_resource = r_cl_setting_calendar_sharing;
+			associated_resource = r_cl_setting_list_calendar_contents;
+			name = CL_CALENDAR_SHARING;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_RECORD_ALL;
+			setting_page_resource = r_cl_setting_record_all;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_RECORD_ALL;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_RIGHT_SOFTKEY_CONTEXT;
+			setting_page_resource = r_cl_setting_right_softkey_context;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_RIGHT_SOFTKEY_CONTEXT;
+		}
+        
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_ALLOW_ROAMING;
+			setting_page_resource = r_cl_setting_allow_roaming;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ALLOW_ROAMING;
+		}
+       		
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_GPS_LOG_TIME;
+			setting_page_resource = r_cl_setting_gps_time_int;
+			name = CL_GPS_LOG_TIME;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_SNAPSHOT_ON_SMS;
+			setting_page_resource = r_cl_setting_snapshot_on_sms;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_SNAPSHOT;
+		
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_RECORD_TIME;
+			setting_page_resource = r_cl_setting_record_time;
+			name = CL_SNAPSHOT_TIME;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_SNAPSHOT_INTERVAL;
+			setting_page_resource = r_cl_setting_snapshot_interval;
+			name = "Automatic snapshot interval";
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_USE_MMC;
+			setting_page_resource = r_cl_setting_use_mmc;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_USE_MMC;
+			
+		}
+		
+		
+// CONTEXT_MEDIA_RELATED
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PROJECT_NAME;
+			setting_page_resource = r_cl_setting_projectname;
+			name = "Project name";
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PUBLISH_AUTHOR;
+			setting_page_resource = r_cl_setting_author;
+			name = CL_PUBLISH_AUTHOR;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PUBLISH_USERNAME;
+			setting_page_resource = r_cl_setting_publish_username;
+			name = CL_PUBLISH_USERNAME;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PUBLISH_PASSWORD;
+			setting_page_resource = r_cl_setting_publish_username;
+			name = CL_PUBLISH_PASSWORD;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_SHOW_AUTOTAGS;
+			setting_page_resource = r_cl_setting_show_autotags;
+			name = "Show context list in publish";
+			associated_resource = r_cl_setting_list_yesno_contents;
+
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_SHOW_TAGS;
+			setting_page_resource = r_cl_setting_show_tags;
+			name = "Show tag box in publish";
+			associated_resource = r_cl_setting_list_yesno_contents;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_FIXED_PRIVACY;
+			setting_page_resource = r_cl_setting_fixed_privacy;
+			name = "Fixed photo privacy";
+			associated_resource = r_cl_setting_list_privacy_contents;
+		}
+
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PHONENO;
+			setting_page_resource = r_cl_setting_phoneno;
+			name = CL_PHONENO;
+		}
+		
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_UPLOAD_PROMPT_TYPE;
+			setting_page_resource = r_cl_setting_upload_prompt_type;
+			associated_resource = r_cl_setting_list_prompttype_contents;
+			name = CL_UPLOAD_PROMPT_TYPE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PUBLISH_URLBASE;
+			setting_page_resource = r_cl_setting_publish_url;
+			name = CL_PUBLISH_URLBASE;
+		}
+		
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PUBLISH_SCRIPT;
+			setting_page_resource = r_cl_publish_script;
+			name = CL_PUBLISH_SCRIPT;
+		}
+		
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_VISUALCODES_URLBASE;
+			setting_page_resource = r_cl_setting_visualcodes_url;
+			name = CL_PUBLISH_URLBASE;
+		}
+		
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_VISUALCODES_SCRIPT;
+			setting_page_resource = r_cl_visualcodes_script;
+			name = CL_PUBLISH_SCRIPT;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_MEDIA_UPLOAD_ENABLE;
+			setting_page_resource = r_cl_setting_media_upload_enable;
+			associated_resource = r_cl_setting_list_publishers;
+			name = CL_PICTURE_ENABLE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_DELETE_UPLOADED;
+			setting_page_resource = r_cl_setting_delete_uploaded;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_DELETE_UPLOADED;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_IGNORE_NOTIFICATIONS;
+			setting_page_resource = r_cl_setting_ignore_notifications;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_IGNORE_NOTIFICATIONS;
+		}
+		
+// CONTEXT_NETWORK_RELATED
+        	, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_JABBER_NICK;
+			setting_page_resource = r_cl_setting_nick;
+			name = CL_JABBER_NICK;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_JABBER_PASS;
+			setting_page_resource = r_cl_setting_pass;
+			name = CL_JABBER_PASS;
+		}
+	        , AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PROXY;
+			setting_page_resource = r_cl_setting_proxy;
+			name = CL_HTTP_PROXY;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_PROXY_PORT;
+			setting_page_resource = r_cl_setting_proxy_port;
+			name = CL_HTTP_PROXY_PORT;
+		}
+        	, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_BT_SCAN_INTERVAL;
+			setting_page_resource = r_cl_setting_bt_int;
+			name = CL_BT_INTERVAL;
+		}
+
+// LOCA
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_ENABLE_LOCA_BLUEJACK;
+			setting_page_resource = r_cl_setting_loca_bluejack_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = "Enable Loca Bluejack";
+		} 
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOCA_BLUEJACK_MAX_MESSAGES;
+			setting_page_resource = r_cl_setting_loca_messages;
+			name = "Loca max message count";
+		} 
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOCA_BLUEJACK_MAX_RETRIES;
+			setting_page_resource = r_cl_setting_loca_retries;
+			name = "Loca max retry count";
+		} 
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOCA_BLUEJACK_CONNECT_COUNT;
+			setting_page_resource = r_cl_setting_loca_connectcount;
+			name = "Loca connect count";
+		} 
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_LOCA_BLUEJACK_MESSAGE_TIMEOUT;
+			setting_page_resource = r_cl_setting_loca_msgtimeout;
+			name = "Loca message timeout";
+		} 
+
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_CONTEXTNW_ENABLED;
+			setting_page_resource = r_cl_setting_contextnw_enable;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_ENABLE_CONTEXTNW;
+		} 
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_CONTEXTNW_HOST;
+			setting_page_resource = r_cl_setting_contextnw_host;
+			name = CL_CN_HOST;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_CONTEXTNW_PORT;
+			setting_page_resource = r_cl_setting_contextnw_port;
+			name = CL_CN_PORT;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier =  SETTING_JABBER_PORT;
+			setting_page_resource = r_cl_setting_jabber_port;
+			name = CL_JABBER_PORT;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier =  SETTING_ALLOW_NETWORK_ACCESS;
+			setting_page_resource = r_cl_setting_network_access;
+			associated_resource = r_cl_setting_list_allownetwork_contents;
+			name = CL_ALLOW_NETWORK_ACCESS;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier =  SETTING_JABBER_ADDR;
+			setting_page_resource = r_cl_setting_jabber_addr;
+			name = CL_JABBER_ADDR;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier =  SETTING_CONNECTIVITY_MODEL;
+			setting_page_resource = r_cl_setting_battery_life;
+			associated_resource = r_cl_setting_battery_life_contents;
+			name = CL_SETTING_BATTERY_LIFE;
+		}
+		, AVKON_SETTING_ITEM
+		{
+			identifier = SETTING_DOWNLOAD_IMAGES_YESNO;
+			setting_page_resource = r_cl_setting_download_images;
+			associated_resource = r_cl_setting_list_yesno_contents;
+			name = CL_SETTING_DOWNLOAD_IMAGES;
+		}
+        };
+}
+  
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_prompt_for_names
+    {
+    number = SETTING_PROMPT_FOR_NAMES;
+    label = CL_ENABLE_NAMING;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_network_access
+    {
+    number = SETTING_ALLOW_NETWORK_ACCESS;
+    label = CL_ALLOW_NETWORK_ACCESS;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_nick
+    {
+    number = SETTING_JABBER_NICK;
+    label = CL_JABBER_NICK;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_shorttext;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_author
+    {
+    number = SETTING_PUBLISH_AUTHOR;
+    label = CL_PUBLISH_AUTHOR;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_publish_username
+    {
+    number = SETTING_PUBLISH_USERNAME;
+    label = CL_PUBLISH_USERNAME;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_publish_password
+    {
+    number = SETTING_PUBLISH_PASSWORD;
+    label = CL_PUBLISH_PASSWORD;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_projectname
+    {
+    number = SETTING_PROJECT_NAME;
+    label = "Project name";
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_ap_list
+{
+	number = SETTING_IP_AP;
+	label = CL_IP_AP;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = r_cl_setting_list_ed;
+}
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_phoneno
+    {
+    number = SETTING_PHONENO;
+    label = CL_PHONENO;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_num;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_pass
+    {
+    number = SETTING_JABBER_PASS;
+    label = CL_JABBER_PASS;
+    type = EEikCtSecretEd;
+    editor_resource_id = r_cl_setting_ed_secret;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_url
+    {
+    number = SETTING_UPLOAD_URLBASE;
+    label = CL_UPLOAD_URLBASE;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_proxy
+    {
+    number = SETTING_PROXY;
+    label = CL_HTTP_PROXY;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_contextnw_host
+    {
+    number = SETTING_CONTEXTNW_HOST;
+    label = CL_CN_HOST;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_publish_url
+    {
+    number = SETTING_PUBLISH_URLBASE;
+    label = CL_PUBLISH_URLBASE;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_visualcodes_url
+    {
+    number = SETTING_VISUALCODES_URLBASE;
+    label = CL_PUBLISH_URLBASE;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_jabber_enable
+    {
+    number = SETTING_PRESENCE_ENABLE;
+    label = CL_JABBER_ENABLE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+    
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_right_softkey_context
+    {
+    number = SETTING_RIGHT_SOFTKEY_CONTEXT;
+    label = CL_RIGHT_SOFTKEY_CONTEXT;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+ 
+    
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_allow_roaming
+    {
+    number = SETTING_ALLOW_ROAMING;
+    label = CL_ALLOW_ROAMING;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_contextnw_enable
+    {
+    number = SETTING_CONTEXTNW_ENABLED;
+    label = CL_ENABLE_CONTEXTNW;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_loca_bluejack_enable
+	{
+	number = SETTING_ENABLE_LOCA_BLUEJACK;
+	label = "Enable Loca Bluejack";
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_logging_enable
+    {
+    number = SETTING_LOGGING_ENABLE;
+    label = CL_ENABLE_LOGGING;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_log_upload_enable
+    {
+    number = SETTING_LOG_UPLOAD_ENABLE;
+    label = CL_ENABLE_LOG_UPLOAD;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_upload_prompt_type
+    {
+    number = SETTING_UPLOAD_PROMPT_TYPE;
+    label = CL_UPLOAD_PROMPT_TYPE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_locationservice_enable
+    {
+    number = SETTING_LOCATIONSERVICE_ENABLE;
+    label = CL_ENABLE_LOCATIONSERVICE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_options_enable
+    {
+    number = SETTING_OPTIONS_ENABLE;
+    label = CL_OPTIONS_ENABLE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_media_upload_enable
+    {
+    number = SETTING_MEDIA_UPLOAD_ENABLE;
+    label = CL_PICTURE_ENABLE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_publish_type
+    {
+    number = SETTING_PUBLISH_TYPE;
+    label = CL_PUBLISH_TYPE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_snapshot_on_sms
+    {
+    number = SETTING_SNAPSHOT_ON_SMS;
+    label = CL_SNAPSHOT;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_use_mmc
+    {
+    number = SETTING_USE_MMC;
+    label = CL_USE_MMC;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_delete_uploaded
+    {
+    number = SETTING_DELETE_UPLOADED;
+    label = CL_DELETE_UPLOADED;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_show_autotags
+    {
+    number = SETTING_SHOW_AUTOTAGS;
+    label = "Show context list";
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_show_tags
+    {
+    number = SETTING_SHOW_TAGS;
+    label = "Show tag box in publish";
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_fixed_privacy
+    {
+    number = SETTING_FIXED_PRIVACY;
+    label = "Fixed photo privacy";
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_publish_script
+    {
+    number = SETTING_PUBLISH_SCRIPT;
+    label = CL_PUBLISH_SCRIPT;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_visualcodes_script
+    {
+    number = SETTING_VISUALCODES_SCRIPT;
+    label = CL_PUBLISH_SCRIPT;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+    
+RESOURCE AVKON_SETTING_PAGE r_cl_upload_script
+    {
+    number = SETTING_UPLOAD_SCRIPT;
+    label = CL_UPLOAD_SCRIPT;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_ignore_notifications
+    {
+    number = SETTING_IGNORE_NOTIFICATIONS;
+    label = CL_IGNORE_NOTIFICATIONS;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE EDWIN r_cl_setting_ed_text
+    {
+    width = 256;
+    lines = 1;
+    maxlength = 256;
+	default_case = EAknEditorLowerCase;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	special_character_table = R_AVKON_SPECIAL_CHARACTER_TABLE_DIALOG;
+	avkon_flags = EAknEditorFlagDefault;
+
+    }
+RESOURCE EDWIN r_cl_setting_ed_shorttext
+    {
+    width = 50;
+    lines = 1;
+    maxlength = 50;
+	default_case = EAknEditorLowerCase;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	special_character_table = R_AVKON_SPECIAL_CHARACTER_TABLE_DIALOG;
+	avkon_flags = EAknEditorFlagDefault;
+
+    }
+     
+RESOURCE EDWIN r_cl_setting_ed_num
+{
+	width = 50;
+	lines = 1;
+	maxlength = 50;	
+#ifndef __S80__
+	default_input_mode = EAknEditorNumericInputMode;
+	allowed_input_modes = EAknEditorNumericInputMode;
+#endif
+}
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_ap_list_content
+    {
+    setting_texts_resource = r_cl_setting_ap_list_contents_texts;
+    popped_up_texts_resource = r_cl_setting_ap_list_contents_popup;
+    }
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_yesno_contents
+    {
+    setting_texts_resource = r_cl_setting_list_contents_yesno_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_yesno_popup;
+    }
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_privacy_contents
+    {
+    setting_texts_resource = r_cl_setting_list_contents_privacy_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_privacy_popup;
+    }
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_publishers
+    {
+    setting_texts_resource = r_cl_setting_list_contents_publishers_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_publishers_popup;
+    }
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_prompttype_contents
+    {
+    setting_texts_resource = r_cl_setting_list_contents_prompttype_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_prompttype_popup;
+    }
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_calendar_contents
+    {
+    setting_texts_resource = r_cl_setting_list_contents_calendar_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_calendar_popup;
+    }
+
+RESOURCE ARRAY r_cl_setting_ap_list_contents_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = CL_NO_AP_DEFINED;
+            }
+		};
+	}
+RESOURCE ARRAY r_cl_setting_ap_list_contents_popup
+{
+	items =
+        {
+		LBUF
+		{
+			txt = CL_NO_AP_DEFINED;
+		}
+	};
+}
+
+RESOURCE ARRAY r_cl_setting_list_contents_yesno_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = CL_YES;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = CL_NO;
+            }
+		};
+	}
+RESOURCE ARRAY r_cl_setting_list_contents_yesno_popup
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = CL_YES;
+            },
+        LBUF
+            {
+            txt = CL_NO;
+            }
+		};
+	}
+	
+RESOURCE ARRAY r_cl_setting_list_contents_calendar_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = SHARE_CALENDAR_FULL;
+            text = CL_SHARE_CALENDAR_FULL;
+            }
+        , AVKON_ENUMERATED_TEXT
+            {
+            value = SHARE_CALENDAR_FREEBUSY;
+            text = CL_SHARE_CALENDAR_FREEBUSY;
+            }
+        , AVKON_ENUMERATED_TEXT
+            {
+            value = SHARE_CALENDAR_NONE;
+            text = CL_SHARE_CALENDAR_NONE;
+            }
+		};
+	}
+RESOURCE ARRAY r_cl_setting_list_contents_calendar_popup
+    {
+    items =
+        {
+		LBUF
+            {
+            txt = CL_SHARE_CALENDAR_FULL;
+            }
+        , LBUF
+            {
+            txt = CL_SHARE_CALENDAR_FREEBUSY;
+            }
+        , LBUF
+            {
+            txt = CL_SHARE_CALENDAR_NONE;
+            }
+		};
+	}
+	
+RESOURCE ARRAY r_cl_setting_list_contents_privacy_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = -1;
+            text = "Not set";
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = "Public";
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = "Friends&family";
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 2;
+            text = "Friends";
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 3;
+            text = "Family";
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 4;
+            text = "Private";
+            }
+		};
+	}
+RESOURCE ARRAY r_cl_setting_list_contents_privacy_popup
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = "Not set";
+            },
+        LBUF
+            {
+            txt = "Public";
+            },
+        LBUF
+            {
+            txt = "Friends&Family";
+            },
+        LBUF
+            {
+            txt = "Friends";
+            },
+        LBUF
+            {
+            txt = "Family";
+            },
+        LBUF
+            {
+            txt = "Private";
+            }
+		};
+	}
+
+RESOURCE ARRAY r_cl_setting_list_contents_publishers_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = MEDIA_PUBLISHER_DISABLED;
+            text = CL_DISABLED;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = MEDIA_PUBLISHER_CL;
+            text = CL_VIA_CONTEXT_LOG;
+            },
+		AVKON_ENUMERATED_TEXT
+            {
+            value = MEDIA_PUBLISHER_CM;
+            text = CL_VIA_CONTEXT_MEDIA;
+            }
+	};
+}
+
+
+RESOURCE ARRAY r_cl_setting_list_contents_publishers_popup
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = CL_DISABLED;
+            },
+        LBUF
+            {
+            txt = CL_VIA_CONTEXT_LOG;
+            },
+        LBUF
+            {
+            txt = CL_VIA_CONTEXT_MEDIA;
+            }
+		};
+	}
+
+RESOURCE ARRAY r_cl_setting_list_contents_prompttype_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = CL_TAG_AND_DESCRIPTION;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = CL_TAG_ONLY;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 2;
+            text = CL_VISUALCODE;
+            }
+		};
+	}
+RESOURCE ARRAY r_cl_setting_list_contents_prompttype_popup
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = CL_TAG_AND_DESCRIPTION;
+            },
+        LBUF
+            {
+            txt = CL_TAG_ONLY;
+            },
+		LBUF
+			{
+			txt = CL_VISUALCODE;
+			}
+		};
+	}
+
+RESOURCE POPUP_SETTING_LIST r_cl_setting_list_ed
+{
+	flags = 0;
+}
+    
+    
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_vibrate_only
+    {
+    number = SETTING_VIBRATE_ONLY;
+    label = CL_VIBRATE_ONLY;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_calendar_sharing
+    {
+    number = SETTING_CALENDAR_SHARING;
+    label = CL_CALENDAR_SHARING;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_record_all
+    {
+    number = SETTING_RECORD_ALL;
+    label = CL_RECORD_ALL;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_INTEGER_EDWIN r_cl_setting_ed_seconds
+	{
+		min = 0;
+		max = 3600;
+	}
+	
+RESOURCE AVKON_INTEGER_EDWIN r_cl_setting_ed_port
+	{
+		min = 0;
+		max = 65000;
+	}
+
+	
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_bt_int
+    {
+    number = SETTING_BT_SCAN_INTERVAL;
+    label = CL_BT_INTERVAL;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_loca_messages
+    {
+    number = SETTING_LOCA_BLUEJACK_MAX_MESSAGES;
+    label = "Loca max message count";
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_loca_retries
+    {
+    number = SETTING_LOCA_BLUEJACK_MAX_RETRIES;
+    label = "Loca max retries";
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_loca_connectcount
+    {
+    number = SETTING_LOCA_BLUEJACK_CONNECT_COUNT;
+    label = "Loca connect count";
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_loca_msgtimeout
+    {
+    number = SETTING_LOCA_BLUEJACK_MESSAGE_TIMEOUT;
+    label = "Loca message timeout";
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_proxy_port
+    {
+    number = SETTING_PROXY_PORT;
+    label = CL_HTTP_PROXY_PORT;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_port;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_contextnw_port
+    {
+    number = SETTING_CONTEXTNW_PORT;
+    label = CL_CN_PORT;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_port;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_record_time
+    {
+    number = SETTING_RECORD_TIME;
+    label = CL_SNAPSHOT_TIME;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_snapshot_interval
+    {
+    number = SETTING_SNAPSHOT_INTERVAL;
+    label = CL_SNAPSHOT_INTERVAL;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_gps_time_int
+    {
+    number = SETTING_GPS_LOG_TIME;
+    label = CL_GPS_LOG_TIME;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_seconds;
+    }
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_jabber_port
+    {
+    number = SETTING_JABBER_PORT;
+    label = CL_JABBER_PORT;
+    type = EAknCtIntegerEdwin;
+    editor_resource_id = r_cl_setting_ed_port;
+    }
+
+
+RESOURCE TBUF R_NO { buf=CL_NO; }
+RESOURCE TBUF R_YES { buf=CL_YES; }
+
+RESOURCE TBUF r_cl_name_cell_caption { buf=CL_CPT_NAME_CELL_TIME; }
+RESOURCE TBUF r_cl_name_old_cell_caption { buf=CL_CPT_NAME_CELL_OLD; }
+RESOURCE TBUF r_cl_name_city_caption { buf=CL_CPT_NAME_CITY_TIME; }
+RESOURCE TBUF r_cl_name_old_city_caption { buf=CL_CPT_NAME_CITY_OLD; }
+
+RESOURCE DIALOG r_context_log_name_input
+  {
+  flags = EGeneralQueryFlags;
+  buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+  items =
+    {
+    DLG_LINE
+      {
+      type = EAknCtQuery;
+      id = EGeneralQuery;
+      control = AVKON_DATA_QUERY
+        {
+        layout = EDataLayout;
+        control = EDWIN
+          {
+          };
+        };
+      }
+    };
+  }
+RESOURCE DIALOG r_context_log_name_input_readonly
+  {
+  flags = EGeneralQueryFlags;
+  buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+  items =
+    {
+    DLG_LINE
+      {
+      type = EAknCtQuery;
+      id = EGeneralQuery;
+      control = AVKON_DATA_QUERY
+        {
+        layout = EDataLayout;
+        control = EDWIN
+          {
+		flags=EEikEdwinReadOnly;
+          };
+        };
+      }
+    };
+  }
+
+RESOURCE CBA r_cba_t9enabled_ok_cancel
+{
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EAknSoftkeyOptions; txt = "OK"; },
+		CBA_BUTTON { id=EAknSoftkeyCancel; txt = "Cancel"; }
+		} ;
+}
+ 
+
+RESOURCE DIALOG r_location_name_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = r_cba_t9enabled_ok_cancel;
+    items =
+        {
+        DLG_LINE
+		{
+            type = EAknCtMultilineQuery;
+            id = EMultilineFirstLine;
+            control = AVKON_DATA_QUERY
+                {
+					layout = EMultiDataFirstEdwin;
+					label = CL_NEIGHBOURHOOD_PROMPT;
+					control = EDWIN
+                    {
+						maxlength=BB_LONGSTRING_MAXLEN;
+						lines = 1;
+                    };
+                };
+		},
+        DLG_LINE
+		{
+			type = EAknCtMultilineQuery;
+            id = EMultilineSecondLine;
+            control = AVKON_DATA_QUERY
+			{
+					layout = EMultiDataSecondEdwin;
+					label = CL_CITYREGION_PROMPT;
+					control = EDWIN
+                    {
+						maxlength=BB_LONGSTRING_MAXLEN;
+						lines = 1;
+					};
+			};
+		}
+		};
+    }
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_list_allownetwork_contents
+    {
+    setting_texts_resource = r_cl_setting_list_contents_allownetwork_texts;
+    popped_up_texts_resource = r_cl_setting_list_contents_allownetwork_popup;
+    }
+
+
+RESOURCE ARRAY r_cl_setting_list_contents_allownetwork_texts
+{
+    items =
+        {
+			AVKON_ENUMERATED_TEXT
+            {
+				value = 1;
+				text = CL_ALLOW_NETWORK_ALWAYS;
+            },
+			AVKON_ENUMERATED_TEXT
+            {
+				value = 0;
+				text = CL_ALLOW_NETWORK_ASK_FIRST;
+            }
+		};
+}
+
+RESOURCE ARRAY r_cl_setting_list_contents_allownetwork_popup
+{
+    items =
+        {
+			LBUF
+            {
+				txt = CL_ALLOW_NETWORK_ALWAYS;
+            },
+			LBUF
+            {
+				txt = CL_ALLOW_NETWORK_ASK_FIRST;
+            }
+		};
+}
+
+RESOURCE SECRETED r_cl_setting_ed_secret
+    {
+		num_letters = 50;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_jabber_addr
+    {
+    number = SETTING_JABBER_ADDR;
+    label = CL_JABBER_ADDR;
+    type = EEikCtEdwin;
+    editor_resource_id = r_cl_setting_ed_text;
+    }
+
+
+RESOURCE AVKON_LIST_QUERY r_jaiku_disposable_confirmation_query
+{
+    flags = EGeneralQueryFlags;
+    softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+			AVKON_LIST_QUERY_DLG_LINE
+            {
+				control = AVKON_LIST_QUERY_CONTROL
+				{
+					listtype = EAknCtSinglePopupMenuListBox;
+					listbox = AVKON_LIST_QUERY_LIST
+					{
+						array_id = r_jaiku_disposable_confirmation_query_options;
+					};
+					heading = "Are you sure?";
+				};
+            }
+        };
+}
+
+
+RESOURCE ARRAY r_jaiku_disposable_confirmation_query_options
+{
+	items =
+		{
+			LBUF {txt = "Yes, don't ask again"; },
+			LBUF {txt = CL_YES; },
+			LBUF {txt = CL_NO; }
+		};
+}
+
+
+
+// RESOURCE DIALOG r_jaiku_disposable_confirmation_query2
+// {
+//     flags = EGeneralQueryFlags;
+//     buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+//     items =
+//         {
+// // 			DLG_LINE
+// //             {
+// // 				type = EEikCtLabel;
+// // 				control = LABEL
+// //                 {
+// // 					standard_font = EEikLabelFontAnnotation;
+// // 					txt = "YAUZA!";
+// //                 };
+// //             },
+// 			DLG_LINE
+//             {
+// 				type = EAknCtListQueryControl;
+// 				id = EListQueryControl;
+// 				control = AVKON_LIST_QUERY_CONTROL
+//                 {
+// 					listtype = EAknCtSinglePopupMenuListBox;
+// 					listbox = LISTBOX
+//                     {
+// 						flags = EAknListBoxMenuList;
+// 						height = 3;
+// 						width = 10;
+// 						array_id = r_jaiku_disposable_confirmation_query_options;
+//                     };
+// 					heading = "Select one item:";
+//                 };
+//             }
+//         };
+// }
+
+
+
+// RESOURCE DIALOG r_demo_singlepage_dialog
+// {
+//     flags = EGeneralQueryFlags;
+//     buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+//     items =
+//         {
+// 			DLG_LINE
+//             {
+// 				type = EEikCtNumberEditor; 
+// 				prompt = "Number1:";
+// 				id = 100;
+// 				control = NUMBER_EDITOR { min=0; max=999; };
+// 				trailer = "cm";
+//             },
+// 			DLG_LINE
+//             {
+// 				type = EEikCtNumberEditor; 
+// 				prompt = "Number2:";
+// 				id = 200;
+// 				control = NUMBER_EDITOR { min=0; max=999; };
+// 				trailer = "cm";
+//             }
+//         };
+// }
+
+
+// RESOURCE MENU_BAR r_demo_menu
+// {
+// 	titles=
+//         {
+// 		MENU_TITLE { menu_pane=r_settings_view_menu; txt="Blah"; }
+//         };
+// }
+
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_battery_life
+    {
+    number = SETTING_CONNECTIVITY_MODEL;
+    label = CL_SETTING_BATTERY_LIFE;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+    }
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_battery_life_contents
+{
+    setting_texts_resource = r_cl_setting_list_battery_life_texts;
+    popped_up_texts_resource = r_cl_setting_list_battery_life_popup;
+}
+
+RESOURCE ARRAY r_cl_setting_list_battery_life_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = CL_SETTING_BATTERY_LIFE__BETTER_BATTERY;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = CL_SETTING_BATTERY_LIFE__BETTER_PERFORMANCE;
+            }
+		};
+	}
+
+RESOURCE ARRAY r_cl_setting_list_battery_life_popup
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = CL_SETTING_BATTERY_LIFE__BETTER_BATTERY;
+            },
+        LBUF
+            {
+            txt = CL_SETTING_BATTERY_LIFE__BETTER_PERFORMANCE;
+            }
+		};
+	}
+	
+
+RESOURCE AVKON_SETTING_PAGE r_cl_setting_download_images
+{
+    number = SETTING_DOWNLOAD_IMAGES_YESNO;
+    label = CL_SETTING_DOWNLOAD_IMAGES;
+    type = EAknCtPopupSettingList;
+    editor_resource_id = r_cl_setting_list_ed;
+}
+
+
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_cl_setting_download_images_contents
+{
+    setting_texts_resource = r_cl_setting_list_download_images_texts;
+    popped_up_texts_resource = r_cl_setting_list_download_images_popup;
+}
+
+RESOURCE ARRAY r_cl_setting_list_download_images_texts
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 0;
+            text = CL_SETTING_DOWNLOAD_IMAGES__AUTOMATICALLY;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 1;
+            text = CL_SETTING_DOWNLOAD_IMAGES__WHEN_VISIBLE;
+            },
+        AVKON_ENUMERATED_TEXT
+            {
+            value = 2;
+            text = CL_SETTING_DOWNLOAD_IMAGES__ON_REQUEST;
+            }
+		};
+	}
+
+RESOURCE ARRAY r_cl_setting_list_download_images_popup
+    {
+    items =
+        {
+        LBUF
+            {
+				txt = CL_SETTING_DOWNLOAD_IMAGES__AUTOMATICALLY;
+            },
+        LBUF
+            {
+				txt = CL_SETTING_DOWNLOAD_IMAGES__WHEN_VISIBLE;
+            },
+        LBUF
+            {
+				txt = CL_SETTING_DOWNLOAD_IMAGES__ON_REQUEST;
+            }
+		};
+	}

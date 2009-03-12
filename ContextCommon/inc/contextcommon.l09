@@ -1,0 +1,37 @@
+#define ELanguage ELangFinnish
+
+#define CC_TITLE "Tilakuvaus:"
+
+#define CC_USER_GIVEN "Kuvaus:"
+#define CC_PREVIOUS_LOCATION "Edellinen paikka:"
+#define CC_CURRENT_LOCATION "Nykyinen paikka:"
+#define CC_CURRENT_PROFILE "Profiili:"
+#define CC_BT_NB "Läh:"
+
+#define CC_TIME_FOR_LAST "[viimeiset %S]"
+#define CC_TIME_LEFT_AGO "[lähti %S sitten]" 
+
+#define CC_SPEAKER ""
+#define CC_VIBRATOR "Värinä"
+
+#define CC_SP_VOLUME "Voim %d/10"
+
+#define CC_ON "päällä"
+#define CC_SILENT "Äänetön"
+#define CC_OFF " pois  päältä"
+
+#define CC_USER_ACTIVE_TEMPLATE "Juuri käyttänyt puhelinta"
+#define CC_USER_INACTIVE_TEMPLATE "Käytti puhelinta %S sitten"
+#define CC_OUT_OF_DATE "Tiedot ovat vanhentuneet (%S)"
+#define CC_NO_INFO "Ei yhteyttä palveluun"
+
+#define CC_BUDDIES_TEMPLATE "%d kaveri(a)"
+#define CC_OTHERS_TEMPLATE "%d muuta"
+#define CC_PREVIOUS		"Edellinen"
+#define CC_JABBER_NOT_AVAIL   "(Ei yhteyttä)"
+#define CC_UNMARK			"Poista valinta"
+
+#define CC_DESKTOP "Pöytäkone"
+#define CC_LAPTOP "Kannettava"
+#define CC_PDA "PDA"
+#define CC_AGO "sitten"

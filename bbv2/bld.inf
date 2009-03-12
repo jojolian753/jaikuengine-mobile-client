@@ -1,0 +1,8 @@
+PRJ_PLATFORMS
+WINS THUMB
+PRJ_MMPFILES
+..\ContextCommon\gv2\ContextCommon.mmp
+..\BlackBoard\gv2\BlackBoardData.mmp
+..\BlackBoard\gv2\BlackBoardFactory.mmp
+..\BlackBoardServer\gv2\BlackBoardServer.mmp
+..\BlackBoardClient\gv2\BlackBoardClientTest.mmp

@@ -1,0 +1,3 @@
+#define ELanguage ELangFinnish
+
+#define CMENU_CAPTION		"Loki"

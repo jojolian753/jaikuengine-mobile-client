@@ -1,0 +1,10 @@
+#define ELanguage ELangEnglish
+
+#define CM_CAPTION		"ContextMedia"
+
+#define CM_VISUALCODE		"Get a Tag"
+#define CM_DATE_THREADS		"by Date"
+#define CM_AUTHOR_THREADS	"by initiator"
+#define CM_LAST_POST_THREADS	"by last post"
+#define CM_UNREAD_THREADS	"by unread"
+#define CM_TITLE_THREADS	"by title"

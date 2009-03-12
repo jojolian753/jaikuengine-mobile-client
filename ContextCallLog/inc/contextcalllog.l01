@@ -1,0 +1,48 @@
+#define ELanguage ELangEnglish
+
+#define CC_CAPTION		"Log"
+#define CC_MISSED			"Missed calls"
+#define CC_RECEIVED		"Received calls"
+#define CC_DIALLED		"Dialled numbers"
+#define CC_LOOKUP		"Incoming lookups"
+
+#define CC_NO_MISSED		"(no missed calls)"
+#define CC_NO_RECEIVED		"(no received calls)"
+#define CC_NO_DIALLED		"(no dialled numbers)"
+#define CC_NO_LOOKUP		"(no incoming lookups)"
+
+#define CC_LOADING_MISSED	"Loading missed calls..."
+#define CC_LOADING_RECEIVED	"Loading received calls..."
+#define CC_LOADING_DIALLED	"Loading dialled calls..."
+#define CC_LOADING_LOOKUP	"Loading incoming lookups..."
+
+#define CC_EXIT			"Exit"
+#define CC_SHUTDOWN		"Shutdown"
+#define CC_CALL			"Call"
+#define CC_USE_NUMBER		"Use number"
+#define CC_DELETE_EVENT		"Delete"
+#define CC_CLEAR_LIST		"Clear list"
+#define CC_CREATE_MSG		"Create message"
+#define CC_CREATE_SMS		"Sms"
+#define CC_CREATE_MMS		"Mms"
+#define CC_CONTACT		"Add to Contacts"
+#define CC_UPDATE_EXISTING	"Update existing"
+#define CC_NEW_CONTACT		"Create new"
+#define CC_PRESENCE_DETAILS	"Presence Detail"
+
+#define CC_DELETE_MESSAGE	"Delete entry from list?"
+
+#define CC_CLEAR_DIALLED	"Clear all dialled numbers?"
+#define CC_CLEAR_MISSED		"Clear all missed calls?"
+#define CC_CLEAR_RECEIVED	"Clear all received calls?"
+#define CC_CLEAR_LOOKUP		"Clear all incoming lookups?"
+
+#define CC_NUMBER			"Number:"
+#define CC_NO_NUMBER		"(no number)"
+
+#define CC_CREATE_CONTACT	"Create new"
+#define CC_UPDATE_CONTACT	"Update existing"
+#define CC_CALL_DETAILS		"Call Details"
+#define CC_CALL_DETAIL_TEMPLATE "Contact: %S\nNumber: %S\nDate:  %02d/%02d\nTime:  %02d:%02d\n"
+	
+#define CC_LOOKUP_SUFFIX	" saw you as"

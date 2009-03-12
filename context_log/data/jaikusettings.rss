@@ -1,0 +1,36 @@
+//  RESOURCE IDENTIFIER
+NAME    CLOM // 4 letter ID
+//  RESOURCE DEFINITIONS 
+
+#include <badef.rh>
+#include <uikon.rh>
+#include "context_log.loc"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=CL_CAPTION; }
+
+#include "context_log_common.rss"
+#include <sdk_version.h>
+
+#ifdef __S60V3__
+#include "jaikusettings.rls"
+#include <appinfo.rh>
+RESOURCE LOCALISABLE_APP_INFO r_jaikusettings_localisable_app_info
+    {
+    short_caption = STRING_jaikusettings_caption_string;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = STRING_jaikusettings_caption_string;
+
+#ifdef __S60V3__
+		number_of_icons = 1;
+	   	icon_file = "\\resource\\apps\\jaikusettings_aif.mif";
+#else
+		number_of_icons = 2;
+	   	icon_file = "\\system\\apps\\jaikusettings\\jaikusettings_aif.mbm";
+#endif
+	    };
+    }
+#endif

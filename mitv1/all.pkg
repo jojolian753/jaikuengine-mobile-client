@@ -1,0 +1,10 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,21,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\expat\symbian\expat_build.SIS",(0x101FAE0C)
+@"..\contextcommon\group\contextcommon_build.SIS",(0x10200C6D)
+@"..\contextserver\group\contextserver_build.SIS",(0x10200C6B)
+@"..\contextclient\group\contextclient_build.SIS",(0x10200C6C)
+@"..\context_log\mitv1\context_log_build.SIS",(0x101FBAD1)
+@"..\starter\group\starter_build.SIS",(0x101FBAD3)
+@"..\autostart\group\cl_autostart_build.SIS",(0x101FBAD2)

@@ -1,0 +1,44 @@
+# Add-on makefile to do extra target building tasks
+# Copyright (c) Penrillian Ltd 2003
+
+SISTARGET=..\..\install\s80\symbianosunit
+INCDIR=..\..\inc
+PKGFILEx=$(SISTARGET)$(CFG).pkg
+PKGFILE=$(PKGFILEx)
+
+!if "$(PLATFORM)"=="ARMI"
+CLEAN:
+	@del $(PKGFILE:pkg=sis)
+	-del $(INCDIR)\testdriver.h
+
+FINAL :
+	makesis $(PKGFILE)
+
+!else # Platform WINS
+CLEAN :
+	-del $(INCDIR)\testdriver.h
+
+FINAL :
+
+!endif
+
+MAKEFILE : $(INCDIR)\testdriver.h
+
+$(INCDIR)\testdriver.h: $(INCDIR)\TestHeader.h
+	cd $(INCDIR) && echo y | testgen.bat
+
+# Boilerplate to stop errors:
+
+BLD : BUILD
+
+LIB : LIBRARY
+
+MAKMAKE : MAKEFILE
+
+SAVESPACE :
+
+RELEASABLES :
+
+BUILD CLEANEXPORT FREEZE LIBRARY LISTING MAKEFILE TARGET TIDY RESOURCE :
+
+CLEANMAKEFILE :

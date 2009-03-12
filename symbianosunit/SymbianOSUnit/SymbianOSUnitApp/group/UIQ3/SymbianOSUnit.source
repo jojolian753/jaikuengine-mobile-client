@@ -1,0 +1,79 @@
+// SymbianOSUnit.source
+//
+// Copyright (c) 2006 Penrillian Ltd.  All rights reserved.
+// Web: www.penrillian.com
+
+// This file is to be #include'd from the test MMP file.
+// (The relative paths for sourcepath and user includes work fine).
+
+TARGET                                  SymbianOSUnit.exe 
+TARGETTYPE                              exe 
+UID                                     0x100039CE 0xE01FADF2 
+macro									__SYMBIANOSUNIT 
+macro									UIQ3 
+
+
+SOURCEPATH                              ..\..\..\cxxtest 
+SOURCE                                  TestOutput.cpp 
+
+SOURCEPATH                              ..\..\SRC 
+SOURCE                                  SymbianOSUnitApp.cpp 
+SOURCE                                  SymbianOSUnitApplication.cpp 
+SOURCE                                  SymbianOSUnitDocument.cpp 
+SOURCE                                  SymbianOSUnitAppUi.cpp 
+SOURCE                                  SymbianOSUnitAppView.cpp 
+SOURCE                                  Logger.cpp 
+SOURCE                                  TestUtils.cpp 
+
+SOURCEPATH                              ..\..\data\uiq3 
+START RESOURCE SymbianOSUnit.rss 
+  TARGETPATH                              \Resource\Apps 
+  HEADER                                   
+  LANG                                    SC 
+END  
+
+START RESOURCE SymbianOSUnit_reg.rss 
+  TARGETPATH                              \private\10003a3f\apps 
+END  
+
+START RESOURCE SymbianOSUnit_loc.rss 
+  TARGETPATH                              \Resource\Apps 
+  LANG                                    SC 
+END  
+
+
+USERINCLUDE                             ..\..\INC 
+SYSTEMINCLUDE                           ..\..\.. 
+SYSTEMINCLUDE                           ..\..\..\cxxtest 
+SYSTEMINCLUDE                           \EPOC32\INCLUDE 
+SYSTEMINCLUDE                           \EPOC32\INCLUDE\LIBC 
+LIBRARY                                 euser.lib 
+LIBRARY                                 apparc.lib 
+LIBRARY                                 cone.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 eikcoctl.lib 
+LIBRARY                                 charconv.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 bafl.lib 
+LIBRARY                                 estlib.lib 
+LIBRARY                                 ws32.lib 
+LIBRARY                                 eikctl.lib 
+LIBRARY                                 qikctl.lib 
+LIBRARY                                 FLOGGER.lib 
+LIBRARY                                 qikcore.lib 
+STATICLIBRARY                           qikalloc.lib
+LIBRARY                                 qikallocdll.lib
+
+START BITMAP SymbianOSUnitAppIcon.mbm 
+  TARGETPATH                              \Resource\Apps 
+  HEADER                                   
+  SOURCEPATH                              ..\..\aif 
+  SOURCE                                  c24 SOSUnit20x16.bmp 
+  SOURCE                                  2 SOSUnit20x16_mask.bmp 
+  SOURCE                                  c24 SOSUnit44x44.bmp 
+  SOURCE                                  2 SOSUnit44x44_mask.bmp 
+  SOURCE                                  c24 SOSUnit64x50.bmp 
+  SOURCE                                  2 SOSUnit64x50_mask.bmp 
+
+END  
+

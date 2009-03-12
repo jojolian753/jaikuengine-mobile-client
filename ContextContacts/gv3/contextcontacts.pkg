@@ -1,0 +1,9 @@
+&EN,FI
+%{"Jaiku Ltd", "Jaiku Ltd"}
+:"Jaiku"	
+#{"Jaiku", "Jaiku"},(0x20006E42),4,36,0
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\contextcontacts.exe"         -"!:\sys\bin\contextcontacts.exe"
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextcontacts.r01"-"!:\resource\apps\contextcontacts.rsc"
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextcontacts_aif.mif"         -"!:\resource\apps\contextcontacts_aif.mif"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\contextcontacts_reg.r01" -"!:\private\10003a3f\import\apps\contextcontacts_reg.rsc"

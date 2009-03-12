@@ -1,0 +1,88 @@
+
+inc/JaikuToolApplication.h,160
+#define __JAIKUTOOL_APPLICATION_H__9,297
+class CJaikuToolApplication CJaikuToolApplication20,561
+    TUid AppDllUid(CJaikuToolApplication::AppDllUid30,793
+
+inc/JaikuToolAppui.h,593
+#define __JAIKUTOOL_APPUI_H__9,285
+class CJaikuToolAppUi CJaikuToolAppUi22,589
+    void ConstructL(CJaikuToolAppUi::ConstructL31,845
+    CJaikuToolAppUi(CJaikuToolAppUi::CJaikuToolAppUi39,1059
+    ~CJaikuToolAppUi(CJaikuToolAppUi::~CJaikuToolAppUi47,1197
+	virtual void DynInitMenuPaneL(CJaikuToolAppUi::DynInitMenuPaneL48,1222
+    void HandleCommandL(CJaikuToolAppUi::HandleCommandL57,1476
+	TErrorHandlerResponse HandleError(CJaikuToolAppUi::HandleError60,1529
+    CJaikuToolAppView* iAppView;CJaikuToolAppUi::iAppView66,1714
+    TChar iDrive;CJaikuToolAppUi::iDrive67,1748
+
+inc/JaikuToolAppview.h,343
+#define __JAIKUTOOL_APPVIEW_H__9,289
+class CJaikuToolAppView CJaikuToolAppView20,495
+    static CJaikuToolAppView* NewL(CJaikuToolAppView::NewL31,798
+    static CJaikuToolAppView* NewLC(CJaikuToolAppView::NewLC40,1097
+     ~CJaikuToolAppView(CJaikuToolAppView::~CJaikuToolAppView48,1271
+    void Draw(CJaikuToolAppView::Draw58,1486
+
+inc/JaikuToolDocument.h,506
+#define __JAIKUTOOL_DOCUMENT_H__9,291
+class CJaikuToolDocument CJaikuToolDocument25,624
+    static CJaikuToolDocument* NewL(CJaikuToolDocument::NewL37,994
+    static CJaikuToolDocument* NewLC(CJaikuToolDocument::NewLC47,1362
+    ~CJaikuToolDocument(CJaikuToolDocument::~CJaikuToolDocument54,1539
+    CEikAppUi* CreateAppUiL(CJaikuToolDocument::CreateAppUiL63,1781
+    void ConstructL(CJaikuToolDocument::ConstructL72,1950
+    CJaikuToolDocument(CJaikuToolDocument::CJaikuToolDocument80,2139
+
+src/JaikuTool.cpp,191
+CApaApplication* NewApplication(14,396
+TInt E32Main(20,479
+EXPORT_C TInt WinsMain(31,762
+TInt E32Dll(36,874
+EXPORT_C CApaApplication* NewApplication(45,1023
+GLDEF_C TInt E32Dll(51,1166
+
+src/JaikuToolApplication.cpp,150
+static const TUid KUidJaikuToolApp 12,418
+CApaDocument* CJaikuToolApplication::CreateDocumentL(14,472
+TUid CJaikuToolApplication::AppDllUid(21,696
+
+src/JaikuToolAppui.cpp,856
+enum TSWStartupReason TSWStartupReason22,527
+    ESWNone TSWStartupReason::ESWNone23,552
+class SysStartup SysStartup26,578
+	IMPORT_C static TInt ShutdownAndRestart(SysStartup::ShutdownAndRestart28,607
+void CJaikuToolAppUi::ConstructL(32,764
+CJaikuToolAppUi::CJaikuToolAppUi(48,1049
+TErrorHandlerResponse CJaikuToolAppUi::HandleError(56,1215
+CJaikuToolAppUi::~CJaikuToolAppUi(76,1796
+void CJaikuToolAppUi::DataDir(92,2084
+void CJaikuToolAppUi::ResetAllDataL(104,2322
+void CJaikuToolAppUi::StopJaikuL(116,2596
+void CJaikuToolAppUi::SendLogsL(122,2805
+void CJaikuToolAppUi::DebugLogDir(189,4804
+void CJaikuToolAppUi::SetDebugLogsEnabled(194,4895
+TBool CJaikuToolAppUi::DebugLogsEnabled(209,5279
+TBool CJaikuToolAppUi::JaikuDataExists(215,5428
+void CJaikuToolAppUi::DynInitMenuPaneL(222,5596
+void CJaikuToolAppUi::HandleCommandL(246,6693
+
+src/JaikuToolAppview.cpp,488
+CJaikuToolAppView* CJaikuToolAppView::NewL(14,376
+CJaikuToolAppView* CJaikuToolAppView::NewLC(21,568
+CJaikuToolAppView::CJaikuToolAppView(29,792
+CJaikuToolAppView::~CJaikuToolAppView(36,905
+CCoeControl* CJaikuToolAppView::ComponentControl(41,978
+TInt CJaikuToolAppView::CountComponentControls(46,1071
+void CJaikuToolAppView::HandleResourceChange(55,1214
+void CJaikuToolAppView::ConstructL(66,1562
+void CJaikuToolAppView::SizeChanged(85,2020
+void CJaikuToolAppView::Draw(94,2193
+
+src/JaikuToolDocument.cpp,300
+CJaikuToolDocument* CJaikuToolDocument::NewL(12,368
+CJaikuToolDocument* CJaikuToolDocument::NewLC(19,546
+void CJaikuToolDocument::ConstructL(27,778
+CJaikuToolDocument::CJaikuToolDocument(32,869
+CJaikuToolDocument::~CJaikuToolDocument(37,1002
+CEikAppUi* CJaikuToolDocument::CreateAppUiL(42,1093

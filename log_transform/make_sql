@@ -1,0 +1,7 @@
+#!/bin/bash
+rm input.sql
+pushd Kirsi-saved; ../tosql.pl 1 RADIOLINJA; popd
+pushd Taneli-saved; ../tosql.pl 2 RADIOLINJA; popd
+pushd Vappu-saved; ../tosql.pl 3 RADIOLINJA; popd
+pushd Salli-saved; ../tosql.pl 4 RADIOLINJA; popd
+#sqlplus raento/in2051el@test.cs.helsinki.fi input.sql

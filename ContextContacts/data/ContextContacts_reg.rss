@@ -1,0 +1,23 @@
+#include <sdk_version.h>
+#include <appinfo.rh>
+#include <contextcontacts.rsg>
+#include "context_uids.rh"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 CONTEXT_UID_CONTEXTCONTACTS
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "contextcontacts";
+#if defined(__S60V3__) 
+    localisable_resource_file = "\\resource\\apps\\contextcontacts";
+#else
+    attributes = KAppBuiltAsDll;
+    localisable_resource_file = "\\system\\apps\\contextcontacts\\contextcontacts";
+#endif
+	localisable_resource_id = R_CONTEXTCONTACTS_LOCALISABLE_APP_INFO;
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+    }
+
+// End of File

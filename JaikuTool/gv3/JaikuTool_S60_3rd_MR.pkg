@@ -1,0 +1,26 @@
+; JaikuTool.pkg
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"JaikuTool"},(0x200089ED),5,1,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"Jaiku Ltd"}
+
+;Unique Vendor name
+:"Jaiku"
+
+; Files to copy
+"\symbian\9.1\S60_3rd_MR\epoc32\release\gcce\urel\JaikuTool.exe"-"!:\sys\bin\JaikuTool.exe"
+IF EXISTS("z:\system\install\Series60v3.1.sis")
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\JaikuTool_reg2.R01"-"!:\private\10003a3f\import\apps\JaikuTool_reg.R01"
+ELSE
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\JaikuTool_reg.R01"-"!:\private\10003a3f\import\apps\JaikuTool_reg.R01"
+ENDIF
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\JaikuTool_loc.R01"-"!:\resource\apps\JaikuTool_loc.R01"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\JaikuTool.R01"-"!:\resource\apps\JaikuTool.R01"

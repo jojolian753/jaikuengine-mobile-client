@@ -1,0 +1,76 @@
+SERVER started on port 2000
+got a connection from: 85-156-140-202.elisa-mobile.fi[85.156.140.202]
+RECV:<?xml version='1.0'?>
+RECV:<stream>
+SEND:<?xml version='1.0'?>
+<stream>
+RECV:<ident><id>0</id><imei>351111106870421</imei><name>Demo phone</name></ident>
+id 0 count 0
+SEND:<ack><id>0</id></ack>
+
+  <tuple module='0x1020811e' id='7' major_version='1'
+  minor_version='0'>
+    <id>13</id>
+
+    <tuplename>
+      <module_uid>0x10208120</module_uid>
+
+      <module_id>1</module_id>
+
+      <subname>58</subname>
+    </tuplename>
+
+    <value module='0x1020811a' id='10' major_version='1'
+    minor_version='0'>testproject</value>
+  </tuple>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3322</id><tuplename><module_uid>0x1020811d</module_uid><module_id>1</module_id><subname></subname></tuplename><location.value module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221713</datetime><priority>2</priority><eventname>location.value</eventname><location.value module="0x1020811e" id="1" major_version="1" minor_version="0"><location.mcc>244</location.mcc><location.mnc>5</location.mnc><location.network>RADIOLINJA</location.network><location.lac>9006</location.lac><location.cellid>393</location.cellid><location.id>51</location.id></location.value></location.value></tuple>
+id 3322 count 0
+SEND:<ack><id>3322</id></ack>
+RECV:<ack><id>13</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3323</id><tuplename><module_uid>0x1020811d</module_uid><module_id>1</module_id><subname></subname></tuplename><location.value module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221720</datetime><priority>2</priority><eventname>location.value</eventname><location.value module="0x1020811e" id="1" major_version="1" minor_version="0"><location.mcc>244</location.mcc><location.mnc>5</location.mnc><location.network>RADIOLINJA</location.network><location.lac>9006</location.lac><location.cellid>393</location.cellid><location.id>51</location.id></location.value></location.value></tuple>
+id 3323 count 0
+SEND:<ack><id>3323</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3324</id><tuplename><module_uid>0x1020811d</module_uid><module_id>4</module_id><subname></subname></tuplename><devices module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221731</datetime><priority>3</priority><eventname>devices</eventname><devices module="0x1020811e" id="4" major_version="1" minor_version="0"><device><bt.mac>00809834bce9</bt.mac><bt.name></bt.name><bt.majorclass>1</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>144</bt.serviceclass></device><device><bt.mac>001262e353b1</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device></devices></devices></tuple>
+id 3324 count 0
+SEND:<ack><id>3324</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3325</id><tuplename><module_uid>0x1020811d</module_uid><module_id>4</module_id><subname></subname></tuplename><devices module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221759</datetime><priority>2</priority><eventname>devices</eventname><devices module="0x1020811e" id="4" major_version="1" minor_version="0"><device><bt.mac>00809834bce9</bt.mac><bt.name></bt.name><bt.majorclass>1</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>144</bt.serviceclass></device><device><bt.mac>000e6d77bfa3</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>1</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device><device><bt.mac>001262e353b1</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device></devices></devices></tuple>
+id 3325 count 0
+SEND:<ack><id>3325</id></ack>
+RECV:</stream>
+SEND:</stream>
+connection closed, received 614 bytes, uncompressed 3248
+got a connection from: 85-156-29-41.elisa-mobile.fi[85.156.29.41]
+RECV:<?xml version='1.0'?>
+RECV:<stream>
+SEND:<?xml version='1.0'?>
+<stream>
+RECV:<ident><id>0</id><imei>351111106870421</imei><name>Demo phone</name></ident>
+id 0 count 1
+SEND:<ack><id>0</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3326</id><tuplename><module_uid>0x1020811d</module_uid><module_id>1</module_id><subname></subname></tuplename><location.value module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221831</datetime><priority>2</priority><eventname>location.value</eventname><location.value module="0x1020811e" id="1" major_version="1" minor_version="0"><location.mcc>244</location.mcc><location.mnc>5</location.mnc><location.network>RADIOLINJA</location.network><location.lac>9006</location.lac><location.cellid>393</location.cellid><location.id>51</location.id></location.value></location.value></tuple>
+id 3326 count 0
+SEND:<ack><id>3326</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3327</id><tuplename><module_uid>0x1020811d</module_uid><module_id>15</module_id><subname></subname></tuplename><charger module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221831</datetime><priority>2</priority><eventname>charger</eventname><general module="0x1020811e" id="14" major_version="1" minor_version="0"><uid>0x100052d7</uid><state>0</state></general></charger></tuple>
+id 3327 count 0
+SEND:<ack><id>3327</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3328</id><tuplename><module_uid>0x1020811d</module_uid><module_id>26</module_id><subname></subname></tuplename><battery module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221831</datetime><priority>2</priority><eventname>battery</eventname><general module="0x1020811e" id="14" major_version="1" minor_version="0"><uid>0x100052d3</uid><state>3</state></general></battery></tuple>
+id 3328 count 0
+SEND:<ack><id>3328</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3329</id><tuplename><module_uid>0x1020811d</module_uid><module_id>16</module_id><subname></subname></tuplename><network_status module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221832</datetime><priority>2</priority><eventname>network_status</eventname><general module="0x1020811e" id="14" major_version="1" minor_version="0"><uid>0x100052c7</uid><state>0</state></general></network_status></tuple>
+id 3329 count 0
+SEND:<ack><id>3329</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3330</id><tuplename><module_uid>0x1020811d</module_uid><module_id>1</module_id><subname></subname></tuplename><location.value module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221839</datetime><priority>2</priority><eventname>location.value</eventname><location.value module="0x1020811e" id="1" major_version="1" minor_version="0"><location.mcc>244</location.mcc><location.mnc>5</location.mnc><location.network>RADIOLINJA</location.network><location.lac>9006</location.lac><location.cellid>393</location.cellid><location.id>51</location.id></location.value></location.value></tuple>
+id 3330 count 0
+SEND:<ack><id>3330</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3331</id><tuplename><module_uid>0x1020811d</module_uid><module_id>4</module_id><subname></subname></tuplename><devices module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221849</datetime><priority>2</priority><eventname>devices</eventname><devices module="0x1020811e" id="4" major_version="1" minor_version="0"><device><bt.mac>001262e353b1</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device><device><bt.mac>000e6d77bfa3</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>1</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device><device><bt.mac>00809834bce9</bt.mac><bt.name></bt.name><bt.majorclass>1</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>144</bt.serviceclass></device></devices></devices></tuple>
+id 3331 count 0
+SEND:<ack><id>3331</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3332</id><tuplename><module_uid>0x1020811d</module_uid><module_id>35</module_id><subname></subname></tuplename><loca.message_status module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221859</datetime><priority>2</priority><eventname>loca.message_status</eventname><loca.message_status module="0x1020811e" id="35" major_version="1" minor_version="0"><messageid>1</messageid><recipient_daddress>001262e353b1</recipient_daddress><succeeded>false</succeeded><at_time>20050621T221859</at_time></loca.message_status></loca.message_status></tuple>
+id 3332 count 0
+SEND:<ack><id>3332</id></ack>
+RECV:<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3333</id><tuplename><module_uid>0x1020811d</module_uid><module_id>4</module_id><subname></subname></tuplename><devices module="0x1020811e" id="10" major_version="1" minor_version="0"><datetime>20050621T221922</datetime><priority>2</priority><eventname>devices</eventname><devices module="0x1020811e" id="4" major_version="1" minor_version="0"><device><bt.mac>00809834bce9</bt.mac><bt.name></bt.name><bt.majorclass>1</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>144</bt.serviceclass></device><device><bt.mac>000e6d77bfa3</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>1</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device><device><bt.mac>001262e353b1</bt.mac><bt.name></bt.name><bt.majorclass>2</bt.majorclass><bt.minorclass>3</bt.minorclass><bt.serviceclass>640</bt.serviceclass></device></devices></devices></tuple>
+id 3333 count 0
+SEND:<ack><id>3333</id></ack>
+RECV:</stream>
+SEND:</stream>
+connection closed, received 874 bytes, uncompressed 5515

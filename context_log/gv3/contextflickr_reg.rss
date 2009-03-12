@@ -1,0 +1,16 @@
+#include <appinfo.rh>
+#include "contextflickr.rls"
+#include <contextflickr.rsg>
+#include "..\..\context_uids.rh"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 CONTEXT_UID_CONTEXT_LOG // application UID
+RESOURCE APP_REGISTRATION_INFO
+    {
+	app_file = "contextflickr";
+	localisable_resource_file =  STRING_contextflickr_loc_resource_file_1;
+	localisable_resource_id = R_CONTEXTFLICKR_LOCALISABLE_APP_INFO;
+
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+ }

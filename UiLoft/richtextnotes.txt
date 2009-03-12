@@ -1,0 +1,166 @@
+19.2.2007
+Individual post view will need a text drawing component, that in the
+long run 
+  1) can draw varying amount of texts. 
+  2) can draw text in different fonts or colors in same row. 
+  3) can layout itself so that some rows are shorter than others 
+  4) can have clickable urls
+   
+19.2.2007
+Based on today's investigation, it might be feasible to use crichtext and ceikrichtexteditor for comments view. 
+Current blocker is that I haven't found way to force CEikRichTextEditor to use anti-aliased fonts and aliased fonts look awful.
+
+ 
+20.2.2007 
+Antialiasing question is still open. I'll move to hbox and vbox layouts for a while
+
+GTK hbox and vbox
+------------------
+Properties of hbox and vbox in gtk
+
+construction:
+gtk.HBox(homogeneous=False, spacing=0)
+- homogenous == all items take same amount of space -> not needed in Jaiku
+- spacing = extra space between children 
+
+adding children:
+gtk.Box.pack_start(child, expand=True, fill=True, padding=0)
+- expand = False -> do not expand, otherwise devide extra space equally between expanding children
+- fill   = actually resize child, if not fill, it just shows backgroind
+- padding = extra space between child and it's neighbours (also between reference end and child) 
+
+
+Other properties of child:
+- pack-type = to start or to end of parent
+- position = index of child in the parent
+
+wxWidgets wxSizer and wxBoxSizer
+--------------------------------
+wxBoxSizer(int orientation) 
+
+Add( window or sizes or (width X height) spacer, int proportion, flag, border)
+- proportion which extra space is distributed (similar to expand, but supports proportional sizing)
+- flags:
+   wxTOP, wxBOTTOM, etc... - which sides of sizer the border width will apply to
+   wxEXPAND - actually resize child (equivalent gtk's fill)
+   wxSHAPED - actually resize child, but preserve aspect ratio
+   wxFIXED_MINSIZE - do not adjust item when item content's change
+   wxALIGN_CENTER, LEFT, CENTER_VERTICAL ... - alignment of item in size that it's been given
+
+- border = border width
+
+Child management:
+- detach - remove child without destroying it
+
+- getSize
+- getPosition
+- getMinSize
+- 
+ 
+
+Java Swing
+----------
+
+BoxLayout(Container, int orientation)
+Box(int orientation) - creates a Box, lightweight container that uses a BoxLayout
+
+
+Components have 
+- getMinimumSize
+- getPreferredSize
+- getMaximumSize
+
+
+
+21.2.2007
+---------
+
+Interface builder approach:
+
+E.g. new, stretchable presence view
+
+list
+  item 
+    hbox 
+      image 
+        imageprovider guid  
+      vbox
+        richtext
+            main: { font, color }
+            timestamp: { font, color }
+  item
+    hbox 
+      image 
+        static filename 
+      vbox 
+        richtext
+             provider guid
+             main: { font, color }
+             timestamp: { font, color }
+  item # nearby
+    hbox 
+       image (static filename) 
+       vbox
+         richtext 
+            stylesheet: main, timestamp 
+            hbox 
+               custom component (guid) 
+ 
+
+Interface for sizer/control/sizeable item
+
+component provides:
+MinSize
+BestSize
+MaxSize
+SetSize
+
+wxWidgets algorithms
+--------------------
+
+wxSizer::SetDimension(x,y,w,h):
+	store x,y,w,h,
+        Layout()
+
+wxSizer::Layout():
+	CalcMin()
+        RecalcSizes() # sets sizes also
+
+wxBoxSizer::CalcMin():
+	# calculates several values for sizer:
+	#  - calls CalcMin recursively for it's chldren
+	#  - minWidth, minHeight 
+	#  - fixedWidth, fixedHeight (only combined from fixed size children
+	#  - total stretchability (needed for proportionality calculations)
+
+	for c in visible child: tell child to calc min size and calculate totalStretch
+	# calc maxminsize 
+	for c in visible proportional child: m.w = (c.w * totalStretch + c.stretch - 1) / c.stretch
+        maxMinSize.w = max of m.w
+	# calc overall minsize
+	proportional child: c.size = maxMinSize * c.stretch / totalStretch
+	fixed childs: fixedwidth += c.size.w, fixedheight = max(fixedheight, c.size.h)
+	minWidth = size.x
+	minHeight = max(minHeight, size.y)
+
+wxBoxSizer::RecalcSizes()
+	delta = m_size.x - m_fixedWidth  # space for proportional items
+        pt = sizer.pos
+	for c in visible childs:
+	    if stretchable(c):
+	       w = (delta * c.stretch) / totalStretch
+	    else:
+	       w = c.size.w
+	              
+            cpos = pt
+            csize = (w, sizer.w)
+            if (EXPAND | SHAPED) csize.h = sizer.h         // set height to sizers height
+            elif (ALIGN_BOTTOM)  cpos.y += sizer.h - csize.h // move to bottom 
+            elif (ALIGN_CENTER_VERTICAL) cpos.y += (sizer.h - csize.h)/ 2
+  
+            if (sizer.containingwindow) 
+               cpos.x = AdjustForLayoutDirection( cpos.x, w, sizer.x )
+
+	    child->SetDimension( cpos, csize )
+            pt.x += width 
+

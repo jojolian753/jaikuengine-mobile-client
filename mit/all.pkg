@@ -1,0 +1,12 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,31,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\expat\symbianv2\expat_build.SIS",(0x101FAE0C)
+@"..\contextnotify\gv2\contextnotify_build.SIS",(0x10204BAA)
+@"..\contextnotifyclient\gv2\contextnotifyclient_build.SIS",(0x10204BAB)
+@"..\contextcommon\gv2\contextcommon_build.SIS",(0x10200C6D)
+@"..\contextserver\gv2\contextserver_build.SIS",(0x10200C6B)
+@"..\contextclient\gv2\contextclient_build.SIS",(0x10200C6C)
+@"..\context_log\mit\context_log_build.SIS",(0x101FBAD1)
+@"..\starter\gv2\starter_build.SIS",(0x101FBAD3)
+@"..\autostart\gv2\cl_autostart_build.SIS",(0x101FBAD2)

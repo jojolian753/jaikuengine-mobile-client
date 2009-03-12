@@ -1,0 +1,79 @@
+f32file.h
+	RFile
+		TInt Open(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Create(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Replace(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Temp(RFs& aFs,const TDesC& aPath,TFileName& aName,TUint aFileMode);
+	RFs
+		TInt Connect();
+
+etelbgsm.h
+	RBasicGsmPhone
+		TInt Open(RTelServer& aSession,const TDesC& aName);
+
+etelagsm.h
+	RAdvGsmPhone
+		TInt Open(RTelServer& aSession,const TDesC& aName);
+
+etelmm.h
+	RMobilePhone
+		TInt Open(RTelServer& aSession,const TDesC& aName);
+
+w32std.h
+	RWsSession
+		TInt Connect();
+	RWindowGroup	RWsSession &aWs
+		TInt Construct(TUint32 aClientHandle);
+		TInt Construct(TUint32 aClientHandle, TBool aInitialFocusState);
+e32std.h
+	RThread
+		TInt Create(const TDesC& aName,TThreadFunction aFunction,TInt aStackSize,TInt aHeapMinSize,TInt aHeapMaxSize,TAny *aPtr,TOwnerType aType=EOwnerProcess);
+#ifndef EKA2
+		TInt Create(const TDesC& aName,TThreadFunction aFunction,TInt aStackSize,RHeap* aHeap,TAny* aPtr,TOwnerType aType=EOwnerProcess);
+		TInt Create(const TDesC& aName,TThreadFunction aFunction,TInt aStackSize,TAny* aPtr,RLibrary* aLibrary,RHeap* aHeap, TInt aHeapMinSize,TInt aHeapMaxSize,TOwnerType aType);
+#endif
+		TInt Open(const TDesC& aFullName,TOwnerType aType=EOwnerProcess);
+		TInt Open(const TFindThread& aFind,TOwnerType aType=EOwnerProcess);
+		TInt Open(TThreadId aID,TOwnerType aType=EOwnerProcess);
+	RTimer
+		TInt CreateLocal();
+	RProcess
+		TInt Create(const TDesC& aFileName,const TDesC& aCommand,const TUidType& aUidType, TOwnerType aType=EOwnerProcess);
+		TInt Create(const TDesC& aFileName,const TDesC& aCommand,TOwnerType aType=EOwnerProcess);
+		TInt Open(const TDesC& aName,TOwnerType aType=EOwnerProcess);
+		TInt Open(const TFindProcess& aFind,TOwnerType aType=EOwnerProcess);
+		TInt Open(TProcessId aId,TOwnerType aType=EOwnerProcess);
+	RChunk
+		TInt CreateLocal(TInt aSize, TInt aMaxSize, TOwnerType aType=EOwnerProcess);
+		TInt CreateGlobal(const TDesC &aName, TInt aSize, TInt aMaxSize, TOwnerType aType=EOwnerProcess);
+
+apgcli.h
+	RApaLsSession
+		TInt Connect();
+
+d32dbms.h 
+	RDbColReadStream
+		void OpenL(const RDbRowSet& aView,TDbColNo aCol);
+	RDbColWriteStream
+		void OpenL(RDbRowSet& aView,TDbColNo aCol);
+
+blackboardclientsession.h
+	RBBClient
+		TInt Connect();
+s32file.h
+	RFileBuf
+		TInt Open(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Create(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Replace(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Temp(RFs& aFs,const TDesC& aPath,TFileName& aName,TUint aFileMode);
+	RFileReadStream
+		TInt Open(RFs& aFs,const TDesC& aName,TUint aFileMode);
+	RFileWriteStream
+		TInt Open(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Create(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Replace(RFs& aFs,const TDesC& aName,TUint aFileMode);
+		TInt Temp(RFs& aFs,const TDesC& aPath,TFileName& aName,TUint aFileMode);
+
+aknkeylock.h
+	RAknKeyLock
+		TInt Connect();

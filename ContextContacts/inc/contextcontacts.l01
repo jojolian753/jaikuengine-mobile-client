@@ -1,0 +1,182 @@
+#ifndef CC_CONTEXTCONTACTS_L01_INCLUDED
+#define CC_CONTEXTCONTACTS_L01_INCLUDED 1
+#include "contextvariant.hrh"
+
+#define ELanguage ELangEnglish
+
+#ifdef __JAIKU__
+#define CC_CAPTION		"Jaiku"
+#define CC_LONG_CAPTION		"Jaiku"
+#else
+#define CC_CAPTION		"Contacts"
+#define CC_LONG_CAPTION		"Contacts"
+#endif
+
+#define CC_TAB_CONTACTS		"Contacts"
+#define CC_TAB_GROUPS		"Groups"
+
+#define CC_CREATE_SMS 		"Sms"
+#define CC_CREATE_MMS		"Mms"
+#define CC_CREATE_EMAIL		"Email"
+
+#define CC_INFO_MEM		"Memory"
+
+#define CC_UNMARK               "Unmark"
+#define CC_MARK			"Mark"
+#define CC_MARK_ALL		"Mark All"
+#define CC_UNMARK_ALL		"Unmark All"
+
+#define CC_OPEN			"Open"
+#define CC_CALL			"Call"
+#define CC_CREATE_MSG		"Send Message"
+#define CC_NEW_CONTACT		"New Contact"
+
+#ifdef __JAIKU__
+#define CC_PRESENCE_DETAILS   "Show Rich Presence"
+#define CC_JABBER	      "Edit Screen Name"
+#define CC_SHOW_JABBER	      "Show Screen Name"
+#else
+#define CC_PRESENCE_DETAILS   "Presence Info"
+#define CC_JABBER		"Edit Jabber Nick"
+#define CC_SHOW_JABBER		"Show Jabber Nick"
+#endif
+
+#define CC_EDIT 			"Edit"
+#define CC_DELETE			"Delete"
+#define CC_DUPLICATE		"Duplicate"
+#define CC_MARK_UNMARK		"Mark/Unmark"
+#define CC_SIM_DIR		"SIM Directory"
+#ifdef __JAIKU__
+#define CC_SETTINGS		"Settings"
+#else
+#define CC_SETTINGS		"Settings"
+#endif
+
+#ifdef __JAIKU__
+#define CC_SHUTDOWN		"Shutdown Jaiku"
+#else
+#define CC_SHUTDOWN		"Shutdown"
+#endif
+#define CC_EXIT			"Exit"
+
+#define CC_GO_TO_WEB		"Go to Web Address"
+#define CC_DEFAULTS		"Defaults"
+
+#define CC_ASSIGN			"Assign"
+#define CC_BACK			"Back"
+
+#define CC_SELECT			"Select"
+#define CC_NONE			"No Default"
+
+#define CC_DEFAULT_PHONE	"Phone number"
+#define CC_DEFAULT_SMS		"Text msg. number"
+#define CC_DEFAULT_MMS		"Mms number/address"
+#define CC_DEFAULT_EMAIL	"Email address"
+#define CC_NO_DEFAULT		"(no default)"
+#define CC_CONTACTS_INFO	"Contacts Info"
+
+#define CC_NO_SMS			"No SMS number for:\n"
+#define CC_NO_MMS			"No MMS address for:\n"
+#define CC_NO_EMAIL		"No Email address for:\n"
+#define CC_LOC_NO_CONTACT_CARD  "No Contact Card for:\n"
+
+#ifdef __JAIKU__
+#define CB_NICK			"Screen Name"
+#else
+#define CB_NICK			"Jabber Nickname"
+#endif
+
+#define CB_CONTACT		"Contact name"
+
+#define CC_FIRST_LAST_NAME	"First Last Name"
+#define CC_LAST_FIRST_NAME	"Last First Name"
+#define CC_NAME_DISPLAY		"Name Display"
+
+#ifdef __JAIKU__
+#define CC_USER_GIVEN           "New Post"
+#undef CL_CPT_SET_USER_GIVEN
+#define CL_CPT_SET_USER_GIVEN   "Post a Jaiku"
+
+#define CC_INVITE		        "Invite to Jaiku"
+#define CC_SET_LOCATION         "Set Location"
+#define CC_ADD_JABBER           "Activate Presence"
+#define CC_NAME_LOCATION         "Set Location"
+
+#define CC_MY_RICH_PRESENCE     "My Rich Presence"
+#define CC_BT_NEIGHBOURHOOD     "BT neighborhood"
+
+#define CC_SHOW_HISTORY         "Show"
+#define CC_ADVANCED_SETTINGS    "Advanced Settings"
+#define CC_ABOUT_JAIKU          "About Jaiku"
+#define CC_SERVERMESSAGE	"Notice from Jaiku"
+#define CC_JAIKU_SUBMENU        "Jaiku"
+#else
+
+#define CC_USER_GIVEN		"Away msg"
+#define CL_CPT_SET_USER_GIVEN   "Away msg"
+#define CC_INVITE		"Invite to Jaiku"
+#define CC_SET_LOCATION         "Set Location"
+#define CC_ADD_JABBER           "Add Jabber Nick"
+#define CC_NAME_LOCATION        "Set Location"
+
+#define CC_MY_RICH_PRESENCE     "My Rich Presence"
+
+#define CC_SHOW_HISTORY         "Show"
+#define CC_ADVANCED_SETTINGS    "Advanced Settings"
+#define CC_ABOUT_JAIKU          "About Jaiku"
+#define CC_SERVERMESSAGE	"Notice from Jaiku"
+#define CC_JAIKU_SUBMENU        "Jaiku"
+
+#endif 
+
+
+#define CC_LOC_DISCONNECTING_JAIKU "Disconnecting Jaiku..."
+
+#define CC_LOC_RUN_WELCOME_AGAIN "Setup Wizard"
+
+#define CC_LOC_DISABLE_AUTOSTART "Disable Auto-Start"
+#define CC_LOC_ENABLE_AUTOSTART  "Enable Auto-Start"
+
+#define CC_LOC_SHOW_CONNECTION_ERROR "Show connection error"
+
+#define CC_LOC_DELETE_DETAIL "Delete detail"
+
+#define CC_LOC_ABOUT_JAIKU_HEADER "Jaiku"
+
+
+#define CC_LOC_MARK_ALL_AS_READ "Mark All As Read"
+#define CC_LOC_POST_COMMENT "Post Comment"
+
+// d: Heading title for Auto-Start setting item
+// l: Setting Item and Setting Page 
+#define CC_LOC_AUTOSTART "Auto-Start"
+
+// d: Heading title for Network Traffic setting item
+// l: Setting Item
+#define CC_LOC_NETWORKTRAFFIC "Data Transferred"
+
+// d: Menu item to launch sharing settings
+// l: Options-menu
+#define CC_LOC_SHARING_SETTINGS "Sharing Settings"
+
+
+// d: Menu item to launch profile sharing
+// l: Options-menu
+#define CC_LOC_SHARE_PROFILE "Sharing Profile"
+
+// d: Menu item to launch location sharing
+// l: Options-menu
+#define CC_LOC_SHARE_LOCATION "Share Location"
+	
+// d: Menu item to launch Calendar sharing
+// l: Options-menu
+#define CC_LOC_SHARE_CALENDAR "Share Calendar"
+
+
+// d: Menu item to launch profile sharing
+// l: Options-menu 
+#define CC_LOC_SHARE_BLUETOOTH "Share Nearby People"
+
+	
+#endif
+

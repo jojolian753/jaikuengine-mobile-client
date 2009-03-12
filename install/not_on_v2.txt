@@ -1,0 +1,1 @@
+This version of Merkitys-Meaning is for Series60 version 1 devices, like the 7650.  Please get the correct version from the website. The installation will stop.

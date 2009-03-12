@@ -1,0 +1,85 @@
+NAME MINI
+
+#include "JaikuDevHelper.hrh"
+
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+// Resource file signature. 
+// This is obligatory and it should be empty. 
+RESOURCE RSS_SIGNATURE
+{
+}
+
+// Default document name
+// This is obligatory. Leave empty, if there isn't default document
+RESOURCE TBUF r_default_document_name
+{	
+  buf="";
+}
+
+
+// Define default menu and CBA key.
+RESOURCE EIK_APP_INFO
+{
+  menubar = r_jaikudevhelper_menubar;
+  cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+}
+
+// Menubar. For Series60, leave as it is.
+RESOURCE MENU_BAR r_jaikudevhelper_menubar
+{
+  titles =
+    {
+      MENU_TITLE
+      {
+	menu_pane = r_jaikudevhelper_menu;
+      }
+    };
+}
+
+
+// Menu for "Options"
+RESOURCE MENU_PANE r_jaikudevhelper_menu
+{
+  items = 
+    {
+		MENU_ITEM
+		{
+			// Example menu choice. Replace with your own.
+			// Modify also JaikuDevHelper.hrh and JaikuDevHelperAppUi.cpp 
+			command = EJaikuDevHelperCmd1;
+			txt = "Clean context and shortcuts";
+		},
+		MENU_ITEM
+		{
+			// Example menu choice. Replace with your own.
+			// Modify also JaikuDevHelper.hrh and JaikuDevHelperAppUi.cpp 
+			command = EJaikuDevHelperCmd1;
+			txt = "Make log dir";
+		},
+		
+		MENU_ITEM
+		{
+			// Example menu choice. Replace with your own.
+			// Modify also JaikuDevHelper.hrh and JaikuDevHelperAppUi.cpp 
+			command = EJaikuDevHelperCmd3;
+			txt = "Store contacts db";
+		},
+
+		MENU_ITEM
+		{
+			// Example menu choice. Replace with your own.
+			// Modify also JaikuDevHelper.hrh and JaikuDevHelperAppUi.cpp 
+			command = EJaikuDevHelperCmd4;
+			txt = "Cmd4";
+		},
+		
+		MENU_ITEM
+		{
+			command = EAknSoftkeyExit;
+			txt = "Exit";
+		}
+    };
+}

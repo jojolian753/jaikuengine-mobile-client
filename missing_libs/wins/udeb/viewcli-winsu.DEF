@@ -1,0 +1,29 @@
+;DLLNAME viewcli[10003F33].DLL
+EXPORTS
+	??1CVwsSessionWrapper@@UAE@XZ @ 1 NONAME
+	?ActivateView@CVwsSessionWrapper@@QAEHABVTVwsViewId@@VTUid@@ABVTDesC8@@@Z @ 2 NONAME
+	?AddView@CVwsSessionWrapper@@QAEHABVTVwsViewId@@@Z @ 3 NONAME
+	?DeactivateActiveView@CVwsSessionWrapper@@QAEHXZ @ 4 NONAME
+	?NewL@CVwsSessionWrapper@@SAPAV1@AAVMVwsSessionWrapperObserver@@@Z @ 5 NONAME
+	?NewL@CVwsSessionWrapper@@SAPAV1@XZ @ 6 NONAME
+	?NewLC@CVwsSessionWrapper@@SAPAV1@AAVMVwsSessionWrapperObserver@@@Z @ 7 NONAME
+	?NewLC@CVwsSessionWrapper@@SAPAV1@XZ @ 8 NONAME
+	?QueueAsyncRequest@CVwsSessionWrapper@@QAEXXZ @ 9 NONAME
+	?RemoveView@CVwsSessionWrapper@@QBEHABVTVwsViewId@@@Z @ 10 NONAME
+	?RequestCustomMessage@CVwsSessionWrapper@@QBEHAAVTDes8@@@Z @ 11 NONAME
+	?StartApp@CVwsSessionWrapper@@QAEHVTUid@@@Z @ 12 NONAME
+	?StartViewServer@CVwsSessionWrapper@@SAHAAVMVwsAppStarter@@@Z @ 13 NONAME
+	?ActivateViewViaViewEvent@CVwsSessionWrapper@@QAEHABVTVwsViewIdAndMessage@@@Z @ 14 NONAME
+	?NotifyNextDeactivation@CVwsSessionWrapper@@QAEHABVTVwsViewId@@@Z @ 15 NONAME
+	?SetSystemDefaultView@CVwsSessionWrapper@@QAEHABVTVwsViewId@@@Z @ 16 NONAME
+	?ShutdownViewServer@CVwsSessionWrapper@@QAEHXZ @ 17 NONAME
+	?NotifyNextActivation@CVwsSessionWrapper@@QAEHXZ @ 18 NONAME
+	?SetSystemDefaultView@CVwsSessionWrapper@@QAEHABVTVwsViewId@@H@Z @ 19 NONAME
+	?NotifyNextActivation@CVwsSessionWrapper@@QAEHABVTVwsViewId@@@Z @ 20 NONAME
+	?NotifyNextDeactivation@CVwsSessionWrapper@@QAEHXZ @ 21 NONAME
+	?SetDefaultView@CVwsSessionWrapper@@QBEHABVTVwsViewId@@@Z @ 22 NONAME
+	?SetDefaultView@CVwsSessionWrapper@@QBEHABVTVwsViewId@@H@Z @ 23 NONAME
+	?CreateActivateViewEvent@CVwsSessionWrapper@@QAEHABVTVwsViewId@@VTUid@@ABVTDesC8@@@Z @ 24 NONAME
+	?SetClientRequestTimeOut@CVwsSessionWrapper@@QAEHVTTimeIntervalMicroSeconds32@@@Z @ 25 NONAME
+	?SetServerEventTimeOut@CVwsSessionWrapper@@QAEHVTTimeIntervalMicroSeconds32@@@Z @ 26 NONAME
+	?EnableServerEventTimeOut@CVwsSessionWrapper@@QAEHH@Z @ 27 NONAME

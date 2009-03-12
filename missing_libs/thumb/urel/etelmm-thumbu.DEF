@@ -1,0 +1,404 @@
+;DLLNAME ETELMM[100064dd].DLL
+EXPORTS
+	"__Q225RMobileBroadcastMessaging28TMobileBroadcastAttributesV1" @ 1 NONAME R3UNUSED
+	"AcceptCCBSRecall__C12RMobilePhoneR14TRequestStatusiRt4TBuf1i128" @ 2 NONAME
+	"AckSmsStored__C19RMobileSmsMessagingR14TRequestStatusRC6TDesC8i" @ 3 NONAME
+	"ActivateCCBS__C11RMobileCallR14TRequestStatusRi" @ 4 NONAME R3UNUSED
+	"ActivateUUS__C11RMobileCallR14TRequestStatusRC6TDesC8" @ 5 NONAME R3UNUSED
+	"AddCall__C21RMobileConferenceCallR14TRequestStatusRCt4TBuf1i128" @ 6 NONAME R3UNUSED
+	"AddEntryL__20CMobilePhoneListBasePCv" @ 7 NONAME R3UNUSED
+	"AddRangeEntryL__27CMobilePhoneBroadcastIdListRCQ225RMobileBroadcastMessaging25TMobileBroadcastIdEntryV1T1" @ 8 NONAME R3UNUSED
+	"AnswerIncomingCallWithUUI__C11RMobileCallR14TRequestStatusRC6TDesC8RCt4TBuf1i129" @ 9 NONAME
+	"BaseConstruct__17RMobilePhoneStoreP26CMobilePhoneStorePtrHolder" @ 10 NONAME R3UNUSED
+	"ChangeSecurityCode__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone24TMobilePhoneSecurityCodeRCQ212RMobilePhone28TMobilePhonePasswordChangeV1" @ 11 NONAME
+	"ClearCostMeter__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone22TMobilePhoneCostMeters" @ 12 NONAME R3UNUSED
+	"Close__14RMobileENStore" @ 13 NONAME R3UNUSED
+	"Close__14RMobileONStore" @ 14 NONAME R3UNUSED
+	"Close__15RMobileNamStore" @ 15 NONAME R3UNUSED
+	"Close__15RMobileSmsStore" @ 16 NONAME R3UNUSED
+	"Close__19RMobileSmsMessaging" @ 17 NONAME R3UNUSED
+	"Close__20RMobileUssdMessaging" @ 18 NONAME R3UNUSED
+	"Close__21RMobileConferenceCall" @ 19 NONAME R3UNUSED
+	"Close__21RMobilePhoneBookStore" @ 20 NONAME R3UNUSED
+	"Close__25RMobileBroadcastMessaging" @ 21 NONAME R3UNUSED
+	"ConstructL__11RMobileCall" @ 22 NONAME R3UNUSED
+	"ConstructL__11RMobileLine" @ 23 NONAME R3UNUSED
+	"ConstructL__12RMobilePhone" @ 24 NONAME R3UNUSED
+	"ConstructL__14RMobileENStore" @ 25 NONAME R3UNUSED
+	"ConstructL__14RMobileONStore" @ 26 NONAME R3UNUSED
+	"ConstructL__15RMobileNamStore" @ 27 NONAME R3UNUSED
+	"ConstructL__15RMobileSmsStore" @ 28 NONAME R3UNUSED
+	"ConstructL__19RMobileSmsMessaging" @ 29 NONAME R3UNUSED
+	"ConstructL__20RMobileUssdMessaging" @ 30 NONAME R3UNUSED
+	"ConstructL__21RMobileConferenceCall" @ 31 NONAME R3UNUSED
+	"ConstructL__21RMobilePhoneBookStore" @ 32 NONAME R3UNUSED
+	"ConstructL__25RMobileBroadcastMessaging" @ 33 NONAME R3UNUSED
+	"ContinueDTMFStringSending__C12RMobilePhonei" @ 34 NONAME R3UNUSED
+	"CreateConference__C21RMobileConferenceCallR14TRequestStatus" @ 35 NONAME R3UNUSED
+	"NotifyCCBSRecall__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 36 NONAME R3UNUSED
+	"DeactivateCCBS__C12RMobilePhoneR14TRequestStatusi" @ 37 NONAME R3UNUSED
+	"Deflect__C11RMobileCallR14TRequestStatusQ211RMobileCall18TMobileCallDeflectRCQ212RMobilePhone14TMobileAddress" @ 38 NONAME
+	"DeleteAll__C17RMobilePhoneStoreR14TRequestStatus" @ 39 NONAME R3UNUSED
+	"DeleteEntryL__28CMobilePhoneEditableListBasei" @ 40 NONAME R3UNUSED
+	"Delete__C17RMobilePhoneStoreR14TRequestStatusi" @ 41 NONAME R3UNUSED
+	"Destruct__11RMobileCall" @ 42 NONAME R3UNUSED
+	"Destruct__11RMobileLine" @ 43 NONAME R3UNUSED
+	"Destruct__12RMobilePhone" @ 44 NONAME R3UNUSED
+	"Destruct__17RMobilePhoneStore" @ 45 NONAME R3UNUSED
+	"Destruct__19RMobileSmsMessaging" @ 46 NONAME R3UNUSED
+	"Destruct__20RMobileUssdMessaging" @ 47 NONAME R3UNUSED
+	"Destruct__21RMobileConferenceCall" @ 48 NONAME R3UNUSED
+	"Destruct__25RMobileBroadcastMessaging" @ 49 NONAME R3UNUSED
+	"DialEmergencyCall__C11RMobileCallR14TRequestStatusRC7TDesC16" @ 50 NONAME R3UNUSED
+	"EnumerateCalls__C21RMobileConferenceCallRi" @ 51 NONAME R3UNUSED
+	"EnumerateMessageStores__C19RMobileSmsMessagingRi" @ 52 NONAME R3UNUSED
+	"Enumerate__C20CMobilePhoneListBase" @ 53 NONAME R3UNUSED
+	"ExtensionId__CQ212RMobilePhone14TMultimodeType" @ 54 NONAME R3UNUSED
+	"GetALSLine__C12RMobilePhoneRQ212RMobilePhone19TMobilePhoneALSLine" @ 55 NONAME R3UNUSED
+	"GetAlternatingCallCaps__C12RMobilePhoneRUl" @ 56 NONAME R3UNUSED
+	"GetAlternatingCallMode__C12RMobilePhoneRQ212RMobilePhone31TMobilePhoneAlternatingCallModeRQ212RMobilePhone14TMobileService" @ 57 NONAME R3UNUSED
+	"GetBatteryCaps__C12RMobilePhoneRUl" @ 58 NONAME R3UNUSED
+	"GetBatteryInfo__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone25TMobilePhoneBatteryInfoV1" @ 59 NONAME R3UNUSED
+	"GetCCBSStatus__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone22TMobilePhoneCCBSStatusQ212RMobilePhone19TMobileInfoLocation" @ 60 NONAME
+	"GetCallServiceCaps__C12RMobilePhoneRUl" @ 61 NONAME R3UNUSED
+	"GetCaps__C19RMobileSmsMessagingR5TDes8" @ 62 NONAME R3UNUSED
+	"GetCaps__C20RMobileUssdMessagingR5TDes8" @ 63 NONAME R3UNUSED
+	"GetCaps__C21RMobileConferenceCallRUl" @ 64 NONAME R3UNUSED
+	"GetCaps__C25RMobileBroadcastMessagingR5TDes8" @ 65 NONAME R3UNUSED
+	"GetConferenceStatus__C21RMobileConferenceCallRQ221RMobileConferenceCall23TMobileConferenceStatus" @ 66 NONAME R3UNUSED
+	"GetCostCaps__C12RMobilePhoneRUl" @ 67 NONAME R3UNUSED
+	"GetCostInfo__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 68 NONAME R3UNUSED
+	"GetCurrentHscsdInfo__C11RMobileCallR5TDes8" @ 69 NONAME R3UNUSED
+	"GetCurrentMode__C12RMobilePhoneRQ212RMobilePhone23TMobilePhoneNetworkMode" @ 70 NONAME R3UNUSED
+	"GetCurrentNetwork__C12RMobilePhoneR14TRequestStatusR5TDes8RQ212RMobilePhone26TMobilePhoneLocationAreaV1" @ 71 NONAME
+	"GetCustomerServiceProfile__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 72 NONAME R3UNUSED
+	"GetDTMFCaps__C12RMobilePhoneRUl" @ 73 NONAME R3UNUSED
+	"GetDefaultPrivacy__C12RMobilePhoneRQ212RMobilePhone19TMobilePhonePrivacy" @ 74 NONAME R3UNUSED
+	"GetEntryL__C20CMobilePhoneListBasei" @ 75 NONAME R3UNUSED
+	"GetFdnStatus__C12RMobilePhoneRQ212RMobilePhone21TMobilePhoneFdnStatus" @ 76 NONAME R3UNUSED
+	"GetFeatureCode__C12RMobilePhoneR14TRequestStatusR6TDes16Q212RMobilePhone26TMobilePhoneNetworkServiceQ212RMobilePhone25TMobilePhoneServiceAction" @ 77 NONAME
+	"GetFilterSetting__C25RMobileBroadcastMessagingRQ225RMobileBroadcastMessaging27TMobilePhoneBroadcastFilter" @ 78 NONAME R3UNUSED
+	"GetHomeNetwork__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 79 NONAME R3UNUSED
+	"GetIccAccessCaps__C12RMobilePhoneRUl" @ 80 NONAME R3UNUSED
+	"GetIdentityCaps__C12RMobilePhoneRUl" @ 81 NONAME R3UNUSED
+	"GetIdentityServiceStatus__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone21TMobilePhoneIdServiceRQ212RMobilePhone27TMobilePhoneIdServiceStatusQ212RMobilePhone19TMobileInfoLocation" @ 82 NONAME
+	"GetIncomingCallType__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone28TMobilePhoneIncomingCallTypeR5TDes8" @ 83 NONAME
+	"GetInfo__C17RMobilePhoneStoreR14TRequestStatusR5TDes8" @ 84 NONAME R3UNUSED
+	"GetLanguageFilter__C25RMobileBroadcastMessagingR14TRequestStatusR6TDes16" @ 85 NONAME R3UNUSED
+	"GetLockInfo__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone16TMobilePhoneLockR5TDes8" @ 86 NONAME
+	"GetMessageStoreInfo__C19RMobileSmsMessagingR14TRequestStatusiR5TDes8" @ 87 NONAME
+	"GetMoSmsBearer__C19RMobileSmsMessagingRQ219RMobileSmsMessaging16TMobileSmsBearer" @ 88 NONAME R3UNUSED
+	"GetMobileCallCaps__C11RMobileCallR5TDes8" @ 89 NONAME R3UNUSED
+	"GetMobileCallInfo__C11RMobileCallR5TDes8" @ 90 NONAME R3UNUSED
+	"GetMobileCallInfo__C21RMobileConferenceCalliR5TDes8" @ 91 NONAME R3UNUSED
+	"GetMobileCallStatus__C11RMobileCallRQ211RMobileCall17TMobileCallStatus" @ 92 NONAME R3UNUSED
+	"GetMobileDataCallCaps__C11RMobileCallR5TDes8" @ 93 NONAME R3UNUSED
+	"GetMobileDataCallRLPRange__C11RMobileCallR14TRequestStatusiR5TDes8" @ 94 NONAME
+	"GetMobileLineStatus__C11RMobileLineRQ211RMobileCall17TMobileCallStatus" @ 95 NONAME R3UNUSED
+	"GetMulticallParams__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 96 NONAME R3UNUSED
+	"GetMultimodeAPIVersion__C12RMobilePhoneRi" @ 97 NONAME R3UNUSED
+	"GetMultimodeCaps__C12RMobilePhoneRUl" @ 98 NONAME R3UNUSED
+	"GetNITZInfo__C12RMobilePhoneRQ212RMobilePhone16TMobilePhoneNITZ" @ 99 NONAME R3UNUSED
+	"GetNetworkCaps__C12RMobilePhoneRUl" @ 100 NONAME R3UNUSED
+	"GetNetworkRegistrationStatus__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone30TMobilePhoneRegistrationStatus" @ 101 NONAME R3UNUSED
+	"GetNetworkSelectionSetting__C12RMobilePhoneR5TDes8" @ 102 NONAME R3UNUSED
+	"GetPhoneId__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone22TMobilePhoneIdentityV1" @ 103 NONAME R3UNUSED
+	"GetPhoneStoreInfo__C12RMobilePhoneR14TRequestStatusR5TDes8RC7TDesC16" @ 104 NONAME
+	"GetReceiveMode__C19RMobileSmsMessagingRQ219RMobileSmsMessaging21TMobileSmsReceiveMode" @ 105 NONAME R3UNUSED
+	"GetSecurityCaps__C12RMobilePhoneRUl" @ 106 NONAME R3UNUSED
+	"GetServiceTable__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone24TMobilePhoneServiceTableR5TDes8" @ 107 NONAME
+	"GetSignalCaps__C12RMobilePhoneRUl" @ 108 NONAME R3UNUSED
+	"GetSignalStrength__C12RMobilePhoneR14TRequestStatusRlRSc" @ 109 NONAME
+	"GetSubscriberId__C12RMobilePhoneR14TRequestStatusRt4TBuf1i15" @ 110 NONAME R3UNUSED
+	"GetUUSCaps__C11RMobileCallRUl" @ 111 NONAME R3UNUSED
+	"GetUUSSetting__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone22TMobilePhoneUUSSetting" @ 112 NONAME R3UNUSED
+	"GoOneToOne__C11RMobileCallR14TRequestStatus" @ 113 NONAME R3UNUSED
+	"HangUp__C21RMobileConferenceCallR14TRequestStatus" @ 114 NONAME R3UNUSED
+	"HangupWithUUI__C11RMobileCallR14TRequestStatusRCt4TBuf1i129" @ 115 NONAME R3UNUSED
+	"Hold__C11RMobileCallR14TRequestStatus" @ 116 NONAME R3UNUSED
+	"InsertEntryL__28CMobilePhoneEditableListBaseiPCv" @ 117 NONAME R3UNUSED
+	"MaxNumberEntries__C20CMobilePhoneListBase" @ 118 NONAME R3UNUSED
+	"NackSmsStored__C19RMobileSmsMessagingR14TRequestStatusRC6TDesC8i" @ 119 NONAME
+	"NewL__18CMobilePhoneCBList" @ 120 NONAME R3UNUSED
+	"NewL__18CMobilePhoneCFList" @ 121 NONAME R3UNUSED
+	"NewL__18CMobilePhoneCWList" @ 122 NONAME R3UNUSED
+	"NewL__18CMobilePhoneENList" @ 123 NONAME R3UNUSED
+	"NewL__18CMobilePhoneONList" @ 124 NONAME R3UNUSED
+	"NewL__19CMobilePhoneNamList" @ 125 NONAME R3UNUSED
+	"NewL__20CMobilePhoneCcbsList" @ 126 NONAME R3UNUSED
+	"NewL__20CMobilePhoneSmspList" @ 127 NONAME R3UNUSED
+	"NewL__22CMobilePhoneGsmSmsList" @ 128 NONAME R3UNUSED
+	"NewL__23CMobilePhoneCdmaSmsList" @ 129 NONAME R3UNUSED
+	"NewL__23CMobilePhoneNetworkList" @ 130 NONAME R3UNUSED
+	"NewL__26CRetrieveMobilePhoneCBListR12RMobilePhone" @ 131 NONAME R3UNUSED
+	"NewL__26CRetrieveMobilePhoneCFListR12RMobilePhone" @ 132 NONAME R3UNUSED
+	"NewL__26CRetrieveMobilePhoneCWListR12RMobilePhone" @ 133 NONAME R3UNUSED
+	"NewL__26CRetrieveMobilePhoneENListR17RMobilePhoneStore" @ 134 NONAME R3UNUSED
+	"NewL__26CRetrieveMobilePhoneONListR17RMobilePhoneStore" @ 135 NONAME R3UNUSED
+	"NewL__27CMobilePhoneBroadcastIdList" @ 136 NONAME R3UNUSED
+	"NewL__27CRetrieveMobilePhoneNamListR17RMobilePhoneStore" @ 137 NONAME R3UNUSED
+	"NewL__27CRetrieveMobilePhoneSmsListR17RMobilePhoneStoreQ215RMobileSmsStore26TMobileSmsEntryExtensionId" @ 138 NONAME R3UNUSED
+	"NewL__28CRetrieveMobilePhoneCcbsListR12RMobilePhone" @ 139 NONAME R3UNUSED
+	"NewL__28CRetrieveMobilePhoneSmspListR19RMobileSmsMessaging" @ 140 NONAME R3UNUSED
+	"NewL__35CRetrieveMobilePhoneBroadcastIdListR25RMobileBroadcastMessaging" @ 141 NONAME R3UNUSED
+	"NewL__36CRetrieveMobilePhoneDetectedNetworksR12RMobilePhone" @ 142 NONAME R3UNUSED
+	"NotifyALSLineChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone19TMobilePhoneALSLine" @ 143 NONAME R3UNUSED
+	"NotifyAlternatingCallCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 144 NONAME R3UNUSED
+	"NotifyAlternatingCallModeChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone31TMobilePhoneAlternatingCallModeRQ212RMobilePhone14TMobileService" @ 145 NONAME
+	"NotifyAlternatingCallSwitch__C11RMobileCallR14TRequestStatus" @ 146 NONAME R3UNUSED
+	"NotifyBatteryInfoChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone25TMobilePhoneBatteryInfoV1" @ 147 NONAME R3UNUSED
+	"NotifyBroadcastIdListChange__C25RMobileBroadcastMessagingR14TRequestStatus" @ 148 NONAME R3UNUSED
+	"NotifyCCBSStatusChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone22TMobilePhoneCCBSStatus" @ 149 NONAME R3UNUSED
+	"NotifyCallBarringStatusChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone23TMobilePhoneCBCondition" @ 150 NONAME R3UNUSED
+	"NotifyCallEvent__C11RMobileCallR14TRequestStatusRQ211RMobileCall16TMobileCallEvent" @ 151 NONAME R3UNUSED
+	"NotifyCallForwardingActive__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone14TMobileServiceRQ212RMobilePhone20TMobilePhoneCFActive" @ 152 NONAME
+	"NotifyCallForwardingStatusChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone23TMobilePhoneCFCondition" @ 153 NONAME R3UNUSED
+	"NotifyCallServiceCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 154 NONAME R3UNUSED
+	"NotifyCallWaitingStatusChange__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 155 NONAME R3UNUSED
+	"NotifyCapsChange__C21RMobileConferenceCallR14TRequestStatusRUl" @ 156 NONAME R3UNUSED
+	"NotifyConferenceEvent__C21RMobileConferenceCallR14TRequestStatusRQ221RMobileConferenceCall22TMobileConferenceEventRt4TBuf1i128" @ 157 NONAME
+	"NotifyConferenceStatusChange__C21RMobileConferenceCallR14TRequestStatusRQ221RMobileConferenceCall23TMobileConferenceStatus" @ 158 NONAME R3UNUSED
+	"NotifyCostCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 159 NONAME R3UNUSED
+	"NotifyCostInfoChange__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 160 NONAME R3UNUSED
+	"NotifyCurrentNetworkChange__C12RMobilePhoneR14TRequestStatusR5TDes8RQ212RMobilePhone26TMobilePhoneLocationAreaV1" @ 161 NONAME
+	"NotifyDTMFCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 162 NONAME R3UNUSED
+	"NotifyDefaultPrivacyChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone19TMobilePhonePrivacy" @ 163 NONAME R3UNUSED
+	"NotifyFdnStatusChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone21TMobilePhoneFdnStatus" @ 164 NONAME R3UNUSED
+	"NotifyFilterSettingChange__C25RMobileBroadcastMessagingR14TRequestStatusRQ225RMobileBroadcastMessaging27TMobilePhoneBroadcastFilter" @ 165 NONAME R3UNUSED
+	"NotifyHscsdInfoChange__C11RMobileCallR14TRequestStatusR5TDes8" @ 166 NONAME R3UNUSED
+	"NotifyIccAccessCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 167 NONAME R3UNUSED
+	"NotifyIncomingCallTypeChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone28TMobilePhoneIncomingCallTypeR5TDes8" @ 168 NONAME
+	"NotifyLanguageFilterChange__C25RMobileBroadcastMessagingR14TRequestStatusR6TDes16" @ 169 NONAME R3UNUSED
+	"NotifyLockInfoChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone16TMobilePhoneLockR5TDes8" @ 170 NONAME
+	"NotifyMessageWaiting__C12RMobilePhoneR14TRequestStatusRi" @ 171 NONAME R3UNUSED
+	"NotifyMoSmsBearerChange__19RMobileSmsMessagingR14TRequestStatusRQ219RMobileSmsMessaging16TMobileSmsBearer" @ 172 NONAME R3UNUSED
+	"NotifyMobileCallCapsChange__C11RMobileCallR14TRequestStatusR5TDes8" @ 173 NONAME R3UNUSED
+	"NotifyMobileCallStatusChange__C11RMobileCallR14TRequestStatusRQ211RMobileCall17TMobileCallStatus" @ 174 NONAME R3UNUSED
+	"NotifyMobileDataCallCapsChange__C11RMobileCallR14TRequestStatusR5TDes8" @ 175 NONAME R3UNUSED
+	"NotifyMobileLineStatusChange__C11RMobileLineR14TRequestStatusRQ211RMobileCall17TMobileCallStatus" @ 176 NONAME R3UNUSED
+	"NotifyModeChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone23TMobilePhoneNetworkMode" @ 177 NONAME R3UNUSED
+	"NotifyMulticallParamsChange__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 178 NONAME R3UNUSED
+	"NotifyNITZInfoChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone16TMobilePhoneNITZ" @ 179 NONAME R3UNUSED
+	"NotifyNetworkRegistrationStatusChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone30TMobilePhoneRegistrationStatus" @ 180 NONAME R3UNUSED
+	"NotifyNetworkSelectionSettingChange__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 181 NONAME R3UNUSED
+	"NotifyPrivacyConfirmation__C11RMobileCallR14TRequestStatusRQ212RMobilePhone19TMobilePhonePrivacy" @ 182 NONAME R3UNUSED
+	"NotifyReceiveModeChange__19RMobileSmsMessagingR14TRequestStatusRQ219RMobileSmsMessaging21TMobileSmsReceiveMode" @ 183 NONAME R3UNUSED
+	"NotifyRemotePartyInfoChange__C11RMobileCallR14TRequestStatusR5TDes8" @ 184 NONAME R3UNUSED
+	"NotifySecurityCapsChange__C12RMobilePhoneR14TRequestStatusRUl" @ 185 NONAME R3UNUSED
+	"NotifySecurityEvent__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone25TMobilePhoneSecurityEvent" @ 186 NONAME R3UNUSED
+	"NotifySignalStrengthChange__C12RMobilePhoneR14TRequestStatusRlRSc" @ 187 NONAME
+	"NotifySmspListChange__C19RMobileSmsMessagingR14TRequestStatus" @ 188 NONAME R3UNUSED
+	"NotifyStopInDTMFString__C12RMobilePhoneR14TRequestStatus" @ 189 NONAME R3UNUSED
+	"NotifyStoreEvent__C17RMobilePhoneStoreR14TRequestStatusRUlRi" @ 190 NONAME
+	"NotifyTrafficChannelConfirmation__C11RMobileCallR14TRequestStatusRQ211RMobileCall14TMobileCallTch" @ 191 NONAME R3UNUSED
+	"NotifyUUSCapsChange__C11RMobileCallR14TRequestStatusRUl" @ 192 NONAME R3UNUSED
+	"NotifyUUSSettingChange__C12RMobilePhoneR14TRequestStatusRQ212RMobilePhone22TMobilePhoneUUSSetting" @ 193 NONAME R3UNUSED
+	"NotifyVoiceFallback__C11RMobileCallR14TRequestStatusRt4TBuf1i128" @ 194 NONAME R3UNUSED
+	"Open__14RMobileENStoreR12RMobilePhone" @ 195 NONAME R3UNUSED
+	"Open__14RMobileONStoreR12RMobilePhone" @ 196 NONAME R3UNUSED
+	"Open__15RMobileNamStoreR12RMobilePhone" @ 197 NONAME R3UNUSED
+	"Open__15RMobileSmsStoreR19RMobileSmsMessagingRC7TDesC16" @ 198 NONAME R3UNUSED
+	"Open__19RMobileSmsMessagingR12RMobilePhone" @ 199 NONAME R3UNUSED
+	"Open__20RMobileUssdMessagingR12RMobilePhone" @ 200 NONAME R3UNUSED
+	"Open__21RMobileConferenceCallR12RMobilePhone" @ 201 NONAME R3UNUSED
+	"Open__21RMobilePhoneBookStoreR12RMobilePhoneRC7TDesC16" @ 202 NONAME R3UNUSED
+	"Open__25RMobileBroadcastMessagingR12RMobilePhone" @ 203 NONAME R3UNUSED
+	"ProgramFeatureCode__C12RMobilePhoneR14TRequestStatusRC7TDesC16Q212RMobilePhone26TMobilePhoneNetworkServiceQ212RMobilePhone25TMobilePhoneServiceAction" @ 204 NONAME
+	"Read__C17RMobilePhoneStoreR14TRequestStatusR5TDes8" @ 205 NONAME R3UNUSED
+	"Read__C21RMobilePhoneBookStoreR14TRequestStatusiiR5TDes8" @ 206 NONAME
+	"ReceiveMessage__C19RMobileSmsMessagingR14TRequestStatusR5TDes8T2" @ 207 NONAME
+	"ReceiveMessage__C20RMobileUssdMessagingR14TRequestStatusR5TDes8T2" @ 208 NONAME
+	"ReceiveMessage__C25RMobileBroadcastMessagingR14TRequestStatusR5TDes8T2" @ 209 NONAME
+	"ReceiveUUI__C11RMobileCallR14TRequestStatusRt4TBuf1i129" @ 210 NONAME R3UNUSED
+	"RejectCCBS__C11RMobileCall" @ 211 NONAME R3UNUSED
+	"RestoreL__20CMobilePhoneListBaseRC6TDesC8" @ 212 NONAME R3UNUSED
+	"ResumeSmsReception__C19RMobileSmsMessagingR14TRequestStatus" @ 213 NONAME R3UNUSED
+	"Resume__C11RMobileCallR14TRequestStatus" @ 214 NONAME R3UNUSED
+	"RetrieveCdmaListL__27CRetrieveMobilePhoneSmsList" @ 215 NONAME R3UNUSED
+	"RetrieveGsmListL__27CRetrieveMobilePhoneSmsList" @ 216 NONAME R3UNUSED
+	"RetrieveListL__26CRetrieveMobilePhoneCBList" @ 217 NONAME R3UNUSED
+	"RetrieveListL__26CRetrieveMobilePhoneCFList" @ 218 NONAME R3UNUSED
+	"RetrieveListL__26CRetrieveMobilePhoneCWList" @ 219 NONAME R3UNUSED
+	"RetrieveListL__26CRetrieveMobilePhoneENList" @ 220 NONAME R3UNUSED
+	"RetrieveListL__26CRetrieveMobilePhoneONList" @ 221 NONAME R3UNUSED
+	"RetrieveListL__27CRetrieveMobilePhoneNamList" @ 222 NONAME R3UNUSED
+	"RetrieveListL__28CRetrieveMobilePhoneCcbsList" @ 223 NONAME R3UNUSED
+	"RetrieveListL__28CRetrieveMobilePhoneSmspList" @ 224 NONAME R3UNUSED
+	"RetrieveListL__35CRetrieveMobilePhoneBroadcastIdList" @ 225 NONAME R3UNUSED
+	"RetrieveListL__36CRetrieveMobilePhoneDetectedNetworks" @ 226 NONAME R3UNUSED
+	"SelectNetwork__C12RMobilePhoneR14TRequestStatusiRCQ212RMobilePhone34TMobilePhoneNetworkManualSelection" @ 227 NONAME
+	"SendDTMFTones__C12RMobilePhoneR14TRequestStatusRC7TDesC16" @ 228 NONAME R3UNUSED
+	"SendMessage__C19RMobileSmsMessagingR14TRequestStatusRC6TDesC8R5TDes8" @ 229 NONAME
+	"SendMessage__C20RMobileUssdMessagingR14TRequestStatusRC6TDesC8T2" @ 230 NONAME
+	"SendNetworkServiceRequest__C12RMobilePhoneR14TRequestStatusRC7TDesC16" @ 231 NONAME R3UNUSED
+	"SendUUI__C11RMobileCallR14TRequestStatusiRCt4TBuf1i129" @ 232 NONAME
+	"SetALSLine__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone19TMobilePhoneALSLine" @ 233 NONAME R3UNUSED
+	"SetActiveNam__C15RMobileNamStoreR14TRequestStatusi" @ 234 NONAME R3UNUSED
+	"SetAlternatingCallMode__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone31TMobilePhoneAlternatingCallModeQ212RMobilePhone14TMobileService" @ 235 NONAME
+	"SetCallBarringPassword__C12RMobilePhoneR14TRequestStatusRCQ212RMobilePhone28TMobilePhonePasswordChangeV1" @ 236 NONAME R3UNUSED
+	"SetCallBarringStatus__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone23TMobilePhoneCBConditionRCQ212RMobilePhone22TMobilePhoneCBChangeV1" @ 237 NONAME
+	"SetCallForwardingStatus__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone23TMobilePhoneCFConditionRCQ212RMobilePhone22TMobilePhoneCFChangeV1" @ 238 NONAME
+	"SetCallWaitingStatus__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone14TMobileServiceQ212RMobilePhone25TMobilePhoneServiceAction" @ 239 NONAME
+	"SetDefaultPrivacy__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone19TMobilePhonePrivacy" @ 240 NONAME R3UNUSED
+	"SetDynamicHscsdParams__C11RMobileCallR14TRequestStatusQ211RMobileCall15TMobileCallAiuri" @ 241 NONAME
+	"SetFdnSetting__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone22TMobilePhoneFdnSetting" @ 242 NONAME R3UNUSED
+	"SetFilterSetting__C25RMobileBroadcastMessagingR14TRequestStatusQ225RMobileBroadcastMessaging27TMobilePhoneBroadcastFilter" @ 243 NONAME R3UNUSED
+	"SetIncomingCallType__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone28TMobilePhoneIncomingCallTypeR5TDes8" @ 244 NONAME
+	"SetLanguageFilter__C25RMobileBroadcastMessagingR14TRequestStatusRC7TDesC16" @ 245 NONAME R3UNUSED
+	"SetLockSetting__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone16TMobilePhoneLockQ212RMobilePhone23TMobilePhoneLockSetting" @ 246 NONAME
+	"SetMaxCostMeter__C12RMobilePhoneR14TRequestStatusUi" @ 247 NONAME R3UNUSED
+	"SetMaxNumberEntries__20CMobilePhoneListBasei" @ 248 NONAME R3UNUSED
+	"SetMoSmsBearer__C19RMobileSmsMessagingR14TRequestStatusQ219RMobileSmsMessaging16TMobileSmsBearer" @ 249 NONAME R3UNUSED
+	"SetMulticallParams__C12RMobilePhoneR14TRequestStatusi" @ 250 NONAME R3UNUSED
+	"SetNetworkSelectionSetting__C12RMobilePhoneR14TRequestStatusRC5TDes8" @ 251 NONAME R3UNUSED
+	"SetPrivacy__C11RMobileCallQ212RMobilePhone19TMobilePhonePrivacy" @ 252 NONAME R3UNUSED
+	"SetPuct__C12RMobilePhoneR14TRequestStatusRC6TDesC8" @ 253 NONAME R3UNUSED
+	"SetReceiveMode__C19RMobileSmsMessagingR14TRequestStatusQ219RMobileSmsMessaging21TMobileSmsReceiveMode" @ 254 NONAME R3UNUSED
+	"SetTrafficChannel__C11RMobileCallQ211RMobileCall14TMobileCallTch" @ 255 NONAME R3UNUSED
+	"SetUUSSetting__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone22TMobilePhoneUUSSetting" @ 256 NONAME R3UNUSED
+	"StartBatch__27CRetrieveMobilePhoneSmsListR14TRequestStatusii" @ 257 NONAME
+	"StartDTMFTone__C12RMobilePhoneG5TChar" @ 258 NONAME R3UNUSED
+	"Start__26CRetrieveMobilePhoneCBListR14TRequestStatusQ212RMobilePhone23TMobilePhoneCBConditionQ212RMobilePhone19TMobileInfoLocation" @ 259 NONAME
+	"Start__26CRetrieveMobilePhoneCFListR14TRequestStatusQ212RMobilePhone23TMobilePhoneCFConditionQ212RMobilePhone19TMobileInfoLocation" @ 260 NONAME
+	"Start__26CRetrieveMobilePhoneCWListR14TRequestStatusQ212RMobilePhone19TMobileInfoLocation" @ 261 NONAME R3UNUSED
+	"Start__26CRetrieveMobilePhoneENListR14TRequestStatus" @ 262 NONAME R3UNUSED
+	"Start__26CRetrieveMobilePhoneONListR14TRequestStatus" @ 263 NONAME R3UNUSED
+	"Start__27CRetrieveMobilePhoneNamListR14TRequestStatusi" @ 264 NONAME R3UNUSED
+	"Start__27CRetrieveMobilePhoneSmsListR14TRequestStatus" @ 265 NONAME R3UNUSED
+	"Start__28CRetrieveMobilePhoneCcbsListR14TRequestStatus" @ 266 NONAME R3UNUSED
+	"Start__28CRetrieveMobilePhoneSmspListR14TRequestStatus" @ 267 NONAME R3UNUSED
+	"Start__35CRetrieveMobilePhoneBroadcastIdListR14TRequestStatusQ225RMobileBroadcastMessaging22TMobileBroadcastIdType" @ 268 NONAME R3UNUSED
+	"Start__36CRetrieveMobilePhoneDetectedNetworksR14TRequestStatus" @ 269 NONAME R3UNUSED
+	"StopDTMFTone__C12RMobilePhone" @ 270 NONAME R3UNUSED
+	"StoreAllL__C14RMobileONStoreR14TRequestStatusP18CMobilePhoneONList" @ 271 NONAME R3UNUSED
+	"StoreAllL__C15RMobileNamStoreR14TRequestStatusiP19CMobilePhoneNamList" @ 272 NONAME
+	"StoreBroadcastIdListL__25RMobileBroadcastMessagingR14TRequestStatusP27CMobilePhoneBroadcastIdListQ225RMobileBroadcastMessaging22TMobileBroadcastIdType" @ 273 NONAME
+	"StoreLC__20CMobilePhoneListBase" @ 274 NONAME R3UNUSED
+	"StoreL__20CMobilePhoneListBaseR5TDes8" @ 275 NONAME R3UNUSED
+	"StoreSmspListL__C19RMobileSmsMessagingR14TRequestStatusP20CMobilePhoneSmspList" @ 276 NONAME R3UNUSED
+	"Swap__C11RMobileCallR14TRequestStatus" @ 277 NONAME R3UNUSED
+	"Swap__C21RMobileConferenceCallR14TRequestStatus" @ 278 NONAME R3UNUSED
+	"SwitchAlternatingCall__C11RMobileCallR14TRequestStatus" @ 279 NONAME R3UNUSED
+	"Transfer__C11RMobileCallR14TRequestStatus" @ 280 NONAME R3UNUSED
+	"VerifySecurityCode__C12RMobilePhoneR14TRequestStatusQ212RMobilePhone24TMobilePhoneSecurityCodeRCt4TBuf1i10T3" @ 281 NONAME
+	"Write__C17RMobilePhoneStoreR14TRequestStatusR5TDes8" @ 282 NONAME R3UNUSED
+	"Write__C21RMobilePhoneBookStoreR14TRequestStatusRC6TDesC8Ri" @ 283 NONAME
+	"_._18CMobilePhoneCBList" @ 284 NONAME R3UNUSED
+	"_._18CMobilePhoneCFList" @ 285 NONAME R3UNUSED
+	"_._18CMobilePhoneCWList" @ 286 NONAME R3UNUSED
+	"_._18CMobilePhoneENList" @ 287 NONAME R3UNUSED
+	"_._18CMobilePhoneONList" @ 288 NONAME R3UNUSED
+	"_._19CMobilePhoneNamList" @ 289 NONAME R3UNUSED
+	"_._20CMobilePhoneCcbsList" @ 290 NONAME R3UNUSED
+	"_._20CMobilePhoneSmspList" @ 291 NONAME R3UNUSED
+	"_._22CMobilePhoneGsmSmsList" @ 292 NONAME R3UNUSED
+	"_._23CMobilePhoneCdmaSmsList" @ 293 NONAME R3UNUSED
+	"_._23CMobilePhoneNetworkList" @ 294 NONAME R3UNUSED
+	"_._26CRetrieveMobilePhoneCBList" @ 295 NONAME R3UNUSED
+	"_._26CRetrieveMobilePhoneCFList" @ 296 NONAME R3UNUSED
+	"_._26CRetrieveMobilePhoneCWList" @ 297 NONAME R3UNUSED
+	"_._26CRetrieveMobilePhoneENList" @ 298 NONAME R3UNUSED
+	"_._26CRetrieveMobilePhoneONList" @ 299 NONAME R3UNUSED
+	"_._27CMobilePhoneBroadcastIdList" @ 300 NONAME R3UNUSED
+	"_._27CRetrieveMobilePhoneNamList" @ 301 NONAME R3UNUSED
+	"_._27CRetrieveMobilePhoneSmsList" @ 302 NONAME R3UNUSED
+	"_._28CRetrieveMobilePhoneCcbsList" @ 303 NONAME R3UNUSED
+	"_._28CRetrieveMobilePhoneSmspList" @ 304 NONAME R3UNUSED
+	"_._35CRetrieveMobilePhoneBroadcastIdList" @ 305 NONAME R3UNUSED
+	"_._36CRetrieveMobilePhoneDetectedNetworks" @ 306 NONAME R3UNUSED
+	"__11RMobileCall" @ 307 NONAME R3UNUSED
+	"__11RMobileLine" @ 308 NONAME R3UNUSED
+	"__12RMobilePhone" @ 309 NONAME R3UNUSED
+	"__14RMobileENStore" @ 310 NONAME R3UNUSED
+	"__14RMobileONStore" @ 311 NONAME R3UNUSED
+	"__15RMobileNamStore" @ 312 NONAME R3UNUSED
+	"__15RMobileSmsStore" @ 313 NONAME R3UNUSED
+	"__19RMobileSmsMessaging" @ 314 NONAME R3UNUSED
+	"__20RMobileUssdMessaging" @ 315 NONAME R3UNUSED
+	"__21RMobileConferenceCall" @ 316 NONAME R3UNUSED
+	"__21RMobilePhoneBookStore" @ 317 NONAME R3UNUSED
+	"__25RMobileBroadcastMessaging" @ 318 NONAME R3UNUSED
+	"__Q211RMobileCall16TMobileCallCugV1" @ 319 NONAME R3UNUSED
+	"__Q211RMobileCall17TMobileCallCapsV1" @ 320 NONAME R3UNUSED
+	"__Q211RMobileCall17TMobileCallInfoV1" @ 321 NONAME R3UNUSED
+	"__Q211RMobileCall19TMobileCallParamsV1" @ 322 NONAME R3UNUSED
+	"__Q211RMobileCall21TMobileCallDataCapsV1" @ 323 NONAME R3UNUSED
+	"__Q211RMobileCall22TMobileCallHscsdInfoV1" @ 324 NONAME R3UNUSED
+	"__Q211RMobileCall22TMobileDataRLPRangesV1" @ 325 NONAME R3UNUSED
+	"__Q211RMobileCall23TMobileCallUUSRequestV1" @ 326 NONAME R3UNUSED
+	"__Q211RMobileCall23TMobileDataCallParamsV1" @ 327 NONAME R3UNUSED
+	"__Q211RMobileCall24TMobileHscsdCallParamsV1" @ 328 NONAME R3UNUSED
+	"__Q211RMobileCall28TMobileCallRemotePartyInfoV1" @ 329 NONAME R3UNUSED
+	"__Q212RMobilePhone14TMobileAddress" @ 330 NONAME R3UNUSED
+	"__Q212RMobilePhone16TMobilePhoneNITZ" @ 331 NONAME R3UNUSED
+	"__Q212RMobilePhone16TMobilePhoneNITZi6TMonthiiiii" @ 332 NONAME
+	"__Q212RMobilePhone18TMobilePhonePuctV1" @ 333 NONAME R3UNUSED
+	"__Q212RMobilePhone21TMobilePhoneCspFileV1" @ 334 NONAME R3UNUSED
+	"__Q212RMobilePhone22TMobilePhoneCBChangeV1" @ 335 NONAME R3UNUSED
+	"__Q212RMobilePhone22TMobilePhoneCFChangeV1" @ 336 NONAME R3UNUSED
+	"__Q212RMobilePhone22TMobilePhoneCostInfoV1" @ 337 NONAME R3UNUSED
+	"__Q212RMobilePhone22TMobilePhoneIdentityV1" @ 338 NONAME R3UNUSED
+	"__Q212RMobilePhone22TMobilePhoneLockInfoV1" @ 339 NONAME R3UNUSED
+	"__Q212RMobilePhone23TMobilePhoneCCBSEntryV1" @ 340 NONAME R3UNUSED
+	"__Q212RMobilePhone25TMobilePhoneBatteryInfoV1" @ 341 NONAME R3UNUSED
+	"__Q212RMobilePhone25TMobilePhoneCBInfoEntryV1" @ 342 NONAME R3UNUSED
+	"__Q212RMobilePhone25TMobilePhoneCFInfoEntryV1" @ 343 NONAME R3UNUSED
+	"__Q212RMobilePhone25TMobilePhoneCWInfoEntryV1" @ 344 NONAME R3UNUSED
+	"__Q212RMobilePhone25TMobilePhoneNetworkInfoV1" @ 345 NONAME R3UNUSED
+	"__Q212RMobilePhone26TMobilePhoneLocationAreaV1" @ 346 NONAME R3UNUSED
+	"__Q212RMobilePhone26TMobilePhoneServiceTableV1" @ 347 NONAME R3UNUSED
+	"__Q212RMobilePhone28TMobilePhonePasswordChangeV1" @ 348 NONAME R3UNUSED
+	"__Q212RMobilePhone30TMobilePhoneNetworkSelectionV1" @ 349 NONAME R3UNUSED
+	"__Q212RMobilePhone31TMobilePhoneMulticallSettingsV1" @ 350 NONAME R3UNUSED
+	"__Q214RMobileENStore16TMobileENEntryV1" @ 351 NONAME R3UNUSED
+	"__Q214RMobileONStore16TMobileONEntryV1" @ 352 NONAME R3UNUSED
+	"__Q214RMobileONStore20TMobileONStoreInfoV1" @ 353 NONAME R3UNUSED
+	"__Q215RMobileNamStore17TMobileNamEntryV1" @ 354 NONAME R3UNUSED
+	"__Q215RMobileNamStore21TMobileNamStoreInfoV1" @ 355 NONAME R3UNUSED
+	"__Q215RMobileSmsStore20TMobileGsmSmsEntryV1" @ 356 NONAME R3UNUSED
+	"__Q215RMobileSmsStore21TMobileCdmaSmsEntryV1" @ 357 NONAME R3UNUSED
+	"__Q217RMobilePhoneStore23TMobilePhoneStoreInfoV1" @ 358 NONAME R3UNUSED
+	"__Q219RMobileSmsMessaging16TMobileSmsCapsV1" @ 359 NONAME R3UNUSED
+	"__Q219RMobileSmsMessaging18TMobileSmspEntryV1" @ 360 NONAME R3UNUSED
+	"__Q219RMobileSmsMessaging26TMobileSmsSendAttributesV1" @ 361 NONAME R3UNUSED
+	"__Q219RMobileSmsMessaging29TMobileSmsReceiveAttributesV1" @ 362 NONAME R3UNUSED
+	"__Q220RMobileUssdMessaging17TMobileUssdCapsV1" @ 363 NONAME R3UNUSED
+	"__Q220RMobileUssdMessaging23TMobileUssdAttributesV1" @ 364 NONAME R3UNUSED
+	"__Q221RMobilePhoneBookStore22TMobilePhoneBookInfoV1" @ 365 NONAME R3UNUSED
+	"__Q225RMobileBroadcastMessaging22TMobileBroadcastCapsV1" @ 366 NONAME R3UNUSED
+	"__Q225RMobileBroadcastMessaging25TMobileBroadcastIdEntryV1" @ 367 NONAME R3UNUSED
+	"AbortSecurityCode__C12RMobilePhoneQ212RMobilePhone24TMobilePhoneSecurityCode" @ 368 NONAME R3UNUSED
+	"ExternalizeL__C20CMobilePhoneListBaseR12RWriteStream" @ 369 NONAME R3UNUSED
+	"InternalizeL__20CMobilePhoneListBaseR11RReadStream" @ 370 NONAME R3UNUSED
+	"GetIccMessageWaitingIndicators__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 371 NONAME R3UNUSED
+	"NotifyIccMessageWaitingIndicatorsChange__C12RMobilePhoneR14TRequestStatusR5TDes8" @ 372 NONAME R3UNUSED
+	"SetIccMessageWaitingIndicators__C12RMobilePhoneR14TRequestStatusRC6TDesC8" @ 373 NONAME R3UNUSED
+	"__Q212RMobilePhone28TMobilePhoneMessageWaitingV1" @ 374 NONAME R3UNUSED
+	"AddNewEntryTag__16CPhoneBookBuffer" @ 375 NONAME R3UNUSED
+	"BufferLength__16CPhoneBookBuffer" @ 376 NONAME R3UNUSED
+	"GetTagAndType__16CPhoneBookBufferRUcRQ216CPhoneBookBuffer12TPhBkTagType" @ 377 NONAME R3UNUSED
+	"GetValue__16CPhoneBookBufferR6TPtrC8" @ 378 NONAME R3UNUSED
+	"GetValue__16CPhoneBookBufferRUc" @ 379 NONAME R3UNUSED
+	"GetValue__16CPhoneBookBufferRUl" @ 380 NONAME R3UNUSED
+	"GetValue__16CPhoneBookBufferRUs" @ 381 NONAME R3UNUSED
+	"PutTagAndValue__16CPhoneBookBufferUcRC6TDesC8" @ 382 NONAME R3UNUSED
+	"PutTagAndValue__16CPhoneBookBufferUcUc" @ 383 NONAME R3UNUSED
+	"PutTagAndValue__16CPhoneBookBufferUcUl" @ 384 NONAME R3UNUSED
+	"PutTagAndValue__16CPhoneBookBufferUcUs" @ 385 NONAME R3UNUSED
+	"RemovePartialEntry__16CPhoneBookBuffer" @ 386 NONAME R3UNUSED
+	"Set__16CPhoneBookBufferP5TDes8" @ 387 NONAME R3UNUSED
+	"StartRead__16CPhoneBookBuffer" @ 388 NONAME R3UNUSED
+	"__16CPhoneBookBuffer" @ 389 NONAME R3UNUSED
+	"GetValue__16CPhoneBookBufferR7TPtrC16" @ 390 NONAME R3UNUSED
+	"PutTagAndValue__16CPhoneBookBufferUcRC7TDesC16" @ 391 NONAME R3UNUSED
+	"GetIndicatorCaps__C12RMobilePhoneRUlT1" @ 392 NONAME R3UNUSED
+	"GetIndicator__C12RMobilePhoneR14TRequestStatusRUl" @ 393 NONAME R3UNUSED
+	"NotifyIndicatorChange__C12RMobilePhoneR14TRequestStatusRUl" @ 394 NONAME R3UNUSED
+	"SkipValue__16CPhoneBookBufferQ216CPhoneBookBuffer12TPhBkTagType" @ 395 NONAME R3UNUSED
+	"RemainingReadLength__16CPhoneBookBuffer" @ 396 NONAME R3UNUSED
+	"RefuseCCBSRecall__C12RMobilePhonei" @ 397 NONAME R3UNUSED
+	"SendMessageNoFdnCheck__C19RMobileSmsMessagingR14TRequestStatusRC6TDesC8R5TDes8" @ 398 NONAME
+	"SendMessageNoFdnCheck__C20RMobileUssdMessagingR14TRequestStatusRC6TDesC8T2" @ 399 NONAME
+	"SendNetworkServiceRequestNoFdnCheck__C12RMobilePhoneR14TRequestStatusRC7TDesC16" @ 400 NONAME R3UNUSED
+	"DialNoFdnCheck__C11RMobileCallR14TRequestStatusRC6TDesC8RC7TDesC16" @ 401 NONAME
+	"DialNoFdnCheck__C11RMobileCallR14TRequestStatusRC7TDesC16" @ 402 NONAME R3UNUSED

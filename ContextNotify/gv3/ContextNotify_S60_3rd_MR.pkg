@@ -1,0 +1,21 @@
+;
+; Installation file for ContextNotify application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"ContextNotify","ContextNotify"},(0x200084B9),5,1,0
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+;
+;
+"\symbian\9.1\S60_3rd_MR\epoc32\release\gcce\urel\ContextNotify.exe"         -"!:\sys\bin\ContextNotify.exe"

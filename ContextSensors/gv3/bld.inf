@@ -1,0 +1,6 @@
+PRJ_PLATFORMS
+WINSCW THUMB
+PRJ_MMPFILES
+ContextSensorData.mmp
+ContextSensors.mmp
+ContextSensorFactory.mmp

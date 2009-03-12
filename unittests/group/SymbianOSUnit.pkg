@@ -1,0 +1,26 @@
+;Symbianosunit.pkg
+;Copyright (c) Penrillian Ltd 2003-2006. All rights reserved.
+; Web: www.penrillian.com
+
+;Language - standard language definitions
+&EN
+
+#{"Symbianosunit"},(0x200089EE),1,01,0
+%{"SymbianOSUnit"}
+:"Jaiku"
+
+[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\ARMV5\urel\SymbianOSUnit.exe"        -"!:\sys\bin\SymbianOSUnit.exe"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\SymbianOSUnit.rsc"        -"!:\resource\apps\SymbianOSUnit.rsc"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\private\10003a3f\apps\SymbianOSUnit_reg.rsc"    -"!:\private\10003a3f\import\apps\SymbianOSUnit_reg.rsc"
+"..\..\symbianosunit\SymbianOSUnit\SymbianOSUnitApp\data\S60_3RD\SymbianOsUnit_aif.mif" -"!:\resource\apps\SymbianOsUnit_aif.mif"
+
+"..\tests\files\ShortcutOriginal.ini" - "!:\unittestfiles\ShortcutOriginal.ini"
+"..\tests\files\ShortcutResult.ini" - "!:\unittestfiles\ShortcutResult.ini"
+"..\tests\files\buddy.mbm" - "!:\unittestfiles\buddy.mbm"
+"..\tests\files\empty.txt" - "!:\unittestfiles\empty.txt"
+"..\tests\files\something.txt" - "!:\unittestfiles\something.txt"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\unittests.mbm"        -"!:\resource\unittests.mbm"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\unittests2.mbm"        -"!:\resource\unittests2.mbm"
+;"errrd" - "!:\resource\errrd"

@@ -1,0 +1,4 @@
+PRJ_PLATFORMS
+winscw armv5
+PRJ_MMPFILES
+contextpython.mmp

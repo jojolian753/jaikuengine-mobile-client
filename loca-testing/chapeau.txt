@@ -1,0 +1,15 @@
+Chapeau, 1408 CLEMENT ST, SAN FRANCISCO
+
+1.	Start at 119 LINDEN AVE, SAN BRUNO - go 0.2 mi
+2.	Turn Right on SAN FELIPE AVE - go < 0.1 mi
+3.	Turn Left on EL CAMINO REAL - go 1.2 mi
+4.	Take ramp onto I-380 WEST toward SAN FRANCISCO/DALY CITY/SAN JOSE - go 0.8 mi
+5.	Take the I-280 NORTH exit toward SAN FRANCISCO - go 5.9 mi
+6.	Take Left fork onto CA-1 NORTH toward 19TH AVENUE/GOLDEN GATE BRIDGE - go 0.5 mi
+7.	CA-1 NORTH becomes JUNIPERO SERRA BLVD - go 0.5 mi
+8.	Bear Left on 19TH AVE[CA-1] - go 3.4 mi
+9.	Continue to follow CA-1 NORTH - go 1.3 mi
+10.	Turn Right on ANZA ST - go < 0.1 mi
+11.	Turn Left on FUNSTON AVE - go 0.1 mi
+12.	Turn Left on GEARY BLVD - go 0.2 mi
+13.	Arrive at 5200 GEARY BLVD, SAN FRANCISCO, on the Right

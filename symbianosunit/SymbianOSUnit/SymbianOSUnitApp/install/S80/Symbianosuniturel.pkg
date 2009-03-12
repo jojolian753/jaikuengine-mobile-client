@@ -1,0 +1,14 @@
+;Symbianosunit.pkg
+;Copyright (c) Penrillian Ltd 2005-2006. All rights reserved.
+;Web: www.penrillian.com
+
+;Language - standard language definitions
+&EN
+
+#{"Symbianosunit"},(0x101FADF4),1,01,0
+
+(0x101F8ED2), 0, 0, 0, {"Series80ProductID"}
+
+"\Symbian\7.0s\S80_DP2_0_SDK\epoc32\release\armi\urel\symbianosunit.app"-"!:\system\apps\symbianosunit\symbianosunit.app"
+"\Symbian\7.0s\S80_DP2_0_SDK\Epoc32\data\z\system\apps\SYMBIANOSUNIT\symbianosunit.aif"-"!:\system\apps\symbianosunit\symbianosunit.aif"
+"\Symbian\7.0s\S80_DP2_0_SDK\Epoc32\data\z\system\apps\SYMBIANOSUNIT\SYMBIANOSUNIT.RSC"-"!:\system\apps\symbianosunit\symbianosunit.rsc"

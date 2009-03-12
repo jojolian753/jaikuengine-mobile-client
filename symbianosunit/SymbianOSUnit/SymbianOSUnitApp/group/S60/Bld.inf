@@ -1,0 +1,15 @@
+// BLD.INF
+//
+// Copyright (c) 2003 Penrillian Ltd.  All rights reserved.
+//
+
+PRJ_PLATFORMS
+
+	wins armi
+
+PRJ_MMPFILES
+
+	makefile extratestbuildtasks.bldmake
+	SymbianOSUnit.mmp
+
+PRJ_EXPORTS

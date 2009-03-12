@@ -1,0 +1,6 @@
+/c24,8 ..\svg\connection.svg
+/c24,8 ..\svg\connection_off.svg
+/c24,8 ..\svg\connection_broken.svg
+/c24,8 ..\svg\connecting1.svg
+/c24,8 ..\svg\connecting2.svg
+/c24,8 ..\svg\connection_offline.svg

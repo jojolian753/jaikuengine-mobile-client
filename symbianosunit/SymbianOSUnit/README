@@ -1,0 +1,12 @@
+Introduction
+------------
+
+SymbianOSUnit is a JUnit/CppUnit/xUnit-like framework for Symbian C++. 
+It is based upon the CxxTest generic C++ unit testing framework.
+
+
+SymbianOSUnit is available under the GNU Lesser General Public Licence (LGPL).
+See http://www.gnu.org/copyleft/lesser.html for the license.
+
+
+See the document "How to use Symbian CXX Test Unit" for instructions

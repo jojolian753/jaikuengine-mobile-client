@@ -1,0 +1,54 @@
+settings view ids
+
+1 list
+2 phone
+3 phone - general
+4 phone - idle 
+5 phone - display
+6 phone
+7 phone
+8 phone
+9 headset
+10 datetime
+11 induction loop
+13 phone
+14 phone
+15 phone
+16 security
+17 fails
+18 fails
+19 fails
+20 packet data
+21 data call - fails
+22 fails
+23 fails
+24 fails
+25 hands free
+26 call forwarding
+27 fails
+28 fails¨
+29 fails
+30 fails
+31 fails
+32 fails
+33 car kit
+34 fails
+35 fails
+36 fails
+37 fails
+38 fails
+39 fails
+40 fails
+41 fails
+42 fails
+43 fails
+44
+45
+46
+47
+48
+49
+65
+257
+4097
+4098

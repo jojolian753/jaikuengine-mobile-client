@@ -1,0 +1,180 @@
+This is a first draft of a module documentation
+for ContextPhone. 
+
+h1. Basic framework
+
+h2. ContextCommon
+
+ContextCommon hosts services needed across the whole
+platform, such as:
+	- errorhandling routines (still under development)
+	- time-outable mutex (Symbian doesn't provide one)
+	- database abstraction that handles resetting,
+	creation/schema update
+	- auto_ptr and RA*
+	- expat wrapper
+	- debug logging and reporting, including
+	stack traces
+
+Every process is supposed to create an 'App context' instance,
+which provides access to these services in a lazily constructed
+way. To efficiently access these without having to go through
+TLS, inherit from MContextBase.
+
+h2. BlackBoardData
+
+The framework for serializable datatypes, including a
+'create by type' factory paradigm. Defines basic datatypes
+like strings, numbers and dates, as well as building
+blocks for complex types.
+
+Serialization works with both a RRead/WriteStream -based
+binary interface as well as XML.
+
+The versioning of complex types is not optimal yet - members
+of complex types are normally serialized without type information,
+which means that when changing the definition of those types,
+the enclosing type has to know it.
+
+h2. BlackBoardFactory
+
+Each module that provides creatable BlackBoard (BB) types
+needs to export a factory creation method as the first ordinal
+of a dll. Since I haven't got round to adding a capability to
+define how that should work in the build scripts, each such
+module comes with a separate dll that has only the factory
+method exported - guaranteed to be the first one.
+
+h2. BlackBoardClient and BlackBoardServer
+
+Tuplespace implementation. Binary blobs are stored as tuples,
+identified by a TTupleName and a subname (string). Supports
+Update, Add (multiple items with same tuple name), Delete and change
+notification. Change notification can be by a prefix instead
+of full tuple name.
+
+Alternatively tuples can be identified by a TComponentName,
+meant to support request queuing. This is also used for
+permanent subscriptions.
+
+Two client versions: a low-level direct access to the tuplespace,
+and a higher-level one that distributes notifications directly
+within a thread and queues the data.
+
+Permanent subscriptions are supported: XML files are read, which
+specify which component is interested in which changes. These
+are stored in a queue, and have to be delete after readning.
+For an example of use, see bb_listener.cpp.
+
+
+h1. Building more shared services on top of the basic framework
+
+h2. Starter
+
+Autostart (runs context_log) and watchdog. Watches a specified
+application, restarts every day to catch eventual leaks, restarts
+on crash and logs crash reason and stack trace.
+
+h2. ContextNetwork
+
+Network protocol (and related utility) implementations:
+	- jabber
+	- http (simple, e.g., no redirection support, although
+	you can add that on top)
+	- bluejacking / robust Obex over BT
+	- sockets engine
+	- queued uploads: context/aware style and flickr
+	- md5 and sha1
+	- queued downloads
+
+h2. ContextClient and ContextServer
+
+Our first client-server component, hence the not-very-descriptive
+names. These implement a jabber connection: logon, presence and
+messages.
+
+	
+h2. ContextNotifyClient and ContextNotify
+
+Status icons in phone idle screen (from all applications) and
+title pane (from current application).
+
+h2. ContextSensors
+
+The actual sensor implementations:
+	- cellid
+	- base recognition
+	- cell naming (operator service)
+	- country names
+	- bluetooth environment
+	- bt gps
+	- alarm clock
+	- calendar
+	- call listener
+	- call recording
+	- media notification
+	- active application
+	- idle/active
+	- shared data (Nokia specific shared state mechanism)
+	- missed calls/unread messages counts
+	- system events (e.g., charger state)
+
+h2. ContextSensorData and ContextSensorFactory
+
+BB data types used for sensor data.
+
+h2. ContextUI
+
+Shared UI components: presence-enhanced contact list, presence detail
+view and settings view. 
+
+All UI components should go here eventually.
+
+h2. ContextCommon2
+
+More general services, ones that depend both on ContextCommon and
+BlackBoard - such as BlackBoard -based shared settings and
+BB error data handling.
+
+h2. ContextMedia
+
+Threaded media storage, uploads and fetching. Used now for VisualCodes,
+supports in principle any threading mechanism.
+
+h2. ContextMediaData and ContextMediaFactory
+
+BB Data types for media. Separated from ContextMedia, so that it can
+be used by ContextNetwork (ContextMedia depends on ContextNetwork).
+
+h2. Recognizer
+
+Visual Codes recognizer. Mostly code by Michael Rohs and
+Beat Gfeller, with some modifications.
+
+h1. Applications
+
+h2. context_log
+
+Runtime environment for sensors, and user interaction with sensors.
+This will probably stay that way - the components have to live
+somewhere.
+
+Additionally, it includes actual code for:
+Presence publishing, bluetooth semantics (known devices), keycapture,
+automated log uploads, etc. These should be moved to separate
+dlls eventually.
+
+h2. ContextContacts and ContextCallLogs
+
+Presence-enhanced replacements for the built-in phone book and call logs.
+Instrumented to gather usage data.
+
+h2. ContextMediaApp
+
+Threaded media browser and annotation tool. Used now for visualcodes only.
+
+h1. Miscellaneous
+
+h2. cl_autostart
+
+Autostart of applications when phone starts, runs starter.

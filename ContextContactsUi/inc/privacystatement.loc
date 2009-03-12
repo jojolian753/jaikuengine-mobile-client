@@ -1,0 +1,10 @@
+#define CC_LOC_PRIVACY_STATEMENT \
+"Jaiku Mobile enables you to share your presence from your phone with your designated contacts. You can also make some or all of your presence details publicly accessible on www.jaiku.com.\n\n\
+Jaiku accesses your phone contacts and enables you to make calls and send SMS, MMS, and email messages. Jaiku also enables you to send Business cards over Bluetooth or other local connection.\n\n\
+If you switch Jaiku Online, Jaiku will use your phone's Internet connection.\n\n\
+If you use Jaiku to share your availability, Jaiku will access your phone's ring profile and listen for key events to determine when your phone is in use.\n\n\
+If you use Jaiku to share your location, Jaiku will access your network cell ID.\n\n\
+If you use Jaiku to share your calendar, Jaiku will access your phone calendar.\n\n\
+If you use Jaiku to share information about nearby people, Jaiku will use your phone's Bluetooth connection.\n\n\
+Want to change your privacy settings or delete your account? You can do so on www.jaiku.com.\n\n\
+Have fun jaikuing!"

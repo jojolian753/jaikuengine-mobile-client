@@ -1,0 +1,15 @@
+#include "contextvariant.hrh"
+
+#define ELanguage ELangEnglish
+#define CL_DRAFTS		"Drafts"
+#define CL_QUEUE		"Queue"
+#define CL_FAILED		"Failed"
+#define CL_PUBLISHED		"Published"
+#define CL_NOT_PUBLISHED	"Not published"
+#define CL_TRASH		"Trash"
+#define CL_ALL			"All"
+#define CL_QUEUED_FOR_PUBLISH	"Queued for publishing"
+#define CL_MOVED_TO_TRASH	"Moved to Trash"
+#define CL_FAILED_TO_QUEUE	"Failed to queue"
+#define CL_FAILED_GENERAL	"Failed to move"
+#define CL_POSTPONED		"Moved to Drafts"

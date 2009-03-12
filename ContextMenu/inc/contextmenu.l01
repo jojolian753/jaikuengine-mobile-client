@@ -1,0 +1,4 @@
+#define ELanguage ELangEnglish
+
+#define CMENU_CAPTION		"ContextMenu"
+

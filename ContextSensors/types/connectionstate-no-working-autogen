@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+$types{ConnectionState} = {
+	uid => CONTEXT_UID_SENSORDATAFACTORY,
+	id => 64,
+	defaultname => connectionstate,
+	allocation => heap,
+	ordered_fields => [
+        Name => ShortString,
+        State => Int,
+        Message => LongString,
+        Error => ErrorInfo,
+        Retry => Time,
+	],
+};
+
+1;

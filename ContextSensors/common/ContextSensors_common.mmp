@@ -1,0 +1,161 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+#include "..\..\contextvariant.hrh"
+
+#ifndef TESTBUILD
+TARGET            ContextSensors.dll
+TARGETTYPE        dll
+UID               0x1000008d CONTEXT_UID_CONTEXTSENSORS
+START ARMI
+TARGETPATH	  \system\libs
+END
+START THUMB
+TARGETPATH	  \system\libs
+END
+
+DEFFILENAME(ContextSensors)
+#endif
+
+SOURCEPATH        ..\src
+#ifndef TESTBUILD
+#ifndef __S60V3__
+SOURCE		dll.cpp
+#endif
+#endif
+SOURCE		log_base_impl.cpp 
+SOURCE log_local.cpp
+
+#ifndef __S60V3__
+SOURCE log_shareddata.cpp 
+SOURCE log_systemevent.cpp
+#endif
+
+#ifdef __S60V3__
+SOURCE  log_calendar_3rd_ed.cpp
+#else
+SOURCE	log_calendar.cpp
+#endif
+
+SOURCE		log_appuse.cpp log_cellid.cpp log_gps.cpp
+SOURCE  bases.cpp bases_test_data.cpp
+SOURCE  cellmap.cpp
+SOURCE  operatormap.cpp
+#ifndef __JAIKU__
+SOURCE  locationing.cpp
+#endif
+SOURCE  discover.cpp
+SOURCE  basestack.cpp
+SOURCE  current_loc.cpp
+SOURCE  mcc.cpp
+SOURCE	cs_music.cpp
+SOURCEPATH ..\..\ContextNotify\src
+SOURCE  foreground.cpp
+
+USERINCLUDE       ..\inc
+USERINCLUDE  ..\..\contextcommon\inc ..\..\expat\lib ..\.. ..\..\blackboard\inc ..\inc ..\..\contextnetwork\inc ..\..\blackboardclient\inc ..\..\contextcommon2\inc ..\..\no_sendo_inc ..\..\contextnotify\inc
+
+SYSTEMINCLUDE     \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib
+
+LIBRARY contextcommon.lib
+LIBRARY	blackboarddata.lib
+LIBRARY contextsensordata.lib
+LIBRARY blackboardclient.lib contextcommon2.lib
+
+#if 1
+LIBRARY		  bafl.lib estor.lib
+LIBRARY		  efsrv.lib 
+LIBRARY	bluetooth.lib 
+// system agent
+
+#ifndef __S60V3__
+LIBRARY SYSAGT.LIB
+#endif
+
+// bt
+LIBRARY SDPAGENT.LIB BTEXTNOTIFIERS.LIB
+LIBRARY SDPDATABASE.LIB
+#  ifndef WINS
+#    ifndef __S60V3__
+LIBRARY plpvariant.lib
+LIBRARY gsmbas.lib
+#    endif
+LIBRARY SMCM.LIB
+// bluetooth status
+#  endif
+#  if !defined(__S60V2FP3__) && !defined(WINS) && !defined(__S60V3__)
+LIBRARY BTENG.LIB
+#  endif
+#  if defined(__S60V3__) && defined(__USE_PLUGIN_APIS__) && !defined(WINS)
+LIBRARY BTENG.LIB
+#  endif
+#ifndef __S80__
+LIBRARY PbkEng.lib 
+#endif
+LIBRARY logcli.lib cone.lib MediaClientAudio.lib
+LIBRARY cntmodel.lib ws32.lib charconv.lib etel.lib
+LIBRARY contextnetwork.lib
+LIBRARY esock.lib
+LIBRARY apgrfx.lib edbms.lib
+LIBRARY COMMONENGINE.LIB msgs.lib
+#endif
+#ifndef __S60V3__
+LIBRARY agnmodel.lib 
+#endif
+// for sms and mms listening
+LIBRARY smcm.lib etext.lib gsmu.lib
+LIBRARY eiksrv.lib 
+
+#ifdef __S60V3__
+LIBRARY tagma.lib
+LIBRARY calinterimapi.lib
+LIBRARY btmanclient.lib btdevice.lib
+LIBRARY centralrepository.lib 
+#endif

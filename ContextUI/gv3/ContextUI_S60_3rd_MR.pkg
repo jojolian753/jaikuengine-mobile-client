@@ -1,0 +1,20 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextUI","ContextUI"},(0x200089E2),5,1,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\contextUI.dll"-"!:\sys\bin\contextUI.dll"
+{
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\contextui.r01"
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\contextui.r09"
+}-"!:\resource\contextui.rsc"

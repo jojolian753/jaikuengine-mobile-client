@@ -1,0 +1,18 @@
+/*
+* ============================================================================
+*  Name     : bld.inf
+*  Part of  : DummyProj
+*  Created  : 13/04/2005 by Mike Howson
+*  Description:
+*	 This file provides the information required for building the
+*    whole of a DummyProj.
+*  Version  :
+*  Copyright: Penrillian
+* ============================================================================
+*/
+
+
+PRJ_MMPFILES
+
+DummyProj.mmp
+

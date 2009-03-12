@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 88 88">
+<g>
+<g>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8694" stroke-miterlimit="3.8637" d="M82.166,42.31    c0,24.62-22.227,39.463-44.187,39.463l-3.541-6.155c-14.988,0-29.896-16.009-29.896-32.484c0-18.039,15.805-36.625,40.263-36.625    C69.809,6.507,82.166,26.696,82.166,42.31z"/>
+<path fill="#019CB1" stroke="#B8B8B8" stroke-width="0.8694" stroke-miterlimit="3.8637" d="M77.71,42.622    c0,21.983-20.942,33.896-36.328,34.364l-3.535-5.312C21.812,71.676,8.74,58.07,8.74,43.356c0-16.107,14.111-32.36,35.951-32.36    C64.988,10.996,77.71,28.681,77.71,42.622z"/>
+<path fill="url(#XMLID_12_)" d="M69.798,39.606c5.173-3.711-5.341-23.992-25.912-24.352c-22.517-0.394-32.417,21.64-27.495,25.414    C29.349,50.604,53.76,51.111,69.798,39.606z"/>
+<path fill="none" d="M69.798,39.606c5.173-3.711-5.341-23.992-25.912-24.352c-22.517-0.394-32.417,21.64-27.495,25.414    C29.349,50.604,53.76,51.111,69.798,39.606z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8693" stroke-miterlimit="3.8637" d="M37.89,64.688    c3.876,0,9.002-3.252,9.002-8.731c0-5.481,0-23.124,0-23.124h-5.508c0,0,0,20.966,0,22.945c0,1.979-2.973,4.445-5.626,4.445    L37.89,64.688z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8693" stroke-miterlimit="3.8637" d="M43.854,21.435    c2.121,0.038,3.81,1.77,3.773,3.864c-0.036,2.097-1.781,3.765-3.901,3.726c-2.119-0.038-3.809-1.768-3.771-3.863    C39.99,23.064,41.737,21.396,43.854,21.435z"/>
+<defs>
+<linearGradient id="XMLID_12_" gradientUnits="userSpaceOnUse" x1="26.3296" y1="802.8584" x2="26.3296" y2="769.9287" gradientTransform="matrix(1 0 0 1 16.7998 -754.6797)">
+<stop offset="0" style="stop-color:#019CB1"/>
+<stop offset="1" style="stop-color:#BCE5EA"/>
+</linearGradient>
+</defs>
+</g>
+<g>
+<g>
+<rect fill="none" width="88" height="88"/>
+</g>
+</g>
+</g>
+</svg>

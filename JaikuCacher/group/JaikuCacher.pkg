@@ -1,0 +1,22 @@
+;
+; Installation file for JaikuCacher application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+
+
+#{"JaikuCacher","JaikuCacher"},(0x10204BAA),4,36,0
+
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+;
+;
+"\Symbian\6.1\Series60\Epoc32\release\thumb\urel\JaikuCacher.exe"         -"!:\system\programs\JaikuCacher.exe"

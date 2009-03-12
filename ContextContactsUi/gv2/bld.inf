@@ -1,0 +1,6 @@
+PRJ_MMPFILES
+ContextContactsUi.mmp
+
+PRJ_EXPORTS
+..\data\N70shortcut.ini \epoc32\wins\c\system\data\context\N70shortcut.ini
+..\data\N70shortcut.ini \epoc32\data\z\system\data\context\N70shortcut.ini

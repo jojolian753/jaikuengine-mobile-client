@@ -1,0 +1,4 @@
+#define ELanguage ELangFinnish
+
+#define REC_CHOOSE_CODE         "Select a code"
+#define REC_CODE_SCREEN_MSG   "Tag OK! Click to select"

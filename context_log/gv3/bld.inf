@@ -1,0 +1,5 @@
+PRJ_PLATFORMS
+winscw gcce
+PRJ_MMPFILES
+contextflickr.mmp
+gnumakefile icons_scalable_dc.mk

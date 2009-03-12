@@ -1,0 +1,104 @@
+These are in a text file so that 
+not everything depends on one single header
+
+all types have module id 0x1020811E (ContextSensorDataFactory)
+all tuples have module id 0x1020811D (ContextSensors)
+
+CellId			1	tuple
+Network name		2
+
+Bluetooth devinfo	3
+list			4	tuple
+name			5
+address			6
+
+TupleName		7
+SubName			8
+TupleMeta		9
+Event			10
+
+current app		11	tuple
+
+gps			12	tuple
+
+profile			13	tuple
+
+sysevent		14	tuple
+charger			15	tuple only
+network status		16	tuple only
+battery status		17	tuple only
+
+idle			18	tuple only
+
+app_event		19	tuple only
+cell annotation		20	tuple only
+web search		21	tuple only
+
+sms			22	tuple only
+
+cell name		23	tuple only
+base			24
+
+own bt info		25	tuple only
+
+battery			26
+
+bt connections		28	tuple only
+bt search mode		29	tuple only
+
+basevisit		30
+presence		31
+bt neighbours		32
+
+usergiven		33	tuple only
+
+location		34
+
+localogic		35
+
+status			36
+
+remote localogic	37
+
+calendarevent		38
+calendar		39
+
+unread			40
+
+alarm			41
+
+city			42
+country			43
+
+outgoing lookup log	44
+incoming lookup log	45
+
+last-known-gps		46
+
+last-connection-byte-count	47
+
+given cell name		48
+given city name		49
+
+userpic			50
+sent invite		51
+
+server message		52
+
+build info              53
+
+feeditem		54
+outgoing item		55
+
+stream_data		56
+stream_comment		57
+channelpost		58
+threadrequest   59
+threadrequestreply 60
+
+music			61
+music-uuid		62 (component)
+
+feeditem-internal   63
+
+connection state    64

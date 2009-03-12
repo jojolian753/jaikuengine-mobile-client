@@ -1,0 +1,6 @@
+#ifdef LANGUAGE_01
+#include "recognizer.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "recognizer.l09"
+#endif

@@ -1,0 +1,7 @@
+shared data
+10008d39
+DefaultAP=WAPIPBearer AccessPointId
+
+\system\data\opera\opera.ini
+[epoc]
+Connection ID=1 = AP id

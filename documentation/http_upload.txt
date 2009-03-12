@@ -1,0 +1,9 @@
+The upload uses is just a multipart HTTP post; just as you would get from
+a web form with a file upload field.
+
+Log files are uploaded as a single file; media include the media file and
+a metadata chunk, encoded in XML.
+
+put20.pl shows how to just store the files
+
+vcput.pl shows how to parse metadata chunks

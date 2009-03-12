@@ -1,0 +1,48 @@
+#define ELanguage ELangFinnish
+
+#define CC_CAPTION		"Loki"
+#define CC_MISSED		"Vastaamattaj‰‰neet puh."
+#define CC_RECEIVED		"Vastatut puhelut"
+#define CC_DIALLED		"Soitetut Puhelut"
+#define CC_LOOKUP		"Tilaasi on katsottu"
+
+#define CC_NO_MISSED		"(ei vastaamattomia puheluja)"
+#define CC_NO_RECEIVED		"(ei vastattuja puheluja)"
+#define CC_NO_DIALLED		"(ei soitettuja numeroita)"
+#define CC_NO_LOOKUP		"(ei katseluja)"
+
+#define CC_LOADING_MISSED	"haetaan vastaamattomia puheluja..."
+#define CC_LOADING_RECEIVED	"haetaan vastattuja puheluja..."
+#define CC_LOADING_DIALLED	"haetaan soitettuja numeroita..."
+#define CC_LOADING_LOOKUP	"haetaan katseluja..."
+
+#define CC_EXIT			"Poistu"
+#define CC_SHUTDOWN		"Sammuta"
+#define CC_CALL			"Soita"
+#define CC_USE_NUMBER		"Poimi numero"
+#define CC_DELETE_EVENT		"Poista"
+#define CC_CLEAR_LIST		"Tyhjenn‰ lista"
+#define CC_CREATE_MSG		"Luo viesti"
+#define CC_CREATE_SMS		"Tekstiviesti"
+#define CC_CREATE_MMS		"Multimediaviesti"
+#define CC_CONTACT		"Lis‰‰ osoitekirjaan"
+#define CC_UPDATE_EXISTING	"P‰ivit‰ tiedot"
+#define CC_NEW_CONTACT		"Luo uusi"
+#define CC_PRESENCE_DETAILS	"Tilan yksityiskohdat"
+
+#define CC_DELETE_MESSAGE	"Poistetaanko nimi listalta?"
+
+#define CC_CLEAR_DIALLED	"Poistetaanko kaikki vastaamatta j‰‰neet puhelut?"
+#define CC_CLEAR_MISSED		"Poistetaanko kaikki vastatut puhelut?"
+#define CC_CLEAR_RECEIVED	"Poistetaanko kaikki soitetut puhelut?"
+#define CC_CLEAR_LOOKUP		"Poistetaanko kaikki katselutiedot?"
+
+#define CC_NUMBER			"Numero:"
+#define CC_NO_NUMBER		"(tuntem. nro)"
+
+#define CC_CREATE_CONTACT	"Luo uusi"
+#define CC_UPDATE_CONTACT	"P‰ivit‰ tiedot"
+#define CC_CALL_DETAILS		"N‰yt‰ tiedot"
+#define CC_CALL_DETAIL_TEMPLATE "Nimi: %S\nNumero: %S\nPvm: %02d/%02d\nKlo:  %02d:%02d\n"
+
+#define CC_LOOKUP_SUFFIX	" n‰ki sinut:"

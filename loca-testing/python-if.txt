@@ -1,0 +1,54 @@
+All strings are unicode (it shouldn't matter much)
+
+Python script arguments:
+	dict1 (device and general):
+		nodename -> string
+		time -> unixtime
+		mac -> string (xxxxxxxxxxxx)
+		majorclass -> int
+		minorclass -> int
+		bt_count -> int
+	dict2 (movement statistics)
+		node1 (nodename) ->
+			last_seen	-> unixtime
+			visitbegin	-> unixtime
+			prev_visitbegin -> unixtime
+			prev_visitend	-> unixtime
+			count	-> int
+			avg	-> int (minutes)
+			var	 	-> float (minutes)
+			total	-> int (minutes)
+			max	-> int (minutes)
+			first_seen -> unixtime
+		node2 -> ...
+	dict3 (message statistics)
+		failurecount		-> int
+		local_failurecount	-> int
+		successcount		-> int
+		prev_local_success	-> unixtime
+		prev_remote_success	-> unixtime
+		prev_local_failure	-> unixtime
+		prev_remote_failure	-> unixtime
+
+Python script should return a tuple with
+	int 	sending_priority
+	int	message_code
+	string 	bluejacking_name
+	string	title
+	string	body
+
+Highest priority wins, zero means don't send
+
+Example script
+def f(general, dev, msg) :
+	f=open('c:/python-locatest.txt', 'a')
+	for k in dev.keys():
+		f.write("%s %d %s " % (k, dev[k]['last_seen'], general['mac']) )
+		f.write("%d " % dev[k]['count'] )
+		f.write("%d " % dev[k]['avg'] )
+		f.write("%f " % dev[k]['var'] )
+		f.write("%d " % dev[k]['visitbegin'] )
+		f.write("%d " % dev[k]['prev_visitbegin'] )
+		f.write("%d\n" % dev[k]['prev_visitend'] )
+	f.close()
+	return (0, 0, u'', u'', u'')

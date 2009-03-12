@@ -1,0 +1,56 @@
+// SymbianOSUnit.mmp
+//
+// Copyright (c) 2006 Penrillian Ltd.  All rights reserved.
+// Web: www.penrillian.com
+
+// This file is to be #include'd from the test MMP file.
+// (The relative paths for sourcepath and user includes work fine).
+
+TARGET        SymbianOSUnit.app
+TARGETTYPE    app
+UID           0x100039ce 0x101FADF2
+TARGETPATH    \system\apps\SymbianOSUnit
+
+macro	__SYMBIANOSUNIT
+macro	SERIES80
+
+SOURCEPATH    ..\..\SRC
+SOURCE        SymbianOSUnitApp.cpp
+SOURCE        SymbianOSUnitApplication.cpp
+SOURCE        SymbianOSUnitDocument.cpp
+SOURCE        SymbianOSUnitAppUi.cpp
+SOURCE        SymbianOSUnitAppView.cpp
+SOURCE        ..\..\cxxtest\TestOutput.cpp
+SOURCE		  Logger.cpp
+SOURCE	      TestUtils.cpp
+
+
+SOURCEPATH    ..\..\data\s80
+RESOURCE      SymbianOSUnit.rss
+
+LANG          SC
+
+USERINCLUDE		  ..\..\INC
+
+SYSTEMINCLUDE ..\..\..
+SYSTEMINCLUDE ..\..\..\cxxtest 
+SYSTEMINCLUDE \EPOC32\INCLUDE 
+SYSTEMINCLUDE \EPOC32\INCLUDE\LIBC 
+
+#if defined(MARM)
+LIBRARY   egcc.lib 
+#endif  
+LIBRARY   euser.lib 
+LIBRARY   apparc.lib 
+LIBRARY   cone.lib 
+LIBRARY   eikcore.lib
+LIBRARY   eikcoctl.lib 
+LIBRARY   charconv.lib 
+LIBRARY   efsrv.lib 
+LIBRARY   bafl.lib 
+LIBRARY   estlib.lib
+LIBRARY   ws32.lib 
+LIBRARY   eikctl.lib
+LIBRARY   FLOGGER.lib 
+
+AIF SymbianOSUnit.aif ..\..\aif SymbianOSUnit.rss c24 SOSUnit64x50.bmp SOSUnit64x50mask.bmp SOSUnit25x20.bmp SOSUnit25x20mask.bmp

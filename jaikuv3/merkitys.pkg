@@ -1,0 +1,46 @@
+&EN,FI
+#{"Jaiku", "Jaiku"},(0x200084B3),0,82,1
+[0x101F7961], 0, 0, 0, {"S60ProductID", "S60ProductID"}
+%{"Jaiku Ltd", "Jaiku Ltd"}
+:"Jaiku"
+@"..\JaikuTool\gv3\JaikuTool_S60_3rd_MR.SIS",(0x200089ED)
+@"..\expat\symbianv3\contextexpat_S60_3rd_MR.SIS",(0x200089E7)
+@"..\contextnotify\gv3\contextnotify_S60_3rd_MR.SIS",(0x200084B9)
+@"..\contextnotifyclient\gv3\contextnotifyclient_S60_3rd_MR.SIS",(0x200084BA)
+@"..\jaikucacher\group\jaikucacher_S60_3rd_MR.SIS",(0x200089F2)
+@"..\jaikucacherclient\group\jaikucacherclient_S60_3rd_MR.SIS",(0x200089F3)
+@"..\contextcommon\gv3\contextcommon_S60_3rd_MR.SIS",(0x200084B8)
+@"..\contextserver\gv3\contextserver_S60_3rd_MR.SIS",(0x200084B6)
+@"..\contextclient\gv3\contextclient_S60_3rd_MR.SIS",(0x200084B7)
+@"..\BlackBoard\gv3\BlackBoardData_S60_3rd_MR.SIS",(0x200084BC)
+@"..\BlackBoard\gv3\BlackBoardFactory_S60_3rd_MR.SIS",(0x200084BF)
+@"..\BlackBoardServer\gv3\BlackBoardServer_S60_3rd_MR.SIS",(0x200084BD)
+@"..\BlackBoardClient\gv3\BlackBoardClient_S60_3rd_MR.SIS",(0x200084BE)
+@"..\keyevents\group\keyevents_client_S60_3rd_MR.SIS",(0x2000AF44)
+@"..\keyevents\group\keyevents_server_S60_3rd_MR.SIS",(0x2000AF43)
+@"..\ContextSensors\gv3\ContextSensorData_S60_3rd_MR.SIS",(0x200089E1)
+@"..\ContextSensors\gv3\ContextSensors_S60_3rd_MR.SIS",(0x200084C1)
+@"..\ContextSensors\gv3\ContextSensorFactory_S60_3rd_MR.SIS",(0x200084C2)
+@"..\ContextCommSensors\gv3\ContextCommSensors_S60_3rd_MR.SIS",(0x200089E9)
+@"..\ContextNetwork\gv3\ContextNetwork_S60_3rd_MR.SIS",(0x200084C3)
+@"..\contextcommon2\gv3\contextcommon2_S60_3rd_MR.SIS",(0x200084C4)
+@"..\contextui\gv3\contextui_S60_3rd_MR.SIS",(0x200089E2)
+@"..\JaikuUiKit\gv3\JaikuUiKit_S60_3rd_MR.SIS",(0x200089EC)
+@"..\ContextMedia\gv3\ContextMediaData_S60_3rd_MR.SIS",(0x200089E3)
+@"..\ContextTransfer\gv3\ContextTransfer_S60_3rd_MR.SIS",(0x200089F0)
+@"..\contextcontactsui\gv3\contextcontactsui_S60_3rd_MR.SIS",(0x200089E8)
+@"..\jaikustreamui\gv3\jaikustreamui_S60_3rd_MR.SIS",(0x2000AF41)
+@"..\context_log\gv3\jaikusettings_S60_3rd_MR.SIS",(0x200084B3)
+@"..\contextcontacts\gv3\contextcontacts_S60_3rd_MR.SIS",(0x200084BB)
+@"..\starter\gv3\starter_S60_3rd_MR.SIS",(0x200084B5)
+@"..\ContextWelcomeUi\gv3\ContextWelcomeUi_S60_3rd_MR.SIS",(0x200089F4)
+@"..\ContextMedia\gv3\ContextMedia_S60_3rd_MR.SIS",(0x200084C5)
+@"..\ContextMedia\gv3\ContextMediaFactory_S60_3rd_MR.SIS",(0x200084C6)
+@"..\ContextMediaUi\gv3\ContextMediaUi_S60_3rd_MR.SIS",(0x200089E4)
+@"..\ContextMediaPlugin\gv3\ContextMediaPlugin_S60_3rd_MR.SIS",(0x200089F1)
+@"..\MeaningApp\gv3\MeaningApp_S60_3rd_MR.SIS",(0x200089EF)
+@"..\ContextWelcome\gv3\ContextWelcome_S60_3rd_MR.SIS",(0x200089EB)
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\startup.rsc" - "c:\private\101f875a\import\[200084B3].RSC"
+""-"!:\data\context\",FN
+".\buildinfo.xml" - "!:\data\context\buildinfo.xml"
+""-"!:\Logs\context\",FN

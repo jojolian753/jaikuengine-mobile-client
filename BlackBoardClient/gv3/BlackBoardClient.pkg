@@ -1,0 +1,16 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"BlackBoardClient","BlackBoardClient"},(0x10208119),4,36,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\Symbian\9.1\S60_3rd_MR\Epoc32\Release\gcce\urel\BlackBoardClient.dll"-"!:\sys\bin\BlackBoardClient.dll"

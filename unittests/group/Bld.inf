@@ -1,0 +1,23 @@
+/*
+* ============================================================================
+*  Name     : bld.inf
+*  Part of  : sample project
+*  Created  : 20/10/2006 by vm,sj
+*  Description:
+*	 This file provides the template for a new project
+*  Version  :
+*  Copyright: Penrillian. All rights reserved
+*  Web      : www.penrillian.com
+* ============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW
+GCCE
+ARMV5
+
+PRJ_MMPFILES
+gnumakefile JaikuUnitTest_icons.mk
+
+makefile extratestbuildtasks.bldmake
+SymbianOSUnit.mmp

@@ -1,0 +1,22 @@
+; UiLoft.pkg
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"UiLoft"},(0x200089ED),1,0,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"Jaiku Ltd"}
+
+;Unique Vendor name
+:"Jaiku"
+
+; Files to copy
+"\Symbian\9.1\S60_3rd_MR\epoc32\release\gcce\urel\UiLoft.exe"-"!:\sys\bin\UiLoft.exe"
+"\Symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\UiLoft_reg.R01"-"!:\private\10003a3f\import\apps\UiLoft_reg.R01"
+"\Symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\UiLoft_loc.R01"-"!:\resource\apps\UiLoft_loc.R01"
+"\Symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\UiLoft.R01"-"!:\resource\apps\UiLoft.R01"

@@ -1,0 +1,38 @@
+#define ELanguage ELangEnglish
+
+#define CC_TITLE "Presence info for"
+
+#define CC_USER_GIVEN "Description:"
+#define CC_PREVIOUS_LOCATION "Previous location:"
+#define CC_CURRENT_LOCATION "Current location:"
+#define CC_CURRENT_PROFILE "Profile:"
+#define CC_BT_NB "Near:"
+
+#define CC_TIME_FOR_LAST "[for last %S]"
+#define CC_TIME_LEFT_AGO "[left %S ago]"
+
+#define CC_SPEAKER "Spkr"
+#define CC_VIBRATOR "Vibrator"
+
+#define CC_SP_VOLUME "vol.%d/10"
+
+#define CC_ON "on"
+#define CC_SILENT "off"
+#define CC_OFF "off"
+
+#define CC_USER_ACTIVE_TEMPLATE "Currently using phone"
+#define CC_USER_INACTIVE_TEMPLATE "Last phone use: %S ago"
+#define CC_OUT_OF_DATE "Info is out-of-date (%S old)"
+#define CC_NO_INFO "Not connected to service"
+
+
+#define CC_BUDDIES_TEMPLATE "%d friend(s)"
+#define CC_OTHERS_TEMPLATE "%d other(s)"
+#define CC_PREVIOUS		"Prev:"
+#define CC_JABBER_NOT_AVAIL   	"(Not connected)"
+#define CC_UNMARK			"Unmark"
+
+#define CC_DESKTOP "Desktop"
+#define CC_LAPTOP "Laptop"
+#define CC_PDA "PDA"
+#define CC_AGO "ago"

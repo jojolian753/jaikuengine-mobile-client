@@ -1,0 +1,13 @@
+PRJ_PLATFORMS
+WINS
+THUMB
+PRJ_MMPFILES
+..\autostart\gv2\cl_autostart.mmp
+..\expat\symbianv2\expat.mmp
+..\ContextNotify\gv2\ContextNotify.mmp
+..\ContextNotifyClient\gv2\ContextNotifyClient.mmp
+..\ContextCommon\gv2\ContextCommon.mmp
+..\starter\gv2\starter.mmp
+..\ContextServer\gv2\ContextServer.mmp
+..\ContextClient\gv2\ContextClient.mmp
+..\Context_log\mit\Context_log.mmp

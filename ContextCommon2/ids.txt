@@ -1,0 +1,13 @@
+1	cl settings
+component support
+2	version
+3	human readable functionality
+4	name
+5	state
+6	error count
+7	error info
+
+8	bt buddies
+9	bt laptops
+10	bt desktops
+11	bt PDAs

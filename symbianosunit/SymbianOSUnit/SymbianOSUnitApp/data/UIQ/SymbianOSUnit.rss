@@ -1,0 +1,59 @@
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+NAME SOSU
+
+#include <eikon.rh>
+#include <eikcore.rsg>
+#include <qikon.rh>
+
+#include "SymbianOSUnit.hrh"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+RESOURCE EIK_APP_INFO
+{
+	menubar=r_file_menubar;
+	toolbar=r_file_toolbar;
+}
+
+
+RESOURCE MENU_BAR r_file_menubar
+{
+    titles=
+    {
+        MENU_TITLE { menu_pane=r_file_first_menu; txt="Menu"; }
+	};
+}
+
+RESOURCE MENU_PANE r_file_first_menu
+{	
+	items=
+    {
+		MENU_ITEM {command = ECmdRunTest; txt = "Run All Suites";},
+		MENU_ITEM {command = EEikCmdExit; txt = "Exit";}
+	};
+}
+
+RESOURCE QIK_TOOLBAR r_file_toolbar
+{
+      // The default height and width for the Toolbar should be used, so we don't specify them.
+	controls=
+	{		
+		QIK_TBAR_BUTTON
+		{
+			id = ECmdRunTest;
+			txt = "Run All Suites";
+		},
+		QIK_TBAR_BUTTON
+		{
+			id = EEikCmdExit;
+			txt = "Exit";
+		}
+	};
+}
+

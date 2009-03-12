@@ -1,0 +1,166 @@
+Known issues as of 2006-04-03
+=============================
+
+* Sometimes flickr's response will get lost on the way. In that case the software cannot help but to think that the upload failed and retry, resulting in multiple copies. This can only be fixed by flickr supporting unique IDs for images so that the retry can replace the previous one.
+* Some commands in the menu won't work while the picture is loading. This cannot be helped, but they should display a message stating that.
+* You have to manually shut down Meaning on upgrade. Otherwise it may be closed by the system in some circumstances, which is not what we want.
+* You cannot restore the deleted profile from Meaning, you have to manually delete c:\system\data\context and rename c:\system\data\context_old to c:\system\data\context
+* Proxy settings are not read from the phone access point, you have to set them manually
+* Deleting or purging a large number of media may take too long on especially older phones, resulting in a VIEWSRV 11 panic. Under work, meanwhile delete in smaller chunks.
+
+Releases
+========
+
+2006-11-24 14:15
+----------------
+
+* Works on newer N70 firmwares (which put photos in subdirectories by month)
+* You can no longer have bluetooth tags on public photos
+* Added tips on how to use the media editor
+* the '<add xxx here>' text now goes away automatically when you start to type (and they are now grey)
+* tags and sharing settings are saved even if you don't upload the media
+* TODO: remove clearing of hints, add tuplename to hint id
+
+2006-06-17 23:45
+----------------
+* Fixed crash on startup with certain kinds of calendar events
+* Moving through the stored media is now accelerated if you keep the joystick pressed right/left, so that larger numbers of pictures are feasibly accessed. Doesn't work too smoothly yet.
+* You can go 'round' the media, from the 1st to the last and vice versa
+* Refactored some source code into separate modules reducing the size of Merkitys by a few tens of KB
+
+2006-04-03 16:00
+----------------
+* Packaged settings (as described in 'Setting up your own server') now work on initial install (increased BlackBoardServer stack size)
+* Advanced Settings: Show context list can be used to disable the contextual tags pop-up
+* String setting (urls, project name, etc.) maximum length increased to 256 (from 50)
+* Privately named expat library, shouldn't clash with other software using expat (such as Weather)
+
+2006-03-24 17:30
+----------------
+* Second line in comment field shown in full again
+* Added 'Project name' and 'Author name' settings under Advanced settings. Project name works the same as tags, author name gets prefixed with 'from:'
+
+2006-03-17 12:00
+----------------
+* Drawing is fixed on the N90. Should work all right now.
+* The input in the tags box is no longer used as search criteria in the tag list box (since it didn't work particularly well), and a colon is added after the selected tags to ease adding more manually
+
+2006-03-10 16:00
+----------------
+* Fixed bugs in drawing of the image revealed underneat the taglist, when the image is not an integer number of times 160x120 or in portrait orientation
+* even empty tags get now saved as the default so that you don't have to keep clearing it
+
+2006-03-09 20:00
+----------------
+* Media loading should use much less memory and time now. No more Error -4, or the camera app getting shut down. OTOH, image quality for 1600x1200 and 1024x768 is slightly worse now due to simplistic scaling.
+
+2006-02-27 15:20
+----------------
+* Incomplete uploads should now be very improbable! No more half-grey images.
+* Open in Gallery added to media browsing
+* Should retry image display when file is still locked by the camera
+
+
+2006-02-20 18:30
+----------------
+* We don't try to activate the camera app if it's been closed (like closing the slider on N70/6681). Should reduce the number of hangs with the camera.
+* Preliminary support for generic authentication. See http://meaning.3xi.org/documents/Help/Setting+up+your+own+server. There might be problems still with the automated download of settings, please contact us if you have problems.
+
+2006-02-17 19:30
+----------------
+* Doesn't crash anymore in bluetooth scan if you set the scan interval to a high number (it gets limited to 2000 seconds, set to 0 to disable)
+
+2006-02-17 08:00
+----------------
+* Added a 'working' display to the bulk deletion and purging of media (like a progress bar, just spinning) - DOESN'T WORK
+* Meaning will now not put the media in something like e:\images\shared\tobeuploaded\shared, but instead just use one level (e.g., e:\images\shared)
+* Meaning will not pick up video and audio files when run before an authentication token is installed (=the default upload URL is now flickr)
+
+
+2006-02-14 17:45
+----------------
+* Now doesn't crash when opening a folder if there is a nested error information related to a piece of media
+* 'Poison message' detection in upload queue: should an upload request persistently crash the app it will be marked as failed
+* Proxy settings actually do something now
+* Won't erroneously show the previous reply from flickr as the error message after receiving no data at all
+* Fixed 1-pixel white right edge on the icon :-)
+* Fixed: Sometimes when you republish files which are in the Queue, the uploader gets confused and stops processing the queue, resulting in things not being published. Nothing is lost though, and they should get published when you restart Meaning or publish some new photos. Under investigation.
+
+2006-02-13 17:30
+----------------
+* PREVIOUS BUILD IS BROKEN: it was pulled quickly, but if you are only getting 'Busy' (or 'Varattu') as your calendar event, please upgrage
+
+2006-02-13 12:00
+----------------
+
+* Fixed bug in CSpecialGroupsImpl::read_contact_groups() that could cause a crash preventing Meaning from starting. This code was not necessary for Meaning anyway, so the whole invocation was removed as well.
+
+2006-02-08 15:00
+----------------
+
+* The title given to the image on flickr when you don't give a comment is now created from the datetime the photo was taken, not from when it was published
+
+2006-02-07 19:30
+----------------
+
+* Defaults for included contextual data and publicness don't get picked up anymore just when browsing drafts
+* You can remove the GPS device setting, Options|Settings|Reset GPS device. This way, if you just played with a GPS receiver, the sw won't try to connect it every time you open the cameera.
+
+2006-02-07 17:00
+----------------
+
+* Space added for photo count in folder list so that numbers larger than 99 don't get truncated
+* installation will ask for language only once (it won't ask at all if your phone is set to
+Finnish or English)
+* installation should be quite a bit faster now as well
+
+2006-02-06 22:00
+----------------
+
+* Beta 1 (5.05)
+* Open in Gallery works on the N70
+* Installation checks for Series 60 version
+* 'Send logs' sends starter logs
+* 'Open in gallery' works in Drafts
+* 'Reset everything' works
+* Toggling publicness works for old media
+* Enable publishing is set to No until you install the authentication token
+* Will read old media even when media publication is disabled (=newly installed)
+* Logs created even when no previous installation
+
+2006-02-06 13:30
+----------------
+* Activates media view after prompting instead of status
+* Camera won't hang on the N70 if you've closed the back slider
+
+2006-02-04 19:00
+----------------
+
+* the context listbox is not clipped by the image after sliding down
+* defaults for 'Delete Media after publish' and 'Enable operator locationing' set to No
+* Listbox drawing fixed on s60v1 (still slight problems on N70)
+
+2006-02-02 12:45
+----------------
+
+* Only locked-on GPS data is used
+
+2006-02-01 15:40
+----------------
+* the watchdog won't think that Meaning is a built-in
+app and shut it down on startup on the N70
+* Cellnames get all the way to flickr now.
+
+2006-02-01 14:20
+----------------
+
+* Last good GPS is kept, and its age shown in the
+media edit view. 
+* GPS triggering on camera activation works now on the
+N70 as well
+
+
+2006-02-01 11:25
+----------------
+
+* First release on meaning.3xi.org

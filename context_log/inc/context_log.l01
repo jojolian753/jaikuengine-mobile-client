@@ -1,0 +1,108 @@
+#include "contextvariant.hrh"
+
+#define ELanguage ELangEnglish
+
+#ifdef __JAIKU__
+#define CL_CAPTION		"Jaiku Settings"
+#else
+#define CL_CAPTION		"Context log"
+#endif 
+
+#define CL_MENU_FILE		"File"
+#define CL_MENU_BACK		"Back"
+#define CL_MENU_SAVE		"Save"
+#define CL_MENU_CLOSE		"Close"
+#define CL_YES			"Yes"
+#define CL_NO			"No"
+
+#define CL_MENU_CANCEL  	"Cancel"
+#define CL_MENU_TRANSFER	"Transfer logs"
+
+#ifdef __JAIKU__
+#define CL_MENU_EXIT		"Shutdown Jaiku"
+#else
+#define CL_MENU_EXIT		"Shutdown"
+#endif
+
+#define CL_MENU_PAUSE		"Pause logging"
+#define CL_MENU_CONTINUE	"Continue logging"
+#define CL_MENU_NAME_CELL	"Name cell"
+#define CL_MENU_NAME_CONTEXT	"Name context"
+#define CL_MENU_RECORD		"Record description"
+#define CL_MENU_COMM		"Get comm log"
+
+#define CL_VIA_HTTP		"via HTTP"
+#define CL_MENU_SETTINGS	"Settings"
+#define CL_MENU_LOCATION	"Location"
+#define CL_MENU_EVENTS		"Show events"
+#define CL_MENU_IMSI		"Show IMSI"
+#ifdef __JAIKU__
+#define CL_MY_CONTEXT		"My Presence"
+#else
+#define CL_MY_CONTEXT		"My Context"
+#endif
+#define CL_ME			"Myself"
+#define CL_PREVIOUS		"Prev:"
+#define CL_STATUS_VIEW		"Status View"
+
+#define CL_MY_CONTEXT_DESC	"This is how your\npresence-friends\nsee you currently"
+#define CL_JABBER_NOT_AVAIL	"(Not connected to service)"
+#define CL_PRESENCE_DETAILS	"Details [left]"
+#define CL_HIDE_MESSAGE		"This is the\nautomated\ndata collector\nfor the\nContext project"
+
+#define CL_BT_GATEWAYS		"Bluetooth IP gateways"
+#define CL_ADD_DEVICE		"Add device"
+#define CL_REMOVE_DEVICE	"Remove device"
+#define CL_MOVE_UP			"Move up"
+#define CL_MOVE_DOWN		"Move down"
+#define CL_BT_BUDDIES		"BT buddies"
+#ifdef __JAIKU__
+#define CL_USER_GIVEN		"New Post"
+#define CL_CPT_SET_USER_GIVEN	"Post a Jaiku"
+#define CL_RESUME_PRESENCE	"Go Online"
+#define CL_SUSPEND_PRESENCE	"Go Offline"
+#else
+#define CL_USER_GIVEN		"Away msg [click]"
+#define CL_CPT_SET_USER_GIVEN	"Set description"
+#define CL_RESUME_PRESENCE	"Resume Presence"
+#define CL_SUSPEND_PRESENCE	"Suspend Presence"
+#endif
+
+#define CL_FREEZE_PRESENCE	"Freeze presence"
+#define CL_UNFREEZE_PRESENCE	"UnFreeze presence"
+#define CL_PRESENCE_FROZEN	"Your information is frozen!"
+
+#define CL_BUSY			"Busy"
+#define CL_CONTEXTFLICKR	"Meaning"
+#define CL_DRAFTS		"Drafts"
+#define CL_QUEUE		"Queue"
+#define CL_FAILED		"Failed"
+#define CL_PUBLISHED		"Published"
+#define CL_NOT_PUBLISHED	"Not published"
+#define CL_TRASH		"Trash"
+#define CL_ALL			"All"
+#define CL_QUEUED_FOR_PUBLISH	"Queued for publishing"
+#define CL_MOVED_TO_TRASH	"Moved to Trash"
+#define CL_FAILED_TO_QUEUE	"Failed to queue"
+#define CL_FAILED_GENERAL	"Failed to move"
+#define CL_SURE_TO_RESET	"Are you sure? Only manual restore possible"
+//#define CL_SURE_TO_RESET	"Are you sure? Restore your settings from Troubleshoot|Restore"
+#define CL_POSTPONED		"Moved to Drafts"
+#define CL_SEND_LOGS		"Send logs"
+#define CL_TEST_GPS		"Test GPS device"
+#define CL_RESET_EVERYTHING	"Reset everything"
+#define CL_RESTORE_EVERYTHING	"Restore previous settings"
+#define CL_REREAD_UNREAD	"Re-read counts"
+#define CL_BT_LAPTOP		"My laptop"
+#define CL_BT_DESKTOP		"My desktop"
+#define CL_BT_PDA		"My PDA"
+#define CL_SYNC_TIME		"Get time from network"
+
+#define CL_BASIC_SETTINGS	"Basic settings"
+#define CL_NETWORK_SETTINGS	"Network settings"
+#define CL_ADVANCED_SETTINGS	"Advanced settings"
+#define CL_SET_GPS		"Select GPS device"
+#define CL_RESET_GPS		"Reset GPS device"
+#define CL_DISABLE_AUTOSTART	"Disable autostart"
+#define CL_ENABLE_AUTOSTART	"Enable autostart"
+#define CL_AGO			"ago"

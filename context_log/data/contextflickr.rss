@@ -1,0 +1,32 @@
+//  RESOURCE IDENTIFIER
+NAME    CLOM // 4 letter ID
+//  RESOURCE DEFINITIONS 
+
+#include <badef.rh> 
+#include <uikon.rh>
+#define FLICKR 1
+#include "context_log.loc"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=CL_CONTEXTFLICKR;  }
+
+#include "context_log_common.rss"
+#include <sdk_version.h>
+
+#ifdef __S60V3__
+#include "contextflickr.rls"
+#include <appinfo.rh>
+RESOURCE LOCALISABLE_APP_INFO r_contextflickr_localisable_app_info
+    {
+    short_caption = STRING_contextflickr_caption_string;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = STRING_contextflickr_caption_string;
+
+        number_of_icons = 1;
+	   	icon_file = "\\resource\\apps\\contextflickr_aif.mif";
+	    };
+    }
+#endif

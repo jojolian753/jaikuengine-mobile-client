@@ -1,0 +1,11 @@
+PRJ_PLATFORMS
+WINS
+THUMB
+PRJ_MMPFILES
+..\autostart\group\cl_autostart.mmp
+..\expat\symbian\expat.mmp
+..\ContextCommon\group\ContextCommon.mmp
+..\starter\group\starter.mmp
+..\ContextServer\group\ContextServer.mmp
+..\ContextClient\group\ContextClient.mmp
+..\Context_log\mitv1\Context_log.mmp

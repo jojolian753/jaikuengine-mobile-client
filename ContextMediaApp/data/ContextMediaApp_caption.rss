@@ -1,0 +1,8 @@
+#include "contextmediaApp.loc"
+#include <apcaptionfile.rh>
+
+RESOURCE CAPTION_DATA
+{
+    caption=CM_CAPTION;
+    shortcaption=CM_CAPTION;
+}

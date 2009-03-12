@@ -1,0 +1,75 @@
+#include "contextvariant.hrh"
+#define ELanguage ELangFinnish
+
+#define CC_CAPTION		"Osoitekirja"
+#define CC_TAB_CONTACTS		"Osoitekirja"
+#define CC_TAB_GROUPS		"Osoitekirja"
+
+#define CC_CREATE_SMS 		"SMS"
+#define CC_CREATE_MMS		"MMS"
+#define CC_CREATE_EMAIL		"Email"
+
+#define CC_INFO_MEM		"Muisti"
+
+#define CC_MARK			"Valitse"
+#define CC_MARK_ALL		"Valitse kaikki"
+#define CC_UNMARK_ALL		"Poista kaikki valinnat"
+
+#define CC_OPEN			"Avaa"
+#define CC_CALL			"Soita"
+#define CC_CREATE_MSG		"Luo viesti"
+#define CC_NEW_CONTACT		"Lisää uusi nimi"
+#define CC_EDIT 			"Muokkaa"
+#define CC_DELETE			"Poista"
+#define CC_DUPLICATE		"Lisää toinen"
+#define CC_MARK_UNMARK		"Valitse/Poista val."
+#define CC_INFO			"Osoitekirjan tiedot"
+#define CC_SIM_DIR		"SIM-hakemisto"
+#define CC_SETTINGS		"Asetukset"
+
+#define CC_EXIT			"Poistu"
+
+#define CC_GO_TO_WEB		"Avaa selaimessa"
+#define CC_DEFAULTS		"Oletukset"
+
+#define CC_ASSIGN			"Aseta"
+#define CC_BACK			"Takaisin"
+
+#define CC_SELECT			"Valitse"
+#define CC_NONE			"Ei oletusarvoa"
+
+#define CC_DEFAULT_PHONE	"Oletuspuhelinnumero"
+#define CC_DEFAULT_SMS		"Oletus-SMS-numero"
+#define CC_DEFAULT_MMS		"Oletus-MMS-number"
+#define CC_DEFAULT_EMAIL	"Oletussähköposti"
+#define CC_NO_DEFAULTS		"(ei oletusarvoa)"
+#define CC_CONTACTS_INFO		"Osoitekirjan tiedot"
+
+#define CC_NO_SMS		"Ei SMS numeroa:\n"
+#define CC_NO_MMS		"Ei MMS numeroa:\n"
+#define CC_NO_EMAIL		"Ei sähköpostiosoitetta:\n"
+
+#define CC_FIRST_LAST_NAME	"First Last Name"
+#define CC_LAST_FIRST_NAME	"Last First Name"
+#define CC_NAME_DISPLAY		"Name Display"
+
+#define CB_NICK			"Jabbertunnus"
+#define CB_CONTACT		"Nimi"
+
+#define CC_USER_GIVEN		"Aseta oma tilakuvaus"
+#define CL_CPT_SET_USER_GIVEN   "Aseta oma tilakuvaus"
+#define CC_INVITE		"Kutsu Jaikuun"
+
+
+#ifdef __JAIKU__
+#define CC_PRESENCE_DETAILS   	"Näytä preesens"
+#define CC_JABBER	        "Jaiku-tunnus"
+#define CC_SHUTDOWN		"Sulje Jaiku Kontaktit"
+#define CC_MY_RICH_PRESENCE     "My Rich Presence"
+
+#else
+#define CC_PRESENCE_DETAILS   	"Kontekstitiedot"
+#define CC_JABBER	        "Jabbertunnus"
+#define CC_SHUTDOWN		"Sammuta"
+#define CC_MY_RICH_PRESENCE     "My Rich Presence"
+#endif

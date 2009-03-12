@@ -1,0 +1,1 @@
+/c24,8 ..\jaikuaif\jaiku_green.svg

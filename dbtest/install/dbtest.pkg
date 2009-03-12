@@ -1,0 +1,24 @@
+;
+; Installation file for dbtest application
+;
+;Languages
+&EN
+;
+; UID is the app's UID
+;
+#{"dbtest"},(0x09A770C5),1,0,0
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID"}
+;
+; Four files to install
+;
+"\Symbian\6.1\Series60\Epoc32\release\armi\udeb\dbtest.app"         -"!:\system\apps\dbtest\dbtest.app"
+"\Symbian\6.1\Series60\Epoc32\release\armi\udeb\dbtest.rsc"         -"!:\system\apps\dbtest\dbtest.rsc"
+"\Symbian\6.1\Series60\Epoc32\release\armi\udeb\dbtest_caption.rsc" -"!:\system\apps\dbtest\dbtest_caption.rsc"
+"\Symbian\6.1\Series60\Epoc32\release\armi\udeb\dbtest.aif"         -"!:\system\apps\dbtest\dbtest.aif"
+

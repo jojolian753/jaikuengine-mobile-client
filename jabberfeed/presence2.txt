@@ -1,0 +1,32 @@
+# Use # to comment lines 
+# time interval are expressed in minutes (prev_since, curr_since, user_since,
+# old)
+# ringtype: 0=ringing, 1=Ascending, 2=RingOnce, 3=BeepOnce, 4=Silent
+# vib: true=on, false=off
+# sp_vol ranges from 0 to 10
+# user has two values idle/active
+# old specifies how old the info is, in minutes.
+# if old>10 then information is out-of-date
+
+nick:reno
+serv:armi.hiit.fi
+pass:reno
+port:5222
+
+prev:Home
+prev_since:360
+curr:Exactum
+curr_since:330
+
+profile_id:1
+profile:general
+ringtype:0
+sp_vol:7
+vib:false
+friends:0
+others:3
+
+user:active
+user_since:10
+
+old:3

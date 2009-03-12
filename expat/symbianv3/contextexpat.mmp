@@ -1,0 +1,17 @@
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+#include "..\..\context_uids.rh"
+
+compresstarget
+TARGET contextExpat.dll
+TARGETTYPE dll
+UID 0x1000008D CONTEXT_UID_EXPAT
+
+SOURCEPATH ..\lib
+SOURCE ..\lib\xmlparse.c ..\lib\xmlrole.c ..\lib\xmltok.c ..\symbian\expatdll.cpp
+USERINCLUDE ..\lib ..\symbian
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc ..\symbian
+//EXPORTUNFROZEN
+LIBRARY estlib.lib euser.lib
+
+DEFFILENAME(expat)

@@ -1,0 +1,173 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+#include "..\..\context_uids.rh"
+#include "..\..\contextvariant.hrh"
+
+//MACRO AUTOMATIC_TEST_RUN
+
+//specify test source files and libraries alonbg with userincludes
+SOURCEPATH ..\tests
+SOURCE	      Test_UnitTestFw.cpp
+SOURCE        Test_TestingFramework.cpp
+SOURCE        Test_UTContactEngine.cpp
+SOURCE        Test_ContactMatcher.cpp
+SOURCE	      Test_BufferIcon.cpp
+SOURCE        Test_JabberPics.cpp
+SOURCE	      Test_UserPics.cpp
+SOURCE	      Test_StringMap.cpp
+SOURCE	      Test_JabberData.cpp
+SOURCE        Test_LayoutData.cpp
+SOURCE        Test_Phonebook.cpp
+SOURCE        Test_Phonebook1.cpp
+SOURCE        Test_BuildInfo.cpp
+SOURCE        Test_Storage.cpp
+SOURCE        Test_IMEI.cpp
+SOURCE        Test_UUID.cpp
+SOURCE        Test_Poster.cpp
+SOURCE        Test_ContactsCache.cpp
+SOURCE        Test_ActiveContact.cpp
+SOURCE        Test_IconManager.cpp
+SOURCE        Test_UrlMultiLabel.cpp
+SOURCE        Test_Downloader.cpp
+SOURCE        Test_FilePurge.cpp
+
+LIBRARY eikcore.lib
+LIBRARY blackboardclient.lib
+LIBRARY blackboarddata.lib
+
+SOURCEPATH ..\utilities
+SOURCE        utcontactengine.cpp
+SOURCE		contexttestbase.cpp
+LIBRARY   pbkeng.lib
+LIBRARY   cntmodel.lib 
+
+USERINCLUDE ..\..\ContextUi\inc 
+SOURCEPATH ..\..\ContextUi\src
+SOURCE	  cu_buffer_icon.cpp
+LIBRARY estor.lib 
+LIBRARY fbscli.lib
+LIBRARY egul.lib
+LIBRARY aknicon.lib
+
+
+USERINCLUDE ..\..\ContextContactsUi\inc 
+SOURCEPATH ..\..\ContextContactsUi\src
+SOURCE    ccu_contactmatcher.cpp
+SOURCE	  ccu_storage.cpp
+SOURCE	  ccu_phonebook_static.cpp
+LIBRARY edbms.lib 
+
+USERINCLUDE ..\..\alloctrace
+
+USERINCLUDE		  ..\tests
+USERINCLUDE		  ..\generated
+USERINCLUDE               ..\utilities
+
+USERINCLUDE ..\..
+USERINCLUDE   ..\..\expat\symbian ..\..\expat\lib
+
+
+USERINCLUDE ..\..\BlackBoardClient\inc
+USERINCLUDE ..\..\BlackBoard\inc
+SYSTEMINCLUDE ..\..\BlackBoard\inc // FIXME? Why SYSTEMINCLUDE
+
+USERINCLUDE ..\..\ContextCommon\inc
+LIBRARY ContextCommon.lib
+
+USERINCLUDE ..\..\ContextCommon2\inc
+LIBRARY ContextCommon2.lib
+
+USERINCLUDE ..\..\ContextContactsUi\inc
+LIBRARY ContextContactsUi.lib
+
+#ifdef __JAIKU_PHOTO_DOWNLOAD__
+USERINCLUDE  ..\..\ContextTransfer\inc ..\..\ContextMedia\inc
+LIBRARY ContextTransfer.lib ContextMediaData.lib
+#endif
+
+USERINCLUDE ..\..\ContextUi\inc
+LIBRARY ContextUi.lib
+
+USERINCLUDE ..\..\ContextSensors\inc
+LIBRARY ContextSensorData.lib
+
+USERINCLUDE ..\..\JaikuUiKit\inc
+LIBRARY JaikuUiKit.lib
+
+USERINCLUDE ..\..\JaikuCacherClient\inc
+LIBRARY JaikuCacherClient.lib
+
+USERINCLUDE ..\..\ContextNetwork\inc
+LIBRARY ContextNetwork.lib
+
+USERINCLUDE ..\..\ContextTransfer\inc
+LIBRARY ContextTransfer.lib esock.lib
+
+START BITMAP unittests.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	SOURCEPATH ..\bitmaps
+	SOURCE c8 white_30_30.bmp
+END
+START BITMAP unittests2.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	SOURCEPATH ..\bitmaps
+	SOURCE c8 white_30_30.bmp
+	SOURCE c8 white_45_60.bmp
+END
+
+//include SymbianOSUnit mmp file from proper directory depending on relative path and target platform
+
+#include "..\..\symbianosunit\SymbianOSUnit\SymbianOSUnitApp\group\s60_3rd\SymbianOSUnit.source"

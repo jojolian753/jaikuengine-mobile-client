@@ -1,0 +1,78 @@
+#include <eikon.rh>
+#include "contextmediaplugin.loc"
+#include <avkon.rh>
+#include <avkon.rsg>
+#include "context_log.hrh"
+
+#define FLICKR 1
+
+NAME    CMPL // 4 letter ID
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf="ContextMediaPlugin"; }
+
+RESOURCE TBUF R_DRAFTS { buf=CL_DRAFTS; }
+RESOURCE TBUF R_QUEUE { buf=CL_QUEUE; }
+RESOURCE TBUF R_FAILED { buf=CL_FAILED; }
+RESOURCE TBUF R_PUBLISHED { buf=CL_PUBLISHED; }
+RESOURCE TBUF R_NOT_PUBLISHED { buf=CL_NOT_PUBLISHED; }
+RESOURCE TBUF R_TRASH { buf=CL_TRASH; }
+RESOURCE TBUF R_ALL { buf=CL_ALL; }
+RESOURCE TBUF R_QUEUED_FOR_PUBLISH { buf=CL_QUEUED_FOR_PUBLISH; }
+RESOURCE TBUF R_MOVED_TO_TRASH { buf=CL_MOVED_TO_TRASH; }
+RESOURCE TBUF R_FAILED_TO_QUEUE { buf=CL_FAILED_TO_QUEUE; }
+RESOURCE TBUF R_FAILED_GENERAL { buf=CL_FAILED_GENERAL; }
+RESOURCE TBUF R_POSTPONED { buf=CL_POSTPONED; }
+
+
+RESOURCE AVKON_VIEW r_cl_flickr_mediaview
+    {
+    menubar=r_cl_mediaview_menubar;  
+    cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;
+    }
+
+RESOURCE MENU_BAR r_cl_mediaview_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_context_log_media_menu; txt="App"; }
+        };
+    }
+
+RESOURCE MENU_PANE r_location_menu
+    {
+    items=
+        {
+		MENU_ITEM { command=Econtext_logCmdAppNameCell; txt=CL_MENU_NAME_CELL; },
+		MENU_ITEM { command=Econtext_logCmdAppNameCity; txt="Name city"; }
+	};
+    }
+
+RESOURCE MENU_PANE r_settings_menu
+{
+	items= 
+	{
+		MENU_ITEM { command=Econtext_logCmdBasicSettings; txt=CL_BASIC_SETTINGS; }
+		, MENU_ITEM { command=Econtext_logCmdNetworkSettings; txt=CL_NETWORK_SETTINGS; }
+		, MENU_ITEM { command=Econtext_logCmdAdvancedSettings; txt=CL_ADVANCED_SETTINGS; }
+		, MENU_ITEM { command=Econtext_logCmdGPS; txt=CL_SET_GPS; }
+		, MENU_ITEM { command=Econtext_logCmdResetGPS; txt=CL_RESET_GPS; }
+		, MENU_ITEM { command=Econtext_logCmdDisableAutostart; txt=CL_DISABLE_AUTOSTART; }
+		, MENU_ITEM { command=Econtext_logCmdEnableAutostart; txt=CL_ENABLE_AUTOSTART; }
+	};
+}
+
+ 
+RESOURCE MENU_PANE r_context_log_media_menu
+    {
+    items=
+        {
+		MENU_ITEM { cascade=r_location_menu; txt="Location"; },
+		MENU_ITEM { cascade=r_settings_menu; txt="Settings"; },
+		//MENU_ITEM { cascade=r_troubleshoot_menu; txt="Troubleshoot"; },
+		MENU_ITEM { command=Econtext_logCmdAppTest; txt="Test"; },
+		MENU_ITEM { command=EEikCmdExit; txt=CL_MENU_EXIT; }
+	};
+    }
+
+
+// End of File

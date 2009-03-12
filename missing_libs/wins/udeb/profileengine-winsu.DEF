@@ -1,0 +1,26 @@
+;DLLNAME profileengine[100058FA].DLL
+EXPORTS
+	??1CProfileAPI@@UAE@XZ @ 1 NONAME
+	??1CProfileDb@@UAE@XZ @ 2 NONAME
+	?E32Dll@@YAHW4TDllReason@@@Z @ 3 NONAME
+	?GetProfileActiveName@CProfileAPI@@QAE?AW4TProErrorCode@1@VTPtr16@@PAH@Z @ 4 NONAME
+	?GetProfileAlertFor@CProfileAPI@@QAE?AW4TProErrorCode@1@PAV?$CArrayFixFlat@J@@PAHH@Z @ 5 NONAME
+	?GetProfileMsgAlertTone@CProfileAPI@@QAE?AW4TProErrorCode@1@PAV?$TBuf@$0BAA@@@PAHH@Z @ 6 NONAME
+	?GetProfileMultiData@CProfileAPI@@QAE?AW4TProErrorCode@1@AAVTDes16@@0AAH111PAV?$CArrayFixFlat@J@@1H@Z @ 7 NONAME
+	?GetProfileNameList@CProfileAPI@@QAE?AW4TProErrorCode@1@PAV?$CArrayFixFlat@UTProfileStruct@CProfileDb@@@@W4TDbSortType@CProfileDb@@@Z @ 8 NONAME
+	?GetProfileNameList@CProfileAPI@@QAE?AW4TProErrorCode@1@PAVMDesC16Array@@W4TDbSortType@CProfileDb@@@Z @ 9 NONAME
+	?GetProfileNotification@CProfileAPI@@QAE?AW4TProErrorCode@1@PAHH@Z @ 10 NONAME
+	?GetProfileSettingList@CProfileAPI@@QAE?AW4TProErrorCode@1@PAV?$CArrayFixFlat@UTSettingStruct@CProfileDb@@@@H@Z @ 11 NONAME
+	?GetProfileSoundList@CProfileAPI@@QAE?AW4TProErrorCode@1@PAV?$CArrayFixFlat@UTSoundStruct@CProfileDb@@@@H@Z @ 12 NONAME
+	?LookupQueryL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAV?$CArrayFixFlat@UTProfileStruct@CProfileDb@@@@W4TDbSortType@1@@Z @ 13 NONAME
+	?NewL@CProfileAPI@@SAPAV1@H@Z @ 14 NONAME
+	?NewL@CProfileDb@@CAPAV1@XZ @ 15 NONAME
+	?NewLC@CProfileAPI@@SAPAV1@H@Z @ 16 NONAME
+	?NewLC@CProfileDb@@CAPAV1@XZ @ 17 NONAME
+	?ProfileAlertForQueryL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAV?$CArrayFixFlat@J@@PAHAAVTDes16@@H@Z @ 18 NONAME
+	?ProfileSettingQueryL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAV?$CArrayFixFlat@UTSettingStruct@CProfileDb@@@@H@Z @ 19 NONAME
+	?ProfileSoundQueryL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAV?$CArrayFixFlat@UTSoundStruct@CProfileDb@@@@H@Z @ 20 NONAME
+	?ReadProfileL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAV?$CArrayFixFlat@UTSettingStruct@CProfileDb@@@@PAV?$CArrayFixFlat@UTSoundStruct@CProfileDb@@@@PAV?$CArrayFixFlat@J@@PAHAAVTDes16@@H@Z @ 21 NONAME
+	?SetProfileName@CProfileAPI@@QAE?AW4TProErrorCode@1@H@Z @ 22 NONAME
+	?SilentIndicator@CProfileAPI@@QAE?AW4TProErrorCode@1@AAH@Z @ 23 NONAME
+	?WriteProfileL@CProfileDb@@AAE?AW4TDbErrorCode@1@PAUTProfileStruct@1@AAVTDes16@@PAV?$CArrayFixFlat@UTSettingStruct@CProfileDb@@@@PAV?$CArrayFixFlat@UTSoundStruct@CProfileDb@@@@PAV?$CArrayFixFlat@J@@G@Z @ 24 NONAME

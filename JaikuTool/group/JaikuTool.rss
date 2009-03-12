@@ -1,0 +1,98 @@
+// ====================================================================
+// File: JaikuTool.rss
+// Created: 01/04/07
+// Author: 
+// Copyright (c): , All rights reserved
+// ==================================================================== */
+
+NAME COJT
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+#include "JaikuTool.hrh"
+#include "contextvariant.hrh"
+
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_JaikuTool_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_JaikuTool_menubar
+//   Menubar for JaikuTool example
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_BAR r_JaikuTool_menubar
+    {
+    titles =
+        {
+        MENU_TITLE {menu_pane = r_JaikuTool_menu;}
+        };
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_JaikuTool_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+RESOURCE MENU_PANE r_JaikuTool_menu
+    {
+    items = 
+        {
+    	MENU_ITEM { command=EJaikuToolCmdStopJaikuSettings; txt="Stop Jaiku service"; }
+    	, MENU_ITEM { command=EJaikuToolCmdStopJaikuContacts; txt="Stop Jaiku Contacts"; }
+    	, MENU_ITEM { command=EJaikuToolCmdDisableAutostart; txt="Disable automatic start"; }
+    	, MENU_ITEM { command=EJaikuToolCmdEnableAutostart; txt="Enable automatic start"; }
+    	, MENU_ITEM { command=EJaikuToolCmdResetData; txt="Reset all Jaiku data"; }
+    	, MENU_ITEM { command=EJaikuToolCmdSendLogs; txt="Send logs"; }
+    	, MENU_ITEM { command=EJaikuToolEnableDebugLogs; txt="Enable debug logs"; }
+    	, MENU_ITEM { command=EJaikuToolDisableDebugLogs; txt="Disable debug logs"; }
+#ifdef __DEV__
+#ifdef QOS_TEST
+	, MENU_ITEM { command=EJaikuToolTestQoS; txt="QoS test"; }
+#endif
+        , MENU_ITEM { command=EJaikuToolCellSize; txt="Show minimum cell size"; }
+    	, MENU_ITEM { command=EJaikuToolReboot; txt="Reboot phone"; }
+    	, MENU_ITEM { command=EJaikuToolAlloc1; txt="Alloc lots (heap)"; }
+    	, MENU_ITEM { command=EJaikuToolAlloc2; txt="Alloc lots (chunks)"; }
+    	, MENU_ITEM { command=EJaikuToolDEXC; txt="Try to start D_EXC"; }
+    	, MENU_ITEM { command=EJaikuToolCloseConnections; txt="Try closing connection"; }
+    	, MENU_ITEM { command=EJaikuToolConnectors; txt="Load-test RConnection"; }
+#endif
+        , MENU_ITEM { command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+    }

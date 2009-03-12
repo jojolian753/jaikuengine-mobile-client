@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<inserts>
+
+<!-- set expiration time to way to the future (30*365 days) SETTING_PRESENCE_EXPIRATION_TIME -->
+<!-- UIDs and IDs are from following files: --> 
+<!-- 1) tuple UID&ID:  const TTypeName KTupleType = { { CONTEXT_UID_SENSORDATAFACTORY }, 7, 1, 0 } from bbtuple.h -->
+<!-- 2) tuplename UID: const TTupleName KCLSettingsTuple = { { CONTEXT_UID_CONTEXTCOMMON2 }, 1 } from cl_settings_impl.h -->
+<!--    tuplename ID:  #define SETTING_PRESENCE_EXPIRATION_TIME 76 // specified in days from cl_settings.h -->
+<!-- 3) value UID&ID:  const TTypeName KIntType = { { KBBUidValue }, 1, 1, 0 } from bbtypes.h -->
+
+<tuple module="0x20006E4E" id="7" major_version="1" minor_version="0">
+  <id>30</id>
+  <tuplename><module_uid>0x20006E50</module_uid><module_id>1</module_id><subname>76</subname></tuplename>
+  <tuplevalue module="0x20006E4C" id="1" major_version="1" minor_version="0">10950</tuplevalue>
+  <expires>29221228T040054</expires>
+</tuple>
+
+<!-- Jabber port SETTING_JABBER_PORT -->
+<tuple module="0x20006E4E" id="7" major_version="1" minor_version="0">
+  <id>30</id>
+  <tuplename><module_uid>0x20006E50</module_uid><module_id>1</module_id><subname>78</subname></tuplename>
+  <tuplevalue module="0x20006E4C" id="1" major_version="1" minor_version="0">5224</tuplevalue>
+  <expires>20060930T120000</expires>
+</tuple>
+	
+</inserts>

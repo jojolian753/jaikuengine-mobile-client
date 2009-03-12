@@ -1,0 +1,34 @@
+1/2 script distribution
+
+bluejack distribution
+x bluetooth neighbourhood distribution
+	in-order	
+
+error recovery, how?
+
+create a way of getting data from the server onto a new node efficiently
+
+x periodic time sync
+
+subnames longer than 40 chars getting found and sorted properly
+
+x add maximum time spent to stats
+
+x xadd support for laptops
+
+x don't log bluetooth to file
+x up timeouts in wins
+
+x commdb pref
+restart of contextnw from the outside if no traffic
+killing of independent worker threads if they don't close nicely
+
+x crash on startup
+
+set profile to silent
+
+gps bluetooth setting
+
+only _laptops_ (?)
+
+set bluetooth to invisible on startup

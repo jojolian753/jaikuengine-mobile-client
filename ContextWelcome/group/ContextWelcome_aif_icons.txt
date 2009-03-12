@@ -1,0 +1,1 @@
+/c24,8 ..\aif\welcome_app.svg

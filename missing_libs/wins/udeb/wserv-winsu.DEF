@@ -1,0 +1,5 @@
+;DLLNAME wserv[10003B20].DLL
+EXPORTS
+	?RegisterWsExe@@YAXABVTDesC16@@@Z @ 1 NONAME
+	?WindowServerThread@@YAHPAX@Z @ 2 NONAME
+	?__DbgTestInvariant@CWsBackedUpWindow@@QBEXXZ @ 3 NONAME

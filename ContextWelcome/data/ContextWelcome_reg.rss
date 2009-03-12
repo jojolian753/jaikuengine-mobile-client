@@ -1,0 +1,24 @@
+#include <sdk_version.h>
+#include <appinfo.rh>
+#include <contextwelcome.rsg>
+#include "context_uids.rh"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 CONTEXT_UID_CONTEXTWELCOME
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "contextwelcome";
+#if defined(__S60V3__) 
+    localisable_resource_file = "\\resource\\apps\\contextwelcome";
+#else
+    attributes = KAppBuiltAsDll;
+    localisable_resource_file = "\\system\\apps\\contextwelcome\\contextwelcome";
+#endif
+	localisable_resource_id = R_CONTEXTWELCOME_LOCALISABLE_APP_INFO;
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	hidden= KAppIsHidden;
+    }
+
+// End of File

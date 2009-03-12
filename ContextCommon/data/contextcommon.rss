@@ -1,0 +1,12 @@
+NAME CCOM
+
+
+#include <eikon.rh>
+#include "contextcommon.loc"
+
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="ContextCommon"; }
+
+

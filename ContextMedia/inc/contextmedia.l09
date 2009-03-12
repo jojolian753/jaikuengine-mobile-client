@@ -1,0 +1,5 @@
+#define ELanguage ELangFinnish
+
+#define CM_LOADING	"Fetching"
+#define CM_ERROR		"Error! Try refresh"
+#define CM_NEW_THREAD   "New Thread"

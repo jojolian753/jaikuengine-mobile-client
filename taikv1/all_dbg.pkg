@@ -1,0 +1,8 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,21,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\contextcommon\install\contextcommon_dbg_build.SIS",(0x10200C6D)
+@"..\contextserver\install\contextserver_dbg_build.SIS",(0x10200C6B)
+@"..\contextclient\install\contextclient_dbg_build.SIS",(0x10200C6C)
+@"..\context_log\taikv1\context_log_dbg_build.SIS",(0x101FBAD1)
+@"..\contextbook\install\contextbook_dbg_build.SIS",(0x101FBAD0)

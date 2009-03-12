@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 12 13">
+<switch>
+<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1" content="structured text"/>
+<g>
+<g>
+<g>
+<path fill-opacity="0.2" stroke-opacity="0.2" fill="#582734" d="M1.133,8.306        c0-0.234,9.587-0.107,9.587,0C10.721,11.144,8.609,13,5.96,13C3.312,13,1.133,11.144,1.133,8.306z"/>
+<linearGradient id="XMLID_43_" gradientUnits="userSpaceOnUse" x1="-261.8994" y1="387.4912" x2="-261.8994" y2="376.7607" gradientTransform="matrix(1 0 0 1 267.8999 -376.3398)">
+<stop offset="0" style="stop-color:#FEBA49"/>
+<stop offset="0.3258" style="stop-color:#B89600"/>
+<stop offset="0.6517" style="stop-color:#B89600"/>
+<stop offset="1" style="stop-color:#EAFF70"/>
+<stop offset="1" style="stop-color:#EAFF70"/>
+</linearGradient>
+<circle fill="url(#XMLID_43_)" stroke="#B89600" stroke-width="0.4128" stroke-miterlimit="3.8637" cx="6" cy="5.786" r="5.365"/>
+<linearGradient id="XMLID_44_" gradientUnits="userSpaceOnUse" x1="-261.8853" y1="387.0615" x2="-261.8853" y2="378.042" gradientTransform="matrix(1 0 0 1 267.8999 -376.3398)">
+<stop offset="0" style="stop-color:#FFA552"/>
+<stop offset="0.6725" style="stop-color:#DBAC00"/>
+<stop offset="0.9766" style="stop-color:#FFC252"/>
+<stop offset="1" style="stop-color:#FFC252"/>
+</linearGradient>
+<ellipse fill="url(#XMLID_44_)" cx="6.014" cy="6.211" rx="4.403" ry="4.51"/>
+<g>
+<ellipse fill-opacity="0.5" stroke-opacity="0.5" fill="#FFFFFF" cx="6" cy="9.243" rx="2.162" ry="1.04"/>
+</g>
+<path fill-opacity="0.3" stroke-opacity="0.3" fill="#FFFFFF" d="M2.609,2.645        c0-0.886,1.824-1.872,3.391-1.872c1.564,0,3.391,0.986,3.391,1.872c0,0.886-1.826,1.576-3.391,1.576        C4.433,4.222,2.609,3.531,2.609,2.645z"/>
+<path fill="#FFFFFF" d="M4.256,1.931c0-0.445,0.781-0.805,1.744-0.805s1.743,0.36,1.743,0.805S6.963,2.63,6,2.63        S4.256,2.376,4.256,1.931z"/>
+</g>
+<g>
+<g>
+<g>
+<rect fill="none" width="12" height="13"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</switch>
+</svg>

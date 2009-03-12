@@ -1,0 +1,455 @@
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+
+// #include "contextui.hrh"
+// #include "contextui.loc"
+
+#include "contextwelcomeui.hrh"
+// #include "contextcontacts.hrh"
+
+#include "contextcommon.loc"
+#include "contextcontactsui.loc"
+#include "contextcontacts.loc"
+#include "context_log.loc"
+
+NAME CWUI
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf="ContextWelcomeUI"; }
+
+RESOURCE CBA r_welcomeui_softkeys
+{
+ 	buttons =
+ 		{
+ 			CBA_BUTTON { id = ECcuSkLeft; txt = ""; },
+			CBA_BUTTON { id = ECcuSkRight; txt = "Ok"; }
+ 		};
+}
+
+
+RESOURCE AVKON_VIEW r_welcomeui_view
+{
+	//menubar = r_welcomeui_menubar;
+	//cba = r_welcomeui_softkeys;
+}
+
+
+RESOURCE MENU_BAR r_welcomeui_menubar
+{
+    titles =
+        {
+			MENU_TITLE 
+			{
+				menu_pane = r_welcomeui_menu;
+			}
+        };
+}
+
+
+RESOURCE MENU_PANE r_welcomeui_menu
+{
+	items = 
+        {
+			MENU_ITEM 
+			{
+				command = EAknSoftkeyExit;   
+				txt = "Exit";
+			}
+        };
+}
+
+
+RESOURCE DIALOG r_welcomeui_wait_ap_testing
+{
+	flags   = EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_EMPTY;
+	items =
+		{
+			DLG_LINE
+			{
+				type    = EAknCtNote;
+				id      = 6;
+				control = AVKON_NOTE
+				{
+					layout         = EWaitLayout;
+					singular_label = CC_LOC_TESTING_ACCESS_POINT;
+					//          plural_label   = "";
+					animation      = R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_welcome_nick_query
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EDataLayout;
+					label = CB_NICK;
+					control = EDWIN
+					{
+						width = 5;
+						lines = 1;
+						maxlength = 50;
+						default_case = EAknEditorLowerCase;
+					};
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_welcome_password_query
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_DATA_QUERY
+				{
+					layout = ECodeLayout;
+					label = "Password";
+					control = SECRETED
+					{
+						num_letters = 50;
+					};
+				};
+			}
+		};
+}
+
+RESOURCE DIALOG r_welcomeui_userid_query
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtMultilineQuery;
+				id = EMultilineFirstLine;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EMultiDataFirstEdwin;
+					label = "Jaiku Screen Name";
+						control = EDWIN
+					{
+						
+						width = 5;
+						lines = 5;
+						maxlength = 128;
+					};
+				};
+			},
+			DLG_LINE
+			{
+				type = EAknCtMultilineQuery;
+				id = EMultilineSecondLine;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EMultiDataSecondEdwin;
+					label = "Password" ;
+					control = EDWIN 
+					{
+						width = 5;
+						lines =5; 
+						maxlength = 128;
+					};
+				};
+			}
+		};
+}
+
+
+
+RESOURCE TBUF R_TEXT_WELCOME_INTRO { buf=CC_LOC_WELCOME_INTRO; }
+			
+RESOURCE TBUF R_TEXT_WELCOME_NICK_TEXT { buf=CC_LOC_WELCOME_NICK_TEXT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_CONTACT_CARD_TEXT { buf=CC_LOC_WELCOME_CONTACT_CARD_TEXT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SELECT_FROM_CONTACTS { buf=CC_LOC_WELCOME_SELECT_FROM_CONTACTS; }
+
+RESOURCE TBUF R_TEXT_WELCOME_CREATE_NEW_CONTACT_CARD { buf=CC_LOC_WELCOME_CREATE_NEW_CONTACT_CARD; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SHARE_CALENDAR_TITLE { buf=CC_LOC_WELCOME_SHARE_CALENDAR_TITLE; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SHARE_CALENDAR_TEXT { buf=CC_LOC_WELCOME_SHARE_CALENDAR_TEXT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SHOW_TITLE_OF_EVENT { buf=CC_LOC_WELCOME_SHOW_TITLE_OF_EVENT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SHOW_BUSY_INSTEAD { buf=CC_LOC_WELCOME_SHOW_BUSY_INSTEAD; }
+
+RESOURCE TBUF R_TEXT_WELCOME_DONT_SHARE_EVENTS { buf=CC_LOC_WELCOME_DONT_SHARE_EVENTS; }
+
+RESOURCE TBUF R_TEXT_WELCOME_AP_SELECTION_TEXT { buf=CC_LOC_WELCOME_AP_SELECTION_TEXT; }
+		
+RESOURCE TBUF R_TEXT_WELCOME_NO_APS_TEXT { buf=CC_LOC_WELCOME_NO_APS_TEXT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_SETUP_COMPLETED_TITLE { buf=CC_LOC_WELCOME_SETUP_COMPLETED_TITLE; }
+	
+RESOURCE TBUF R_TEXT_WELCOME_SETUP_COMPLETED_TEXT { buf=CC_LOC_WELCOME_SETUP_COMPLETED_TEXT; }
+	
+RESOURCE TBUF R_TEXT_WELCOME_ADD_SHORTCUT_TO_IDLE { buf=CC_LOC_WELCOME_ADD_SHORTCUT_TO_IDLE; }
+
+RESOURCE TBUF R_TEXT_WELCOME_LAUNCH_JAIKU { buf=CC_LOC_WELCOME_LAUNCH_JAIKU; }
+
+RESOURCE TBUF R_TEXT_WELCOME_ADD_JAIKU_TITLE { buf=CC_LOC_WELCOME_ADD_JAIKU_TITLE; }
+
+RESOURCE TBUF R_TEXT_WELCOME_ADD_JAIKU_TEXT { buf=CC_LOC_WELCOME_ADD_JAIKU_TEXT; }
+	
+RESOURCE TBUF R_TEXT_WELCOME_TO_SETTINGS { buf=CC_LOC_WELCOME_TO_SETTINGS; }
+
+
+RESOURCE TBUF R_TEXT_WELCOME_BLUETOOTH_QUERY_TEXT { buf=CC_LOC_WELCOME_BLUETOOTH_TEXT; }
+RESOURCE TBUF R_TEXT_WELCOME_BLUETOOTH_QUERY_YES  { buf=CC_LOC_WELCOME_BLUETOOTH_YES; }
+RESOURCE TBUF R_TEXT_WELCOME_BLUETOOTH_QUERY_NO   { buf=CC_LOC_WELCOME_BLUETOOTH_NO; }
+	
+RESOURCE TBUF R_TEXT_WELCOME_AP_SELECTION_ITEM { buf=CC_LOC_WELCOME_AP_SELECTION_ITEM; }
+
+
+
+RESOURCE DIALOG r_ap_list_dialog
+{
+    flags = EAknDialogSelectionList | EEikDialogFlagWait;
+    buttons = R_AVKON_SOFTKEYS_SELECT_CANCEL;
+
+    items = 
+    {
+        DLG_LINE
+        {
+            type = EAknCtSingleListBox;
+            id = ESelectionListControl;
+            control = LISTBOX
+            {
+                flags = EAknListBoxSelectionList;
+            };
+        }
+    };
+}
+
+
+RESOURCE CBA r_softkeys_accept_decline
+{
+	buttons =
+		{
+			CBA_BUTTON
+			{
+				id = EAknSoftkeyOk;
+				txt = CC_LOC_ACCEPT;
+			},
+			CBA_BUTTON
+			{
+				id = EAknSoftkeyCancel;
+				txt = CC_LOC_DECLINE;
+			}
+		};
+}
+
+
+
+RESOURCE DIALOG r_privacystatement_dialog
+{
+    flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+    buttons = r_softkeys_accept_decline;
+    items=
+    {
+        DLG_LINE
+        {
+           type = EAknCtPopupHeadingPane;
+           id = EAknMessageQueryHeaderId;
+           control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+           type = EAknCtMessageQuery;
+           id = EAknMessageQueryContentId;
+           control = AVKON_MESSAGE_QUERY
+           {
+           };
+         }
+    };
+    
+}
+
+
+RESOURCE TBUF R_TEXT_PRIVACY_STATEMENT_HEADER { buf=CC_LOC_PRIVACY_STATEMENT_HEADER; }
+RESOURCE TBUF R_TEXT_PRIVACY_STATEMENT { buf=CC_LOC_PRIVACY_STATEMENT; }
+
+
+RESOURCE TBUF R_TEXT_CONNECT_TO_NETWORK { buf=CC_LOC_CONNECT_TO_NETWORK; }
+RESOURCE TBUF R_TEXT_YES { buf=CC_LOC_YES; }
+RESOURCE TBUF R_TEXT_NO { buf=CC_LOC_NO; }
+
+RESOURCE TBUF R_TEXT_LAUNCH_JAIKU_ON_STARTUP { buf=CC_LOC_LAUNCH_JAIKU_ON_STARTUP; }
+
+RESOURCE TBUF R_TEXT_WELCOME_JAIKU_IS_READY { buf=CC_LOC_WELCOME_JAIKU_IS_READY; }
+RESOURCE TBUF R_TEXT_WELCOME_JAIKU_IS_READY_TITLE { buf=CC_LOC_WELCOME_JAIKU_IS_READY_TITLE; }
+
+RESOURCE TBUF R_TEXT_WELCOME_CONFIRM_NO_NETWORK_ACCESS { buf=CC_LOC_WELCOME_CONFIRM_NO_NETWORK_ACCESS; }
+RESOURCE TBUF R_TEXT_WELCOME_CONFIRM_NO_NETWORK_ACCESS_TITLE { buf=CC_LOC_WELCOME_CONFIRM_NO_NETWORK_ACCESS_TITLE; }
+
+
+
+RESOURCE DIALOG r_okcancel_message_dialog_with_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+		{
+        DLG_LINE
+        {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_yesno_message_dialog_with_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+		{
+        DLG_LINE
+        {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_okcancel_query_dialog
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_CONFIRMATION_QUERY
+				{
+					layout = EConfirmationQueryLayout;
+					label = "";
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_yesno_query_dialog
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_CONFIRMATION_QUERY
+				{
+					layout = EConfirmationQueryLayout;
+					label = "";
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_yesno_message_dialog_no_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+    {
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_okcancel_message_dialog_no_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+    {
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE TBUF R_TEXT_WELCOME_AP_FAILED_TEXT    { buf=CC_LOC_WELCOME_AP_FAILED_TEXT; }
+RESOURCE TBUF R_TEXT_WELCOME_AP_SELECT_ANOTHER { buf=CC_LOC_WELCOME_AP_SELECT_ANOTHER; }
+RESOURCE TBUF R_TEXT_WELCOME_AP_SELECT_LATER   { buf=CC_LOC_WELCOME_AP_SELECT_LATER; }
+
+// Used in: About dialog
+RESOURCE TBUF R_TEXT_VERSION_FMT   { buf=CC_LOC_VERSION_FMT; }
+
+// Welcome final screen without shortcut query
+RESOURCE TBUF R_TEXT_WELCOME_SETUP_COMPLETED_TEXT__NOSHORTCUT { buf=CC_LOC_WELCOME_SETUP_COMPLETED_TEXT__NOSHORTCUT; }
+RESOURCE TBUF R_TEXT_WELCOME_LAUNCH_JAIKU__NOSHORTCUT { buf=CC_LOC_WELCOME_LAUNCH_JAIKU__NOSHORTCUT; }
+
+RESOURCE TBUF R_TEXT_WELCOME_BATTERY_QUERY_TEXT { buf=CC_LOC_WELCOME_BATTERY_TEXT; }
+RESOURCE TBUF R_TEXT_WELCOME_BATTERY_QUERY_GOOD_BATTERY       { buf=CC_LOC_WELCOME_BATTERY_GOOD_BATTERY; }
+RESOURCE TBUF R_TEXT_WELCOME_BATTERY_QUERY_GOOD_PERFORMANCE   { buf=CC_LOC_WELCOME_BATTERY_GOOD_PERFORMANCE; }

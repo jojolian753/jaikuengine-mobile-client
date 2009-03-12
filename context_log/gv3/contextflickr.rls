@@ -1,0 +1,12 @@
+//  LOCALISATION STRINGS
+
+//d:Caption string for app.
+rls_string STRING_contextflickr_caption_string "Merkitys"
+
+//d:Short caption string for app.
+rls_string STRING_contextflickr_short_caption_string "Merkitys"
+
+rls_string STRING_contextflickr_loc_resource_file_1 "\\resource\\apps\\contextflickr"
+
+// End of File
+

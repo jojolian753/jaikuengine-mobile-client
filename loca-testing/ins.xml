@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<inserts>
+<!-- disable bluejacking -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>54</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">0</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- bluetooh scan interval -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>20</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">5</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- enable contextnw -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>46</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">1</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- contexnw host -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>1</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>44</subname></tuplename><tuplevalue module="0x1020811a" id="10" major_version="1" minor_version="0">loca.hiit.fi</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- contexnw port -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>45</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">5001</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- nodename -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>1</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>31</subname></tuplename><tuplevalue module="0x1020811a" id="10" major_version="1" minor_version="0">Fountain</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- password -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>1</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>53</subname></tuplename><tuplevalue module="0x1020811a" id="10" major_version="1" minor_version="0">emulator</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- gps addr -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>7442</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>28</subname></tuplename><tuplevalue module="0x1020811a" id="13" major_version="1" minor_version="0">000db50088d8</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- gps port -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>30</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>3</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">1</tuplevalue><expires>29221228T040054</expires></tuple>
+<!-- gps log time -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>29</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">10</tuplevalue><expires>29221228T040054</expires></tuple>
+</inserts>

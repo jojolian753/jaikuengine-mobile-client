@@ -1,0 +1,25 @@
+
+
+RESOURCE AVKON_VIEW r_list_view
+{
+	menubar = r_list_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	
+}
+
+RESOURCE MENU_BAR r_list_view_menubar
+{
+    titles=
+        {
+			MENU_TITLE { menu_pane=r_list_view_menupane; txt="View"; }
+        };
+}
+
+
+RESOURCE MENU_PANE r_list_view_menupane
+{
+	items =
+		{			
+			MENU_ITEM { command=EEikCmdExit; txt="Exit"; }
+		};
+}

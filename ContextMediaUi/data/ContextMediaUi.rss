@@ -1,0 +1,432 @@
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+
+#include "contextmediaui.hrh"
+#include "contextmediaui.loc"
+#include "recognizerview.hrh"
+
+
+
+//  RESOURCE IDENTIFIER
+NAME    CMUI // 4 letter ID
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="ContextMediaUi"; }
+
+// used for list of threads
+RESOURCE AVKON_VIEW r_contextmediaapp_threadsview
+{
+	menubar=r_contextmedia_menubar_threads_menu;  
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+}
+
+RESOURCE MENU_BAR r_contextmedia_menubar_threads_menu
+{
+	titles=
+	{
+		MENU_TITLE { menu_pane=r_contextmedia_app_pane; txt="App"; },
+		MENU_TITLE { menu_pane=r_contextmedia_threads_pane; txt="View"; }
+	};
+}
+
+RESOURCE MENU_PANE r_contextmedia_app_pane
+{
+	items=
+        {
+		MENU_ITEM { command=EcontextmediaappCmdSettings; txt=CM_SETTINGS;},
+		MENU_ITEM { command=EAknCmdExit; txt=CM_EXIT; }
+        };
+}
+
+RESOURCE MENU_PANE r_contextmedia_threads_pane
+{
+	items=
+        {
+		MENU_ITEM { command=EcontextmediaappCmdOpenItem; txt=CM_OPEN;},
+		MENU_ITEM { command=EcontextmediaappCmdMarkAsRead; txt=CM_MARK_THREAD_READ;},
+		MENU_ITEM { command=EcontextmediaappCmdRefresh; txt=CM_REFRESH_THREADS;},
+		MENU_ITEM { command=EcontextmediaappCmdHide; txt=CM_HIDE;},
+		MENU_ITEM { command=EcontextmediaappCmdUnhideAll; txt=CM_UNHIDE_ALL;}
+        };
+}
+
+
+//----------------------------------------------------------------------------------------------
+RESOURCE AVKON_VIEW r_contextmediaapp_threadsprompt
+{
+	cba=R_AVKON_SOFTKEYS_SELECT_CANCEL;	
+}
+
+//----------------------------------------------------------------------------------------------
+RESOURCE AVKON_VIEW r_contextmediaapp_threadview
+{
+	menubar=r_contextmedia_menubar_thread_menu;  
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;   
+}
+
+RESOURCE MENU_BAR r_contextmedia_menubar_thread_menu
+{
+	titles=
+	{
+		MENU_TITLE { menu_pane=r_contextmedia_thread_pane; txt="View"; }
+	};
+}
+
+RESOURCE MENU_PANE r_contextmedia_thread_pane
+{
+	items=
+        {
+		MENU_ITEM { command=EcontextmediaappCmdOpenItem; txt=CM_OPEN;},
+		MENU_ITEM { cascade=r_reply_menu; command=EcontextmediaappCmdReply; txt=CM_REPLY;},
+		MENU_ITEM { cascade=r_reply_menu; command=EcontextmediaappCmdFirstPost; txt=CM_FIRST_POST;},
+		MENU_ITEM { command=EcontextmediaappCmdMarkAsRead; txt=CM_MARK_POST_READ;},
+		MENU_ITEM { command=EcontextmediaappCmdRefresh; txt=CM_REFRESH_THREAD;},
+		MENU_ITEM { cascade=r_contact_person; command=EcontextmediaappCmdContact; txt=CM_CONTACT; }
+        };
+}
+
+RESOURCE MENU_PANE r_contact_person
+{
+	items= 
+	{
+		MENU_ITEM { command=EcontextmediaappCmdCall; txt = CM_CALL; },
+		MENU_ITEM { command=EcontextmediaappCmdSms; txt = CM_SMS; }
+	};
+}
+
+RESOURCE MENU_PANE r_reply_menu
+{
+	items= 
+	{
+		MENU_ITEM { command=EcontextmediaappCmdReplyWithCaptured; txt = CM_CAPTURED; },
+		MENU_ITEM { command=EcontextmediaappCmdCamera; txt = CM_CAMERA; },
+		MENU_ITEM { command=EcontextmediaappCmdCamera2; txt = CM_CAMERA; },
+		MENU_ITEM { command=EcontextmediaappCmdVideo; txt = CM_VIDEO; },
+		MENU_ITEM { command=EcontextmediaappCmdVideo2; txt = CM_VIDEO; },
+		MENU_ITEM { command=EcontextmediaappCmdAudio; txt = CM_AUDIO; }
+	};
+}
+
+//------------------------------------------------------------------------------------------------------------
+RESOURCE AVKON_VIEW r_visualcode_view
+{
+	menubar=r_contextmedia_menubar_visualcode_menu;  
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+}
+    
+RESOURCE MENU_BAR r_contextmedia_menubar_visualcode_menu
+{
+	titles=
+        {
+		MENU_TITLE { menu_pane=r_contextmedia_app_pane; txt="App"; },
+		MENU_TITLE { menu_pane=r_contextmedia_visualcode_pane; txt="View"; }
+        };
+}
+    
+RESOURCE MENU_PANE r_contextmedia_visualcode_pane
+{
+	items=
+        {
+		MENU_ITEM { command=ERecognizerCaptureCode; txt=CM_CAPTURE_CODE;}	
+        };
+} 
+ 
+//-------------------------------------------------------------------------------------------------------------   
+RESOURCE AVKON_VIEW r_contextmediaapp_postview
+{
+	menubar=r_contextmedia_menubar_post_menubar;  
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK; 
+}
+    
+RESOURCE MENU_BAR r_contextmedia_menubar_post_menubar
+{
+	titles=
+        {
+		MENU_TITLE { menu_pane=r_contextmedia_menubar_post_menu; txt="View"; }
+        };
+}
+    
+RESOURCE MENU_PANE r_contextmedia_menubar_post_menu
+{
+    items=
+        {
+		MENU_ITEM { command=EcontextmediaappCmdShowErrors; txt=CM_SHOW_ERRORS;},
+		MENU_ITEM { command=EcontextmediaappCmdPlay; txt=CM_PLAY;},
+		MENU_ITEM { command=EcontextmediaappCmdRepublish; txt=CM_REPUBLISH; },
+		MENU_ITEM { cascade=r_reply_menu; command=EcontextmediaappCmdReply; txt=CM_REPLY;},
+		MENU_ITEM { command=EcontextmediaappCmdReFetch; txt=CM_REFETCH;},
+		MENU_ITEM { command=EcontextmediaappCmdMarkAsRead; txt=CM_MARK_POST_READ;},
+		MENU_ITEM { cascade=r_contact_person; command=EcontextmediaappCmdContact; txt=CM_CONTACT; },
+		MENU_ITEM { command=EcontextmediaappCmdDelete; txt=CM_DELETE;}, 
+		MENU_ITEM { command=EcontextmediaappCmdDeleteFrom; txt=CM_DELETE_FROM;}, 
+		MENU_ITEM { command=EcontextmediaappCmdPurge; txt=CM_PURGE;}, 
+		MENU_ITEM { command=EcontextmediaappCmdPurgeFrom; txt=CM_PURGE_FROM;}, 
+		MENU_ITEM { command=EcontextmediaappCmdOpenInGallery; txt=CM_OPEN_IN_GALLERY; }
+        };
+}
+
+RESOURCE CBA r_cba_publish_options
+{
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EcontextmediaappCmdPublish; txt = CM_PUBLISH; },
+		CBA_BUTTON { id=EAknSoftkeyOptions; txt = CM_OPTIONS; }
+		} ;
+}
+    
+//----------------------------------------------------------------------------------------------------------
+RESOURCE AVKON_VIEW r_contextmediaapp_editorview_standalone
+{
+	menubar=r_contextmedia_menubar_editor_menubar;
+	//cba=r_cba_publish_postpone; 
+	cba=r_cba_publish_options;
+}
+
+RESOURCE AVKON_VIEW r_contextmediaapp_editorview
+{
+	menubar=r_contextmedia_menubar_editor_menubar;
+	//cba=r_cba_publish_postpone; 
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+
+RESOURCE MENU_BAR r_contextmedia_menubar_editor_menubar
+{
+	titles=
+        {
+		MENU_TITLE { menu_pane=r_contextmedia_menubar_editor_menubar_menu; txt="View"; }
+        };
+}
+    
+RESOURCE MENU_PANE r_contextmedia_menubar_editor_menubar_menu
+{
+	items=
+        {
+		MENU_ITEM { command=EcontextmediaappCmdShowErrors; txt=CM_SHOW_ERRORS;},
+		MENU_ITEM { command=EcontextmediaappCmdNewImage; txt=CM_NEW_IMAGE;},
+		MENU_ITEM { command=EAknSoftkeySelect; txt=CM_SELECT;},
+		MENU_ITEM { command=EcontextmediaappCmdPublish; txt=CM_PUBLISH;},
+		MENU_ITEM { command=EcontextmediaappCmdPostpone; txt=CM_POSTPONE;},
+		MENU_ITEM { command=EcontextmediaappCmdDontpublish; txt=CM_DONT_PUBLISH; },
+		MENU_ITEM { command=EcontextmediaappCmdPlay; txt=CM_PLAY;},	
+		MENU_ITEM { command=EcontextmediaappCmdDelete; txt=CM_DELETE;},
+		MENU_ITEM { command=EcontextmediaappCmdOpenInGallery; txt=CM_OPEN_IN_GALLERY; }
+        };
+}
+
+//-----------------------------------------------------------------------------------------------------------
+    
+RESOURCE CBA r_cba_post_cancel
+{
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EcontextmediaappCmdPublish; txt = CM_POST; },
+		CBA_BUTTON { id=EAknSoftkeyCancel; txt = CM_CANCEL; }
+		} ;
+}
+
+RESOURCE CBA r_pause_stop
+{
+	buttons = 
+	{
+		CBA_BUTTON { id=EcontextmediaappCmdPause; txt = CM_PAUSE; },
+		CBA_BUTTON { id=EcontextmediaappCmdStop; txt = CM_STOP; }
+	};
+}
+
+RESOURCE CBA r_continue_stop
+{
+	buttons = 
+	{
+		CBA_BUTTON { id=EcontextmediaappCmdContinue; txt = CM_RESUME; },
+		CBA_BUTTON { id=EcontextmediaappCmdStop; txt = CM_STOP; }
+	} ;
+}
+
+    
+RESOURCE ARRAY r_reply_popup_menu
+{
+	items = 
+	{
+		LBUF { txt = CM_CAPTURED; },
+		LBUF { txt = CM_CAMERA; },
+		LBUF { txt = CM_VIDEO; },
+		LBUF { txt = CM_AUDIO; }
+	};
+}
+
+#ifndef __S80__
+RESOURCE DIALOG r_confirmation_query
+{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items=
+	{
+		DLG_LINE
+		{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+			{
+			};
+		},
+		DLG_LINE
+		{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+	};
+}  
+#endif
+
+RESOURCE MENU_BAR r_list_menubar 
+	{ 
+	titles = 
+		{ 
+		MENU_TITLE { menu_pane = R_AVKON_MENUPANE_MARKABLE_LIST; } 
+		};
+	}
+
+RESOURCE DIALOG r_list_dialog
+{
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar | EEikDialogFlagFillAppClientRect | 
+		EEikDialogFlagCbaButtons  
+#ifndef __S80__
+| EAknListBoxMultipleSelection | EAknListBoxEnterMarks ;
+#else
+	;
+#endif
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+
+    items = 
+    {
+        DLG_LINE
+        {
+            type = EAknCtSingleListBox;
+            id = ESelectionListControl;
+            control = LISTBOX
+            {
+                flags = EAknListBoxMarkableList;
+            };
+        }
+#ifndef __S80__
+	, DLG_LINE
+		{ 
+			itemflags = EEikDlgItemNonFocusing; 
+			id = EFindControl; 
+			type = EAknCtSelectionListFixedFind; 
+		}
+#endif
+    };
+}
+
+RESOURCE TITLE_PANE r_app_name
+{
+	txt = CM_CAPTION;
+}
+    
+RESOURCE TBUF R_TITLE	{buf=CM_CAPTION;}
+
+RESOURCE TBUF R_DEFAULT_COMMENT {buf=CM_DEFAULT_COMMENT;}
+RESOURCE TBUF R_DEFAULT_SIGNATURE {buf=CM_DEFAULT_SIGNATURE;}
+
+RESOURCE TBUF R_LOADING {buf=CM_LOADING;}
+RESOURCE TBUF R_DOWNLOADING {buf=CM_DOWNLOADING;}
+
+RESOURCE TBUF R_EMPTY	{buf=CM_EMPTY;}
+
+RESOURCE TBUF R_BY {buf=CM_BY;}
+RESOURCE TBUF R_FIRST_BY {buf=CM_FIRST_BY;}
+RESOURCE TBUF R_LAST_BY {buf=CM_LAST_BY;}
+
+RESOURCE TBUF R_REPLY {buf=CM_REPLY;}
+RESOURCE TBUF R_ADD_REPLY {buf= CM_ADD_REPLY; }
+RESOURCE TBUF R_FIRST_POST {buf= CM_FIRST_POST; }
+
+RESOURCE TBUF R_CAPTURED {buf=CM_CAPTURED;}
+RESOURCE TBUF R_CAMERA { buf = CM_CAMERA; }
+RESOURCE TBUF R_VIDEO { buf = CM_VIDEO; }
+RESOURCE TBUF R_AUDIO { buf = CM_AUDIO; }
+
+RESOURCE TBUF R_NO_TITLE { buf = CM_NO_TITLE; }
+RESOURCE TBUF R_NO_ITEM {buf=CM_NO_ITEM;}
+RESOURCE TBUF R_NO_ITEM_VISIBLE {buf=CM_NO_ITEM_VISIBLE;}
+
+RESOURCE TBUF R_SELECT_THREAD {buf= CM_SELECT_THREAD; }
+
+RESOURCE TBUF R_NEW_THREAD {buf= CM_NEW_THREAD; }
+RESOURCE TBUF R_USE_CODE {buf= CM_USE_CODE; }
+
+RESOURCE TBUF R_DELETE_MESSAGE {buf=CM_DELETE_MESSAGE;}
+
+RESOURCE TBUF R_PRIVATE { buf=CM_PRIVATE; }
+RESOURCE TBUF R_FRIENDS { buf=CM_FRIENDS; }
+RESOURCE TBUF R_PUBLIC { buf=CM_PUBLIC; }
+RESOURCE TBUF R_FAMILY { buf=CM_FAMILY; }
+RESOURCE TBUF R_FRIENDS_AND_FAMILY { buf=CM_FRIENDS_AND_FAMILY; }
+RESOURCE TBUF R_NO_COUNTRY { buf=CM_NO_COUNTRY; }
+RESOURCE TBUF R_NO_CITY { buf=CM_NO_CITY; }
+RESOURCE TBUF R_NO_LOCATION { buf=CM_NO_LOCATION; }
+RESOURCE TBUF R_NO_GSM { buf=CM_NO_GSM; }
+RESOURCE TBUF R_BT_DEVICES { buf=CM_BT_DEVICES; }
+RESOURCE TBUF R_NO_BT { buf=CM_NO_BT; }
+RESOURCE TBUF R_NO_CALENDAR { buf=CM_NO_CALENDAR; }
+RESOURCE TBUF R_NO_GPS { buf=CM_NO_GPS; }
+RESOURCE TBUF R_NO_CONTEXT { buf=CM_NO_CONTEXT; }
+RESOURCE TBUF R_TAGS_DEFAULT { buf=CM_TAGS_DEFAULT; }
+RESOURCE TBUF R_SELECT_TAGS { buf=CM_SELECT_TAGS; }
+RESOURCE TBUF R_WAIT_FOR_LOAD { buf=CM_WAIT_FOR_LOAD; }
+RESOURCE TBUF R_AGO { buf=CM_AGO; }
+
+RESOURCE TBUF R_HINT_TAGS { buf = CM_HINT_TAGS; }
+RESOURCE TBUF R_HINT_CLICKTAG { buf = CM_HINT_CLICKTAG; }
+RESOURCE TBUF R_HINT_MOVEUP { buf = CM_HINT_MOVEUP; }
+RESOURCE TBUF R_HINT_SHARING { buf = CM_HINT_SHARING; }
+RESOURCE TBUF R_HINT_DISABLE { buf = CM_HINT_DISABLE; }
+RESOURCE TBUF R_HINT_CITY { buf = CM_HINT_CITY; }
+RESOURCE TBUF R_HINT_PLACE { buf = CM_HINT_PLACE; }
+RESOURCE TBUF R_HINT_CLEAR { buf = CM_HINT_CLEAR; }
+
+RESOURCE DIALOG r_delete_waitnote
+{
+ flags = EAknWaitNoteFlags;
+ buttons=R_AVKON_SOFTKEYS_EMPTY;
+ items =
+ {
+   DLG_LINE
+   {
+     type = EAknCtNote;
+     id = EGeneralNote;
+     control = AVKON_NOTE
+     {
+       layout = EWaitLayout;
+        singular_label= CM_DELETING_MSG;
+        animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+     };
+   }
+ };
+}
+
+RESOURCE DIALOG r_purge_waitnote
+{
+ flags = EAknWaitNoteFlags;
+ buttons=R_AVKON_SOFTKEYS_EMPTY;
+ items =
+ {
+   DLG_LINE
+   {
+     type = EAknCtNote;
+     id = EGeneralNote;
+     control = AVKON_NOTE
+     {
+       layout = EWaitLayout;
+        singular_label= CM_PURGING_MSG;
+        animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+     };
+   }
+ };
+}

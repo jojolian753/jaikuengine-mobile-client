@@ -1,0 +1,12 @@
+&EN,FI
+%{"Jaiku Ltd", "Jaiku Ltd"}
+:"Jaiku"	
+#{"ContextWelcome", "NoName"},(0x20006EE1),1,0,0
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductId"}
+
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextwelcome_aif.mif"         -"!:\resource\apps\contextwelcome_aif.mif"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\contextwelcome_reg.r01" -"!:\private\10003a3f\import\apps\contextwelcome_reg.rsc"
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextwelcome.r01"-"!:\resource\apps\contextwelcome.rsc"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\contextwelcome.exe"         -"!:\sys\bin\contextwelcome.exe",FR,RI
+
+

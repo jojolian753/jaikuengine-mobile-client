@@ -1,0 +1,29 @@
+
+Then: 	
+Go to: 	S. Corner Of El Camino Real & Park Place (Location map)
+
+Board: 	Samtrans Bus #391/Redwood City at 9:27 am (next bus at 9:57 am) (schedule detail)
+Fare: 	Pay $1.50
+
+Get Off: 	Millbrae BART @ Location 9 at 9:40 am
+
+
+Then: 	
+Go to: 	BART Millbrae, 199 North Rollins Rd (Location map)
+
+Board: 	BART Mill/Dublin Line/Dublin/Pleasanton at 9:46 am (next 10:01 am) (schedule detail)
+Fare: 	Pay $3.15, Get BART Ticket, (Get BART To Bus Transfer Upon Leaving)
+
+Get Off: 	BART Daly City at 10:06 am
+
+
+Then: 	
+Go to: 	N.W. Corner Of Daly City BART Station (Location map)
+
+Board: 	SF Muni Bus #28/19th Ave at 10:14 am (next bus at 10:26 am) (schedule detail)
+
+Important! Important Announcements About This Route What is Important Announcement?
+
+Fare: 	Show Transfer To Driver, Pay $1.25
+
+Get Off: 	Park Presidio

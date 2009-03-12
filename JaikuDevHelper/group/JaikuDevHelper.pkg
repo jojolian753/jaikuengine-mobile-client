@@ -1,0 +1,14 @@
+&EN
+
+#{"JaikuDevHelper"},(0x20006EE2),1,0,0
+
+(0x101F6F88), 0, 0, 0, {"Series60ProductID"}
+
+"\Symbian\7.0s\Series60_v21\Epoc32\release\thumb\urel\jaikudevhelper.app"         -"!:\system\apps\jaikudevhelper\jaikudevhelper.app"
+
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\jaikudevhelper\jaikudevhelper.rsc" -"!:\system\apps\jaikudevhelper\jaikudevhelper.rsc"
+
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\jaikudevhelper\jaikudevhelper_caption.rsc" -"!:\system\apps\jaikudevhelper\jaikudevhelper_caption.rsc"
+
+
+

@@ -1,0 +1,61 @@
+#define ELanguage ELangFinnish
+
+
+
+#define CL_TAG_AND_DESCRIPTION "Tag and description"
+#define CL_TAG_ONLY		"Tag only"
+#define CL_VISUALCODE		"VisualCode"
+
+#define CL_JABBER_NICK		"Jabber Nick"
+#define CL_JABBER_PASS		"Jabber password"
+
+#define CL_JABBER_ENABLE	"Enable presence"
+
+#define CL_PICTURE_ENABLE	"Enable media publishing"
+#define CL_UPLOAD_URLBASE	"URL base for upload"
+#define CL_PUBLISH_URLBASE	"URL base for publish"
+
+#define CL_OPTIONS_ENABLE	"Enable Options"
+#define CL_DELETE_UPLOADED	"Delete media after upload"
+#define CL_ENABLE_LOGGING	"Enable data logger"
+#define CL_ENABLE_LOCATIONSERVICE "Enable operator location service"
+#define CL_ENABLE_NAMING	"Prompt for names"
+
+#define CL_BT_INTERVAL		"Bluetooth scan interval"
+#define CL_RECORD_ALL		"Record all calls"
+#define CL_UPLOAD_PROMPT_TYPE	"Upload tagging"
+#define CL_VIBRATE_ONLY		"Vibrate only"
+#define CL_GPS_LOG_TIME		"GPS Log time"
+#define CL_PUBLISH_AUTHOR	"Author name for upload"
+#define CL_UPLOAD_SCRIPT	"Upload script name"
+#define CL_PUBLISH_SCRIPT	"Publish script name"
+#define CL_RIGHT_SOFTKEY_CONTEXT "Right key to Context"
+#define CL_ALLOW_ROAMING	"Allow Roaming"
+#define CL_IGNORE_NOTIFICATIONS "Ignore Media Notifications"
+
+#define CL_SNAPSHOT		"Snapshot on SMS reception"
+#define CL_SNAPSHOT_TIME	"Snapshot Record time"
+#define CL_USE_MMC		"Use MMC"
+#define CL_IP_AP			"IP Access Point"
+#define CL_HTTP_PROXY		"HTTP Proxy name"
+#define CL_HTTP_PROXY_PORT	"HTTP Proxy port"
+#define CL_ENABLE_CONTEXTNW	"Enable ContextNw"
+#define CL_CN_HOST		"ContextNetwork Host"
+#define CL_CN_PORT		"ContextNetwork port"
+#define CL_NO_AP_DEFINED 	"No access points defined"
+#define CL_YES			"Yes"
+#define CL_NO			"No"
+#define CL_DISABLED		"Disabled"
+#define CL_VIA_CONTEXT_LOG	"Via Context_log"
+#define CL_VIA_CONTEXT_MEDIA  "Via ContextMedia"
+#define CL_PHONENO		"My Phone Number"
+
+#define CL_PUBLISH_USERNAME	"Muun palvelun tunnus"
+#define CL_PUBLISH_PASSWORD	"Muun palvelun salasana"
+
+#define CL_CPT_NAME_CELL_TIME	"[Klikkaa pois]\nNimeä paikka (klo %02d:%02d)"
+#define CL_CPT_NAME_CITY_TIME	"[Klikkaa pois]\nNimeä kaupunki (klo %02d:%02d)"
+#define CL_CPT_NAME_CELL_OLD	"Nimeä paikka"
+#define CL_CPT_NAME_CITY_OLD	"Nimeä kaupunki/seutu"
+
+

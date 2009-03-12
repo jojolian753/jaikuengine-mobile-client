@@ -1,0 +1,137 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#define OLD_CONTEXT_UID_CONTEXTBOOK 0x101FBAD0
+#define OLD_CONTEXT_UID_CONTEXT_LOG 0x101FBAD1
+#define OLD_CONTEXT_UID_CL_AUTOSTART 0x101FBAD2
+#define OLD_CONTEXT_UID_STARTER 0x101FBAD3
+
+/*
+ * range 2: 0x10200C6B to 0x10200C6E - USED UP
+ */
+#define OLD_CONTEXT_UID_CONTEXTSERVER 0x10200C6B
+#define OLD_CONTEXT_UID_CONTEXTCLIENT 0x10200C6C
+#define OLD_CONTEXT_UID_CONTEXTCOMMON 0x10200C6D
+#define OLD_CONTEXT_UID_RECOGNIZER 0x10200C6E
+
+/*
+ * range 3: 0x10204B9C to 0x10204BAF - USED UP
+ */
+#define OLD_CONTEXT_UID_DBTEST 0x10204B9C
+#define OLD_CONTEXT_UID_GNUBOX 0x10204B9D
+#define OLD_CONTEXT_UID_CONTEXTNOTE 0x10204B9E
+#define OLD_CONTEXT_UID_CONTEXTFETCH 0x10204B9F
+#define OLD_CONTEXT_UID_CONTEXT 0x10204BA0
+#define OLD_CONTEXT_UID_TASKLIST 0x10204BA1
+#define OLD_CONTEXT_UID_SIDFILE 0x10204BA2
+#define OLD_CONTEXT_UID_SIDCONTROLLERDLL 0x10204BA3
+#define OLD_CONTEXT_UID_PLAYSID 0x10204BA4
+#define OLD_CONTEXT_UID_SIDCONTROLLER 0x10204BA5
+#define OLD_CONTEXT_UID_SIDPLAY 0x10204BA6
+#define OLD_CONTEXT_UID_SIDFORMAT 0x10204BA7
+#define OLD_CONTEXT_UID_LIBSIDPLAY 0x10204BA8
+#define OLD_CONTEXT_UID_SIDFILES 0x10204BA9
+#define OLD_CONTEXT_UID_CONTEXTNOTIFY 0x10204BAA
+#define OLD_CONTEXT_UID_CONTEXTNOTIFYCLIENT 0x10204BAB
+
+// MMP handling defines WINS, compiling __WINS__
+#if defined(WINS) || defined(__WINS__)
+// overriding doesn't work in the emulator
+#  define OLD_CONTEXT_UID_CONTEXTCONTACTS 0x10204BAC
+#  define OLD_CONTEXT_UID_CONTEXTCALLLOG 0x10204BAD
+#else
+// overriding internal uids
+// NOTE: these must be last so that the naive
+// perl script that makes SIS files gets it right
+#  define OLD_CONTEXT_UID_CONTEXTCONTACTS 0x101F4CCE 
+#  define OLD_CONTEXT_UID_CONTEXTCALLLOG 0x101F4CD5
+#endif
+#define OLD_CONTEXT_UID_BLACKBOARDDATA	0x10204BAE
+#define OLD_CONTEXT_UID_BLACKBOARDSERVER	0x10204BAF
+
+/*
+ * range 4: 0x10208119 to 0x1020812C 
+ */
+#define OLD_CONTEXT_UID_BLACKBOARDCLIENT	0x10208119
+#define OLD_CONTEXT_UID_BLACKBOARDFACTORY	0x1020811A
+#define OLD_CONTEXT_UID_BLACKBOARDCLIENTTEST 0x1020811B
+#define OLD_CONTEXT_UID_BLACKBOARD		0x1020811C
+#define OLD_CONTEXT_UID_CONTEXTSENSORS	0x1020811D
+#define OLD_CONTEXT_UID_SENSORDATAFACTORY	0x1020811E
+#define OLD_CONTEXT_UID_CONTEXTNETWORK	0x1020811F
+#define OLD_CONTEXT_UID_CONTEXTCOMMON2	0x10208120
+#define OLD_CONTEXT_UID_CONTEXTMEDIA	0x10208121
+#define OLD_CONTEXT_UID_CONTEXTMEDIAFACTORY 0x10208122
+#define OLD_CONTEXT_UID_CONTEXTMEDIAAPP	0x10208123
+#define OLD_CONTEXT_UID_CONTEXTNETWORKTEST  0x10208124
+#define OLD_CONTEXT_UID_CONTEXTSENSORDATA   0x10208125
+#define OLD_CONTEXT_UID_CONTEXTMEDIATEST	0x10208126
+#define OLD_CONTEXT_UID_BTAP		0x10208127
+#define OLD_CONTEXT_UID_CONTEXTUI		0x10208128
+#define OLD_CONTEXT_UID_CONTEXTMEDIADATA	0x10208129
+#define OLD_CONTEXT_UID_FLICKR_AUTH		0x1020812A
+#define OLD_CONTEXT_UID_SPANE		0x1020812B
+#define OLD_CONTEXT_UID_GSMAUDIO		0x1020812C
+
+/* 
+ * range 5: 0x20000411 - 0x20000424
+ */
+
+#define OLD_CONTEXT_UID_CONTACTS_STARTER	0x20000411
+#define OLD_CONTEXT_UID_CONTEXTFLICKR	0x20000412
+#define OLD_CONTEXT_UID_CONTEXTMEDIAUI	0x20000412
+#define OLD_CONTEXT_UID_CONTEXTMENU		0x20000413
+
+#define OLD_CONTEXT_UID_GSMAUDIO_TEST	0x20000415
+#define OLD_CONTEXT_UID_SETTINGS		0x20000416
+#define OLD_CONTEXT_UID_SHUTTER		0x20000417
+#define OLD_CONTEXT_UID_EXPAT		0x20000418
+#define OLD_CONTEXT_UID_CONTEXTCONTACTSUI	0x20000419
+#define OLD_CONTEXT_UID_S80AVKON		0x2000041A
+#define OLD_CONTEXT_UID_NETMON		0x2000041B
+#define OLD_CONTEXT_UID_HWTRICKS		0x2000041C
+#define OLD_CONTEXT_UID_CONTEXTBLUE		0x2000041D
+#define OLD_CONTEXT_UID_BLACKBOARDREMOTE	0x2000041E
+#define OLD_CONTEXT_UID_CONTEXTCOMMSENSORS  0x2000041F

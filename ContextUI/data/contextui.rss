@@ -1,0 +1,6 @@
+#include <avkon.rsg>
+#include <avkon.rh>
+#ifndef __S80__
+#include <avkon.mbg>
+#endif
+#include "contextui_common.rss"

@@ -1,0 +1,148 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+
+#ifndef TESTBUILD
+TARGET            ContextUI.dll
+TARGETTYPE        dll
+UID               0x1000008d CONTEXT_UID_CONTEXTUI
+START ARMI
+TARGETPATH	  \system\libs
+END
+START THUMB
+TARGETPATH	  \system\libs
+END
+
+DEFFILENAME(ContextUi)
+
+#endif
+
+SOURCEPATH        ..\src
+SOURCE SettingsView.cpp
+#ifndef TESTBUILD
+SOURCE		dll.cpp
+#endif
+SOURCE		cu_errorui.cpp
+SOURCE		emptytext.cpp
+SOURCE		cu_busy.cpp
+SOURCE		icons.cpp
+SOURCE		hintbox.cpp
+SOURCE		cu_sendmsg.cpp
+SOURCE		cu_cellnaming.cpp
+SOURCE		cu_common.cpp
+SOURCE		cu_systemapp.cpp
+SOURCE      cu_shortcutreplacer.cpp
+SOURCE		cu_buffer_icon.cpp
+SOURCE		ccu_utils.cpp
+SOURCE      cu_launchersettingitem.cpp
+SOURCE      cu_dynamicsettings.cpp
+SOURCE      cu_autosettings.cpp
+SOURCE      cu_resourcereaders.cpp
+SOURCE      cu_queries.cpp
+
+LANG     01 09
+#ifndef __S60V3__
+SYSTEMRESOURCE ..\data\contextui.rss
+#else
+START RESOURCE ..\data\contextui.rss
+TARGETPATH \resource
+HEADER
+END RESOURCE
+#endif
+
+
+USERINCLUDE ..\inc
+USERINCLUDE ..\..  ..\..\context
+USERINCLUDE ..\..\ContextCommon2\inc ..\..\ContextSensors\inc ..\..\ContextCommon\inc ..\..\BlackBoard\inc ..\..\expat\lib ..\..\ContextClient\inc ..\..\blackboardclient\inc
+
+SYSTEMINCLUDE     \epoc32\include \epoc32\include\libc
+
+LIBRARY eikcore.lib
+LIBRARY edbms.lib blackboardclient.lib blackboarddata.lib
+LIBRARY CONE.LIB
+LIBRARY COMMDB.LIB
+LIBRARY euser.lib
+LIBRARY avkon.lib
+LIBRARY contextcommon2.lib
+LIBRARY contextcommon.lib
+LIBRARY contextsensordata.lib
+LIBRARY eikcoctl.lib
+
+LIBRARY bafl.lib
+LIBRARY pbkeng.lib
+LIBRARY etext.lib
+LIBRARY eikctl.lib
+LIBRARY efsrv.lib 
+#if !defined(__S60V3__) && !defined(__S60V2FP3__)
+LIBRARY Sendnorm.lib
+#endif
+
+LIBRARY sendui.lib 
+
+#ifdef __S60V2__
+LIBRARY sysutil.lib
+#endif
+
+LIBRARY estor.lib
+LIBRARY EIKDLG.LIB
+// Ws
+LIBRARY ws32.lib
+LIBRARY fbscli.lib 
+//icon lib
+LIBRARY egul.lib
+LIBRARY msgs.lib BCardEng.lib PbkView.lib cntmodel.lib
+LIBRARY etel.lib
+LIBRARY apgrfx.lib
+LIBRARY apparc.lib
+#ifdef __S60V3__
+LIBRARY aknicon.lib 
+LIBRARY commsdat.lib
+LIBRARY tagma.lib
+LIBRARY form.lib
+LIBRARY aknskins.lib aknskinsrv.lib aknswallpaperutils.lib
+#endif

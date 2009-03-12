@@ -1,0 +1,16 @@
+;SymbianosunitUrel.pkg
+;Copyright (c) Penrillian Ltd 2003-2006. Allrights reserved
+;Web: www.penrillian.com
+;Language - standard language definitions
+&EN
+
+#{"Symbianosunit"},(0x101FADF4),1,01,0
+
+;All SIS packages for the P80x platform will need to include the following
+;line in their package files:
+(0x101F80BE), 1, 0, 0, {"SonyEricssonP80xPlatformProductID"}
+
+"\Symbian\uiq_21\epoc32\release\armi\urel\symbianosunit.app"-"!:\system\apps\symbianosunit\symbianosunit.app"
+"\Symbian\UIQ_21\epoc32\data\z\system\APPS\SYMBIANOSUNIT\symbianosunit.rsc"-"!:\system\apps\symbianosunit\symbianosunit.rsc"
+"\Symbian\UIQ_21\epoc32\data\z\system\apps\SYMBIANOSUNIT\symbianosunit.aif"-"!:\system\apps\symbianosunit\symbianosunit.aif"
+

@@ -1,0 +1,6 @@
+&EN,FI
+#{"Meaning authentication token", "Merkitys authentication token"},(0x20006EDF),5,20,0
+[0x101F7961], 0, 0, 0, {"S60ProductID", "S60ProductID"}
+%{"Jaiku Ltd", "Jaiku Oy"}
+:"Jaiku"
+"system\data\context\flickr_auth_token.txt"-"!:\system\data\context\flickr_auth_token.txt"

@@ -1,0 +1,16 @@
+/c24,8 ..\svg\welcome_focus_active.svg
+/c24,8 ..\svg\welcome_focus_inactive.svg
+/c24,8 ..\svg\welcome_header_background.svg
+/c24,8 ..\svg\welcome_header_logo.svg
+/c24,8 ..\svg\welcome_header_text_accesspoint.svg
+/c24,8 ..\svg\welcome_header_text_bluetooth.svg
+/c24,8 ..\svg\welcome_header_text_calendar.svg
+/c24,8 ..\svg\welcome_header_text_login.svg
+/c24,8 ..\svg\welcome_header_text_yournumber.svg
+/c24,8 ..\svg\welcome_header_text_internet.svg
+/c24,8 ..\svg\welcome_header_text_autostart.svg
+/c24,8 ..\svg\welcome_header_battery_usage.svg
+/c24,8 ..\svg\welcome_jaiku_logo.svg
+/c24,8 ..\svg\welcome_peacehand.svg
+/c24,8 ..\svg\welcome_text_congratulations.svg
+/c24,8 ..\svg\welcome_text_welcometojaiku.svg

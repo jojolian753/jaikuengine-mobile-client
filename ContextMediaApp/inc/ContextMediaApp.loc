@@ -1,0 +1,6 @@
+#ifdef LANGUAGE_01
+#include "contextmediaapp.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextmediaapp.l09"
+#endif

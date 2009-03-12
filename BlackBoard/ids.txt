@@ -1,0 +1,4 @@
+
+1-20 in bbtypes.h
+21	md5hash
+22	uuid

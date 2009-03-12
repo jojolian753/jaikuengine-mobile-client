@@ -1,0 +1,5 @@
+PRJ_PLATFORMS
+WINS WINSCW
+PRJ_MMPFILES
+alloctrace.mmp
+alloctracetest.mmp

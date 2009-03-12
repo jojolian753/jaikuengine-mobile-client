@@ -1,0 +1,23 @@
+// BLD.INF
+//
+// For SymbianOSUnit
+//
+// Copyright (c) 2003 Penrillian Ltd.  All rights reserved.
+//
+
+
+PRJ_MMPFILES
+
+makefile extratestbuildtasks.bldmake
+SymbianOSUnit.mmp
+
+PRJ_EXPORTS
+/* For normal exports, the base source directory is the one containing BLD.INF; 
+   the base destination directory is (probably) EPOC32\Build
+
+#define INS_TARGET(a,b) a##UIQ\##b
+#define ADD_ROOT(a) ..\..\EPOC32\##a
+
+#include "..\..\..\..\group\exports.inc"
+
+*/

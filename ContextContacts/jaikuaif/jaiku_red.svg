@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 88 88">
+<g>
+<g>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8694" stroke-miterlimit="3.8637" d="M81.938,43.137    c0,24.619-22.226,39.464-44.186,39.464l-3.542-6.156c-14.988,0-29.896-16.008-29.896-32.483c0-18.039,15.806-36.626,40.262-36.626    C69.581,7.334,81.938,27.524,81.938,43.137z"/>
+<path fill="#F00000" stroke="#B8B8B8" stroke-width="0.8694" stroke-miterlimit="3.8637" d="M77.482,43.451    c0,21.982-20.942,33.895-36.328,34.363l-3.535-5.311c-16.036,0-29.107-13.605-29.107-28.319c0-16.107,14.112-32.361,35.952-32.361    C64.764,11.824,77.482,29.509,77.482,43.451z"/>
+<path fill="url(#XMLID_24_)" d="M69.57,40.435c5.174-3.711-5.342-23.993-25.911-24.352c-22.518-0.395-32.417,21.639-27.495,25.412    C29.122,51.43,53.533,51.939,69.57,40.435z"/>
+<path fill="none" d="M69.57,40.435c5.174-3.711-5.342-23.993-25.911-24.352c-22.518-0.395-32.417,21.639-27.495,25.412    C29.122,51.43,53.533,51.939,69.57,40.435z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8693" stroke-miterlimit="3.8637" d="M37.663,65.516    c3.876,0,9.003-3.252,9.003-8.731c0-5.481,0-23.125,0-23.125h-5.508c0,0,0,20.967,0,22.946c0,1.979-2.974,4.443-5.626,4.443    L37.663,65.516z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.8693" stroke-miterlimit="3.8637" d="M43.629,22.263    c2.12,0.038,3.809,1.769,3.771,3.864c-0.034,2.096-1.78,3.764-3.9,3.726c-2.119-0.038-3.81-1.768-3.773-3.864    C39.764,23.893,41.51,22.225,43.629,22.263z"/>
+<defs>
+<linearGradient id="XMLID_24_" gradientUnits="userSpaceOnUse" x1="26.1021" y1="803.6855" x2="26.102" y2="770.7578" gradientTransform="matrix(1 0 0 1 16.7998 -754.6797)">
+<stop offset="0" style="stop-color:#F00000"/>
+<stop offset="1" style="stop-color:#FBBCBC"/>
+</linearGradient>
+</defs>
+</g>
+<g>
+<g>
+<rect fill="none" width="88" height="88"/>
+</g>
+</g>
+</g>
+</svg>

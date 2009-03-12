@@ -1,0 +1,255 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+#include "..\..\contextvariant.hrh"
+
+TARGET            ContextCommon.dll
+TARGETTYPE        dll
+UID               0x1000008d CONTEXT_UID_CONTEXTCOMMON
+DEFFILENAME(ContextCommon)
+
+SOURCEPATH        ..\src
+SOURCE		  xmlbuf.cpp
+SOURCE		  dll.cpp
+SOURCE		  app_context.cpp db.cpp settings.cpp
+SOURCE		  store.cpp symbian_store.cpp symbian_tree.cpp pointer.cpp
+SOURCE		  xml.cpp 
+SOURCE		  timeout.cpp independent.cpp connectioninit.cpp
+SOURCE		  checkedactive.cpp
+SOURCE		  file_output_base.cpp
+SOURCE		  jabberdata.cpp
+SOURCE		  symbian_auto_ptr.cpp
+SOURCE		  errorhandling.cpp errorinfo.cpp
+SOURCE		  symbian_refcounted_ptr.cpp
+SOURCE		  circular.cpp
+SOURCE		  mutexrequest.cpp
+SOURCE		  stringarg.cpp
+SOURCE		  reporting.cpp
+SOURCE		  ntpconnection.cpp
+SOURCE		  cc_schedulers.cpp
+SOURCE		  break.cpp
+SOURCE		  server_startup.cpp
+SOURCE		  alerter.cpp
+SOURCE		  phonehelper.cpp
+SOURCE		  cc_imei.cpp
+SOURCE        md5.cpp
+SOURCE        cc_processmanagement.cpp
+SOURCE		  cc_recovery.cpp
+SOURCE		  cc_component.cpp
+SOURCE        stringmap.cpp
+SOURCE        cc_uuid.cpp
+SOURCE		  sha1.cpp
+SOURCE        cc_componentname.cpp
+SOURCE        testsupport.cpp
+
+LANG     01 09
+#ifndef __S60V3__
+SYSTEMRESOURCE ..\data\contextcommon.rss
+#else
+START RESOURCE ..\data\contextcommon.rss
+TARGETPATH \resource
+HEADER
+END RESOURCE
+#endif
+
+
+USERINCLUDE       ..\inc
+
+SYSTEMINCLUDE     \epoc32\include \epoc32\include\libc ..\..\expat\symbian ..\..\expat\lib ..\..\ContextNotifyClient\inc ..\.. ..\..\no_sendo_inc
+//EXPORTUNFROZEN
+LIBRARY           euser.lib
+#if !defined(WINS) && !defined(__S60V3__)
+LIBRARY gsmbas.lib 
+#endif
+#ifndef __S60V3__
+#ifndef WINS
+// GSM
+// call handling
+//LIBRARY gsmadv.lib
+LIBRARY profileengine.lib filelist.lib
+#endif
+#endif
+LIBRARY etel.lib commonengine.lib 
+LIBRARY etext.lib SENDUI.LIB
+LIBRARY msgs.lib
+// file ops
+LIBRARY charconv.lib efile.lib efsrv.lib
+LIBRARY bafl.lib 
+#ifndef __S60V3__
+// system agent
+LIBRARY SYSAGT.LIB
+// imei
+LIBRARY plpvariant.lib
+#endif
+#if defined(__S60V3__) || defined(__S60V2FP3__)
+LIBRARY etel3rdparty.lib
+#endif
+// db
+LIBRARY EDBMS.LIB ESTOR.LIB
+#ifndef __S80__
+// notifier
+LIBRARY AKNNOTIFY.LIB
+#endif
+LIBRARY contextexpat.lib
+
+//eiklabel
+LIBRARY eikcoctl.lib
+LIBRARY cntmodel.lib 
+
+// connection opening
+LIBRARY COMMDB.LIB ESOCK.LIB insock.lib flogger.lib
+
+LIBRARY apgrfx.lib apmime.lib  ws32.lib
+LIBRARY apparc.lib
+LIBRARY EIKCORE.LIB
+LIBRARY estlib.lib
+LIBRARY cone.lib
+LIBRARY MediaClientAudio.lib
+
+#ifdef __S60V3__
+LIBRARY BitmapTransforms.lib
+LIBRARY etel3rdparty.lib
+LIBRARY centralrepository.lib
+#ifndef WINS
+LIBRARY mmfcontrollerframework.lib
+#endif
+LIBRARY ecom.lib
+LIBRARY commsdat.lib
+LIBRARY tagma.lib
+LIBRARY form.lib
+LIBRARY avkon.lib
+SYSTEMINCLUDE \epoc32\include\mmf\plugin
+#endif
+
+
+
+START BITMAP contextcommon.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+#ifdef __JAIKU__	
+	SOURCE 1  lookup.bmp
+#else
+	SOURCE c8 speaker_off.bmp
+	SOURCE 1  speaker_off_mask.bmp
+	SOURCE c8 speaker_on.bmp
+	SOURCE 1  speaker_on_mask.bmp
+	SOURCE c8 user_active.bmp
+	SOURCE 1  user_active_mask.bmp
+	SOURCE c8 vibrator_on.bmp
+	SOURCE 1  vibrator_on_mask.bmp
+	SOURCE c8 vibrator_off.bmp
+	SOURCE 1  vibrator_off_mask.bmp
+	SOURCE c8 user_inactive.bmp
+	SOURCE 1  user_inactive_mask.bmp
+	SOURCE c8 user_inactive_lvl_1.bmp
+	SOURCE c8 user_inactive_lvl_2.bmp
+	SOURCE c8 user_inactive_lvl_3.bmp
+	SOURCE c8 speaker_off_grey.bmp
+	SOURCE 1  speaker_off_grey_mask.bmp
+	SOURCE c8 speaker_on_grey.bmp
+	SOURCE 1  speaker_on_grey_mask.bmp 
+	SOURCE c8 vibrator_off_grey.bmp
+	SOURCE 1  vibrator_off_grey_mask.bmp
+	SOURCE c8 vibrator_on_grey.bmp
+	SOURCE 1  vibrator_on_grey_mask.bmp
+	SOURCE c8 buddy1.bmp
+	SOURCE 1  buddy1_mask.bmp
+	SOURCE c8 buddy2.bmp
+	SOURCE 1  buddy2_mask.bmp
+	SOURCE c8 buddy3.bmp
+	SOURCE 1  buddy3_mask.bmp
+	SOURCE c8 buddy4.bmp
+	SOURCE 1  buddy4_mask.bmp
+	SOURCE c8 buddy1_grey.bmp
+	SOURCE c8 buddy2_grey.bmp
+	SOURCE c8 buddy3_grey.bmp
+	SOURCE c8 buddy4_grey.bmp
+	SOURCE c8 other1.bmp
+	SOURCE c8 other2.bmp
+	SOURCE c8 other3.bmp
+	SOURCE c8 other4.bmp
+	SOURCE c8 other1_grey.bmp
+	SOURCE c8 other2_grey.bmp
+	SOURCE c8 other3_grey.bmp
+	SOURCE c8 other4_grey.bmp
+
+	SOURCE c8 laptop.bmp
+	SOURCE c8 laptop_grey.bmp
+	SOURCE 1  laptop_mask.bmp
+	SOURCE c8 desktop.bmp
+	SOURCE c8 desktop_grey.bmp
+	SOURCE 1  desktop_mask.bmp
+	SOURCE c8 pda.bmp
+	SOURCE c8 pda_grey.bmp
+	SOURCE 1  pda_mask.bmp
+
+	SOURCE c8 calendar.bmp
+	SOURCE c8 calendar_grey.bmp
+	SOURCE 1  calendar_mask.bmp
+#endif // ! __JAIKU__ 
+END
+
+#ifdef __S60V3__
+LIBRARY FeatDiscovery.lib centralrepository.lib
+#endif
+
+
+#if defined(__S60V3__) && defined(WINS)
+START WINS
+WIN32_LIBRARY kernel32.lib
+END
+SOURCEPATH ..\..\alloctrace
+SOURCE logging.cpp
+SOURCE allocator.cpp
+USERINCLUDE ..\..\alloctrace
+#endif
