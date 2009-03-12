@@ -1,0 +1,5 @@
+PRJ_PLATFORMS
+WINC WINS THUMB
+PRJ_MMPFILES
+BlackBoardServer.mmp
+BlackBoard_test.mmp

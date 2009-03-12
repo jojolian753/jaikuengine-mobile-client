@@ -1,0 +1,35 @@
+;
+; Installation file for contextcontacts application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"ContextWelcome", "Noname"},(0x20006EE1),1,0,0
+
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductId"}
+;
+; Four files to install
+;
+{ 
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\contextwelcome\contextwelcome.r01"
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\contextwelcome\contextwelcome.r09"
+}-"!:\system\apps\contextwelcome\contextwelcome.rsc"
+{
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\contextwelcome\contextwelcome_caption.r01" 
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\contextwelcome\contextwelcome_caption.r09" 
+}-"!:\system\apps\contextwelcome\contextwelcome_caption.rsc"
+
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\contextwelcome\contextwelcome.aif"         -"!:\system\apps\contextwelcome\contextwelcome.aif"
+IF exists("z:\system\install\Series60v2.1.sis")
+"\Symbian\7.0s\Series60_v21\Epoc32\release\thumb\urel\contextwelcome.app"         -"!:\system\apps\contextwelcome\contextwelcome.app"
+ELSE
+"\Symbian\7.0s\Series60_v21\Epoc32\release\thumb\urel\contextwelcome.app"         -"!:\system\apps\contextwelcome\contextwelcome.app", FILERUN, RUNINSTALL
+ENDIF

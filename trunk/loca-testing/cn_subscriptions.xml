@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<subscriptions>
+	<component>
+		<!-- bblistener -->
+		<module_uid>0x1020811F</module_uid>
+		<module_id>1</module_id>
+	</component>
+	<tuplename>
+		<!-- cellid -->
+		<module_uid>0x1020811D</module_uid>
+		<module_id>1</module_id>
+	</tuplename>
+	<tuplename>
+		<!-- bt env -->
+		<module_uid>0x1020811D</module_uid>
+		<module_id>4</module_id>
+	</tuplename>
+	<tuplename>
+		<!-- battery -->
+		<module_uid>0x1020811D</module_uid>
+		<module_id>26</module_id>
+	</tuplename>
+	<tuplename>
+		<!-- charger -->
+		<module_uid>0x1020811D</module_uid>
+		<module_id>15</module_id>
+	</tuplename>
+	<tuplename>
+		<!-- network connectivity -->
+		<module_uid>0x1020811D</module_uid>
+		<module_id>16</module_id>
+	</tuplename>
+	<tuplename>
+		<!-- stop request -->
+		<module_uid>0x1020811F</module_uid>
+		<module_id>2</module_id>
+	</tuplename>
+</subscriptions>

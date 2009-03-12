@@ -1,0 +1,23 @@
+/*
+* ============================================================================
+*  Name     : bld.inf
+*  Part of  : sample project
+*  Created  : 20/10/2006 by vm,sj
+*  Description:
+*	 This file provides the template for a new project
+*  Version  :
+*  Copyright: Penrillian. All rights reserved
+*  Web      : www.penrillian.com
+* ============================================================================
+*/
+
+
+PRJ_MMPFILES
+
+YourProj.mmp
+
+
+PRJ_TESTMMPFILES
+
+makefile extratestbuildtasks.bldmake
+SymbianOSUnit.mmp

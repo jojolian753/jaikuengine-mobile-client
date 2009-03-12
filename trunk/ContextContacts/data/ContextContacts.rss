@@ -1,0 +1,984 @@
+/*
+ */
+
+//  RESOURCE IDENTIFIER
+NAME    AWIZ // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+#include "contextcontacts.hrh"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <contextcontactsui.mbg>
+#include <sdk_version.h>
+
+#include "scalableui_variant.h"
+#include "contextvariant.hrh"
+#include "jaiku_viewids.hrh"
+#include "ccn_settingitemid.hrh"
+
+#include <contextui.rsg>
+
+
+#include "context_log.loc"
+#include "contextcontacts.loc"
+#include "contextcontactsui.loc"
+#include "contextui.loc"
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="contextcontacts"; }
+
+RESOURCE EIK_APP_INFO
+    {
+// #ifdef GROUP_TAB
+//     status_pane = r_contextcontacts_status_pane;
+// #endif
+    }
+
+
+#if !defined(__SCALABLEUI_VARIANT_DEFINED__)
+#error You must include scalable_ui_variant.h correctly
+#endif 
+
+#ifdef __SCALABLEUI_VARIANT__
+
+#include "contextcontacts.rls"
+#include <appinfo.rh>
+RESOURCE LOCALISABLE_APP_INFO r_contextcontacts_localisable_app_info
+    {
+    short_caption = STRING_contextcontacts_caption_string;
+    caption_and_icon =
+    CAPTION_AND_ICON_INFO
+        {
+			caption = STRING_contextcontacts_caption_string;
+			
+			number_of_icons = 1;
+#ifdef __S60V3__ 
+			icon_file = "\\resource\\apps\\contextcontacts_aif.mif";
+#else
+			icon_file = "\\system\\apps\\contextcontacts\\contextcontacts_aif.mif";
+#endif
+        };
+    }
+
+#endif
+
+//----------------------------------------------------
+//   
+//    r_contextcontacts_view_contacts
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_contextcontacts_view_contacts
+    {
+		menubar=r_jaiku_contact_list_view_menubar;
+		cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+    }
+
+
+//----------------------------------------------------
+//   
+//    r_contextcontacts_view_contacts_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+
+
+RESOURCE MENU_PANE r_message_menu
+{
+	items= 
+	{
+/*
+	MENU_ITEM { command=EContextContactsCmdCreateSms; txt=CC_CREATE_SMS; },
+	MENU_ITEM { command=EContextContactsCmdCreateMms; txt=CC_CREATE_MMS; },
+	MENU_ITEM { command=EContextContactsCmdCreateEmail; txt=CC_CREATE_EMAIL; }
+*/
+	};
+}
+
+
+
+RESOURCE STATUS_PANE_APP_MODEL r_contextcontacts_status_pane
+    {
+	panes=
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidNavi;
+			type = EAknCtNaviPane;
+			resource = r_contextcontacts_navi_decorator;
+			}
+		};
+    }
+    
+//----------------------------------------------------
+//   
+//    r_contextcontacts_navi_decorator
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE NAVI_DECORATOR r_contextcontacts_navi_decorator
+{
+	type = ENaviDecoratorControlTabGroup;
+	control = TAB_GROUP
+	{
+		tab_width = EAknTabWidthWithTwoTabs;
+		active = 0;
+		tabs = 
+		{
+			TAB
+			{
+				id = EContextContactsViewContactsTab; // from application hrh
+// 				bmpfile = "\\system\\data\\contextcontacts.mbm";
+// 				bmpid = EMbmContextcontactsContacts;
+// 				bmpmask = EMbmContextcontactsContacts_mask;
+			},
+			TAB
+			{
+				id = EContextContactsViewGroupsTab;
+// 				bmpfile = "\\system\\data\\contextcontacts.mbm";
+// 				bmpid = EMbmContextcontactsGroups;
+// 				bmpmask = EMbmContextcontactsGroups_mask;
+			}
+		};
+	};
+}
+	
+//-----------------------------------------------
+// Detailed view
+//-----------------------------------------------
+
+RESOURCE AVKON_VIEW r_contextcontacts_detail_view
+    {
+    menubar=r_contextcontacts_menubar_detail_view;  
+    cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+    }	
+    
+RESOURCE MENU_BAR r_contextcontacts_menubar_detail_view
+    {
+		titles=
+			{
+			MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+			MENU_TITLE { menu_pane=r_contextcontacts_detail_view_menu; txt="View"; }
+			};
+    }
+    
+RESOURCE MENU_BAR r_contextcontacts_menubar_detail_specific_view
+{
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_contextcontacts_detail_view_specific_menu; txt="v"; }
+        };
+}
+
+RESOURCE MENU_BAR r_contextcontacts_menubar_click_on_contact
+{
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_contextcontacts_menubar_click_on_contact_menu; txt="v"; }
+        };
+}
+    
+RESOURCE MENU_PANE r_contextcontacts_detail_view_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EContextContactsCmdCall; txt=CC_CALL; },
+#ifdef __S60V3__ 
+        MENU_ITEM { command=EContextContactsMenuMsg; txt = CC_CREATE_MSG; },
+#else
+        MENU_ITEM { cascade=r_message_menu; command=EContextContactsMenuMsg; txt = CC_CREATE_MSG; },
+#endif
+        MENU_ITEM { command=EContextContactsCmdGoToWeb; txt=CC_GO_TO_WEB; },
+        MENU_ITEM { command=EContextContactsCmdEdit; txt=CC_EDIT; },
+        MENU_ITEM { command=EContextContactsCmdDelete; txt=CC_LOC_DELETE_DETAIL; },
+        MENU_ITEM { command=EContextContactsCmdDefaults; txt=CC_DEFAULTS; },
+        MENU_ITEM { command=EContextContactsCmdInvite; txt = CC_INVITE;},
+        MENU_ITEM { command=EContextContactsCmdAddJabber; txt = CC_ADD_JABBER; }
+   // ringtone
+   // voice tag
+   // speed dial
+   //
+    //    MENU_ITEM { command=EContextContactsCmdCopyToSim; txt=CC_COPY_TO_SIM; }
+        };
+    }
+    
+RESOURCE MENU_PANE r_contextcontacts_menubar_click_on_contact_menu
+    {
+    items=
+        {
+             MENU_ITEM { command=EContextContactsCmdOpen; txt=CC_OPEN; },
+             MENU_ITEM { command=EContextContactsCmdPresenceDetails; txt = CC_PRESENCE_DETAILS;}
+       };
+    }
+    
+RESOURCE MENU_PANE r_contextcontacts_detail_view_specific_menu
+    {
+    items=
+        {
+             MENU_ITEM { command=EContextContactsCmdCall; txt=CC_CALL; },
+#ifndef __S60V3__
+             MENU_ITEM { cascade=r_message_current_menu; command=EContextContactsMenuMsgCurrent; txt = CC_CREATE_MSG; },
+#else
+             MENU_ITEM { command=EContextContactsMenuMsgCurrent; txt = CC_CREATE_MSG; },
+#endif
+             MENU_ITEM { command=EContextContactsCmdGoToWeb; txt=CC_GO_TO_WEB; },
+             MENU_ITEM { command=EContextContactsCmdEdit; txt=CC_EDIT; }
+            
+        };
+    }
+    
+RESOURCE MENU_PANE r_message_current_menu
+{
+	items= 
+	{
+	MENU_ITEM { command=EContextContactsCmdCreateSms; txt=CC_CREATE_SMS; },
+	MENU_ITEM { command=EContextContactsCmdCreateMms; txt=CC_CREATE_MMS; },
+	MENU_ITEM { command=EContextContactsCmdCreateEmail; txt=CC_CREATE_EMAIL; }
+	};
+}  
+
+
+RESOURCE DIALOG r_confirmation_query
+{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+	items=
+	{
+		DLG_LINE
+		{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+			{
+			};
+		},
+		DLG_LINE
+		{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+	};
+}  
+
+RESOURCE DIALOG r_contacts_info
+{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+	{
+		DLG_LINE
+		{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+			{
+			};
+		},
+		DLG_LINE
+		{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+	};
+}
+
+RESOURCE CBA r_default_popup_cba
+{
+	buttons =
+	{
+		CBA_BUTTON {id=EContextContactsCmdAssign; txt = CC_ASSIGN;},
+		CBA_BUTTON {id=EAknSoftkeyBack; txt = CC_BACK; }
+	};
+}
+
+RESOURCE CBA r_select_none_cba
+{
+	buttons =
+	{
+		CBA_BUTTON {id=EAknSoftkeyOk; txt = CC_SELECT;},
+		CBA_BUTTON {id=EAknSoftkeyBack; txt = CC_NONE; }
+	};
+}
+
+RESOURCE DIALOG r_cb_nick_dialog
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagFillAppClientRect |
+            EEikDialogFlagNoTitleBar | EEikDialogFlagNoBorder |
+            EEikDialogFlagCbaButtons;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    form = r_cb_nick_form;
+    }
+
+RESOURCE DIALOG r_cb_nick_dialog_readonly
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagFillAppClientRect |
+            EEikDialogFlagNoTitleBar | EEikDialogFlagNoBorder |
+            EEikDialogFlagCbaButtons;
+    buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+    form = r_cb_nick_form;
+    }
+
+RESOURCE FORM r_cb_nick_form
+    {
+	flags = EEikFormUseDoubleSpacedFormat;
+    items =
+        {
+		DLG_LINE
+			{
+            type = EEikCtEdwin;
+			prompt = CB_CONTACT;
+			id = 1;
+			itemflags = EEikDlgItemAsLabel | EEikDlgItemNonFocusing;
+			control = EDWIN
+				{
+                flags = EEikEdwinNoHorizScrolling | EEikEdwinReadOnly | EEikEdwinDisplayOnly;
+                width = 50;
+                lines = 1;
+                maxlength = 50;
+				};
+			},
+        DLG_LINE
+            {
+            type = EEikCtEdwin;
+            prompt = CB_NICK;
+            id = 2;
+            itemflags = EEikDlgItemTakesEnterKey | EEikDlgItemOfferAllHotKeys;
+            control = EDWIN
+                {
+                flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+				default_case = EAknEditorLowerCase;
+				numeric_keymap = EAknEditorStandardNumberModeKeymap;
+				special_character_table = R_AVKON_SPECIAL_CHARACTER_TABLE_DIALOG;
+					avkon_flags = EAknEditorFlagDefault;
+                width = 50;
+                lines = 2;
+                maxlength = 50;
+                };
+            } /*,
+        DLG_LINE
+            {
+            type = EAknCtPopupFieldText;
+            prompt = "Detail";
+            id = 3;
+            itemflags = EEikDlgItemTakesEnterKey | EEikDlgItemOfferAllHotKeys;
+            control = POPUP_FIELD_TEXT
+                {
+				popupfield = POPUP_FIELD {
+					width=10;
+					};
+                textarray = r_boolean_texts;
+                };
+            } */
+		};
+    }
+    
+  RESOURCE ARRAY r_boolean_texts
+    {
+    items =
+        {
+        LBUF
+            {
+            txt = "Yes";
+            },
+        LBUF
+            {
+            txt = "No";
+            }
+		};
+	}
+RESOURCE CBA r_cba_t9enabled_ok_cancel
+{	
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EAknSoftkeyOptions; txt = "OK"; },
+		CBA_BUTTON { id=EAknSoftkeyCancel; txt = "Cancel"; }
+		} ;
+}
+ 
+// REMOVEME: moved to ccu 
+RESOURCE DIALOG r_context_contacts_set_user_given
+  {
+  flags = EGeneralQueryFlags;
+  buttons = r_cba_t9enabled_publish_cancel;
+  items =
+    {
+    DLG_LINE
+      {
+      type = EAknCtQuery;
+      id = EGeneralQuery;
+      control = AVKON_DATA_QUERY
+        {
+        layout = EDataLayout;
+        control = EDWIN
+          {
+          };
+        };
+      }
+    };
+  } 
+
+
+
+
+
+RESOURCE TBUF R_DELETE {buf=CC_DELETE;}
+RESOURCE TBUF R_UNMARK { buf=CC_UNMARK; }
+
+RESOURCE TBUF R_DEFAULTS {buf=CC_DEFAULTS;}
+RESOURCE TBUF R_DEFAULT_PHONE {buf=CC_DEFAULT_PHONE;}
+RESOURCE TBUF R_DEFAULT_SMS {buf=CC_DEFAULT_SMS;}
+RESOURCE TBUF R_DEFAULT_MMS {buf=CC_DEFAULT_MMS;}
+RESOURCE TBUF R_DEFAULT_EMAIL {buf=CC_DEFAULT_EMAIL;}        
+RESOURCE TBUF R_NO_DEFAULT {buf=CC_NO_DEFAULT;}  
+RESOURCE TBUF R_CONTACTS_INFO_BUF {buf=CC_CONTACTS_INFO;}
+RESOURCE TBUF R_CONTACTS_TITLE {buf=CC_LONG_CAPTION;}
+
+RESOURCE TBUF R_CONTACTS_NO_SMS {buf=CC_NO_SMS;}
+RESOURCE TBUF R_CONTACTS_NO_MMS {buf=CC_NO_MMS;}
+RESOURCE TBUF R_CONTACTS_NO_EMAIL {buf=CC_NO_EMAIL;}
+
+RESOURCE TBUF R_CONTACTS_set_user_given { buf=CL_CPT_SET_USER_GIVEN; }
+
+RESOURCE TBUF R_TXT_PRIVACYSTATEMENT_NOT_ACCEPTED { buf="You must accept the privacy statement before using Jaiku"; }
+RESOURCE TBUF R_TXT_WELCOME_NOT_COMPLETED { buf="You must complete the Welcome process before using Jaiku"; }
+
+
+
+RESOURCE TAB_GROUP r_contact_level_tab_group
+{
+    tab_width = EAknTabWidthWithTwoTabs;  // Two tabs
+	active = 0;
+    tabs =
+		{
+			TAB
+			{
+				id = JAIKU_AUTHORFEED_VIEWID;
+#ifdef __S60V3__
+ 				bmpfile = "\\resource\\contextcontactsui.mif";
+ 				bmpid = EMbmContextcontactsuiTab_contact_feed;
+ 				bmpmask = EMbmContextcontactsuiTab_contact_feed_mask;
+#else
+				txt = "Feed";
+#endif
+			},
+			TAB
+			{
+				id = JAIKU_CONTACTCARD_VIEWID;
+#ifdef __S60V3__
+ 				bmpfile = "\\resource\\contextcontactsui.mif";
+ 				bmpid = EMbmContextcontactsuiTab_contact_details;
+ 				bmpmask = EMbmContextcontactsuiTab_contact_details_mask;
+#else
+				txt = "Details";
+#endif
+
+			}
+		};
+}
+
+
+RESOURCE AVKON_VIEW r_bt_dev_set_view
+{
+	menubar=r_bt_dev_set_view_menubar_view;  
+	cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;    
+}
+
+
+RESOURCE MENU_BAR r_bt_dev_set_view_menubar_view
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_bt_dev_set_view_view_menu; txt="bt_dev_view"; }
+        };
+    }
+    
+RESOURCE MENU_PANE r_bt_dev_set_view_view_menu
+{
+    items=
+        {
+			MENU_ITEM { command=EContextContactsAddDevice; txt = "Add device"; },
+			MENU_ITEM { command=EContextContactsDeleteDevice; txt="Remove device"; }
+        };
+}
+
+RESOURCE TBUF r_txt_disconnecting_jaiku
+{
+	buf = CC_LOC_DISCONNECTING_JAIKU;
+}
+
+
+
+RESOURCE TBUF R_TEXT_NO_CONTACT_CARD {buf=CC_LOC_NO_CONTACT_CARD;}
+
+RESOURCE CBA r_cba_t9enabled_publish_cancel
+{
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EAknSoftkeyOptions; txt = "Publish"; },
+		CBA_BUTTON { id=EAknSoftkeyCancel; txt = "Cancel"; }
+		} ;
+}
+
+RESOURCE DIALOG r_emptyback_query_dialog
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_BACK;
+    items=
+		{
+        DLG_LINE
+        {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+RESOURCE TBUF R_TEXT_ABOUT_JAIKU_HEADER {buf=CC_LOC_ABOUT_JAIKU_HEADER;}
+
+
+RESOURCE AVKON_VIEW r_yourcontactsstream_view
+{
+	menubar = r_yourcontactsstream_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+RESOURCE MENU_BAR r_yourcontactsstream_view_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+		MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+		MENU_TITLE { menu_pane=r_yourcontactsstream_view_menupane; txt="View"; },
+		MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+		MENU_TITLE { menu_pane=r_jaiku_go_online_menu;        txt="Go Online"; }
+        };
+    }
+
+RESOURCE MENU_PANE r_yourcontactsstream_view_menupane
+{
+	items =
+		{		
+			MENU_ITEM { command=EContextContactsCmdSetUserDesc; txt = CC_USER_GIVEN;},
+			MENU_ITEM { command=EContextContactsCmdPostComment; txt = CC_LOC_POST_COMMENT; },
+			MENU_ITEM { command=EContextContactsCmdMarkAllAsRead; txt = CC_LOC_MARK_ALL_AS_READ;}
+		};
+}
+
+
+// REMOVEME: moved to ccu 
+RESOURCE DIALOG r_context_contacts_post_comment
+{
+	flags = EGeneralQueryFlags;
+	buttons = r_cba_t9enabled_publish_cancel;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EDataLayout;
+					control = EDWIN
+					{
+						lines = 4;
+					};
+				};
+			}
+		};
+} 
+
+
+
+RESOURCE AVKON_VIEW r_feedbyauthor_view
+{
+	menubar = r_feedbyauthor_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+RESOURCE MENU_BAR r_feedbyauthor_view_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+		MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+		MENU_TITLE { menu_pane=r_feedbyauthor_view_menupane; txt="View"; },
+		MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+		MENU_TITLE { menu_pane=r_jaiku_go_online_menu;        txt="Go Online"; }
+        };
+    }
+
+RESOURCE MENU_PANE r_feedbyauthor_view_menupane
+{
+	items =
+		{		
+			MENU_ITEM { command=EContextContactsCmdSetUserDesc; txt = CC_USER_GIVEN;},
+			MENU_ITEM { command=EContextContactsCmdAppNameLocation; txt = CC_NAME_LOCATION; },
+			MENU_ITEM { command=EContextContactsCmdPostComment; txt = CC_LOC_POST_COMMENT; }
+		};
+}
+
+
+
+
+RESOURCE TAB_GROUP r_main_level_tab_group
+{
+    tab_width = EAknTabWidthWithTwoTabs;  // Two tabs
+	active = 0;
+    tabs =
+		{
+			TAB
+			{
+				id = JAIKU_CONTACTS_VIEWID;
+#ifdef __S60V3__
+ 				bmpfile = "\\resource\\contextcontactsui.mif";
+ 				bmpid = EMbmContextcontactsuiTab_contacts;
+ 				bmpmask = EMbmContextcontactsuiTab_contacts_mask;
+#else
+				txt = "Contacts";
+#endif
+			},
+			TAB
+			{
+				id = JAIKU_EVERYBODYSFEED_VIEWID;
+#ifdef __S60V3__
+ 				bmpfile = "\\resource\\contextcontactsui.mif";
+ 				bmpid = EMbmContextcontactsuiTab_my_feed;
+ 				bmpmask = EMbmContextcontactsuiTab_my_feed_mask;
+#else
+				txt = "Jaikus";
+#endif
+			}
+		};
+}
+
+
+
+RESOURCE AVKON_VIEW r_comments_view
+{
+	menubar = r_comments_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+RESOURCE MENU_BAR r_comments_view_menubar
+    {
+    titles=
+        {
+			MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+			MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+			MENU_TITLE { menu_pane=r_comments_view_menupane; txt="View"; },
+			MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+			MENU_TITLE { menu_pane=r_jaiku_go_online_menu;        txt="Go Online"; }
+        };
+    }
+
+RESOURCE MENU_PANE r_comments_view_menupane
+{
+	items =
+		{		
+			MENU_ITEM { command=EContextContactsCmdDownloadImage; txt = "Download image"; },
+			MENU_ITEM { command=EContextContactsCmdPostComment; txt = CC_LOC_POST_COMMENT; }
+			//MENU_ITEM { command=EContextContactsCmdOpenUrl; txt="Open jaiku.comin browser"; }
+		};
+}
+
+
+
+
+RESOURCE AVKON_VIEW r_feedgroup_view
+{
+	menubar = r_feedgroup_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+RESOURCE MENU_BAR r_feedgroup_view_menubar
+    {
+    titles=
+        {
+			MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+			MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+			MENU_TITLE { menu_pane=r_feedgroup_view_menupane; txt="View"; },
+			MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+			MENU_TITLE { menu_pane=r_jaiku_go_online_menu;        txt="Go Online"; }
+        };
+    }
+
+RESOURCE MENU_PANE r_feedgroup_view_menupane
+{
+	items =
+		{
+			MENU_ITEM { command=EContextContactsCmdPostComment; txt = CC_LOC_POST_COMMENT; }
+		};
+}
+
+
+
+RESOURCE MENU_PANE r_jaiku_application_menu
+{
+	items=
+        {
+			MENU_ITEM { command=EContextContactsCmdSettings; txt = CC_SETTINGS; },
+			MENU_ITEM { command=EContextContactsCmdShutdown; txt = CC_EXIT; }
+        };
+}
+
+
+RESOURCE MENU_PANE r_jaiku_connection_menu
+{
+	items=
+        {
+			MENU_ITEM { command=EContextContactsCmdShowJabberError; txt = CC_LOC_SHOW_CONNECTION_ERROR; },
+			//			MENU_ITEM { command=EcontextContactsCmdAppResumePresence; txt=CL_RESUME_PRESENCE; },
+			MENU_ITEM { command=EcontextContactsCmdAppSuspendPresence; txt=CL_SUSPEND_PRESENCE; }
+        };
+}
+
+RESOURCE MENU_PANE r_jaiku_system_messages_menu
+{
+	items=
+        {
+			MENU_ITEM { command=EContextContactsCmdServerMessage; txt = CC_SERVERMESSAGE; }
+        };
+}
+
+// @deprecated
+RESOURCE MENU_PANE r_jaiku_temp_extras_menu
+    {
+    items=
+        {
+		};
+	}
+
+
+RESOURCE MENU_PANE r_jaiku_contacts_list_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EContextContactsCmdSetUserDesc; txt = CC_USER_GIVEN; },
+        MENU_ITEM { command=EContextContactsCmdOpen; txt = CC_OPEN; },
+        MENU_ITEM { command=EContextContactsCmdCall; txt = CC_CALL; },
+#ifndef __S60V3__
+        MENU_ITEM { cascade=r_message_menu; command=EContextContactsMenuMsg; txt = CC_CREATE_MSG; },
+#else
+        MENU_ITEM { command=EContextContactsMenuMsg; txt = CC_CREATE_MSG; },
+#endif
+        MENU_ITEM { command=EContextContactsCmdNew; txt = CC_NEW_CONTACT; },
+        MENU_ITEM { command=EContextContactsCmdDelete; txt = CC_DELETE; }
+        };
+}
+
+
+RESOURCE MENU_BAR r_jaiku_contact_list_view_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+		MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+		MENU_TITLE { menu_pane=R_AVKON_MENUPANE_MARKABLE_LIST; txt="Marking"; },	    
+		MENU_TITLE { menu_pane=r_jaiku_contacts_list_menu;     txt="Contact list"; },
+		MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+		MENU_TITLE { menu_pane=r_jaiku_go_online_menu;         txt="Go Online"; } 
+        };
+    }
+
+
+RESOURCE MENU_PANE r_bt_neighbourhood_menu
+    {
+    items=
+        {
+		MENU_ITEM { command=EContextContactsCmdBtFriends; txt="Friends"; },
+		MENU_ITEM { command=EContextContactsCmdBtLaptop;  txt="My laptop"; },
+		MENU_ITEM { command=EContextContactsCmdBtDesktop; txt="My desktop"; }
+		};
+    }
+
+
+RESOURCE MENU_PANE r_rich_presence_view_menupane
+{
+	items =
+		{	
+			// Actions 
+			MENU_ITEM { command=EContextContactsCmdAppNameLocation; txt = CC_NAME_LOCATION; },
+			MENU_ITEM { command=EContextContactsCmdBtNeighbourhoodSubmenu; cascade=r_bt_neighbourhood_menu; txt=CC_BT_NEIGHBOURHOOD; },
+			// Sharing 
+			MENU_ITEM { command=EContextContactsCmdSharingSettings;  txt = CC_LOC_SHARING_SETTINGS; },
+			
+			// Extra
+			MENU_ITEM { command=EContextContactsCmdEditJabber; txt = CC_LOC_EDIT_SCREEN_NAME; },
+			MENU_ITEM { command=EContextContactsCmdShowJabber; txt = CC_LOC_SHOW_SCREEN_NAME; }
+		};
+}
+
+RESOURCE MENU_BAR r_rich_presence_view_menubar
+    {
+    titles=
+        {
+			MENU_TITLE { menu_pane=r_jaiku_application_menu;       txt="Application"; },
+			MENU_TITLE { menu_pane=r_jaiku_connection_menu;        txt="Connection"; },
+			MENU_TITLE { menu_pane=r_rich_presence_view_menupane;  txt="View"; },
+			MENU_TITLE { menu_pane=r_jaiku_system_messages_menu;   txt="System messages"; },
+			MENU_TITLE { menu_pane=r_jaiku_go_online_menu;        txt="Go Online"; }
+
+        };
+    }
+
+RESOURCE AVKON_VIEW r_richpresence_view
+{
+	menubar = r_rich_presence_view_menubar;
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+
+
+RESOURCE TAB_GROUP r_presence_tab_group
+{
+    tab_width = EAknTabWidthWithOneTab;  // Two tabs
+	active = 0;
+    tabs =
+		{
+			TAB
+			{
+				id = JAIKU_PRESENCE_VIEWID;
+#ifdef __S60V3__
+ 				bmpfile = "\\resource\\contextcontactsui.mif";
+ 				bmpid = EMbmContextcontactsuiTab_presence;
+ 				bmpmask = EMbmContextcontactsuiTab_presence_mask;
+#else
+				txt = "Presence";
+#endif
+
+			}
+		};
+}
+
+RESOURCE MENU_PANE r_jaiku_go_online_menu
+{
+	items=
+        {
+			MENU_ITEM { command=EcontextContactsCmdAppResumePresence; txt=CL_RESUME_PRESENCE; }
+        };
+}
+
+
+
+RESOURCE AVKON_SETTING_ITEM r_jaiku_autostart_setting_item
+{
+	identifier = EJaikuSettingItemId_AutoStart;
+	setting_page_resource = r_jaiku_autostart_setting_page;
+	associated_resource = R_CL_SETTING_LIST_YESNO_CONTENTS;
+	name = CC_LOC_AUTOSTART;
+}
+
+RESOURCE AVKON_SETTING_PAGE r_jaiku_autostart_setting_page
+{
+	number = EJaikuSettingItemId_AutoStart;
+	label = CC_LOC_AUTOSTART;
+	type = EAknCtPopupSettingList;
+	editor_resource_id = R_CL_SETTING_LIST_ED;
+}
+
+RESOURCE AVKON_SETTING_ITEM r_jaiku_setupwizard_setting_item
+{
+	identifier = EJaikuSettingItemId_SetupWizard;
+	name = CC_LOC_RUN_WELCOME_AGAIN;
+}
+
+RESOURCE AVKON_SETTING_ITEM r_jaiku_networktraffic_setting_item
+{
+	identifier = EJaikuSettingItemId_NetworkTraffic;
+	name = CC_LOC_NETWORKTRAFFIC;
+}
+
+
+RESOURCE AVKON_LIST_QUERY r_jaiku_calendar_sharing_query
+{
+    flags = EGeneralQueryFlags;
+    softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+			AVKON_LIST_QUERY_DLG_LINE
+            {
+				control = AVKON_LIST_QUERY_CONTROL
+				{
+					listtype = EAknCtSinglePopupMenuListBox;
+					listbox = AVKON_LIST_QUERY_LIST
+					{
+						array_id = r_jaiku_calendar_sharing_options;
+					};
+                heading = CC_LOC_SHARE_CALENDAR;
+				};
+            }
+        };
+}
+
+
+RESOURCE ARRAY r_jaiku_calendar_sharing_options
+    {
+		items =
+			{
+				LBUF {txt = CL_SHARE_CALENDAR_FULL; },
+				LBUF {txt = CL_SHARE_CALENDAR_FREEBUSY; },
+				LBUF {txt = CL_SHARE_CALENDAR_NONE; }
+			};
+    }
+
+
+RESOURCE AVKON_LIST_QUERY r_jaiku_bluetooth_sharing_query
+{
+    flags = EGeneralQueryFlags;
+    softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+			AVKON_LIST_QUERY_DLG_LINE
+            {
+				control = AVKON_LIST_QUERY_CONTROL
+				{
+					listtype = EAknCtSinglePopupMenuListBox;
+					listbox = AVKON_LIST_QUERY_LIST
+					{
+						array_id = r_jaiku_bluetooth_sharing_options;
+					};
+                heading = CC_LOC_SHARE_BLUETOOTH;
+				};
+            }
+        };
+}
+
+
+RESOURCE ARRAY r_jaiku_bluetooth_sharing_options
+    {
+		items =
+			{
+				LBUF {txt = CL_YES; },
+				LBUF {txt = CL_NO; }
+			};
+    }
+
+// End of File

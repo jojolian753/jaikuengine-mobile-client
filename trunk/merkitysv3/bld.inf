@@ -1,0 +1,52 @@
+PRJ_PLATFORMS
+WINSCW
+GCCE
+ARMV5
+
+PRJ_MMPFILES
+// Scalable icons 
+gnumakefile ..\ContextContacts\group\ContextContacts_aif_icons.mk
+gnumakefile ..\context_log\group\JaikuSettings_aif_icons.mk
+gnumakefile ..\ContextContactsUi\group\ContextContactsUi_icons.mk
+gnumakefile ..\ContextWelcomeUi\group\ContextWelcomeUi_icons.mk
+gnumakefile ..\ContextWelcome\group\ContextWelcome_aif_icons.mk
+gnumakefile ..\context_log\group\JaikuConnection_icons.mk
+gnumakefile ..\ContextContactsUi\group\Jaicons.mk
+gnumakefile ..\MeaningApp\aif\MeaningApp_aif_icons.mk
+
+// MMPs 
+..\expat\symbianv3\contextexpat.mmp
+..\ContextCommon\group\ContextCommon.mmp
+..\BlackBoard\gv3\BlackBoardData.mmp
+..\BlackBoard\gv3\BlackBoardFactory.mmp
+..\ContextSensors\gv3\ContextSensorData.mmp
+..\BlackBoardServer\gv3\BlackBoardServer.mmp
+..\BlackBoardClient\gv3\BlackBoardClient.mmp
+..\ContextSensors\gv3\ContextSensorFactory.mmp
+..\ContextCommon2\gv3\ContextCommon2.mmp
+..\ContextUI\gv3\ContextUI.mmp
+..\JaikuUiKit\group\JaikuUiKit.mmp
+..\ContextNotify\gv3\ContextNotify.mmp
+..\ContextNotifyClient\gv3\ContextNotifyClient.mmp
+..\ContextNetwork\gv3\ContextNetwork.mmp
+..\ContextSensors\gv3\ContextSensors.mmp
+..\ContextCommSensors\group\ContextCommSensors.mmp
+..\JaikuCacher\group\JaikuCacher.mmp
+..\JaikuCacherClient\group\JaikuCacherClient.mmp
+..\ContextMedia\gv3\ContextMediaData.mmp
+..\ContextTransfer\group\ContextTransfer.mmp
+..\ContextContactsUI\group\ContextContactsUI.mmp
+..\ContextServer\group\ContextServer.mmp
+..\ContextClient\group\ContextClient.mmp
+..\Context_log\group\jaikusettings.mmp
+..\ContextContacts\group\ContextContacts.mmp
+..\ContextWelcomeUi\group\ContextWelcomeUi.mmp
+..\ContextWelcome\group\ContextWelcome.mmp
+..\starter\group\starter.mmp
+..\JaikuTool\group\JaikuTool.mmp
+..\ContextMedia\gv3\ContextMedia.mmp
+..\ContextMedia\gv3\ContextMediaFactory.mmp
+..\ContextMediaUi\gv3\ContextMediaUi.mmp
+..\ContextMediaPlugin\group\ContextMediaPlugin.mmp
+..\MeaningApp\group\MeaningApp.mmp
+//..\UiLoft\group\UiLoft.mmp

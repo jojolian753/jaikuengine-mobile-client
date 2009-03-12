@@ -1,0 +1,12 @@
+#ifdef __WINS__
+#define CC_MBM "z:\\system\\data\\contextcalllog.mbm"
+#else
+#define CC_MBM "\\system\\apps\\contextcalllog\\contextcalllog.mbm"
+#endif 
+
+#ifdef LANGUAGE_01
+#include "contextcalllog.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextcalllog.l09"
+#endif

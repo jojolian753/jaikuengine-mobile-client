@@ -1,0 +1,42 @@
+extending battery life
+----------------------
+
+1st phase
+
+a)
+make keepalives specific
+	client sends <keepalive/>
+	proxy re-posts latest presence with new timestamp
+		presence looks like: timestamp, escaped XML
+		20051102T112907&lt;presencev2 ...
+
+b)
+suspend downstream when idle
+	client sends <suspend/>
+	proxy keeps a local copy of others' changed presence, but doesn't send downstream
+	client keeps sending updates/keepalives of its
+
+	client sends <resume/>
+	proxy sends all changes
+
+2nd phase
+a)
+	diffs-only downstream
+
+		<presencev2>
+			<x>...
+			<y>...
+		</presencev2>
+	if client has received same <x> already, just send 
+		<presencev2>
+			<y>...
+		</presencev2>
+
+	if the whole presence is unchanged, just send timestamp
+b)
+	diffs-only upstream
+
+
+3rd phase
+privacy management
+------------------

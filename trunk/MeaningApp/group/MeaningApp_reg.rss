@@ -1,0 +1,23 @@
+// ====================================================================
+// File: MeaningApp_reg.rss
+// Created: 01/04/07
+// Author: 
+// Copyright (c): , All rights reserved
+// ==================================================================== */
+
+//MeaningApp application's registration resource file 
+
+#include <appinfo.rh>
+#include "..\..\context_uids.rh"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 CONTEXT_UID_MEANINGAPP
+
+RESOURCE APP_REGISTRATION_INFO 
+	{
+	app_file="MeaningApp";
+	//
+	localisable_resource_file="\\resource\\apps\\MeaningApp_loc";
+	//
+	//group_name="Configurations";
+	}

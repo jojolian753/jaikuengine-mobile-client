@@ -1,0 +1,72 @@
+// SymbianOSUnit.mmp
+//
+// Copyright (c) 2006 Penrillian Ltd.  All rights reserved.
+// Web : www.penrillian.com
+
+// This file is to be #include'd from the test MMP file.
+// (The relative paths for sourcepath and user includes work fine).
+
+
+TARGET        SymbianOSUnit.exe
+TARGETTYPE    exe
+UID           0x100039ce CONTEXT_UID_SYMBIANOSUNIT
+TARGETPATH    \sys\bin
+EPOCSTACKSIZE 65536
+
+macro	__SYMBIANOSUNIT
+macro	SERIES60_3RD
+
+SOURCEPATH    ..\..\SRC
+SOURCE        SymbianOSUnitApp.cpp
+SOURCE        SymbianOSUnitApplication.cpp
+SOURCE        SymbianOSUnitDocument.cpp
+SOURCE        SymbianOSUnitAppUi.cpp
+SOURCE        SymbianOSUnitAppView.cpp
+SOURCE        ..\..\cxxtest\TestOutput.cpp
+SOURCE	  Logger.cpp
+SOURCE	  TestUtils.cpp
+
+
+SOURCEPATH    ..\..\data\s60_3rd
+START RESOURCE SymbianOSUnit.rss
+HEADER
+TARGETPATH     resource\apps
+END  
+
+SOURCEPATH    ..\..\data\S60_3RD
+START RESOURCE SymbianOSUnit_reg.rss 
+TARGETPATH     \private\10003a3f\apps 
+END  
+
+
+USERINCLUDE		  ..\..\INC
+
+SYSTEMINCLUDE ..\..\..
+SYSTEMINCLUDE ..\..\..\cxxtest 
+SYSTEMINCLUDE \EPOC32\INCLUDE 
+SYSTEMINCLUDE \EPOC32\INCLUDE\LIBC 
+
+LIBRARY   euser.lib 
+LIBRARY   apparc.lib 
+LIBRARY   cone.lib 
+LIBRARY   eikcore.lib 
+LIBRARY   eikcoctl.lib 
+LIBRARY   charconv.lib 
+LIBRARY   efsrv.lib 
+LIBRARY   bafl.lib 
+LIBRARY   estlib.lib
+LIBRARY   ws32.lib 
+LIBRARY   avkon.lib 
+LIBRARY   eikctl.lib
+LIBRARY   FLOGGER.lib 
+LIBRARY   gdi.lib 
+
+
+//AIF SymbianOSUnit.aif ..\..\aif SymbianOSUnit.rss c24 SOSUnit44x44.bmp SOSUnit44x44mask.bmp SOSUnit42x29.bmp SOSUnit42x29mask.bmp
+// ------------------------------------------------------------------------------------
+// And some other files for editing:
+// ------------------------------------------------------------------------------------
+
+
+SOURCEPATH ..\..\install\s60_3rd
+DOCUMENT Symbianosuniturel.pkg

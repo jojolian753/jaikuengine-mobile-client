@@ -1,0 +1,16 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextSensorFactory","ContextSensorFactory"},(0x1020811E),4,36,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\Symbian\9.1\S60_3rd_MR\Epoc32\Release\gcce\urel\bbf200084C2.dll"-"!:\sys\bin\bbf200084C2.dll"

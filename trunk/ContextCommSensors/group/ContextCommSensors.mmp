@@ -1,0 +1,133 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include <sdk_version.mmp>
+#include "..\..\context_uids.rh"
+#include "..\..\contextvariant.hrh"
+#include "..\..\context.mmp"
+
+
+#ifndef TESTBUILD
+TARGET            ContextCommSensors.dll
+TARGETTYPE        dll
+UID               0x1000008d CONTEXT_UID_CONTEXTCOMMSENSORS
+START ARMI
+TARGETPATH	  \system\libs
+END
+START THUMB
+TARGETPATH	  \system\libs
+END
+
+#endif
+
+DEFFILENAME(ContextCommSensors)
+
+SOURCEPATH        ..\src
+SOURCE		dll.cpp
+#ifndef __JAIKU__
+#ifndef __S60V3__
+SOURCE  call_listener.cpp
+SOURCE  call_recorder.cpp
+SOURCE  mda_recorder.cpp
+SOURCE  log_sms.cpp
+#endif
+#endif
+SOURCE  log_profile.cpp
+#ifndef __S60V3__
+SOURCE  log_unread.cpp
+SOURCE  log_alarm.cpp
+#endif
+
+USERINCLUDE  ..\inc
+USERINCLUDE  ..\.. ..\..\contextcommon\inc  ..\..\blackboard\inc  ..\..\blackboardclient\inc ..\..\contextcommon2\inc ..\..\no_sendo_inc ..\..\ContextSensors\inc ..\..\Contextnetwork\inc
+USERINCLUDE  ..\..\expat\lib 
+
+SYSTEMINCLUDE     \epoc32\include \epoc32\include\libc
+
+LIBRARY           euser.lib contextcommon.lib
+LIBRARY		  blackboarddata.lib
+LIBRARY contextsensordata.lib contextsensors.lib
+LIBRARY blackboardclient.lib contextcommon2.lib
+
+#if 1
+LIBRARY		  bafl.lib estor.lib
+LIBRARY		  efsrv.lib 
+#if defined(__S60V2__) && !defined(__S60V3__)
+LIBRARY profileengine.lib 
+#endif
+
+#if defined(__S60V3__)
+LIBRARY centralrepository.lib
+#else
+#  ifdef __S60V2__
+LIBRARY PlatformEnv.lib
+#  else
+LIBRARY SYSAGT.LIB
+#  endif
+LIBRARY ealwl.lib
+#endif
+
+#  ifndef WINS
+#   ifndef __S60V3__
+LIBRARY gsmbas.lib
+#    ifdef __S60V2__
+LIBRARY etelmm.lib
+#    endif
+#   endif
+#  endif
+#ifndef __S80__
+LIBRARY PbkEng.lib 
+#endif
+LIBRARY logcli.lib MediaClientAudio.lib
+LIBRARY cntmodel.lib charconv.lib etel.lib
+LIBRARY contextnetwork.lib
+LIBRARY esock.lib
+LIBRARY COMMONENGINE.LIB msgs.lib
+#endif
+// for sms and mms listening
+LIBRARY smcm.lib etext.lib gsmu.lib
+LIBRARY eiksrv.lib 
+LIBRARY cone.lib
+LIBRARY hal.lib

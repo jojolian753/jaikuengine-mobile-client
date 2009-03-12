@@ -1,0 +1,55 @@
+NAME MINI
+
+#include "ContextWelcome.hrh"
+#include "scalableui_variant.h"
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+// Resource file signature. 
+// This is obligatory and it should be empty. 
+RESOURCE RSS_SIGNATURE
+{
+}
+
+// Default document name
+// This is obligatory. Leave empty, if there isn't default document
+RESOURCE TBUF r_default_document_name
+{	
+  buf="";
+}
+
+
+// Define default menu and CBA key.
+RESOURCE EIK_APP_INFO
+{
+	//cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+}
+
+
+
+#if !defined(__SCALABLEUI_VARIANT_DEFINED__)
+#error You must include scalable_ui_variant.h correctly
+#endif 
+
+#ifdef __SCALABLEUI_VARIANT__
+#include <appinfo.rh>
+#include "contextwelcome.rls"
+RESOURCE LOCALISABLE_APP_INFO r_contextwelcome_localisable_app_info
+    {
+    short_caption = STRING_contextwelcome_caption_string;
+    caption_and_icon =
+    CAPTION_AND_ICON_INFO
+        {
+			caption = STRING_contextwelcome_caption_string;
+			
+			number_of_icons = 1;
+#ifdef __S60V3__ 
+			icon_file = "\\resource\\apps\\contextwelcome_aif.mif";
+#else
+			icon_file = "\\system\\apps\\contextwelcome\\contextwelcome_aif.mif";
+#endif
+        };
+    }
+
+#endif

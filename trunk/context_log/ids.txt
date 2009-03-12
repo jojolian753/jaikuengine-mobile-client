@@ -1,0 +1,6 @@
+These are in a text file so that 
+not everything depends on one single header
+
+component id is applucation uid
+
+Connnection Indicator   1       component

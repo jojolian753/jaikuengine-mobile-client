@@ -1,0 +1,100 @@
+#define ELanguage ELangEnglish
+
+#define CL_TAG_AND_DESCRIPTION "Tag and description"
+#define CL_TAG_ONLY		"Tag only"
+#define CL_VISUALCODE		"VisualCode"
+
+#ifdef __JAIKU__
+#define CL_JABBER_NICK		"Jaiku Screen Name"
+#define CL_JABBER_PASS		"Jaiku Password"
+#define CL_CPT_NAME_CELL_TIME	"[Click to close]\nName neighborhood (at %02d:%02d)"
+#define CL_CPT_NAME_CITY_TIME	"[Click to close]\nName city/region (%02d:%02d)"
+#define CL_CPT_NAME_CELL_OLD	"Name neighborhood"
+#define CL_CPT_NAME_CITY_OLD	"Name city/region"
+
+#else
+
+#define CL_JABBER_NICK		"Jabber Nick"
+#define CL_JABBER_PASS		"Jabber password"
+#define CL_CPT_NAME_CELL_TIME	"[Click to close]\nName place (at %02d:%02d)"
+#define CL_CPT_NAME_CITY_TIME	"[Click to close]\nName city/region (%02d:%02d)"
+#define CL_CPT_NAME_CELL_OLD	"Name place"
+#define CL_CPT_NAME_CITY_OLD	"Name city/region"
+
+#endif 
+
+#define CL_JABBER_ENABLE	"Enable presence"
+
+#define CL_PICTURE_ENABLE	"Enable media publishing"
+#define CL_UPLOAD_URLBASE	"URL base for upload"
+#define CL_PUBLISH_URLBASE	"URL base for publish"
+
+#define CL_OPTIONS_ENABLE	"Enable Options"
+#define CL_DELETE_UPLOADED	"Delete media after upload"
+#define CL_ENABLE_LOGGING	"Enable data logger"
+#define CL_ENABLE_LOCATIONSERVICE "Enable operator location service"
+#define CL_ENABLE_NAMING	"Prompt for names"
+
+#define CL_BT_INTERVAL		"BT Scan Interval"
+#define CL_RECORD_ALL		"Record all calls"
+#define CL_UPLOAD_PROMPT_TYPE	"Upload tagging"
+#define CL_VIBRATE_ONLY		"Vibrate only"
+#define CL_GPS_LOG_TIME		"GPS Log time"
+#define CL_PUBLISH_AUTHOR	"Author name for upload"
+#define CL_UPLOAD_SCRIPT	"Upload script name"
+#define CL_PUBLISH_SCRIPT	"Publish script name"
+#define CL_RIGHT_SOFTKEY_CONTEXT "Right key to Context"
+#define CL_ALLOW_ROAMING	"Allow Roaming"
+#define CL_IGNORE_NOTIFICATIONS "Ignore Media Notifications"
+
+#define CL_SNAPSHOT		"Snapshot on SMS reception"
+#define CL_SNAPSHOT_TIME	"Snapshot Record time"
+#define CL_USE_MMC		"Use MMC"
+#define CL_IP_AP			"IP Access Point"
+#define CL_HTTP_PROXY		"HTTP Proxy name"
+#define CL_HTTP_PROXY_PORT	"HTTP Proxy port"
+#define CL_ENABLE_CONTEXTNW	"Enable ContextNw"
+#define CL_CN_HOST		"ContextNetwork Host"
+#define CL_CN_PORT		"ContextNetwork port"
+#define CL_NO_AP_DEFINED 	"No access points defined"
+#define CL_YES			"Yes"
+#define CL_NO			"No"
+#define CL_DISABLED		"Disabled"
+#define CL_VIA_CONTEXT_LOG	"Via Context_log"
+#define CL_VIA_CONTEXT_MEDIA  "Via ContextMedia"
+#define CL_PHONENO		"My Phone Number"
+#define CL_PUBLISH_USERNAME	"Other service username"
+#define CL_PUBLISH_PASSWORD	"Other service password"
+
+
+#define CL_SHOW_CALENDAR_ITEMS_AS_BUSY "Hide Calendar event names"
+#define CL_JABBER_ADDR "Jabber Server"
+#define CL_JABBER_PORT "Jabber Server Port"
+
+
+#define CL_NEIGHBOURHOOD_PROMPT "Neighbourhood"
+#define CL_CITYREGION_PROMPT "City or Region"
+
+#define CL_CALENDAR_SHARING	"Calendar Sharing"
+#define CL_SHARE_CALENDAR_FREEBUSY "Free/Busy only"
+#define CL_SHARE_CALENDAR_FULL	"Title of event"
+#define CL_SHARE_CALENDAR_NONE  "Do not share"
+
+#define CL_ALLOW_NETWORK_ACCESS  "Internet Connection"
+#define CL_ALLOW_NETWORK_ALWAYS    "Connect automatically"
+#define CL_ALLOW_NETWORK_ASK_FIRST "Ask first"
+
+#define CL_MENU_CHANGE "Change"
+#define CL_MENU_CANCEL "Cancel"
+
+#define CL_EXIT			"Exit"
+
+#define CL_SETTING_BATTERY_LIFE "Battery life"	
+#define CL_SETTING_BATTERY_LIFE__BETTER_BATTERY	  "Better battery life"
+#define CL_SETTING_BATTERY_LIFE__BETTER_PERFORMANCE  "More up-to-date"
+
+#define CL_SETTING_DOWNLOAD_IMAGES "Download images"
+
+#define CL_SETTING_DOWNLOAD_IMAGES__AUTOMATICALLY "Automatically"
+#define CL_SETTING_DOWNLOAD_IMAGES__WHEN_VISIBLE  "When visible"
+#define CL_SETTING_DOWNLOAD_IMAGES__ON_REQUEST    "On request"

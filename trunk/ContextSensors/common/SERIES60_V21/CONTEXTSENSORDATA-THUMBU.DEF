@@ -1,0 +1,271 @@
+EXPORTS
+	__eq__C9TBBUnreadRC9TBBUnread @ 1 NONAME R3UNUSED ; TBBUnread::operator==(TBBUnread const &) const
+	AddItemL__15CBBBtDeviceListP7HBufC16P7MBBData @ 2 NONAME R3UNUSED ; CBBBtDeviceList::AddItemL(HBufC16 *, MBBData *)
+	AddRef__C11CBBPresence @ 3 NONAME R3UNUSED ; CBBPresence::AddRef(void) const
+	CloneL__C10CBBUserPicRC7TDesC16 @ 4 NONAME R3UNUSED ; CBBUserPic::CloneL(TDesC16 const &) const
+	CloneL__C10TBBBatteryRC7TDesC16 @ 5 NONAME R3UNUSED ; TBBBattery::CloneL(TDesC16 const &) const
+	CloneL__C10TBBProfileRC7TDesC16 @ 6 NONAME R3UNUSED ; TBBProfile::CloneL(TDesC16 const &) const
+	CloneL__C11CBBPresenceRC7TDesC16 @ 7 NONAME R3UNUSED ; CBBPresence::CloneL(TDesC16 const &) const
+	CloneL__C11TBBBaseInfoRC7TDesC16 @ 8 NONAME R3UNUSED ; TBBBaseInfo::CloneL(TDesC16 const &) const
+	CloneL__C11TBBCalendarRC7TDesC16 @ 9 NONAME R3UNUSED ; TBBCalendar::CloneL(TDesC16 const &) const
+	CloneL__C11TBBLocationRC7TDesC16 @ 10 NONAME R3UNUSED ; TBBLocation::CloneL(TDesC16 const &) const
+	CloneL__C11TBBSysEventRC7TDesC16 @ 11 NONAME R3UNUSED ; TBBSysEvent::CloneL(TDesC16 const &) const
+	CloneL__C12TBBBaseVisitRC7TDesC16 @ 12 NONAME R3UNUSED ; TBBBaseVisit::CloneL(TDesC16 const &) const
+	CloneL__C12TBBUserGivenRC7TDesC16 @ 13 NONAME R3UNUSED ; TBBUserGiven::CloneL(TDesC16 const &) const
+	CloneL__C13TBBCellNamingRC7TDesC16 @ 14 NONAME R3UNUSED ; TBBCellNaming::CloneL(TDesC16 const &) const
+	CloneL__C13TBBCurrentAppRC7TDesC16 @ 15 NONAME R3UNUSED ; TBBCurrentApp::CloneL(TDesC16 const &) const
+	CloneL__C13TBBSentInviteRC7TDesC16 @ 16 NONAME R3UNUSED ; TBBSentInvite::CloneL(TDesC16 const &) const
+	CloneL__C13TBBUserActiveRC7TDesC16 @ 17 NONAME R3UNUSED ; TBBUserActive::CloneL(TDesC16 const &) const
+	CloneL__C14CBBSensorEventRC7TDesC16 @ 18 NONAME R3UNUSED ; CBBSensorEvent::CloneL(TDesC16 const &) const
+	CloneL__C15CBBBtDeviceListRC7TDesC16 @ 19 NONAME R3UNUSED ; CBBBtDeviceList::CloneL(TDesC16 const &) const
+	CloneL__C15TBBBtDeviceInfoRC7TDesC16 @ 20 NONAME R3UNUSED ; TBBBtDeviceInfo::CloneL(TDesC16 const &) const
+	CloneL__C16TBBBluetoothNameRC7TDesC16 @ 21 NONAME R3UNUSED ; TBBBluetoothName::CloneL(TDesC16 const &) const
+	CloneL__C16TBBCalendarEventRC7TDesC16 @ 22 NONAME R3UNUSED ; TBBCalendarEvent::CloneL(TDesC16 const &) const
+	CloneL__C16TBBLocaMsgStatusRC7TDesC16 @ 23 NONAME R3UNUSED ; TBBLocaMsgStatus::CloneL(TDesC16 const &) const
+	CloneL__C16TBBServerMessageRC7TDesC16 @ 24 NONAME R3UNUSED ; TBBServerMessage::CloneL(TDesC16 const &) const
+	CloneL__C19TBBBluetoothAddressRC7TDesC16 @ 25 NONAME R3UNUSED ; TBBBluetoothAddress::CloneL(TDesC16 const &) const
+	CloneL__C19TBBShortNetworkNameRC7TDesC16 @ 26 NONAME R3UNUSED ; TBBShortNetworkName::CloneL(TDesC16 const &) const
+	CloneL__C20TBBNeighbourhoodInfoRC7TDesC16 @ 27 NONAME R3UNUSED ; TBBNeighbourhoodInfo::CloneL(TDesC16 const &) const
+	CloneL__C8TGpsLineRC7TDesC16 @ 28 NONAME R3UNUSED ; TGpsLine::CloneL(TDesC16 const &) const
+	CloneL__C9CBBLookupRC7TDesC16 @ 29 NONAME R3UNUSED ; CBBLookup::CloneL(TDesC16 const &) const
+	CloneL__C9TBBCellIdRC7TDesC16 @ 30 NONAME R3UNUSED ; TBBCellId::CloneL(TDesC16 const &) const
+	CloneL__C9TBBUnreadRC7TDesC16 @ 31 NONAME R3UNUSED ; TBBUnread::CloneL(TDesC16 const &) const
+	ConstructL__11CBBPresence @ 32 NONAME R3UNUSED ; CBBPresence::ConstructL(void)
+	ConstructL__15CBBBtDeviceList @ 33 NONAME R3UNUSED ; CBBBtDeviceList::ConstructL(void)
+	ConstructL__9CBBLookup @ 34 NONAME R3UNUSED ; CBBLookup::ConstructL(void)
+	Equals__C10CBBUserPicPC7MBBData @ 35 NONAME R3UNUSED ; CBBUserPic::Equals(MBBData const *) const
+	Equals__C10TBBBatteryPC7MBBData @ 36 NONAME R3UNUSED ; TBBBattery::Equals(MBBData const *) const
+	Equals__C10TBBProfilePC7MBBData @ 37 NONAME R3UNUSED ; TBBProfile::Equals(MBBData const *) const
+	Equals__C11CBBPresencePC7MBBData @ 38 NONAME R3UNUSED ; CBBPresence::Equals(MBBData const *) const
+	Equals__C11TBBBaseInfoPC7MBBData @ 39 NONAME R3UNUSED ; TBBBaseInfo::Equals(MBBData const *) const
+	Equals__C11TBBCalendarPC7MBBData @ 40 NONAME R3UNUSED ; TBBCalendar::Equals(MBBData const *) const
+	Equals__C11TBBLocationPC7MBBData @ 41 NONAME R3UNUSED ; TBBLocation::Equals(MBBData const *) const
+	Equals__C11TBBSysEventPC7MBBData @ 42 NONAME R3UNUSED ; TBBSysEvent::Equals(MBBData const *) const
+	Equals__C12TBBBaseVisitPC7MBBData @ 43 NONAME R3UNUSED ; TBBBaseVisit::Equals(MBBData const *) const
+	Equals__C12TBBUserGivenPC7MBBData @ 44 NONAME R3UNUSED ; TBBUserGiven::Equals(MBBData const *) const
+	Equals__C13TBBCellNamingPC7MBBData @ 45 NONAME R3UNUSED ; TBBCellNaming::Equals(MBBData const *) const
+	Equals__C13TBBCurrentAppPC7MBBData @ 46 NONAME R3UNUSED ; TBBCurrentApp::Equals(MBBData const *) const
+	Equals__C13TBBSentInvitePC7MBBData @ 47 NONAME R3UNUSED ; TBBSentInvite::Equals(MBBData const *) const
+	Equals__C13TBBUserActivePC7MBBData @ 48 NONAME R3UNUSED ; TBBUserActive::Equals(MBBData const *) const
+	Equals__C14CBBSensorEventPC7MBBData @ 49 NONAME R3UNUSED ; CBBSensorEvent::Equals(MBBData const *) const
+	Equals__C15CBBBtDeviceListPC7MBBData @ 50 NONAME R3UNUSED ; CBBBtDeviceList::Equals(MBBData const *) const
+	Equals__C15TBBBtDeviceInfoPC7MBBData @ 51 NONAME R3UNUSED ; TBBBtDeviceInfo::Equals(MBBData const *) const
+	Equals__C16TBBBluetoothNamePC7MBBData @ 52 NONAME R3UNUSED ; TBBBluetoothName::Equals(MBBData const *) const
+	Equals__C16TBBCalendarEventPC7MBBData @ 53 NONAME R3UNUSED ; TBBCalendarEvent::Equals(MBBData const *) const
+	Equals__C16TBBLocaMsgStatusPC7MBBData @ 54 NONAME R3UNUSED ; TBBLocaMsgStatus::Equals(MBBData const *) const
+	Equals__C16TBBServerMessagePC7MBBData @ 55 NONAME R3UNUSED ; TBBServerMessage::Equals(MBBData const *) const
+	Equals__C19TBBBluetoothAddressPC7MBBData @ 56 NONAME R3UNUSED ; TBBBluetoothAddress::Equals(MBBData const *) const
+	Equals__C19TBBShortNetworkNamePC7MBBData @ 57 NONAME R3UNUSED ; TBBShortNetworkName::Equals(MBBData const *) const
+	Equals__C20TBBNeighbourhoodInfoPC7MBBData @ 58 NONAME R3UNUSED ; TBBNeighbourhoodInfo::Equals(MBBData const *) const
+	Equals__C8TGpsLinePC7MBBData @ 59 NONAME R3UNUSED ; TGpsLine::Equals(MBBData const *) const
+	Equals__C9CBBLookupPC7MBBData @ 60 NONAME R3UNUSED ; CBBLookup::Equals(MBBData const *) const
+	Equals__C9TBBCellIdPC7MBBData @ 61 NONAME R3UNUSED ; TBBCellId::Equals(MBBData const *) const
+	Equals__C9TBBUnreadPC7MBBData @ 62 NONAME R3UNUSED ; TBBUnread::Equals(MBBData const *) const
+	Factory__14CBBSensorEvent @ 63 NONAME R3UNUSED ; CBBSensorEvent::Factory(void)
+	First__15CBBBtDeviceList @ 64 NONAME R3UNUSED ; CBBBtDeviceList::First(void)
+	First__C15CBBBtDeviceList @ 65 NONAME R3UNUSED ; CBBBtDeviceList::First(void) const
+	FixedType__C15CBBBtDeviceList @ 66 NONAME R3UNUSED ; CBBBtDeviceList::FixedType(void) const
+	FromStringL__9TBBCellIdRC7TDesC16 @ 67 NONAME R3UNUSED ; TBBCellId::FromStringL(TDesC16 const &)
+	GetPart__14CBBSensorEventRC7TDesC16RC9TTypeNameRUi @ 68 NONAME ; CBBSensorEvent::GetPart(TDesC16 const &, TTypeName const &, unsigned int &)
+	InternalizeL__11CBBPresenceR11RReadStream @ 69 NONAME R3UNUSED ; CBBPresence::InternalizeL(RReadStream &)
+	InternalizeL__11TBBCalendarR11RReadStream @ 70 NONAME R3UNUSED ; TBBCalendar::InternalizeL(RReadStream &)
+	InternalizeL__20TBBNeighbourhoodInfoR11RReadStream @ 71 NONAME R3UNUSED ; TBBNeighbourhoodInfo::InternalizeL(RReadStream &)
+	InternalizeL__9CBBLookupR11RReadStream @ 72 NONAME R3UNUSED ; CBBLookup::InternalizeL(RReadStream &)
+	IntoStringL__C11TBBBaseInfoR6TDes16 @ 73 NONAME R3UNUSED ; TBBBaseInfo::IntoStringL(TDes16 &) const
+	IntoStringL__C13TBBUserActiveR6TDes16 @ 74 NONAME R3UNUSED ; TBBUserActive::IntoStringL(TDes16 &) const
+	IntoStringL__C9TBBCellIdR6TDes16 @ 75 NONAME R3UNUSED ; TBBCellId::IntoStringL(TDes16 &) const
+	IntoXmlL__C12TBBBaseVisitP15MBBExternalizeri @ 76 NONAME R3UNUSED ; TBBBaseVisit::IntoXmlL(MBBExternalizer *, int) const
+	IsSet__C12TBBBaseVisit @ 77 NONAME R3UNUSED ; TBBBaseVisit::IsSet(void) const
+	MinimalXmlL__11CBBPresenceP15MBBExternalizer @ 78 NONAME R3UNUSED ; CBBPresence::MinimalXmlL(MBBExternalizer *)
+	NewL__11CBBPresence @ 79 NONAME R3UNUSED ; CBBPresence::NewL(void)
+	NewL__11CBBPresenceUi @ 80 NONAME R3UNUSED ; CBBPresence::NewL(unsigned int)
+	NewL__15CBBBtDeviceList @ 81 NONAME R3UNUSED ; CBBBtDeviceList::NewL(void)
+	NewL__9CBBLookup @ 82 NONAME R3UNUSED ; CBBLookup::NewL(void)
+	NewL__9CBBLookupUi @ 83 NONAME R3UNUSED ; CBBLookup::NewL(unsigned int)
+	Next__15CBBBtDeviceList @ 84 NONAME R3UNUSED ; CBBBtDeviceList::Next(void)
+	Next__C15CBBBtDeviceList @ 85 NONAME R3UNUSED ; CBBBtDeviceList::Next(void) const
+	NmeaToLatLong__FRC7TDesC16R11TGeoLatLong @ 86 NONAME R3UNUSED ; NmeaToLatLong(TDesC16 const &, TGeoLatLong &)
+	Part__C10CBBUserPicUi @ 87 NONAME R3UNUSED ; CBBUserPic::Part(unsigned int) const
+	Part__C10TBBBatteryUi @ 88 NONAME R3UNUSED ; TBBBattery::Part(unsigned int) const
+	Part__C10TBBProfileUi @ 89 NONAME R3UNUSED ; TBBProfile::Part(unsigned int) const
+	Part__C11CBBPresenceUi @ 90 NONAME R3UNUSED ; CBBPresence::Part(unsigned int) const
+	Part__C11TBBBaseInfoUi @ 91 NONAME R3UNUSED ; TBBBaseInfo::Part(unsigned int) const
+	Part__C11TBBCalendarUi @ 92 NONAME R3UNUSED ; TBBCalendar::Part(unsigned int) const
+	Part__C11TBBLocationUi @ 93 NONAME R3UNUSED ; TBBLocation::Part(unsigned int) const
+	Part__C11TBBSysEventUi @ 94 NONAME R3UNUSED ; TBBSysEvent::Part(unsigned int) const
+	Part__C12TBBBaseVisitUi @ 95 NONAME R3UNUSED ; TBBBaseVisit::Part(unsigned int) const
+	Part__C12TBBUserGivenUi @ 96 NONAME R3UNUSED ; TBBUserGiven::Part(unsigned int) const
+	Part__C13TBBCellNamingUi @ 97 NONAME R3UNUSED ; TBBCellNaming::Part(unsigned int) const
+	Part__C13TBBCurrentAppUi @ 98 NONAME R3UNUSED ; TBBCurrentApp::Part(unsigned int) const
+	Part__C13TBBSentInviteUi @ 99 NONAME R3UNUSED ; TBBSentInvite::Part(unsigned int) const
+	Part__C13TBBUserActiveUi @ 100 NONAME R3UNUSED ; TBBUserActive::Part(unsigned int) const
+	Part__C14CBBSensorEventUi @ 101 NONAME R3UNUSED ; CBBSensorEvent::Part(unsigned int) const
+	Part__C15TBBBtDeviceInfoUi @ 102 NONAME R3UNUSED ; TBBBtDeviceInfo::Part(unsigned int) const
+	Part__C16TBBCalendarEventUi @ 103 NONAME R3UNUSED ; TBBCalendarEvent::Part(unsigned int) const
+	Part__C16TBBLocaMsgStatusUi @ 104 NONAME R3UNUSED ; TBBLocaMsgStatus::Part(unsigned int) const
+	Part__C16TBBServerMessageUi @ 105 NONAME R3UNUSED ; TBBServerMessage::Part(unsigned int) const
+	Part__C20TBBNeighbourhoodInfoUi @ 106 NONAME R3UNUSED ; TBBNeighbourhoodInfo::Part(unsigned int) const
+	Part__C9TBBUnreadUi @ 107 NONAME R3UNUSED ; TBBUnread::Part(unsigned int) const
+	Release__C11CBBPresence @ 108 NONAME R3UNUSED ; CBBPresence::Release(void) const
+	SetDevices__11CBBPresencePC15CBBBtDeviceList @ 109 NONAME R3UNUSED ; CBBPresence::SetDevices(CBBBtDeviceList const *)
+	StaticType__10CBBUserPic @ 110 NONAME R3UNUSED ; CBBUserPic::StaticType(void)
+	StaticType__10TBBBattery @ 111 NONAME R3UNUSED ; TBBBattery::StaticType(void)
+	StaticType__10TBBProfile @ 112 NONAME R3UNUSED ; TBBProfile::StaticType(void)
+	StaticType__11CBBPresence @ 113 NONAME R3UNUSED ; CBBPresence::StaticType(void)
+	StaticType__11TBBBaseInfo @ 114 NONAME R3UNUSED ; TBBBaseInfo::StaticType(void)
+	StaticType__11TBBCalendar @ 115 NONAME R3UNUSED ; TBBCalendar::StaticType(void)
+	StaticType__11TBBLocation @ 116 NONAME R3UNUSED ; TBBLocation::StaticType(void)
+	StaticType__11TBBSysEvent @ 117 NONAME R3UNUSED ; TBBSysEvent::StaticType(void)
+	StaticType__12TBBBaseVisit @ 118 NONAME R3UNUSED ; TBBBaseVisit::StaticType(void)
+	StaticType__12TBBUserGiven @ 119 NONAME R3UNUSED ; TBBUserGiven::StaticType(void)
+	StaticType__13TBBCellNaming @ 120 NONAME R3UNUSED ; TBBCellNaming::StaticType(void)
+	StaticType__13TBBCurrentApp @ 121 NONAME R3UNUSED ; TBBCurrentApp::StaticType(void)
+	StaticType__13TBBSentInvite @ 122 NONAME R3UNUSED ; TBBSentInvite::StaticType(void)
+	StaticType__13TBBUserActive @ 123 NONAME R3UNUSED ; TBBUserActive::StaticType(void)
+	StaticType__14CBBSensorEvent @ 124 NONAME R3UNUSED ; CBBSensorEvent::StaticType(void)
+	StaticType__15CBBBtDeviceList @ 125 NONAME R3UNUSED ; CBBBtDeviceList::StaticType(void)
+	StaticType__15TBBBtDeviceInfo @ 126 NONAME R3UNUSED ; TBBBtDeviceInfo::StaticType(void)
+	StaticType__16TBBBluetoothName @ 127 NONAME R3UNUSED ; TBBBluetoothName::StaticType(void)
+	StaticType__16TBBCalendarEvent @ 128 NONAME R3UNUSED ; TBBCalendarEvent::StaticType(void)
+	StaticType__16TBBLocaMsgStatus @ 129 NONAME R3UNUSED ; TBBLocaMsgStatus::StaticType(void)
+	StaticType__16TBBServerMessage @ 130 NONAME R3UNUSED ; TBBServerMessage::StaticType(void)
+	StaticType__19TBBBluetoothAddress @ 131 NONAME R3UNUSED ; TBBBluetoothAddress::StaticType(void)
+	StaticType__19TBBShortNetworkName @ 132 NONAME R3UNUSED ; TBBShortNetworkName::StaticType(void)
+	StaticType__20TBBNeighbourhoodInfo @ 133 NONAME R3UNUSED ; TBBNeighbourhoodInfo::StaticType(void)
+	StaticType__8TGpsLine @ 134 NONAME R3UNUSED ; TGpsLine::StaticType(void)
+	StaticType__9CBBLookup @ 135 NONAME R3UNUSED ; CBBLookup::StaticType(void)
+	StaticType__9TBBCellId @ 136 NONAME R3UNUSED ; TBBCellId::StaticType(void)
+	StaticType__9TBBUnread @ 137 NONAME R3UNUSED ; TBBUnread::StaticType(void)
+	StringSep__C10CBBUserPicUi @ 138 NONAME R3UNUSED ; CBBUserPic::StringSep(unsigned int) const
+	StringSep__C10TBBBatteryUi @ 139 NONAME R3UNUSED ; TBBBattery::StringSep(unsigned int) const
+	StringSep__C10TBBProfileUi @ 140 NONAME R3UNUSED ; TBBProfile::StringSep(unsigned int) const
+	StringSep__C11CBBPresenceUi @ 141 NONAME R3UNUSED ; CBBPresence::StringSep(unsigned int) const
+	StringSep__C11TBBBaseInfoUi @ 142 NONAME R3UNUSED ; TBBBaseInfo::StringSep(unsigned int) const
+	StringSep__C11TBBCalendarUi @ 143 NONAME R3UNUSED ; TBBCalendar::StringSep(unsigned int) const
+	StringSep__C11TBBLocationUi @ 144 NONAME R3UNUSED ; TBBLocation::StringSep(unsigned int) const
+	StringSep__C11TBBSysEventUi @ 145 NONAME R3UNUSED ; TBBSysEvent::StringSep(unsigned int) const
+	StringSep__C12TBBBaseVisitUi @ 146 NONAME R3UNUSED ; TBBBaseVisit::StringSep(unsigned int) const
+	StringSep__C12TBBUserGivenUi @ 147 NONAME R3UNUSED ; TBBUserGiven::StringSep(unsigned int) const
+	StringSep__C13TBBCellNamingUi @ 148 NONAME R3UNUSED ; TBBCellNaming::StringSep(unsigned int) const
+	StringSep__C13TBBCurrentAppUi @ 149 NONAME R3UNUSED ; TBBCurrentApp::StringSep(unsigned int) const
+	StringSep__C13TBBSentInviteUi @ 150 NONAME R3UNUSED ; TBBSentInvite::StringSep(unsigned int) const
+	StringSep__C13TBBUserActiveUi @ 151 NONAME R3UNUSED ; TBBUserActive::StringSep(unsigned int) const
+	StringSep__C14CBBSensorEventUi @ 152 NONAME R3UNUSED ; CBBSensorEvent::StringSep(unsigned int) const
+	StringSep__C15TBBBtDeviceInfoUi @ 153 NONAME R3UNUSED ; TBBBtDeviceInfo::StringSep(unsigned int) const
+	StringSep__C16TBBCalendarEventUi @ 154 NONAME R3UNUSED ; TBBCalendarEvent::StringSep(unsigned int) const
+	StringSep__C16TBBLocaMsgStatusUi @ 155 NONAME R3UNUSED ; TBBLocaMsgStatus::StringSep(unsigned int) const
+	StringSep__C16TBBServerMessageUi @ 156 NONAME R3UNUSED ; TBBServerMessage::StringSep(unsigned int) const
+	StringSep__C20TBBNeighbourhoodInfoUi @ 157 NONAME R3UNUSED ; TBBNeighbourhoodInfo::StringSep(unsigned int) const
+	StringSep__C9CBBLookupUi @ 158 NONAME R3UNUSED ; CBBLookup::StringSep(unsigned int) const
+	StringSep__C9TBBCellIdUi @ 159 NONAME R3UNUSED ; TBBCellId::StringSep(unsigned int) const
+	StringSep__C9TBBUnreadUi @ 160 NONAME R3UNUSED ; TBBUnread::StringSep(unsigned int) const
+	TupleName__C14CBBSensorEvent @ 161 NONAME R3UNUSED ; CBBSensorEvent::TupleName(void) const
+	Type__C10CBBUserPic @ 162 NONAME R3UNUSED ; CBBUserPic::Type(void) const
+	Type__C10TBBBattery @ 163 NONAME R3UNUSED ; TBBBattery::Type(void) const
+	Type__C10TBBProfile @ 164 NONAME R3UNUSED ; TBBProfile::Type(void) const
+	Type__C11CBBPresence @ 165 NONAME R3UNUSED ; CBBPresence::Type(void) const
+	Type__C11TBBBaseInfo @ 166 NONAME R3UNUSED ; TBBBaseInfo::Type(void) const
+	Type__C11TBBCalendar @ 167 NONAME R3UNUSED ; TBBCalendar::Type(void) const
+	Type__C11TBBLocation @ 168 NONAME R3UNUSED ; TBBLocation::Type(void) const
+	Type__C11TBBSysEvent @ 169 NONAME R3UNUSED ; TBBSysEvent::Type(void) const
+	Type__C12TBBBaseVisit @ 170 NONAME R3UNUSED ; TBBBaseVisit::Type(void) const
+	Type__C12TBBUserGiven @ 171 NONAME R3UNUSED ; TBBUserGiven::Type(void) const
+	Type__C13TBBCellNaming @ 172 NONAME R3UNUSED ; TBBCellNaming::Type(void) const
+	Type__C13TBBCurrentApp @ 173 NONAME R3UNUSED ; TBBCurrentApp::Type(void) const
+	Type__C13TBBSentInvite @ 174 NONAME R3UNUSED ; TBBSentInvite::Type(void) const
+	Type__C13TBBUserActive @ 175 NONAME R3UNUSED ; TBBUserActive::Type(void) const
+	Type__C14CBBSensorEvent @ 176 NONAME R3UNUSED ; CBBSensorEvent::Type(void) const
+	Type__C15CBBBtDeviceList @ 177 NONAME R3UNUSED ; CBBBtDeviceList::Type(void) const
+	Type__C15TBBBtDeviceInfo @ 178 NONAME R3UNUSED ; TBBBtDeviceInfo::Type(void) const
+	Type__C16TBBBluetoothName @ 179 NONAME R3UNUSED ; TBBBluetoothName::Type(void) const
+	Type__C16TBBCalendarEvent @ 180 NONAME R3UNUSED ; TBBCalendarEvent::Type(void) const
+	Type__C16TBBLocaMsgStatus @ 181 NONAME R3UNUSED ; TBBLocaMsgStatus::Type(void) const
+	Type__C16TBBServerMessage @ 182 NONAME R3UNUSED ; TBBServerMessage::Type(void) const
+	Type__C19TBBBluetoothAddress @ 183 NONAME R3UNUSED ; TBBBluetoothAddress::Type(void) const
+	Type__C19TBBShortNetworkName @ 184 NONAME R3UNUSED ; TBBShortNetworkName::Type(void) const
+	Type__C20TBBNeighbourhoodInfo @ 185 NONAME R3UNUSED ; TBBNeighbourhoodInfo::Type(void) const
+	Type__C8TGpsLine @ 186 NONAME R3UNUSED ; TGpsLine::Type(void) const
+	Type__C9CBBLookup @ 187 NONAME R3UNUSED ; CBBLookup::Type(void) const
+	Type__C9TBBCellId @ 188 NONAME R3UNUSED ; TBBCellId::Type(void) const
+	Type__C9TBBUnread @ 189 NONAME R3UNUSED ; TBBUnread::Type(void) const
+	"_._9CBBLookup" @ 190 NONAME R3UNUSED ; CBBLookup::~CBBLookup(void)
+	__10CBBUserPic @ 191 NONAME R3UNUSED ; CBBUserPic::CBBUserPic(void)
+	__10TBBBatteryRC7TDesC16 @ 192 NONAME R3UNUSED ; TBBBattery::TBBBattery(TDesC16 const &)
+	__10TBBProfile @ 193 NONAME R3UNUSED ; TBBProfile::TBBProfile(void)
+	__11CBBPresence @ 194 NONAME R3UNUSED ; CBBPresence::CBBPresence(void)
+	__11CBBPresenceUi @ 195 NONAME R3UNUSED ; CBBPresence::CBBPresence(unsigned int)
+	__11TBBBaseInfo @ 196 NONAME R3UNUSED ; TBBBaseInfo::TBBBaseInfo(void)
+	__11TBBCalendar @ 197 NONAME R3UNUSED ; TBBCalendar::TBBCalendar(void)
+	__11TBBCalendarUi @ 198 NONAME R3UNUSED ; TBBCalendar::TBBCalendar(unsigned int)
+	__11TBBLocation @ 199 NONAME R3UNUSED ; TBBLocation::TBBLocation(void)
+	__11TBBSysEventRC7TDesC16 @ 200 NONAME R3UNUSED ; TBBSysEvent::TBBSysEvent(TDesC16 const &)
+	__12TBBBaseVisitRC7TDesC16 @ 201 NONAME R3UNUSED ; TBBBaseVisit::TBBBaseVisit(TDesC16 const &)
+	__12TBBUserGivenRC7TDesC16 @ 202 NONAME R3UNUSED ; TBBUserGiven::TBBUserGiven(TDesC16 const &)
+	__13TBBCellNaming @ 203 NONAME R3UNUSED ; TBBCellNaming::TBBCellNaming(void)
+	__13TBBCurrentApp @ 204 NONAME R3UNUSED ; TBBCurrentApp::TBBCurrentApp(void)
+	__13TBBSentInvite @ 205 NONAME R3UNUSED ; TBBSentInvite::TBBSentInvite(void)
+	__13TBBUserActive @ 206 NONAME R3UNUSED ; TBBUserActive::TBBUserActive(void)
+	__14CBBSensorEventRC7TDesC16RC10TTupleNameP14MBBDataFactoryG5TTimeP7MBBDatai @ 207 NONAME ; CBBSensorEvent::CBBSensorEvent(TDesC16 const &, TTupleName const &, MBBDataFactory *, TTime, MBBData *, int)
+	__15TBBBtDeviceInfo @ 208 NONAME R3UNUSED ; TBBBtDeviceInfo::TBBBtDeviceInfo(void)
+	__15TBBBtDeviceInfoG16TInquirySockAddrRC7TDesC16 @ 209 NONAME ; TBBBtDeviceInfo::TBBBtDeviceInfo(TInquirySockAddr, TDesC16 const &)
+	__15TBBBtDeviceInfoRC6TDesC8RC7TDesC16iii @ 210 NONAME ; TBBBtDeviceInfo::TBBBtDeviceInfo(TDesC8 const &, TDesC16 const &, int, int, int)
+	__16TBBCalendarEventRC7TDesC16 @ 211 NONAME R3UNUSED ; TBBCalendarEvent::TBBCalendarEvent(TDesC16 const &)
+	__16TBBLocaMsgStatus @ 212 NONAME R3UNUSED ; TBBLocaMsgStatus::TBBLocaMsgStatus(void)
+	__16TBBLocaMsgStatusRC16TBBLocaMsgStatus @ 213 NONAME R3UNUSED ; TBBLocaMsgStatus::TBBLocaMsgStatus(TBBLocaMsgStatus const &)
+	__16TBBServerMessage @ 214 NONAME R3UNUSED ; TBBServerMessage::TBBServerMessage(void)
+	__19TBBBluetoothAddressRC6TDesC8RC7TDesC16 @ 215 NONAME R3UNUSED ; TBBBluetoothAddress::TBBBluetoothAddress(TDesC8 const &, TDesC16 const &)
+	__20TBBNeighbourhoodInfo @ 216 NONAME R3UNUSED ; TBBNeighbourhoodInfo::TBBNeighbourhoodInfo(void)
+	__20TBBNeighbourhoodInfoi @ 217 NONAME R3UNUSED ; TBBNeighbourhoodInfo::TBBNeighbourhoodInfo(int)
+	__9CBBLookupUi @ 218 NONAME R3UNUSED ; CBBLookup::CBBLookup(unsigned int)
+	__9TBBCellIdRC7TDesC16 @ 219 NONAME R3UNUSED ; TBBCellId::TBBCellId(TDesC16 const &)
+	__9TBBCellIdRC9TBBCellId @ 220 NONAME R3UNUSED ; TBBCellId::TBBCellId(TBBCellId const &)
+	__9TBBUnread @ 221 NONAME R3UNUSED ; TBBUnread::TBBUnread(void)
+	__as__10CBBUserPicRC10CBBUserPic @ 222 NONAME R3UNUSED ; CBBUserPic::operator=(CBBUserPic const &)
+	__as__10TBBBatteryRC10TBBBattery @ 223 NONAME R3UNUSED ; TBBBattery::operator=(TBBBattery const &)
+	__as__10TBBProfileRC10TBBProfile @ 224 NONAME R3UNUSED ; TBBProfile::operator=(TBBProfile const &)
+	__as__11CBBPresenceRC11CBBPresence @ 225 NONAME R3UNUSED ; CBBPresence::operator=(CBBPresence const &)
+	__as__11TBBBaseInfoRC11TBBBaseInfo @ 226 NONAME R3UNUSED ; TBBBaseInfo::operator=(TBBBaseInfo const &)
+	__as__11TBBCalendarRC11TBBCalendar @ 227 NONAME R3UNUSED ; TBBCalendar::operator=(TBBCalendar const &)
+	__as__11TBBLocationRC11TBBLocation @ 228 NONAME R3UNUSED ; TBBLocation::operator=(TBBLocation const &)
+	__as__11TBBSysEventRC11TBBSysEvent @ 229 NONAME R3UNUSED ; TBBSysEvent::operator=(TBBSysEvent const &)
+	__as__12TBBBaseVisitRC12TBBBaseVisit @ 230 NONAME R3UNUSED ; TBBBaseVisit::operator=(TBBBaseVisit const &)
+	__as__12TBBUserGivenRC12TBBUserGiven @ 231 NONAME R3UNUSED ; TBBUserGiven::operator=(TBBUserGiven const &)
+	__as__13TBBCellNamingRC13TBBCellNaming @ 232 NONAME R3UNUSED ; TBBCellNaming::operator=(TBBCellNaming const &)
+	__as__13TBBCurrentAppRC13TBBCurrentApp @ 233 NONAME R3UNUSED ; TBBCurrentApp::operator=(TBBCurrentApp const &)
+	__as__13TBBSentInviteRC13TBBSentInvite @ 234 NONAME R3UNUSED ; TBBSentInvite::operator=(TBBSentInvite const &)
+	__as__13TBBUserActiveRC13TBBUserActive @ 235 NONAME R3UNUSED ; TBBUserActive::operator=(TBBUserActive const &)
+	__as__14CBBSensorEventRC14CBBSensorEvent @ 236 NONAME R3UNUSED ; CBBSensorEvent::operator=(CBBSensorEvent const &)
+	__as__15CBBBtDeviceListRC15CBBBtDeviceList @ 237 NONAME R3UNUSED ; CBBBtDeviceList::operator=(CBBBtDeviceList const &)
+	__as__15TBBBtDeviceInfoRC15TBBBtDeviceInfo @ 238 NONAME R3UNUSED ; TBBBtDeviceInfo::operator=(TBBBtDeviceInfo const &)
+	__as__16TBBCalendarEventRC16TBBCalendarEvent @ 239 NONAME R3UNUSED ; TBBCalendarEvent::operator=(TBBCalendarEvent const &)
+	__as__16TBBLocaMsgStatusRC16TBBLocaMsgStatus @ 240 NONAME R3UNUSED ; TBBLocaMsgStatus::operator=(TBBLocaMsgStatus const &)
+	__as__16TBBServerMessageRC16TBBServerMessage @ 241 NONAME R3UNUSED ; TBBServerMessage::operator=(TBBServerMessage const &)
+	__as__20TBBNeighbourhoodInfoRC20TBBNeighbourhoodInfo @ 242 NONAME R3UNUSED ; TBBNeighbourhoodInfo::operator=(TBBNeighbourhoodInfo const &)
+	__as__8TGpsLineRC8TGpsLine @ 243 NONAME R3UNUSED ; TGpsLine::operator=(TGpsLine const &)
+	__as__9CBBLookupRC9CBBLookup @ 244 NONAME R3UNUSED ; CBBLookup::operator=(CBBLookup const &)
+	__as__9TBBCellIdRC9TBBCellId @ 245 NONAME R3UNUSED ; TBBCellId::operator=(TBBCellId const &)
+	__as__9TBBUnreadRC9TBBUnread @ 246 NONAME R3UNUSED ; TBBUnread::operator=(TBBUnread const &)
+	__eq__C10CBBUserPicRC10CBBUserPic @ 247 NONAME R3UNUSED ; CBBUserPic::operator==(CBBUserPic const &) const
+	__eq__C10TBBBatteryRC10TBBBattery @ 248 NONAME R3UNUSED ; TBBBattery::operator==(TBBBattery const &) const
+	__eq__C10TBBProfileRC10TBBProfile @ 249 NONAME R3UNUSED ; TBBProfile::operator==(TBBProfile const &) const
+	__eq__C11CBBPresenceRC11CBBPresence @ 250 NONAME R3UNUSED ; CBBPresence::operator==(CBBPresence const &) const
+	__eq__C11TBBBaseInfoRC11TBBBaseInfo @ 251 NONAME R3UNUSED ; TBBBaseInfo::operator==(TBBBaseInfo const &) const
+	__eq__C11TBBCalendarRC11TBBCalendar @ 252 NONAME R3UNUSED ; TBBCalendar::operator==(TBBCalendar const &) const
+	__eq__C11TBBLocationRC11TBBLocation @ 253 NONAME R3UNUSED ; TBBLocation::operator==(TBBLocation const &) const
+	__eq__C11TBBSysEventRC11TBBSysEvent @ 254 NONAME R3UNUSED ; TBBSysEvent::operator==(TBBSysEvent const &) const
+	__eq__C12TBBBaseVisitRC12TBBBaseVisit @ 255 NONAME R3UNUSED ; TBBBaseVisit::operator==(TBBBaseVisit const &) const
+	__eq__C12TBBUserGivenRC12TBBUserGiven @ 256 NONAME R3UNUSED ; TBBUserGiven::operator==(TBBUserGiven const &) const
+	__eq__C13TBBCellNamingRC13TBBCellNaming @ 257 NONAME R3UNUSED ; TBBCellNaming::operator==(TBBCellNaming const &) const
+	__eq__C13TBBCurrentAppRC13TBBCurrentApp @ 258 NONAME R3UNUSED ; TBBCurrentApp::operator==(TBBCurrentApp const &) const
+	__eq__C13TBBSentInviteRC13TBBSentInvite @ 259 NONAME R3UNUSED ; TBBSentInvite::operator==(TBBSentInvite const &) const
+	__eq__C13TBBUserActiveRC13TBBUserActive @ 260 NONAME R3UNUSED ; TBBUserActive::operator==(TBBUserActive const &) const
+	__eq__C14CBBSensorEventRC14CBBSensorEvent @ 261 NONAME R3UNUSED ; CBBSensorEvent::operator==(CBBSensorEvent const &) const
+	__eq__C15TBBBtDeviceInfoRC15TBBBtDeviceInfo @ 262 NONAME R3UNUSED ; TBBBtDeviceInfo::operator==(TBBBtDeviceInfo const &) const
+	__eq__C16TBBCalendarEventRC16TBBCalendarEvent @ 263 NONAME R3UNUSED ; TBBCalendarEvent::operator==(TBBCalendarEvent const &) const
+	__eq__C16TBBLocaMsgStatusRC16TBBLocaMsgStatus @ 264 NONAME R3UNUSED ; TBBLocaMsgStatus::operator==(TBBLocaMsgStatus const &) const
+	__eq__C16TBBServerMessageRC16TBBServerMessage @ 265 NONAME R3UNUSED ; TBBServerMessage::operator==(TBBServerMessage const &) const
+	__eq__C20TBBNeighbourhoodInfoRC20TBBNeighbourhoodInfo @ 266 NONAME R3UNUSED ; TBBNeighbourhoodInfo::operator==(TBBNeighbourhoodInfo const &) const
+	__eq__C9CBBLookupRC9CBBLookup @ 267 NONAME R3UNUSED ; CBBLookup::operator==(CBBLookup const &) const
+	__eq__C9TBBCellIdRC9TBBCellId @ 268 NONAME R3UNUSED ; TBBCellId::operator==(TBBCellId const &) const
+	AddItemL__15CBBBtDeviceListP15TBBBtDeviceInfo @ 269 NONAME R3UNUSED ; CBBBtDeviceList::AddItemL(TBBBtDeviceInfo *)
+

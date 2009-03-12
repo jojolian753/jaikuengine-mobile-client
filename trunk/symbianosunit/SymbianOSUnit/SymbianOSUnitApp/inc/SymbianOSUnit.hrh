@@ -1,0 +1,21 @@
+// SymbianOSUnit.hrh
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+enum SymbianOSUnitCommands
+{
+//	Insert the commands here
+	ECmdRunAutomatic = 2,
+	ECmdRunTest = 100
+};
+
+
+enum TSymbianOSUnitControl
+{
+	ESymbianOSUnitViewPage = 1,
+	ESymbianOSUnitLabelCtrl,
+	ESymbianOSUnitProgressCtrl,
+	ESymbianOSUnitEdwinCtrl
+};

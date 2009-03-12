@@ -1,0 +1,29 @@
+&EN,FI
+#{"Meaning","Merkitys"},(0x10204BA0),5,14,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+IF exists("z:\system\install\Series60v2.0_series60.SIS")
+	"not_on_v2.txt"-"",FT,TA
+ELSE
+@"..\mdaaudioinputstreamplugin.sis",(0x1000562F)
+@"..\expat\symbian\contextexpat_series60.SIS",(0x20000418)
+@"..\contextnotify\group\contextnotify_series60.SIS",(0x10204BAA)
+@"..\contextnotifyclient\group\contextnotifyclient_series60.SIS",(0x10204BAB)
+@"..\contextcommon\group\contextcommon_series60.SIS",(0x10200C6D)
+@"..\BlackBoard\gv1\BlackBoardData_series60.SIS",(0x10204BAE)
+@"..\BlackBoard\gv1\BlackBoardFactory_series60.SIS",(0x1020811A)
+@"..\BlackBoardServer\gv1\BlackBoardServer_series60.SIS",(0x10204BAF)
+@"..\BlackBoardClient\gv1\BlackBoardClient_series60.SIS",(0x10208119)
+@"..\ContextSensors\gv1\ContextSensorData_series60.SIS",(0x10208125)
+@"..\ContextSensors\gv1\ContextSensors_series60.SIS",(0x1020811D)
+@"..\ContextSensors\gv1\ContextSensorFactory_series60.SIS",(0x1020811E)
+@"..\ContextNetwork\gv1\ContextNetwork_series60.SIS",(0x1020811F)
+@"..\ContextMedia\gv1\ContextMediaData_series60.SIS",(0x10208129)
+@"..\ContextMedia\gv1\ContextMedia_series60.SIS",(0x10208121)
+@"..\ContextMedia\gv1\ContextMediaFactory_series60.SIS",(0x10208122)
+@"..\contextcommon2\gv1\contextcommon2_series60.SIS",(0x10208120)
+@"..\contextui\gv1\contextui_series60.SIS",(0x10208128)
+@"..\ContextMediaUi\gv1\ContextMediaUi_series60.SIS",(0x20000412)
+@"..\context_log\group\contextflickr_series60.SIS",(0x101FBAD1)
+@"..\starter\group\starter_series60.SIS",(0x101FBAD3)
+@"..\autostart\group\cl_autostart_series60.SIS",(0x101FBAD2)
+ENDIF

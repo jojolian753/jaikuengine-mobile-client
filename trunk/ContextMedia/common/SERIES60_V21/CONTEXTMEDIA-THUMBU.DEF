@@ -1,0 +1,13 @@
+EXPORTS
+	NewL__11CTagStorageR3CDb @ 1 NONAME R3UNUSED ; CTagStorage::NewL(CDb &)
+	MediaPoolId__12CPostStorage @ 2 NONAME R3UNUSED ; CPostStorage::MediaPoolId(void)
+	NewDummyNetworkL__Fv @ 3 NONAME R3UNUSED ; NewDummyNetworkL(void)
+	AddMeToMediaPoolId__12CPostStorage @ 4 NONAME R3UNUSED ; CPostStorage::AddMeToMediaPoolId(void)
+	NewL__12CPostStorageR12MApp_contextR3CDbP14MBBDataFactory @ 5 NONAME R3UNUSED ; CPostStorage::NewL(MApp_context &, CDb &, MBBDataFactory *)
+	OpenPostInMessageEditorL__FR12MApp_contextR10CSendAppUiRC7CCMPosti @ 6 NONAME ; OpenPostInMessageEditorL(MApp_context &, CSendAppUi &, CCMPost const &, int)
+	RootId__12CPostStorage @ 7 NONAME R3UNUSED ; CPostStorage::RootId(void)
+	__10TOldPromptb @ 8 NONAME R3UNUSED ; TOldPrompt::TOldPrompt(bool)
+	NewL__17CPicturePublisherR12MApp_contextR14i_status_notifRC7TDesC16T3iiiiR13MUploadPromptT9P12CTransferDirT3 @ 9 NONAME ; CPicturePublisher::NewL(MApp_context &, i_status_notif &, TDesC16 const &, TDesC16 const &, int, int, int, int, MUploadPrompt &, MUploadPrompt &, CTransferDir *, TDesC16 const &)
+	Prompt__10TOldPromptRC7TDesC16P15MUploadCallBack @ 10 NONAME R3UNUSED ; TOldPrompt::Prompt(TDesC16 const &, MUploadCallBack *)
+	"_._17CPicturePublisher" @ 11 NONAME R3UNUSED ; CPicturePublisher::~CPicturePublisher(void)
+

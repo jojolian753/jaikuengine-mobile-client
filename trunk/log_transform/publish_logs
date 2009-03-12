@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ "$2" = "" ]
+then
+	echo "Usage: "
+	echo "publish_logs PERSON DEFAULT_NETWORK"
+	exit
+fi
+
+/home/group/context/bin/toxml.pl $*
+if [ -f context*xml ]
+then
+	install -m 0644 -g context context*xml comm*xml /home/group/context/public_html/data
+fi

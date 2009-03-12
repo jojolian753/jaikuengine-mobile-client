@@ -1,0 +1,8 @@
+#ifdef LANGUAGE_01
+#include "contextcommon.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextcommon.l09"
+#endif
+
+// End of File

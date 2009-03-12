@@ -1,0 +1,4 @@
+PRJ_PLATFORMS
+winscw gcce
+PRJ_MMPFILES
+contextui.mmp

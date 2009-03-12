@@ -1,0 +1,3 @@
+/c24,8 ..\svg\testsvg1.svg
+/8     ..\svg\testsvg2.svg
+/c24,8 ..\svg\testsvg3.svg

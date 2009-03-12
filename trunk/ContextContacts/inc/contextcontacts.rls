@@ -1,0 +1,12 @@
+//  LOCALISATION STRINGS
+
+//d:Caption string for app.
+rls_string STRING_contextcontacts_caption_string "Jaiku"
+
+//d:Short caption string for app.
+rls_string STRING_contextcontacts_short_caption_string "Jaiku"
+
+rls_string STRING_contextcontacts_loc_resource_file_1 "\\resource\\apps\\contextcontacts"
+
+// End of File
+

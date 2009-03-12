@@ -1,0 +1,8 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,21,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\contextcommon\gv2\contextcommon_dbg_build.SIS",(0x10200C6D)
+@"..\contextserver\gv2\contextserver_dbg_build.SIS",(0x10200C6B)
+@"..\contextclient\gv2\contextclient_dbg_build.SIS",(0x10200C6C)
+@"..\context_log\gv2\context_log_dbg_build.SIS",(0x101FBAD1)
+@"..\contextbook\gv2\contextbook_dbg_build.SIS",(0x101FBAD0)

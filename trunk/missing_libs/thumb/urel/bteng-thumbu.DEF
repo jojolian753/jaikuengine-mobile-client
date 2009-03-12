@@ -1,0 +1,59 @@
+;DLLNAME BTENG[10005952].DLL
+EXPORTS
+	"UnregisterSecuritySettingsL__13CBTConnectionUi" @ 1 NONAME R3UNUSED
+	"ActiveConnectSocketL__13CBTConnectionR11RSocketServR7RSocketiR9CBTDeviceUiR14TRequestStatus" @ 2 NONAME
+	"AddDeviceIntoRegistryL__16RBTDeviceHandlerR9CBTDevice" @ 3 NONAME R3UNUSED
+	"AreExistingConnectionsL__16RBTDeviceHandlerRi" @ 4 NONAME R3UNUSED
+	"AuthenticateConnection__13CBTConnectionR7RSocketR14TRequestStatus" @ 5 NONAME R3UNUSED
+	"CancelAuthentication__13CBTConnectionR7RSocket" @ 6 NONAME R3UNUSED
+	"CancelBonding__13CBTConnection" @ 7 NONAME R3UNUSED
+	"CancelConnection__13CBTConnectionR7RSocket" @ 8 NONAME R3UNUSED
+	"CloseAllBasebandConnectionsL__16RBTDeviceHandler" @ 9 NONAME R3UNUSED
+	"CloseBasebandConnectionL__16RBTDeviceHandlerRC9CBTDevice" @ 10 NONAME R3UNUSED
+	"DeleteAllDevicesL__16RBTDeviceHandler" @ 11 NONAME R3UNUSED
+	"DeleteDeviceFromRegistryL__16RBTDeviceHandlerR9CBTDevice" @ 12 NONAME R3UNUSED
+	"DeleteDevicesWithoutLinkKeyL__16RBTDeviceHandler" @ 13 NONAME R3UNUSED
+	"DisconnectSocketL__13CBTConnectionR7RSocketQ27RSocket9TShutdown" @ 14 NONAME R3UNUSED
+	"E32Dll__F10TDllReason" @ 15 NONAME R3UNUSED
+	"GetAllSettings__14CBTMCMSettingsRiR22TBTDiscoverabilityModeR13TBTSearchModeR6TDes16T1" @ 16 NONAME
+	"GetDevicesFromRegistryL__16RBTDeviceHandlerRt13CArrayPtrFlat1Z9CBTDevice" @ 17 NONAME R3UNUSED
+	"GetDiscoverabilityModeL__14CBTMCMSettingsR22TBTDiscoverabilityMode" @ 18 NONAME R3UNUSED
+	"GetLocalBDAddress__14CBTMCMSettingsR10TBTDevAddr" @ 19 NONAME R3UNUSED
+	"GetLocalBTName__14CBTMCMSettingsR6TDes16" @ 20 NONAME R3UNUSED
+	"GetOpenBasebandConnectionsL__16RBTDeviceHandlerRt13CArrayPtrFlat1Z9CBTDevice" @ 21 NONAME R3UNUSED
+	"GetPowerStateL__14CBTMCMSettingsRi" @ 22 NONAME R3UNUSED
+	"GetRemoteDeviceInfoL__13CBTConnectionR7RSocketR9CBTDevice" @ 23 NONAME R3UNUSED
+	"GetSearchModeL__14CBTMCMSettingsR13TBTSearchMode" @ 24 NONAME R3UNUSED
+	"IsDeviceConnectedL__16RBTDeviceHandlerRC9CBTDeviceRi" @ 25 NONAME R3UNUSED
+	"IsLocalNameModified__14CBTMCMSettingsRi" @ 26 NONAME R3UNUSED
+	"ModifyDeviceInRegistryL__16RBTDeviceHandlerR9CBTDevice" @ 27 NONAME R3UNUSED
+	"NewLC__13CBTConnection" @ 28 NONAME R3UNUSED
+	"NewLC__14CBTMCMSettingsP16MBTMCMSettingsCB" @ 29 NONAME R3UNUSED
+	"NewL__13CBTConnection" @ 30 NONAME R3UNUSED
+	"NewL__14CBTMCMSettingsP16MBTMCMSettingsCB" @ 31 NONAME R3UNUSED
+	"PassiveConnectSocketL__13CBTConnectionR11RSocketServR7RSocketT2RUiR14TRequestStatus" @ 32 NONAME
+	"PerformBondingL__13CBTConnectionR9CBTDeviceP18MBTBondingObserver" @ 33 NONAME R3UNUSED
+	"RegisterSDPSettingsL__13CBTConnectionUiUiRUl" @ 34 NONAME
+	"RegisterSecuritySettingsL__13CBTConnectionUiiiiii" @ 35 NONAME
+	"ReleaseLocalChannelL__13CBTConnectionR7RSocket" @ 36 NONAME R3UNUSED
+	"RemoveTrustFromDevicesL__16RBTDeviceHandler" @ 37 NONAME R3UNUSED
+	"ReserveLocalChannelL__13CBTConnectionR11RSocketServR7RSocketRUi" @ 38 NONAME
+	"RestoreFactorySettingsL__6CBTRfsi" @ 39 NONAME R3UNUSED
+	"SearchRemoteChannelL__13CBTConnectionRC9CBTDeviceUiRUi" @ 40 NONAME
+	"SearchRemoteChannelL__13CBTConnectionRC9CBTDeviceUiRUiR14TRequestStatus" @ 41 NONAME
+	"SearchRemoteDeviceL__13CBTConnectionR9CBTDevice" @ 42 NONAME R3UNUSED
+	"SearchRemoteDeviceL__13CBTConnectionR9CBTDevice20TBTMajorServiceClass" @ 43 NONAME R3UNUSED
+	"SetDefaultValuesL__14CBTMCMSettings" @ 44 NONAME R3UNUSED
+	"SetDeviceSecurityL__16RBTDeviceHandlerR9CBTDeviceiii" @ 45 NONAME
+	"SetDiscoverabilityModeL__14CBTMCMSettings22TBTDiscoverabilityModei" @ 46 NONAME R3UNUSED
+	"SetLocalBTName__14CBTMCMSettingsRC7TDesC16" @ 47 NONAME R3UNUSED
+	"SetPowerStateL__14CBTMCMSettingsii" @ 48 NONAME R3UNUSED
+	"SetSearchModeL__14CBTMCMSettings13TBTSearchMode" @ 49 NONAME R3UNUSED
+	"UnregisterSDPSettingsL__13CBTConnectionUl" @ 50 NONAME R3UNUSED
+	"ActiveConnectSocketL__13CBTConnectionR11RSocketServR7RSocketR9CBTDeviceUiR14TRequestStatus" @ 51 NONAME
+	"RemoteSdpQueryL__13CBTConnectionRC9CBTDeviceG5TUUIDUsRUi" @ 52 NONAME
+	"GetAccessoryAddr__14CBTMCMSettingsR10TBTDevAddr" @ 53 NONAME R3UNUSED
+	"GetConnectionStatus__14CBTMCMSettingsRi" @ 54 NONAME R3UNUSED
+	"IsCallOngoing__14CBTMCMSettingsRi" @ 55 NONAME R3UNUSED
+	"IsWiredAccConnected__14CBTMCMSettingsRi" @ 56 NONAME R3UNUSED
+	"CancelSearch__13CBTConnection" @ 57 NONAME R3UNUSED

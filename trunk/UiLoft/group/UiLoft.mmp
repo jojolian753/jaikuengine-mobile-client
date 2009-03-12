@@ -1,0 +1,155 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+
+#ifdef __S60V3__
+EPOCSTACKSIZE 0x5000
+#endif
+
+#ifdef __UI_FRAMEWORKS_V2__
+TARGETPATH	\sys\bin
+
+#if defined(EKA2) || !defined(WINS)
+TARGET          UiLoft.exe
+TARGETTYPE exe
+#else // EKA1 WINS
+TARGET          UiLoft.app
+TARGETTYPE exedll
+deffile \epoc32\release\wins\UiLoft.def
+#endif
+#else // __UI_FRAMEWORKS_V2__
+TARGET          UiLoft.app
+TARGETPATH      \system\apps\UiLoft
+TARGETTYPE app
+#endif
+UID               0x100039CE CONTEXT_UID_UILOFT
+
+LANG              01
+
+SOURCEPATH        ..\src
+DOCUMENT		  Series_60_APP_ReadMe.txt
+SOURCE            UiLoft.cpp
+SOURCE            UiLoftApplication.cpp 
+SOURCE            UiLoftAppView.cpp
+SOURCE            UiLoftAppUi.cpp
+SOURCE            UiLoftDocument.cpp 
+SOURCE            MyPicture.cpp
+SOURCE ListView.cpp
+
+
+LIBRARY JaikuUiKit.lib
+USERINCLUDE       ..\..\JaikuUiKit\inc
+
+LIBRARY ContextContactsUi.lib
+USERINCLUDE ..\..\ContextContactsUi\inc
+
+USERINCLUDE  ..\inc 
+USERINCLUDE  ..\.. 
+USERINCLUDE  ..\..\ContextCommon\inc
+USERINCLUDE  ..\..\ContextCommon2\inc
+USERINCLUDE  ..\..\BlackBoard\inc
+USERINCLUDE  ..\..\ContextUi\inc
+USERINCLUDE       ..\sis 
+
+USERINCLUDE       ..\..\expat\lib ..\..\expat\symbian 
+SYSTEMINCLUDE     \epoc32\include\libc
+
+
+SYSTEMINCLUDE     \epoc32\include
+
+LIBRARY       aknicon.lib 
+LIBRARY       aknnotify.lib
+LIBRARY       aknskins.lib
+LIBRARY		  apgrfx.lib
+LIBRARY       apparc.lib
+LIBRARY       avkon.lib  
+LIBRARY       bafl.lib
+LIBRARY       CommonEngine.lib
+LIBRARY       commonui.lib
+LIBRARY       cone.lib 
+LIBRARY       efsrv.lib
+LIBRARY       egul.lib 
+LIBRARY		  eikcoctl.lib
+LIBRARY       eikcore.lib  
+LIBRARY       eikctl.lib  
+LIBRARY       eiksrv.lib
+LIBRARY       estor.lib
+LIBRARY       etext.lib 
+LIBRARY       euser.lib
+LIBRARY       fbscli.lib
+LIBRARY       form.lib 
+LIBRARY       gdi.lib  
+LIBRARY       sendui.lib
+LIBRARY		  sysutil.lib
+LIBRARY       uiklaf.lib 
+LIBRARY       ws32.lib
+
+LIBRARY contextcommon.lib
+LIBRARY contextcommon2.lib
+
+
+SOURCEPATH        ..\group
+#ifdef __UI_FRAMEWORKS_V2__
+START RESOURCE	UiLoft.RSS
+HEADER
+targetpath	\resource\apps
+end
+#else
+RESOURCE        UiLoft.RSS 
+#endif
+
+#ifdef __UI_FRAMEWORKS_V2__
+sourcepath		.
+START RESOURCE	UiLoft_reg.rss
+TARGETPATH	\private\10003a3f\apps
+END
+   
+start resource UiLoft_loc.RSS
+targetpath \resource\apps
+end
+#endif

@@ -1,0 +1,10 @@
+#include "contextvariant.hrh"
+
+#ifdef LANGUAGE_01
+#include "contextui.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextui.l09"
+#endif
+
+// End of File

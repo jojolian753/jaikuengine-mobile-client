@@ -1,0 +1,8 @@
+#include "contextmenu.loc"
+#include <apcaptionfile.rh>
+
+RESOURCE CAPTION_DATA
+{
+    caption=CMENU_CAPTION;
+    shortcaption=CMENU_CAPTION;
+}

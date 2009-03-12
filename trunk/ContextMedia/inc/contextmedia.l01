@@ -1,0 +1,6 @@
+#define ELanguage ELangEnglish
+
+#define CM_LOADING_TITLE	"Fetching"
+#define CM_ERROR_TITLE		"Error! Try refresh"
+#define CM_NEW_THREAD_TITLE   "New Thread"
+#define CM_NO_AUTHOR		"?"

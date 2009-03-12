@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   baseProfile="tiny"
+   id="Layer_1"
+   width="18.331"
+   height="18.332"
+   viewBox="0 0 18.331 18.332"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.45"
+   sodipodi:docname="placeholder.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:docbase="D:\my\projects\jaicons"
+   sodipodi:modified="true"><metadata
+   id="metadata28"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs26" /><sodipodi:namedview
+   inkscape:window-height="573"
+   inkscape:window-width="739"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:zoom="20.565131"
+   inkscape:cx="9.1654997"
+   inkscape:cy="9.1660004"
+   inkscape:window-x="22"
+   inkscape:window-y="29"
+   inkscape:current-layer="Layer_1" />
+<path
+   fill="#FFFFFF"
+   d="M18.33,16.922c0,0.776-0.631,1.41-1.408,1.41H1.409c-0.778,0-1.41-0.634-1.41-1.41V1.41  C0,0.631,0.632,0,1.409,0H16.92c0.777,0,1.408,0.631,1.408,1.41L18.33,16.922L18.33,16.922z"
+   id="path3" />
+<g
+   id="g5">
+	<g
+   id="g7">
+		<path
+   fill="#0BAFEF"
+   d="M13.676,8.074c0,0,0,5.401,0,6.067c-0.665,0-8.234,0-8.898,0c0-0.666,0-6.067,0-6.067    c0-0.208-0.168-0.375-0.375-0.375S4.028,7.866,4.028,8.074v6.442c0,0.207,0.168,0.375,0.375,0.375h9.648    c0.207,0,0.375-0.168,0.375-0.375V8.074c0-0.208-0.168-0.375-0.375-0.375C13.843,7.699,13.676,7.866,13.676,8.074z"
+   id="path9" />
+	</g>
+	<g
+   id="g11">
+		<g
+   id="g13">
+			<path
+   fill="#0BAFEF"
+   d="M8.956,2.692L2.302,9.347c-0.146,0.146-0.146,0.384,0,0.53s0.384,0.146,0.531,0l6.654-6.654     c0.146-0.146,0.146-0.384,0-0.53S9.103,2.546,8.956,2.692z"
+   id="path15" />
+		</g>
+		<g
+   id="g17">
+			<path
+   fill="#0BAFEF"
+   d="M8.966,2.692c-0.146,0.146-0.146,0.384,0,0.53l6.654,6.654c0.146,0.146,0.384,0.146,0.53,0     s0.146-0.384,0-0.53L9.496,2.692C9.35,2.546,9.113,2.546,8.966,2.692z"
+   id="path19" />
+		</g>
+	</g>
+	<rect
+   x="7.794"
+   y="9.461"
+   fill="#0BAFEF"
+   width="2.866"
+   height="4.859"
+   id="rect21" />
+	<polygon
+   fill="#0BAFEF"
+   points="13.239,6.729 11.862,5.866 11.474,5.436 11.474,3.653 13.239,3.653  "
+   id="polygon23" />
+</g>
+<path
+   sodipodi:type="arc"
+   style="fill:#0000ff"
+   id="path2186"
+   sodipodi:cx="9.2389393"
+   sodipodi:cy="7.391151"
+   sodipodi:rx="2.18817"
+   sodipodi:ry="1.94504"
+   d="M 11.427109 7.391151 A 2.18817 1.94504 0 1 1  7.0507693,7.391151 A 2.18817 1.94504 0 1 1  11.427109 7.391151 z" /></svg>

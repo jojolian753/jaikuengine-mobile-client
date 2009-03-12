@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 88 88">
+<switch>
+<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1" content="structured text"/>
+<g>
+<g>
+<g>
+<g>
+<ellipse fill-opacity="0.2" stroke-opacity="0.2" fill="#3A2928" cx="25.92" cy="51.429" rx="14.949" ry="6.406"/>
+<g>
+<path fill="#185F0C" d="M10.271,46.614c0-7.331,3.807-14.672,8.022-17.426          c-2.182-2.198-3.404-4.767-3.404-8.18c0-5.672,4.944-11.101,11.345-11.101c6.402,0,11.425,5.105,11.425,11.101          c0,3.62-1.308,6.213-3.728,8.427c4.133,3.075,7.781,10.05,7.781,17.088C41.712,56.97,10.271,57.061,10.271,46.614z"/>
+<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="25.9219" y1="53.3203" x2="25.9219" y2="28.1362">
+<stop offset="0" style="stop-color:#BAE774"/>
+<stop offset="1" style="stop-color:#1B620E"/>
+</linearGradient>
+<path fill-rule="evenodd" fill="url(#XMLID_7_)" d="M11.555,45.944          c0-9.835,6.431-17.809,14.366-17.809c7.936,0,14.369,7.973,14.369,17.809C40.289,55.778,11.555,55.778,11.555,45.944z"/>
+<g>
+<linearGradient id="XMLID_8_" gradientUnits="userSpaceOnUse" x1="26.3989" y1="30.9087" x2="26.3989" y2="10.9224">
+<stop offset="0" style="stop-color:#185F0C"/>
+<stop offset="0.1414" style="stop-color:#185F0C"/>
+<stop offset="1" style="stop-color:#D3F098"/>
+</linearGradient>
+<ellipse fill="url(#XMLID_8_)" cx="26.399" cy="20.916" rx="9.889" ry="9.993"/>
+</g>
+<linearGradient id="XMLID_9_" gradientUnits="userSpaceOnUse" x1="25.8257" y1="50.8125" x2="25.8257" y2="40.7808">
+<stop offset="0" style="stop-color:#A5E864"/>
+<stop offset="1" style="stop-color:#347012"/>
+</linearGradient>
+<path fill-rule="evenodd" fill="url(#XMLID_9_)" d="M37.524,46.374          c0,3.142-6.299,4.438-11.699,4.438c-5.4,0-11.698-1.297-11.698-4.438c0-3.146,6.298-5.594,11.698-5.594          C31.225,40.78,37.524,43.229,37.524,46.374z"/>
+<path fill-opacity="0.3" stroke-opacity="0.3" fill-rule="evenodd" fill="#FFFFFF" d="M32.166,13.9          c0,1.804-3.084,2.549-5.728,2.549c-2.645,0-5.729-0.745-5.729-2.549c0-1.806,3.084-3.211,5.729-3.211          C29.082,10.689,32.166,12.095,32.166,13.9z"/>
+</g>
+</g>
+<g>
+<path fill-opacity="0.2" stroke-opacity="0.2" fill="#3A2928" d="M60.96,66.957c8.257,0,14.95,2.871,14.95,6.408         c0,3.538-6.693,6.407-14.95,6.407c-8.254,0-14.949-2.869-14.949-6.407C46.011,69.828,52.706,66.957,60.96,66.957z"/>
+<g>
+<path fill="#185F0C" d="M45.312,68.55c0-7.329,3.808-14.672,8.021-17.425          c-2.182-2.197-3.402-4.768-3.402-8.181c0-5.671,4.943-11.1,11.346-11.1c6.4,0,11.423,5.104,11.423,11.1          c0,3.62-1.305,6.213-3.727,8.429c4.133,3.073,7.78,10.05,7.78,17.087C76.752,78.907,45.312,78.996,45.312,68.55z"/>
+<linearGradient id="XMLID_10_" gradientUnits="userSpaceOnUse" x1="60.9609" y1="75.2578" x2="60.9609" y2="50.0723">
+<stop offset="0" style="stop-color:#BAE774"/>
+<stop offset="1" style="stop-color:#1B620E"/>
+</linearGradient>
+<path fill-rule="evenodd" fill="url(#XMLID_10_)" d="M46.594,67.881          c0-9.836,6.433-17.809,14.368-17.809c7.935,0,14.366,7.973,14.366,17.809C75.328,77.716,46.594,77.716,46.594,67.881z"/>
+<g>
+<linearGradient id="XMLID_11_" gradientUnits="userSpaceOnUse" x1="61.4385" y1="52.8447" x2="61.4385" y2="32.8584">
+<stop offset="0" style="stop-color:#185F0C"/>
+<stop offset="0.1414" style="stop-color:#185F0C"/>
+<stop offset="1" style="stop-color:#D3F098"/>
+</linearGradient>
+<ellipse fill="url(#XMLID_11_)" cx="61.44" cy="42.851" rx="9.889" ry="9.993"/>
+</g>
+<linearGradient id="XMLID_12_" gradientUnits="userSpaceOnUse" x1="60.8652" y1="72.75" x2="60.8652" y2="62.7168">
+<stop offset="0" style="stop-color:#A5E864"/>
+<stop offset="1" style="stop-color:#347012"/>
+</linearGradient>
+<path fill-rule="evenodd" fill="url(#XMLID_12_)" d="M72.562,68.31          c0,3.143-6.297,4.44-11.695,4.44c-5.399,0-11.698-1.298-11.698-4.44c0-3.145,6.299-5.593,11.698-5.593          C66.265,62.717,72.562,65.165,72.562,68.31z"/>
+<path fill-opacity="0.3" stroke-opacity="0.3" fill-rule="evenodd" fill="#FFFFFF" d="M67.207,35.837          c0,1.804-3.086,2.549-5.731,2.549c-2.644,0-5.728-0.745-5.728-2.549c0-1.806,3.084-3.211,5.728-3.211          C64.121,32.625,67.207,34.031,67.207,35.837z"/>
+</g>
+</g>
+</g>
+<g>
+<rect fill="none" width="88" height="88"/>
+</g>
+</g>
+</g>
+</switch>
+</svg>

@@ -1,0 +1,292 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#ifndef __JAIKULAYOUTIDS_H__
+#define __JAIKULAYOUTIDS_H__
+
+enum TJaikuLayoutGroup
+	{
+		LG_contacts_list = 0,
+		LG_contacts_list_item_content,
+		LG_welcome_softkeys,
+		LG_welcome_selection_listbox,
+		LG_welcome_selection_listbox_content,
+		LG_richpresence_list,
+		LG_richpresence_list_item_content,
+		LG_idleview_connection_icon,
+		LG_welcome_page,
+		LG_welcome_selection_page,
+		LG_welcome_congratulations_page,
+		LG_stream_list,
+		LG_stream_list_item_content,
+		LG_feed_controls,
+		LG_feed_controls_margins,
+		LG_feed_bubble,
+		LG_feed_button,
+		LG_presence_list,
+		LG_progressbar,
+		LG_mediaview,
+		LG_mediaviewupper,
+		LG_mediaviewlower,
+		LG_mediapost,
+		LG_autotags,
+		LG_medialistbox
+	};
+
+
+
+// Parent is a contact list item
+enum 
+	{		
+		LI_contacts_list__listbox = 0,
+		LI_contacts_list__scrollbar,
+		LI_contacts_list__item_full,
+		LI_contacts_list__item_content_only,
+		LI_contacts_list__find_pane
+	};
+
+enum 
+	{
+		LI_contacts_list_item_content__nonjaiku_contact_name = 0,
+		LI_contacts_list_item_content__nonjaiku_contact_extradetails,
+		LI_contacts_list_item_content__jaiku_contact_name,
+		LI_contacts_list_item_content__jaiku_contact_presenceline,
+		LI_contacts_list_item_content__jaiku_contact_image,
+		LI_contacts_list_item_content__jaiku_contact_status_icon,
+		LI_contacts_list_item_content__jaiku_contact_unread_icon,
+		LI_contacts_list_item_content__selection_marker,
+	};
+
+enum 
+	{
+		// softkeys
+		LI_welcome__leftsoftkey = 0,
+		LI_welcome__rightsoftkey,
+	};
+
+
+enum 
+	{
+		// welcome page
+		LI_welcome_page__body_text = 0,
+		LI_welcome_page__jaiku_logo,
+		LI_welcome_page__welcometojaiku,
+	};
+
+
+enum 
+	{
+		// congrats page
+		LI_welcome_congratulations_page__body_text = 0,
+		LI_welcome_congratulations_page__logo,
+		LI_welcome_congratulations_page__text,
+	};
+
+enum 
+	{
+		// welcome selection page
+		LI_welcome_selection_page__header_bg = 0,
+		LI_welcome_selection_page__header_text,
+		LI_welcome_selection_page__header_logo,
+		LI_welcome_selection_page__body_text,
+	};
+
+enum 
+	{
+		LI_welcome_selection_listbox__listbox = 0,
+		LI_welcome_selection_listbox__item, 
+		LI_welcome_selection_listbox__item_text, 
+	};
+
+	
+enum 
+	{
+		LI_richpresence_list__listbox = 0,
+		LI_richpresence_list__item_full,
+		LI_richpresence_list__item_content_only
+	};
+
+enum 
+	{
+		LI_richpresence_list_item_content__maintext = 0,
+		LI_richpresence_list_item_content__maintext_tstamp,
+		LI_richpresence_list_item_content__secondarytext,
+		LI_richpresence_list_item_content__icon,
+	};
+
+
+enum 
+	{
+		LI_idleview_connection_icon__icon = 0,
+	};
+
+enum 
+	{
+		LI_stream_list__listbox = 0,
+		LI_stream_list__item_full,
+		LI_stream_list__item_content_only
+	};
+
+enum
+	{
+		LI_stream_list_item_content__text = 0,
+		LI_stream_list_item_content__jaicon,
+		LI_stream_list_item_content__buddyicon,
+		LI_stream_list_item_content__commenticon,
+		LI_stream_list_item_content__commentcount,
+
+
+	};
+
+enum 
+	{
+		LI_feed_controls__buddy_icon = 0,
+		LI_feed_controls__jaicon,
+		LI_feed_controls__traffic_light,
+		LI_feed_controls__separator,
+		LI_feed_controls__unread_indicator,
+		LI_feed_controls__thumbnail,
+	};
+
+enum 
+	{
+		LI_feed_controls_margins__main = 0,
+		LI_feed_controls_margins__buddy,
+		LI_feed_controls_margins__jaicon,
+		LI_feed_controls_margins__bubblecontent,
+		LI_feed_controls_margins__button_out,
+		LI_feed_controls_margins__button_in,
+		LI_feed_controls_margins__separator,
+		LI_feed_controls_margins__author_header,
+		LI_feed_controls_margins__author_header_buddy,
+		LI_feed_controls_margins__comment_indicator,
+		LI_feed_controls_margins__focused_buddy,
+		LI_feed_controls_margins__thumbnail,
+	};
+
+enum 
+	{
+		LI_feed_bubble__corner = 0,
+		LI_feed_bubble__left,
+		LI_feed_bubble__right,
+		LI_feed_bubble__top,
+		LI_feed_bubble__bottom,
+	};
+
+enum
+	{
+		LI_feed_button__u1 = 0,
+		LI_feed_button__u2,
+		LI_feed_button__u3,
+		LI_feed_button__d1,
+		LI_feed_button__d2,
+		LI_feed_button__d3,
+	};
+
+enum 
+	{
+		LI_presence_list__item_margins = 0,
+		LI_presence_list__icon,
+		LI_presence_list__icon_margins,
+		LI_presence_list__traffic_light,
+	};
+
+
+enum
+	{
+		LI_progressbar__message = 0
+	};
+
+enum
+	{
+		LI_mediaview__upper = 0,
+		LI_mediaview__lower,
+		LI_mediaview__indicators
+	};
+
+
+enum
+	{
+		LI_mediaviewupper__picture = 0,
+		LI_mediaviewupper__video,
+		LI_mediaviewupper__leftarrow,
+		LI_mediaviewupper__rightarrow,
+		LI_mediaviewupper__timebox,
+		LI_mediaviewupper__countbox,
+		LI_mediaviewupper__loadinglabel,
+		LI_mediaviewupper__errorlabel,
+		LI_mediaviewupper__volumeindicator
+	};
+
+enum
+	{
+		LI_mediaviewlower__comment = 0,
+		LI_mediaviewlower__tags
+	};
+
+enum
+	{
+		LI_mediapost__selecttags,
+	};
+
+enum
+	{
+		LI_autotags__itemsize = 0,
+		LI_autotags__text,
+		LI_autotags__icon,
+		LI_autotags__textmargins,
+		LI_autotags__iconmargins
+	};
+
+
+enum
+	{
+		LI_medialistbox__itemsize = 0,
+		LI_medialistbox__name,
+		LI_medialistbox__count,
+		LI_medialistbox__name_margins,
+		LI_medialistbox__count_margins
+	};
+#endif //  __JAIKULAYOUTIDS_H__

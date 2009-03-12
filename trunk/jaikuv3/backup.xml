@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<backup_registration>
+	<system_backup/>
+	<restore requires_reboot = "no"/>
+	<public_backup>
+		<include_directory>\Data\Context\</include_directory>
+	</public_backup>
+</backup_registration>

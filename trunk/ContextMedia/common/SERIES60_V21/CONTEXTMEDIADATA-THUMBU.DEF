@@ -1,0 +1,31 @@
+EXPORTS
+	__eq__C9TCMSenderRC9TCMSender @ 1 NONAME R3UNUSED ; TCMSender::operator==(TCMSender const &) const
+	CloneL__C7CCMPostRC7TDesC16 @ 2 NONAME R3UNUSED ; CCMPost::CloneL(TDesC16 const &) const
+	CloneL__C9TCMSenderRC7TDesC16 @ 3 NONAME R3UNUSED ; TCMSender::CloneL(TDesC16 const &) const
+	ConstructL__7CCMPostii @ 4 NONAME R3UNUSED ; CCMPost::ConstructL(int, int)
+	Equals__C7CCMPostPC7MBBData @ 5 NONAME R3UNUSED ; CCMPost::Equals(MBBData const *) const
+	Equals__C9TCMSenderPC7MBBData @ 6 NONAME R3UNUSED ; TCMSender::Equals(MBBData const *) const
+	GetThumbnailIndex__C7CCMPost @ 7 NONAME R3UNUSED ; CCMPost::GetThumbnailIndex(void) const
+	HasCrucialFields__C7CCMPost @ 8 NONAME R3UNUSED ; CCMPost::HasCrucialFields(void) const
+	HasMainFields__C7CCMPost @ 9 NONAME R3UNUSED ; CCMPost::HasMainFields(void) const
+	InternalizeL__7CCMPostR11RReadStream @ 10 NONAME R3UNUSED ; CCMPost::InternalizeL(RReadStream &)
+	LastPostAuthor__C7CCMPost @ 11 NONAME R3UNUSED ; CCMPost::LastPostAuthor(void) const
+	LastPostDate__C7CCMPost @ 12 NONAME R3UNUSED ; CCMPost::LastPostDate(void) const
+	NewL__7CCMPostP14MBBDataFactoryUiii @ 13 NONAME ; CCMPost::NewL(MBBDataFactory *, unsigned int, int, int)
+	NewL__7CCMPostP14MBBDataFactoryii @ 14 NONAME R3UNUSED ; CCMPost::NewL(MBBDataFactory *, int, int)
+	Release__C7CCMPost @ 15 NONAME R3UNUSED ; CCMPost::Release(void) const
+	SetDeletionNotify__7CCMPostP19MPostDeletionNotify @ 16 NONAME R3UNUSED ; CCMPost::SetDeletionNotify(MPostDeletionNotify *)
+	SetLastPostInfo__7CCMPostRC7TDesC16RC5TTime @ 17 NONAME R3UNUSED ; CCMPost::SetLastPostInfo(TDesC16 const &, TTime const &)
+	SetThumbNailIndex__7CCMPosti @ 18 NONAME R3UNUSED ; CCMPost::SetThumbNailIndex(int)
+	StaticType__7CCMPost @ 19 NONAME R3UNUSED ; CCMPost::StaticType(void)
+	StaticType__9TCMSender @ 20 NONAME R3UNUSED ; TCMSender::StaticType(void)
+	Type__C7CCMPost @ 21 NONAME R3UNUSED ; CCMPost::Type(void) const
+	Type__C9TCMSender @ 22 NONAME R3UNUSED ; TCMSender::Type(void) const
+	"_._7CCMPost" @ 23 NONAME R3UNUSED ; CCMPost::~CCMPost(void)
+	__7CCMPostP14MBBDataFactoryUi @ 24 NONAME R3UNUSED ; CCMPost::CCMPost(MBBDataFactory *, unsigned int)
+	__9TCMSender @ 25 NONAME R3UNUSED ; TCMSender::TCMSender(void)
+	__as__7CCMPostRC7CCMPost @ 26 NONAME R3UNUSED ; CCMPost::operator=(CCMPost const &)
+	__as__9TCMSenderRC9TCMSender @ 27 NONAME R3UNUSED ; TCMSender::operator=(TCMSender const &)
+	__eq__C7CCMPostRC7CCMPost @ 28 NONAME R3UNUSED ; CCMPost::operator==(CCMPost const &) const
+	AddRef__C7CCMPost @ 29 NONAME R3UNUSED ; CCMPost::AddRef(void) const
+

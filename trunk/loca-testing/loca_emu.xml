@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<inserts>
+<!-- enable bluejacking -->
+<tuple module="0x1020811e" id="7" major_version="1" minor_version="0"><id>3</id><tuplename><module_uid>0x10208120</module_uid><module_id>1</module_id><subname>54</subname></tuplename><tuplevalue module="0x1020811a" id="1" major_version="1" minor_version="0">1</tuplevalue><expires>29221228T040054</expires></tuple>
+</inserts>

@@ -1,0 +1,74 @@
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+NAME SOSU
+
+#include <eikon.rh>
+#include <eikcore.rsg>
+#include <aiftool.rh>
+#include "SymbianOSUnit.hrh"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+RESOURCE EIK_APP_INFO
+{
+	hotkeys=r_file_hotkeys;
+	menubar=r_file_menubar;
+    cba = r_file_cba;
+}
+
+RESOURCE HOTKEYS r_file_hotkeys
+    {
+    control=
+        {
+        HOTKEY { command=EEikCmdExit; key='e'; }
+        };
+    }
+
+RESOURCE CBA r_file_cba
+{
+buttons=
+    {
+    CBA_BUTTON
+        {
+        id=ECmdRunTest;
+        txt="Run All";
+        },
+    CBA_BUTTON
+        {
+        id=0;
+        txt="";
+        },
+    CBA_BUTTON
+        {
+        id=0;
+        txt="";
+        },
+    CBA_BUTTON
+        {
+        id=EEikCmdExit;
+        txt="Exit";
+        }
+    };
+}
+
+RESOURCE MENU_BAR r_file_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_file_first_menu; txt="Menu"; }
+		};
+    }
+
+RESOURCE MENU_PANE r_file_first_menu
+	{
+	items=
+		{
+		MENU_ITEM { command=ECmdRunTest; txt="Run All Suites"; },
+		MENU_ITEM { command=EEikCmdExit; txt="Exit"; }
+        };
+    }

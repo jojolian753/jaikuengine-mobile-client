@@ -1,0 +1,53 @@
+ContextNetwork (not to be confused with the DLL with the same name) remotes
+ContextPhone's tuplespace (BlackBoard) events into an XML stream, and accepts
+remote  tuplespace updates (no deletes yet). It works in real-time
+
+Parsing events
+	you get tuples, which are made of
+		tuplename
+			uid, id (, subname)
+		id
+		data
+	and you have to ack the ids
+
+	the data is typically an event:
+		datetime
+		eventname
+		event data
+
+	if an element has 'module_uid, module_id, major_version, minor_version',
+	then these should be used do determine the type of the object to
+	create. Inside these, things are often identified just with a name
+
+	example of incoming/outgoing data in example-nw.xml - sadly it's both
+	in the same stream, due to nature of the server which it was logged
+	from
+
+	As seen in the example, the client sends everything inside a
+	'<stream>' element, keeping that open for the duration of
+	the connection. The client starts with an '<ident>', which
+	the server has to ack, and then starts sending events. The client
+	will automatically reconnect
+	
+Data format
+	The format of the tuplespace data is the proprietary XML
+	serialization of objects in ContextPhone. It is defined
+	(in code, no docs as such) in BlackBoardData, and the
+	actual sensor types in ContextSensorData.
+		
+To enable on the phone
+	Set the ContextNetwork host, port and enabled settings;
+	and either add:
+
+a) permanent subscriptions
+	put cn.xml into c:\system\data\context\bbsubs, this makes
+	the blackboard server to store all updates to the named
+	tuples in a persistent queue for the named component
+
+b) other possibility:
+	modify bb_listener.cpp to listen to 'normal' (non-persistent)
+	events
+
+The stream is zlib-compressed, with no headers. As an example
+of how to handle that, see zproxy code at 
+	http://www.cs.helsinki.fi/group/context/latest/source

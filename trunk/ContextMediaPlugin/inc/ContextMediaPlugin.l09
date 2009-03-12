@@ -1,0 +1,14 @@
+#define ELanguage ELangFinnish
+
+#define CL_DRAFTS		"Luonnokset"
+#define CL_QUEUE		"L‰htev‰t"
+#define CL_FAILED		"L‰hetysvirhe"
+#define CL_PUBLISHED		"L‰hetetyt"
+#define CL_NOT_PUBLISHED	"Omat"
+#define CL_TRASH		"Roskakori"
+#define CL_ALL			"Kaikki"
+#define CL_QUEUED_FOR_PUBLISH	"L‰hetet‰‰n"
+#define CL_MOVED_TO_TRASH	"Siirretty Roskakoriin"
+#define CL_FAILED_TO_QUEUE	"L‰hetysjonoon siirt‰minen ep‰onnistui"
+#define CL_FAILED_GENERAL	"Siirt‰minen ep‰onnistui"
+#define CL_POSTPONED		"Siirretty Luonnoksiin"

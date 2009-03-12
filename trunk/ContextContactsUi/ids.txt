@@ -1,0 +1,15 @@
+UID 200089e9
+
+1	feed storager component
+2	feed S60 listbox array (not a real component, just for callbacks)
+3       poster uuid generation
+4	feed model component (not a real component, just for callbacks)
+5   thread-fetching-component (for replies) (maybe)
+
+// Feed controls
+100     post in stream
+101     comment in stream
+102     feed in stream
+103    	comment button
+104     commen in post
+

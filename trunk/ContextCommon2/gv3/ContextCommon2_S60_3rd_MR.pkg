@@ -1,0 +1,16 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextCommon2","ContextCommon2"},(0x200084C4),5,1,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\ContextCommon2.dll"-"!:\sys\bin\ContextCommon2.dll"

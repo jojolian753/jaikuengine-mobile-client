@@ -1,0 +1,7 @@
+The presence info is sent via jabber, as an extended-away presence.
+We simply serialize a CBBPresence object into XML, escape it
+and put it into the text field. The server just routes the data,
+it doesn't understand the contents.
+
+Subscriptions must be done with a 'real' jabber client; there is
+no support for that in ContextPhone.

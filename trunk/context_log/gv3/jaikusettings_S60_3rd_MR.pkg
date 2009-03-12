@@ -1,0 +1,12 @@
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+#{"Jaiku Settings", "Jaiku Settings"},(0x200084B3),5,1,0
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+"\symbian\9.1\S60_3rd_MR\epoc32\release\gcce\urel\jaikusettings.exe"         -"!:\sys\bin\jaikusettings.exe"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\apps\jaikusettings.r01"-"!:\resource\apps\jaikusettings.rsc"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\apps\jaikusettings_aif.mif"         -"!:\resource\apps\jaikusettings_aif.mif"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\JaikuSettings_reg.r01" -"!:\private\10003a3f\import\apps\JaikuSettings_reg.rsc"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\context_log.mbm"         -"!:\resource\context_log.mbm"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\JaikuConnection.mif"         -"!:\resource\JaikuConnection.mif"
+

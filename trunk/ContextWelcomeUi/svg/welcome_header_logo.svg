@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="33.583" height="38.625"
+	 viewBox="0 0 33.583 38.625" overflow="visible" enable-background="new 0 0 33.583 38.625" xml:space="preserve">
+<radialGradient id="XMLID_3_" cx="16.5444" cy="219.2939" r="13.0737" gradientTransform="matrix(1.1216 0 0 0.2716 -2.0115 -24.4862)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#1992A7"/>
+	<stop  offset="0.2868" style="stop-color:#3EA9B8"/>
+	<stop  offset="0.5789" style="stop-color:#5DBCC5"/>
+	<stop  offset="0.8271" style="stop-color:#70C8CE"/>
+	<stop  offset="1" style="stop-color:#77CCD1"/>
+</radialGradient>
+<ellipse fill="url(#XMLID_3_)" cx="16.544" cy="35.074" rx="14.664" ry="3.551"/>
+<path fill="#FFFFFF" d="M31.357,16.146c0,9.396-8.482,15.061-16.863,15.061l-1.352-2.35c-5.719,0-11.408-6.108-11.408-12.397
+	c0-6.883,6.031-13.977,15.365-13.977C26.64,2.482,31.357,10.188,31.357,16.146z"/>
+<path fill="#96C63F" stroke="#B8B8B8" stroke-width="0.6" stroke-miterlimit="3.8637" d="M29.656,16.266
+	c0,8.389-7.99,12.936-13.863,13.114l-1.35-2.027C8.324,27.354,3.335,22.16,3.335,16.546c0-6.147,5.385-12.35,13.719-12.35
+	C24.8,4.196,29.656,10.945,29.656,16.266z"/>
+<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="-51.0928" y1="-700.5757" x2="-51.0928" y2="-689.5166" gradientTransform="matrix(1.1364 0 0 -1.1364 74.5207 -777.7466)">
+	<stop  offset="0" style="stop-color:#96C63F"/>
+	<stop  offset="0.1332" style="stop-color:#9BC948"/>
+	<stop  offset="0.3493" style="stop-color:#A8D060"/>
+	<stop  offset="0.6215" style="stop-color:#BDDB87"/>
+	<stop  offset="0.9362" style="stop-color:#DBEBBD"/>
+	<stop  offset="1" style="stop-color:#E1EFC9"/>
+</linearGradient>
+<path fill="url(#XMLID_4_)" d="M26.638,15.115c1.973-1.417-2.041-9.156-9.891-9.294C8.156,5.671,4.376,14.079,6.255,15.52
+	C11.201,19.312,20.515,19.506,26.638,15.115z"/>
+<path fill="none" d="M26.638,15.115c1.973-1.417-2.041-9.156-9.891-9.294C8.156,5.671,4.376,14.079,6.255,15.52
+	C11.201,19.312,20.515,19.506,26.638,15.115z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.6" stroke-miterlimit="3.8637" d="M14.46,24.688
+	c1.479,0,3.436-1.242,3.436-3.332c0-2.092,0-8.825,0-8.825h-2.104c0,0,0,8.001,0,8.757c0,0.755-1.135,1.695-2.145,1.695
+	L14.46,24.688z"/>
+<path fill="#FFFFFF" stroke="#B8B8B8" stroke-width="0.6" stroke-miterlimit="3.8637" d="M16.738,7.993
+	c0.916,0.017,1.643,0.763,1.627,1.665c-0.016,0.903-0.768,1.622-1.68,1.605c-0.914-0.016-1.643-0.762-1.627-1.664
+	C15.074,8.695,15.826,7.977,16.738,7.993z"/>
+<g>
+	<g>
+		<rect x="0" fill="none" width="33.584" height="33.583"/>
+	</g>
+</g>
+</svg>

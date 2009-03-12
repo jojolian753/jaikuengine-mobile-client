@@ -1,0 +1,3 @@
+EXPORTS
+	CreateDataFactory__Fv @ 1 NONAME R3UNUSED ; CreateDataFactory(void)
+

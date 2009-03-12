@@ -1,0 +1,25 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextMediaUi","ContextMediaUi"},(0x200089E4),5,1,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\contextmediaui.dll"-"!:\sys\bin\contextmediaui.dll"
+
+{
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\contextmediaui.r01"
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\contextmediaui.r09"
+}-"!:\resource\contextmediaui.rsc"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\contextmediaui_video.mbm"-"!:\resource\contextmediaui_video.mbm"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\contextmediaui_audio.mbm"-"!:\resource\contextmediaui_audio.mbm"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\contextmediaui_unknown.mbm"-"!:\resource\contextmediaui_unknown.mbm"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\contextmediauitags.mbm"-"!:\resource\contextmediauitags.mbm"

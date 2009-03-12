@@ -1,0 +1,6 @@
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+#{"starter", "starter"},(0x20006E42),4,36,0
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\cl_starter.exe"         -"!:\sys\bin\cl_starter.exe"

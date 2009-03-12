@@ -1,0 +1,14 @@
+;Symbianosunit.pkg
+;Copyright (c) Penrillian Ltd 2003
+
+;Language - standard language definitions
+&EN
+
+#{"Symbianosunit"},(0x101FADF4),1,01,0
+
+(0x101F6F88), 0, 0, 0, {"Series60ProductID"}
+
+"\Symbian\7.0s\Series60_v20\epoc32\release\armi\urel\symbianosunit.app"-"!:\system\apps\symbianosunit\symbianosunit.app"
+"\Symbian\7.0s\Series60_v20\Epoc32\data\z\system\apps\SYMBIANOSUNIT\SYMBIANOSUNIT.RSC"-"!:\system\apps\symbianosunit\symbianosunit.rsc"
+"\Symbian\7.0s\Series60_v20\Epoc32\data\z\system\apps\SYMBIANOSUNIT\symbianosunit.aif"-"!:\system\apps\symbianosunit\symbianosunit.aif"
+

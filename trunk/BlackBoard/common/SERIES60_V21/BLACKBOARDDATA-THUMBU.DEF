@@ -1,0 +1,320 @@
+EXPORTS
+	__op9TSeverity__C11TBBSeverity @ 1 NONAME R3UNUSED ; TBBSeverity::operator TSeverity(void) const
+	AddRef__C12CBBErrorInfo @ 2 NONAME R3UNUSED ; CBBErrorInfo::AddRef(void) const
+	AppendCheckingSpaceL__FR6TDes16RC7TDesC16 @ 3 NONAME R3UNUSED ; AppendCheckingSpaceL(TDes16 &, TDesC16 const &)
+	Append__10CBBString8RC6TDesC8 @ 4 NONAME R3UNUSED ; CBBString8::Append(TDesC8 const &)
+	Append__9CBBStringRC7TDesC16 @ 5 NONAME R3UNUSED ; CBBString::Append(TDesC16 const &)
+	BBErrorCode__Fi @ 6 NONAME R3UNUSED ; BBErrorCode(int)
+	CharacterDataL__10TSingleXmlPCUwi @ 7 NONAME R3UNUSED ; TSingleXml::CharacterDataL(unsigned wchar_t const *, int)
+	CharacterDataL__13CContainerXmlPCUwi @ 8 NONAME R3UNUSED ; CContainerXml::CharacterDataL(unsigned wchar_t const *, int)
+	CharacterData__12TCheckingXmlPCUwi @ 9 NONAME R3UNUSED ; TCheckingXml::CharacterData(unsigned wchar_t const *, int)
+	CheckStringSpaceL__FRC6TDes16i @ 10 NONAME R3UNUSED ; CheckStringSpaceL(TDes16 const &, int)
+	CleanupPushBBDataL__FP7MBBData @ 11 NONAME R3UNUSED ; CleanupPushBBDataL(MBBData *)
+	CloneL__C10CBBString8RC7TDesC16 @ 12 NONAME R3UNUSED ; CBBString8::CloneL(TDesC16 const &) const
+	CloneL__C10TBBMD5HashRC7TDesC16 @ 13 NONAME R3UNUSED ; TBBMD5Hash::CloneL(TDesC16 const &) const
+	CloneL__C11TBBSeverityRC7TDesC16 @ 14 NONAME R3UNUSED ; TBBSeverity::CloneL(TDesC16 const &) const
+	CloneL__C12CBBErrorInfoRC7TDesC16 @ 15 NONAME R3UNUSED ; CBBErrorInfo::CloneL(TDesC16 const &) const
+	CloneL__C12TBBErrorCodeRC7TDesC16 @ 16 NONAME R3UNUSED ; TBBErrorCode::CloneL(TDesC16 const &) const
+	CloneL__C12TBBErrorTypeRC7TDesC16 @ 17 NONAME R3UNUSED ; TBBErrorType::CloneL(TDesC16 const &) const
+	CloneL__C12TBBTupleMetaRC7TDesC16 @ 18 NONAME R3UNUSED ; TBBTupleMeta::CloneL(TDesC16 const &) const
+	CloneL__C12TBBTupleNameRC7TDesC16 @ 19 NONAME R3UNUSED ; TBBTupleName::CloneL(TDesC16 const &) const
+	CloneL__C13TBBLongStringRC7TDesC16 @ 20 NONAME R3UNUSED ; TBBLongString::CloneL(TDesC16 const &) const
+	CloneL__C14CBBGenericListRC7TDesC16 @ 21 NONAME R3UNUSED ; CBBGenericList::CloneL(TDesC16 const &) const
+	CloneL__C14TBBShortStringRC7TDesC16 @ 22 NONAME R3UNUSED ; TBBShortString::CloneL(TDesC16 const &) const
+	CloneL__C15TBBShortString8RC7TDesC16 @ 23 NONAME R3UNUSED ; TBBShortString8::CloneL(TDesC16 const &) const
+	CloneL__C15TBBTupleSubNameRC7TDesC16 @ 24 NONAME R3UNUSED ; TBBTupleSubName::CloneL(TDesC16 const &) const
+	CloneL__C16CBBGeneralHolderRC7TDesC16 @ 25 NONAME R3UNUSED ; CBBGeneralHolder::CloneL(TDesC16 const &) const
+	CloneL__C16TBBComponentNameRC7TDesC16 @ 26 NONAME R3UNUSED ; TBBComponentName::CloneL(TDesC16 const &) const
+	CloneL__C6TBBAckRC7TDesC16 @ 27 NONAME R3UNUSED ; TBBAck::CloneL(TDesC16 const &) const
+	CloneL__C6TBBIntRC7TDesC16 @ 28 NONAME R3UNUSED ; TBBInt::CloneL(TDesC16 const &) const
+	CloneL__C6TBBUidRC7TDesC16 @ 29 NONAME R3UNUSED ; TBBUid::CloneL(TDesC16 const &) const
+	CloneL__C7TBBBoolRC7TDesC16 @ 30 NONAME R3UNUSED ; TBBBool::CloneL(TDesC16 const &) const
+	CloneL__C7TBBTimeRC7TDesC16 @ 31 NONAME R3UNUSED ; TBBTime::CloneL(TDesC16 const &) const
+	CloneL__C7TBBUintRC7TDesC16 @ 32 NONAME R3UNUSED ; TBBUint::CloneL(TDesC16 const &) const
+	CloneL__C8CBBTupleRC7TDesC16 @ 33 NONAME R3UNUSED ; CBBTuple::CloneL(TDesC16 const &) const
+	CloneL__C8TBBInt64RC7TDesC16 @ 34 NONAME R3UNUSED ; TBBInt64::CloneL(TDesC16 const &) const
+	CloneL__C9CBBStringRC7TDesC16 @ 35 NONAME R3UNUSED ; CBBString::CloneL(TDesC16 const &) const
+	CloneL__C9MBBStreamRC7TDesC16 @ 36 NONAME R3UNUSED ; MBBStream::CloneL(TDesC16 const &) const
+	CloseMBBDataIndirect__FPv @ 37 NONAME R3UNUSED ; CloseMBBDataIndirect(void *)
+	CompareMajorL__C9TTypeNameRC9TTypeName @ 38 NONAME R3UNUSED ; TTypeName::CompareMajorL(TTypeName const &) const
+	ConstructL__10CBBString8i @ 39 NONAME R3UNUSED ; CBBString8::ConstructL(int)
+	ConstructL__14CBBDataFactory @ 40 NONAME R3UNUSED ; CBBDataFactory::ConstructL(void)
+	ConstructL__14CBBGenericList @ 41 NONAME R3UNUSED ; CBBGenericList::ConstructL(void)
+	ConstructL__9CBBStringi @ 42 NONAME R3UNUSED ; CBBString::ConstructL(int)
+	ConstructL__9MBBStream @ 43 NONAME R3UNUSED ; MBBStream::ConstructL(void)
+	Count__C14CBBGenericList @ 44 NONAME R3UNUSED ; CBBGenericList::Count(void) const
+	CreateCopyL__C12CBBErrorInfo @ 45 NONAME R3UNUSED ; CBBErrorInfo::CreateCopyL(void) const
+	EndElementL__10TSingleXmlPCUw @ 46 NONAME R3UNUSED ; TSingleXml::EndElementL(unsigned wchar_t const *)
+	EndElementL__13CContainerXmlPCUw @ 47 NONAME R3UNUSED ; CContainerXml::EndElementL(unsigned wchar_t const *)
+	EndElement__12TCheckingXmlPCUw @ 48 NONAME R3UNUSED ; TCheckingXml::EndElement(unsigned wchar_t const *)
+	EndElement__13CContainerXmlPCUw @ 49 NONAME R3UNUSED ; CContainerXml::EndElement(unsigned wchar_t const *)
+	EndInnerElementL__17CPartContainerXmlPCUw @ 50 NONAME R3UNUSED ; CPartContainerXml::EndInnerElementL(unsigned wchar_t const *)
+	Equals__C10CBBString8PC7MBBData @ 51 NONAME R3UNUSED ; CBBString8::Equals(MBBData const *) const
+	Equals__C10TBBMD5HashPC7MBBData @ 52 NONAME R3UNUSED ; TBBMD5Hash::Equals(MBBData const *) const
+	Equals__C12CBBErrorInfoPC7MBBData @ 53 NONAME R3UNUSED ; CBBErrorInfo::Equals(MBBData const *) const
+	Equals__C12TBBErrorCodePC7MBBData @ 54 NONAME R3UNUSED ; TBBErrorCode::Equals(MBBData const *) const
+	Equals__C12TBBTupleMetaPC7MBBData @ 55 NONAME R3UNUSED ; TBBTupleMeta::Equals(MBBData const *) const
+	Equals__C12TBBTupleNamePC7MBBData @ 56 NONAME R3UNUSED ; TBBTupleName::Equals(MBBData const *) const
+	Equals__C13TBBLongStringPC7MBBData @ 57 NONAME R3UNUSED ; TBBLongString::Equals(MBBData const *) const
+	Equals__C14CBBGenericListPC7MBBData @ 58 NONAME R3UNUSED ; CBBGenericList::Equals(MBBData const *) const
+	Equals__C14TBBShortStringPC7MBBData @ 59 NONAME R3UNUSED ; TBBShortString::Equals(MBBData const *) const
+	Equals__C15TBBShortString8PC7MBBData @ 60 NONAME R3UNUSED ; TBBShortString8::Equals(MBBData const *) const
+	Equals__C15TBBTupleSubNamePC7MBBData @ 61 NONAME R3UNUSED ; TBBTupleSubName::Equals(MBBData const *) const
+	Equals__C16CBBGeneralHolderPC7MBBData @ 62 NONAME R3UNUSED ; CBBGeneralHolder::Equals(MBBData const *) const
+	Equals__C16TBBComponentNamePC7MBBData @ 63 NONAME R3UNUSED ; TBBComponentName::Equals(MBBData const *) const
+	Equals__C6TBBAckPC7MBBData @ 64 NONAME R3UNUSED ; TBBAck::Equals(MBBData const *) const
+	Equals__C6TBBIntPC7MBBData @ 65 NONAME R3UNUSED ; TBBInt::Equals(MBBData const *) const
+	Equals__C6TBBUidPC7MBBData @ 66 NONAME R3UNUSED ; TBBUid::Equals(MBBData const *) const
+	Equals__C7TBBBoolPC7MBBData @ 67 NONAME R3UNUSED ; TBBBool::Equals(MBBData const *) const
+	Equals__C7TBBTimePC7MBBData @ 68 NONAME R3UNUSED ; TBBTime::Equals(MBBData const *) const
+	Equals__C7TBBUintPC7MBBData @ 69 NONAME R3UNUSED ; TBBUint::Equals(MBBData const *) const
+	Equals__C8CBBTuplePC7MBBData @ 70 NONAME R3UNUSED ; CBBTuple::Equals(MBBData const *) const
+	Equals__C8TBBInt64PC7MBBData @ 71 NONAME R3UNUSED ; TBBInt64::Equals(MBBData const *) const
+	Equals__C9CBBStringPC7MBBData @ 72 NONAME R3UNUSED ; CBBString::Equals(MBBData const *) const
+	Equals__C9MBBStreamPC7MBBData @ 73 NONAME R3UNUSED ; MBBStream::Equals(MBBData const *) const
+	ErrorInHandler__12TCheckingXmli @ 74 NONAME R3UNUSED ; TCheckingXml::ErrorInHandler(int)
+	Error__10TSingleXml9XML_ErrorPCUwl @ 75 NONAME ; TSingleXml::Error(XML_Error, unsigned wchar_t const *, long)
+	Error__17CPartContainerXml9XML_ErrorPCUwl @ 76 NONAME ; CPartContainerXml::Error(XML_Error, unsigned wchar_t const *, long)
+	ExternalizeL__C14CBBGenericListR12RWriteStream @ 77 NONAME R3UNUSED ; CBBGenericList::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C15TBBCompoundDataR12RWriteStream @ 78 NONAME R3UNUSED ; TBBCompoundData::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C16CBBGeneralHolderR12RWriteStream @ 79 NONAME R3UNUSED ; CBBGeneralHolder::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C24TBBFixedLengthStringBaseR12RWriteStream @ 80 NONAME R3UNUSED ; TBBFixedLengthStringBase::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C25TBBFixedLengthStringBase8R12RWriteStream @ 81 NONAME R3UNUSED ; TBBFixedLengthStringBase8::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C6TBBIntR12RWriteStream @ 82 NONAME R3UNUSED ; TBBInt::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C7TBBBoolR12RWriteStream @ 83 NONAME R3UNUSED ; TBBBool::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C7TBBTimeR12RWriteStream @ 84 NONAME R3UNUSED ; TBBTime::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C7TBBUintR12RWriteStream @ 85 NONAME R3UNUSED ; TBBUint::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C8TBBInt64R12RWriteStream @ 86 NONAME R3UNUSED ; TBBInt64::ExternalizeL(RWriteStream &) const
+	ExternalizeL__C9TTypeNameR12RWriteStream @ 87 NONAME R3UNUSED ; TTypeName::ExternalizeL(RWriteStream &) const
+	Factory__8CBBTuple @ 88 NONAME R3UNUSED ; CBBTuple::Factory(void)
+	First__14CBBGenericList @ 89 NONAME R3UNUSED ; CBBGenericList::First(void)
+	First__C14CBBGenericList @ 90 NONAME R3UNUSED ; CBBGenericList::First(void) const
+	FixedType__C14CBBGenericList @ 91 NONAME R3UNUSED ; CBBGenericList::FixedType(void) const
+	FromStringL__10CBBString8RC6TDesC8 @ 92 NONAME R3UNUSED ; CBBString8::FromStringL(TDesC8 const &)
+	FromStringL__10CBBString8RC7TDesC16 @ 93 NONAME R3UNUSED ; CBBString8::FromStringL(TDesC16 const &)
+	FromStringL__14CBBGenericListRC7TDesC16 @ 94 NONAME R3UNUSED ; CBBGenericList::FromStringL(TDesC16 const &)
+	FromStringL__15TBBCompoundDataRC7TDesC16 @ 95 NONAME R3UNUSED ; TBBCompoundData::FromStringL(TDesC16 const &)
+	FromStringL__16CBBGeneralHolderRC7TDesC16 @ 96 NONAME R3UNUSED ; CBBGeneralHolder::FromStringL(TDesC16 const &)
+	FromStringL__24TBBFixedLengthStringBaseRC7TDesC16 @ 97 NONAME R3UNUSED ; TBBFixedLengthStringBase::FromStringL(TDesC16 const &)
+	FromStringL__25TBBFixedLengthStringBase8RC7TDesC16 @ 98 NONAME R3UNUSED ; TBBFixedLengthStringBase8::FromStringL(TDesC16 const &)
+	FromStringL__6TBBIntRC7TDesC16 @ 99 NONAME R3UNUSED ; TBBInt::FromStringL(TDesC16 const &)
+	FromStringL__7TBBBoolRC7TDesC16 @ 100 NONAME R3UNUSED ; TBBBool::FromStringL(TDesC16 const &)
+	FromStringL__7TBBTimeRC7TDesC16 @ 101 NONAME R3UNUSED ; TBBTime::FromStringL(TDesC16 const &)
+	FromStringL__7TBBUintRC7TDesC16 @ 102 NONAME R3UNUSED ; TBBUint::FromStringL(TDesC16 const &)
+	FromStringL__8TBBInt64RC7TDesC16 @ 103 NONAME R3UNUSED ; TBBInt64::FromStringL(TDesC16 const &)
+	FromStringL__9CBBStringRC7TDesC16 @ 104 NONAME R3UNUSED ; CBBString::FromStringL(TDesC16 const &)
+	FromXmlL__13TBBSimpleDataP17MNestedXmlHandlerP10CXmlParserRP7HBufC16i @ 105 NONAME ; TBBSimpleData::FromXmlL(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, int)
+	FromXmlL__14CBBGenericListP17MNestedXmlHandlerP10CXmlParserRP7HBufC16i @ 106 NONAME ; CBBGenericList::FromXmlL(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, int)
+	FromXmlL__15TBBCompoundDataP17MNestedXmlHandlerP10CXmlParserRP7HBufC16i @ 107 NONAME ; TBBCompoundData::FromXmlL(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, int)
+	FromXmlL__16CBBGeneralHolderP17MNestedXmlHandlerP10CXmlParserRP7HBufC16i @ 108 NONAME ; CBBGeneralHolder::FromXmlL(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, int)
+	GetBackwardsCompatibleUid__FRUi @ 109 NONAME R3UNUSED ; GetBackwardsCompatibleUid(unsigned int &)
+	GetCurrentHandler__13CContainerXml @ 110 NONAME R3UNUSED ; CContainerXml::GetCurrentHandler(void)
+	GetPart__15TBBCompoundDataRC7TDesC16RC9TTypeNameRUi @ 111 NONAME ; TBBCompoundData::GetPart(TDesC16 const &, TTypeName const &, unsigned int &)
+	GetPart__8CBBTupleRC7TDesC16RC9TTypeNameRUi @ 112 NONAME ; CBBTuple::GetPart(TDesC16 const &, TTypeName const &, unsigned int &)
+	HandleAttributesL__13CContainerXmlPCUwPPCUw @ 113 NONAME R3UNUSED ; CContainerXml::HandleAttributesL(unsigned wchar_t const *, unsigned wchar_t const **)
+	HandleAttributesL__17CPartContainerXmlPCUwPPCUw @ 114 NONAME R3UNUSED ; CPartContainerXml::HandleAttributesL(unsigned wchar_t const *, unsigned wchar_t const **)
+	IdFromAttributes__9TTypeNamePPCUw @ 115 NONAME R3UNUSED ; TTypeName::IdFromAttributes(unsigned wchar_t const **)
+	IdFromStreamL__9TTypeNameR11RReadStream @ 116 NONAME R3UNUSED ; TTypeName::IdFromStreamL(RReadStream &)
+	InnerErrorInfo__12CBBErrorInfo @ 117 NONAME R3UNUSED ; CBBErrorInfo::InnerErrorInfo(void)
+	InternalizeL__10CBBString8R11RReadStream @ 118 NONAME R3UNUSED ; CBBString8::InternalizeL(RReadStream &)
+	InternalizeL__14CBBGenericListR11RReadStream @ 119 NONAME R3UNUSED ; CBBGenericList::InternalizeL(RReadStream &)
+	InternalizeL__15TBBCompoundDataR11RReadStream @ 120 NONAME R3UNUSED ; TBBCompoundData::InternalizeL(RReadStream &)
+	InternalizeL__16CBBGeneralHolderR11RReadStream @ 121 NONAME R3UNUSED ; CBBGeneralHolder::InternalizeL(RReadStream &)
+	InternalizeL__24TBBFixedLengthStringBaseR11RReadStream @ 122 NONAME R3UNUSED ; TBBFixedLengthStringBase::InternalizeL(RReadStream &)
+	InternalizeL__25TBBFixedLengthStringBase8R11RReadStream @ 123 NONAME R3UNUSED ; TBBFixedLengthStringBase8::InternalizeL(RReadStream &)
+	InternalizeL__6TBBIntR11RReadStream @ 124 NONAME R3UNUSED ; TBBInt::InternalizeL(RReadStream &)
+	InternalizeL__7TBBBoolR11RReadStream @ 125 NONAME R3UNUSED ; TBBBool::InternalizeL(RReadStream &)
+	InternalizeL__7TBBTimeR11RReadStream @ 126 NONAME R3UNUSED ; TBBTime::InternalizeL(RReadStream &)
+	InternalizeL__7TBBUintR11RReadStream @ 127 NONAME R3UNUSED ; TBBUint::InternalizeL(RReadStream &)
+	InternalizeL__8TBBInt64R11RReadStream @ 128 NONAME R3UNUSED ; TBBInt64::InternalizeL(RReadStream &)
+	InternalizeL__9CBBStringR11RReadStream @ 129 NONAME R3UNUSED ; CBBString::InternalizeL(RReadStream &)
+	IntoStringL__C14CBBGenericListR6TDes16 @ 130 NONAME R3UNUSED ; CBBGenericList::IntoStringL(TDes16 &) const
+	IntoStringL__C15TBBCompoundDataR6TDes16 @ 131 NONAME R3UNUSED ; TBBCompoundData::IntoStringL(TDes16 &) const
+	IntoStringL__C16CBBGeneralHolderR6TDes16 @ 132 NONAME R3UNUSED ; CBBGeneralHolder::IntoStringL(TDes16 &) const
+	IntoStringL__C24TBBFixedLengthStringBaseR6TDes16 @ 133 NONAME R3UNUSED ; TBBFixedLengthStringBase::IntoStringL(TDes16 &) const
+	IntoStringL__C25TBBFixedLengthStringBase8R6TDes16 @ 134 NONAME R3UNUSED ; TBBFixedLengthStringBase8::IntoStringL(TDes16 &) const
+	IntoStringL__C6TBBIntR6TDes16 @ 135 NONAME R3UNUSED ; TBBInt::IntoStringL(TDes16 &) const
+	IntoStringL__C6TBBUidR6TDes16 @ 136 NONAME R3UNUSED ; TBBUid::IntoStringL(TDes16 &) const
+	IntoStringL__C7TBBBoolR6TDes16 @ 137 NONAME R3UNUSED ; TBBBool::IntoStringL(TDes16 &) const
+	IntoStringL__C7TBBTimeR6TDes16 @ 138 NONAME R3UNUSED ; TBBTime::IntoStringL(TDes16 &) const
+	IntoStringL__C7TBBUintR6TDes16 @ 139 NONAME R3UNUSED ; TBBUint::IntoStringL(TDes16 &) const
+	IntoStringL__C8TBBInt64R6TDes16 @ 140 NONAME R3UNUSED ; TBBInt64::IntoStringL(TDes16 &) const
+	IntoStringL__C9TTypeNameR6TDes16 @ 141 NONAME R3UNUSED ; TTypeName::IntoStringL(TDes16 &) const
+	IntoXmlL__C14CBBGenericListP15MBBExternalizeri @ 142 NONAME R3UNUSED ; CBBGenericList::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C15TBBCompoundDataP15MBBExternalizeri @ 143 NONAME R3UNUSED ; TBBCompoundData::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C16CBBGeneralHolderP15MBBExternalizeri @ 144 NONAME R3UNUSED ; CBBGeneralHolder::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C24TBBFixedLengthStringBaseP15MBBExternalizeri @ 145 NONAME R3UNUSED ; TBBFixedLengthStringBase::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C25TBBFixedLengthStringBase8P15MBBExternalizeri @ 146 NONAME R3UNUSED ; TBBFixedLengthStringBase8::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C6TBBIntP15MBBExternalizeri @ 147 NONAME R3UNUSED ; TBBInt::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C6TBBUidP15MBBExternalizeri @ 148 NONAME R3UNUSED ; TBBUid::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C7TBBBoolP15MBBExternalizeri @ 149 NONAME R3UNUSED ; TBBBool::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C7TBBTimeP15MBBExternalizeri @ 150 NONAME R3UNUSED ; TBBTime::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C7TBBUintP15MBBExternalizeri @ 151 NONAME R3UNUSED ; TBBUint::IntoXmlL(MBBExternalizer *, int) const
+	IntoXmlL__C8TBBInt64P15MBBExternalizeri @ 152 NONAME R3UNUSED ; TBBInt64::IntoXmlL(MBBExternalizer *, int) const
+	IsAttribute__C13TBBSimpleData @ 153 NONAME R3UNUSED ; TBBSimpleData::IsAttribute(void) const
+	IsAttribute__C7MBBData @ 154 NONAME R3UNUSED ; MBBData::IsAttribute(void) const
+	MakeAttributesLC__C9TTypeName @ 155 NONAME R3UNUSED ; TTypeName::MakeAttributesLC(void) const
+	Name__C12TBBNamedData @ 156 NONAME R3UNUSED ; TBBNamedData::Name(void) const
+	Name__C14CBBGenericList @ 157 NONAME R3UNUSED ; CBBGenericList::Name(void) const
+	NewL__10CBBString8RC7TDesC16i @ 158 NONAME R3UNUSED ; CBBString8::NewL(TDesC16 const &, int)
+	NewL__10CStreamXmlP7MBBDataR17MIncomingObserverb @ 159 NONAME R3UNUSED ; CStreamXml::NewL(MBBData *, MIncomingObserver &, bool)
+	NewL__12CBBErrorInfoP14MBBDataFactory @ 160 NONAME R3UNUSED ; CBBErrorInfo::NewL(MBBDataFactory *)
+	NewL__12CBBErrorInfoP14MBBDataFactory9TSeverity10TErrorTypeG10TErrorCode @ 161 NONAME ; CBBErrorInfo::NewL(MBBDataFactory *, TSeverity, TErrorType, TErrorCode)
+	NewL__12CBBErrorInfoP14MBBDataFactoryPC10MErrorInfo @ 162 NONAME R3UNUSED ; CBBErrorInfo::NewL(MBBDataFactory *, MErrorInfo const *)
+	NewL__13CSingleParserP7MBBDataii @ 163 NONAME R3UNUSED ; CSingleParser::NewL(MBBData *, int, int)
+	NewL__14CBBDataFactory @ 164 NONAME R3UNUSED ; CBBDataFactory::NewL(void)
+	NewL__14CBBGenericListRC7TDesC16N21P14MBBDataFactory @ 165 NONAME ; CBBGenericList::NewL(TDesC16 const &, TDesC16 const &, TDesC16 const &, MBBDataFactory *)
+	NewL__19CXmlBufExternalizeri @ 166 NONAME R3UNUSED ; CXmlBufExternalizer::NewL(int)
+	NewL__7CStreamR17MIncomingObserverR12MApp_context @ 167 NONAME R3UNUSED ; CStream::NewL(MIncomingObserver &, MApp_context &)
+	NewL__9CBBStringRC7TDesC16i @ 168 NONAME R3UNUSED ; CBBString::NewL(TDesC16 const &, int)
+	NextErrorInfo__12CBBErrorInfo @ 169 NONAME R3UNUSED ; CBBErrorInfo::NextErrorInfo(void)
+	Next__14CBBGenericList @ 170 NONAME R3UNUSED ; CBBGenericList::Next(void)
+	Next__C14CBBGenericList @ 171 NONAME R3UNUSED ; CBBGenericList::Next(void) const
+	OwnsValue__C16CBBGeneralHolder @ 172 NONAME R3UNUSED ; CBBGeneralHolder::OwnsValue(void) const
+	ParseL__9MBBStreamRC6TDesC8 @ 173 NONAME R3UNUSED ; MBBStream::ParseL(TDesC8 const &)
+	Part__C12CBBErrorInfoUi @ 174 NONAME R3UNUSED ; CBBErrorInfo::Part(unsigned int) const
+	Part__C12TBBErrorCodeUi @ 175 NONAME R3UNUSED ; TBBErrorCode::Part(unsigned int) const
+	Part__C12TBBTupleMetaUi @ 176 NONAME R3UNUSED ; TBBTupleMeta::Part(unsigned int) const
+	Part__C12TBBTupleNameUi @ 177 NONAME R3UNUSED ; TBBTupleName::Part(unsigned int) const
+	Part__C6TBBAckUi @ 178 NONAME R3UNUSED ; TBBAck::Part(unsigned int) const
+	Part__C8CBBTupleUi @ 179 NONAME R3UNUSED ; CBBTuple::Part(unsigned int) const
+	ReadPart__15TBBCompoundDataUii @ 180 NONAME R3UNUSED ; TBBCompoundData::ReadPart(unsigned int, int)
+	ReadPart__9MBBStreamUii @ 181 NONAME R3UNUSED ; MBBStream::ReadPart(unsigned int, int)
+	Release__C12CBBErrorInfo @ 182 NONAME R3UNUSED ; CBBErrorInfo::Release(void) const
+	RemoveContextNamespace__FPCUw @ 183 NONAME R3UNUSED ; RemoveContextNamespace(unsigned wchar_t const *)
+	Reset__14CBBGenericList @ 184 NONAME R3UNUSED ; CBBGenericList::Reset(void)
+	Reset__9MBBStream @ 185 NONAME R3UNUSED ; MBBStream::Reset(void)
+	SetCurrentHandler__13CContainerXmlP17MNestedXmlHandler @ 186 NONAME R3UNUSED ; CContainerXml::SetCurrentHandler(MNestedXmlHandler *)
+	SetError__10TSingleXmli @ 187 NONAME R3UNUSED ; TSingleXml::SetError(int)
+	SetError__17CPartContainerXmli @ 188 NONAME R3UNUSED ; CPartContainerXml::SetError(int)
+	SetInnerError__12CBBErrorInfoP12CBBErrorInfo @ 189 NONAME R3UNUSED ; CBBErrorInfo::SetInnerError(CBBErrorInfo *)
+	SetInnerError__12CBBErrorInfoPC10MErrorInfo @ 190 NONAME R3UNUSED ; CBBErrorInfo::SetInnerError(MErrorInfo const *)
+	SetIsAttribute__13TBBSimpleDatai @ 191 NONAME R3UNUSED ; TBBSimpleData::SetIsAttribute(int)
+	SetName__12TBBNamedDataPC7TDesC16 @ 192 NONAME R3UNUSED ; TBBNamedData::SetName(TDesC16 const *)
+	SetName__14CBBGenericListPC7TDesC16 @ 193 NONAME R3UNUSED ; CBBGenericList::SetName(TDesC16 const *)
+	SetName__16CBBGeneralHolderPC7TDesC16 @ 194 NONAME R3UNUSED ; CBBGeneralHolder::SetName(TDesC16 const *)
+	SetNextError__12CBBErrorInfoP12CBBErrorInfo @ 195 NONAME R3UNUSED ; CBBErrorInfo::SetNextError(CBBErrorInfo *)
+	SetNextError__12CBBErrorInfoPC10MErrorInfo @ 196 NONAME R3UNUSED ; CBBErrorInfo::SetNextError(MErrorInfo const *)
+	SetOwnsValue__16CBBGeneralHolderi @ 197 NONAME R3UNUSED ; CBBGeneralHolder::SetOwnsValue(int)
+	SetValue__16CBBGeneralHolderP7MBBData @ 198 NONAME R3UNUSED ; CBBGeneralHolder::SetValue(MBBData *)
+	StartElementL__10TSingleXmlPCUwPPCUw @ 199 NONAME R3UNUSED ; TSingleXml::StartElementL(unsigned wchar_t const *, unsigned wchar_t const **)
+	StartElementL__13CContainerXmlPCUwPPCUw @ 200 NONAME R3UNUSED ; CContainerXml::StartElementL(unsigned wchar_t const *, unsigned wchar_t const **)
+	StartElement__12TCheckingXmlPCUwPPCUw @ 201 NONAME R3UNUSED ; TCheckingXml::StartElement(unsigned wchar_t const *, unsigned wchar_t const **)
+	StartInnerElementL__17CPartContainerXmlPCUwPPCUw @ 202 NONAME R3UNUSED ; CPartContainerXml::StartInnerElementL(unsigned wchar_t const *, unsigned wchar_t const **)
+	StaticType__10CBBString8 @ 203 NONAME R3UNUSED ; CBBString8::StaticType(void)
+	StaticType__10TBBMD5Hash @ 204 NONAME R3UNUSED ; TBBMD5Hash::StaticType(void)
+	StaticType__11TBBSeverity @ 205 NONAME R3UNUSED ; TBBSeverity::StaticType(void)
+	StaticType__12CBBErrorInfo @ 206 NONAME R3UNUSED ; CBBErrorInfo::StaticType(void)
+	StaticType__12TBBErrorCode @ 207 NONAME R3UNUSED ; TBBErrorCode::StaticType(void)
+	StaticType__12TBBTupleMeta @ 208 NONAME R3UNUSED ; TBBTupleMeta::StaticType(void)
+	StaticType__12TBBTupleName @ 209 NONAME R3UNUSED ; TBBTupleName::StaticType(void)
+	StaticType__13TBBLongString @ 210 NONAME R3UNUSED ; TBBLongString::StaticType(void)
+	StaticType__14CBBGenericList @ 211 NONAME R3UNUSED ; CBBGenericList::StaticType(void)
+	StaticType__14TBBShortString @ 212 NONAME R3UNUSED ; TBBShortString::StaticType(void)
+	StaticType__15TBBShortString8 @ 213 NONAME R3UNUSED ; TBBShortString8::StaticType(void)
+	StaticType__15TBBTupleSubName @ 214 NONAME R3UNUSED ; TBBTupleSubName::StaticType(void)
+	StaticType__16TBBComponentName @ 215 NONAME R3UNUSED ; TBBComponentName::StaticType(void)
+	StaticType__6TBBAck @ 216 NONAME R3UNUSED ; TBBAck::StaticType(void)
+	StaticType__6TBBInt @ 217 NONAME R3UNUSED ; TBBInt::StaticType(void)
+	StaticType__6TBBUid @ 218 NONAME R3UNUSED ; TBBUid::StaticType(void)
+	StaticType__7TBBBool @ 219 NONAME R3UNUSED ; TBBBool::StaticType(void)
+	StaticType__7TBBTime @ 220 NONAME R3UNUSED ; TBBTime::StaticType(void)
+	StaticType__7TBBUint @ 221 NONAME R3UNUSED ; TBBUint::StaticType(void)
+	StaticType__8CBBTuple @ 222 NONAME R3UNUSED ; CBBTuple::StaticType(void)
+	StaticType__8TBBInt64 @ 223 NONAME R3UNUSED ; TBBInt64::StaticType(void)
+	StaticType__9CBBString @ 224 NONAME R3UNUSED ; CBBString::StaticType(void)
+	StringSep__C12TBBErrorCodeUi @ 225 NONAME R3UNUSED ; TBBErrorCode::StringSep(unsigned int) const
+	StringSep__C12TBBTupleMetaUi @ 226 NONAME R3UNUSED ; TBBTupleMeta::StringSep(unsigned int) const
+	StringSep__C12TBBTupleNameUi @ 227 NONAME R3UNUSED ; TBBTupleName::StringSep(unsigned int) const
+	StringSep__C8CBBTupleUi @ 228 NONAME R3UNUSED ; CBBTuple::StringSep(unsigned int) const
+	StringSep__C9MBBStreamUi @ 229 NONAME R3UNUSED ; MBBStream::StringSep(unsigned int) const
+	SyncPtr__9CBBString @ 230 NONAME R3UNUSED ; CBBString::SyncPtr(void)
+	TakeHBufC__9CBBStringP7HBufC16 @ 231 NONAME R3UNUSED ; CBBString::TakeHBufC(HBufC16 *)
+	Type__C10CBBString8 @ 232 NONAME R3UNUSED ; CBBString8::Type(void) const
+	Type__C10TBBMD5Hash @ 233 NONAME R3UNUSED ; TBBMD5Hash::Type(void) const
+	Type__C11TBBSeverity @ 234 NONAME R3UNUSED ; TBBSeverity::Type(void) const
+	Type__C12CBBErrorInfo @ 235 NONAME R3UNUSED ; CBBErrorInfo::Type(void) const
+	Type__C12TBBErrorCode @ 236 NONAME R3UNUSED ; TBBErrorCode::Type(void) const
+	Type__C12TBBErrorType @ 237 NONAME R3UNUSED ; TBBErrorType::Type(void) const
+	Type__C12TBBTupleMeta @ 238 NONAME R3UNUSED ; TBBTupleMeta::Type(void) const
+	Type__C12TBBTupleName @ 239 NONAME R3UNUSED ; TBBTupleName::Type(void) const
+	Type__C13TBBLongString @ 240 NONAME R3UNUSED ; TBBLongString::Type(void) const
+	Type__C14CBBGenericList @ 241 NONAME R3UNUSED ; CBBGenericList::Type(void) const
+	Type__C14TBBShortString @ 242 NONAME R3UNUSED ; TBBShortString::Type(void) const
+	Type__C15TBBShortString8 @ 243 NONAME R3UNUSED ; TBBShortString8::Type(void) const
+	Type__C15TBBTupleSubName @ 244 NONAME R3UNUSED ; TBBTupleSubName::Type(void) const
+	Type__C16CBBGeneralHolder @ 245 NONAME R3UNUSED ; CBBGeneralHolder::Type(void) const
+	Type__C16TBBComponentName @ 246 NONAME R3UNUSED ; TBBComponentName::Type(void) const
+	Type__C6TBBAck @ 247 NONAME R3UNUSED ; TBBAck::Type(void) const
+	Type__C6TBBInt @ 248 NONAME R3UNUSED ; TBBInt::Type(void) const
+	Type__C6TBBUid @ 249 NONAME R3UNUSED ; TBBUid::Type(void) const
+	Type__C7TBBBool @ 250 NONAME R3UNUSED ; TBBBool::Type(void) const
+	Type__C7TBBTime @ 251 NONAME R3UNUSED ; TBBTime::Type(void) const
+	Type__C7TBBUint @ 252 NONAME R3UNUSED ; TBBUint::Type(void) const
+	Type__C8CBBTuple @ 253 NONAME R3UNUSED ; CBBTuple::Type(void) const
+	Type__C8TBBInt64 @ 254 NONAME R3UNUSED ; TBBInt64::Type(void) const
+	Type__C9CBBString @ 255 NONAME R3UNUSED ; CBBString::Type(void) const
+	Zero__10CBBString8 @ 256 NONAME R3UNUSED ; CBBString8::Zero(void)
+	Zero__12CBBErrorInfo @ 257 NONAME R3UNUSED ; CBBErrorInfo::Zero(void)
+	Zero__9CBBString @ 258 NONAME R3UNUSED ; CBBString::Zero(void)
+	"_._10CBBString8" @ 259 NONAME R3UNUSED ; CBBString8::~CBBString8(void)
+	"_._13CContainerXml" @ 260 NONAME R3UNUSED ; CContainerXml::~CContainerXml(void)
+	"_._14CBBDataFactory" @ 261 NONAME R3UNUSED ; CBBDataFactory::~CBBDataFactory(void)
+	"_._14CBBGenericList" @ 262 NONAME R3UNUSED ; CBBGenericList::~CBBGenericList(void)
+	"_._16CBBGeneralHolder" @ 263 NONAME R3UNUSED ; CBBGeneralHolder::~CBBGeneralHolder(void)
+	"_._17MNestedXmlHandler" @ 264 NONAME R3UNUSED ; MNestedXmlHandler::~MNestedXmlHandler(void)
+	"_._7MBBData" @ 265 NONAME R3UNUSED ; MBBData::~MBBData(void)
+	"_._9CBBString" @ 266 NONAME R3UNUSED ; CBBString::~CBBString(void)
+	"_._9MBBStream" @ 267 NONAME R3UNUSED ; MBBStream::~MBBStream(void)
+	__10CBBString8RC7TDesC16 @ 268 NONAME R3UNUSED ; CBBString8::CBBString8(TDesC16 const &)
+	__10TBBMD5HashRC7TDesC16 @ 269 NONAME R3UNUSED ; TBBMD5Hash::TBBMD5Hash(TDesC16 const &)
+	__10TIgnoreXmlP17MNestedXmlHandlerP10CXmlParser @ 270 NONAME R3UNUSED ; TIgnoreXml::TIgnoreXml(MNestedXmlHandler *, CXmlParser *)
+	__10TSingleXmlP17MNestedXmlHandlerP10CXmlParserRP7HBufC16R7MBBDatai @ 271 NONAME ; TSingleXml::TSingleXml(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, MBBData &, int)
+	__11TBBSeverity @ 272 NONAME R3UNUSED ; TBBSeverity::TBBSeverity(void)
+	__11TBBSeverity9TSeverity @ 273 NONAME R3UNUSED ; TBBSeverity::TBBSeverity(TSeverity)
+	__11TBBSeverityUi @ 274 NONAME R3UNUSED ; TBBSeverity::TBBSeverity(unsigned int)
+	__12TBBErrorCode @ 275 NONAME R3UNUSED ; TBBErrorCode::TBBErrorCode(void)
+	__12TBBErrorCodeG10TErrorCode @ 276 NONAME ; TBBErrorCode::TBBErrorCode(TErrorCode)
+	__12TBBErrorCodeG4TUidi @ 277 NONAME R3UNUSED ; TBBErrorCode::TBBErrorCode(TUid, int)
+	__12TBBErrorCodeRC12TBBErrorCode @ 278 NONAME R3UNUSED ; TBBErrorCode::TBBErrorCode(TBBErrorCode const &)
+	__12TBBErrorType @ 279 NONAME R3UNUSED ; TBBErrorType::TBBErrorType(void)
+	__12TBBErrorType10TErrorType @ 280 NONAME R3UNUSED ; TBBErrorType::TBBErrorType(TErrorType)
+	__12TBBErrorTypeUi @ 281 NONAME R3UNUSED ; TBBErrorType::TBBErrorType(unsigned int)
+	__12TBBTupleMetaUiiRC7TDesC16 @ 282 NONAME ; TBBTupleMeta::TBBTupleMeta(unsigned int, int, TDesC16 const &)
+	__12TBBTupleNameRC7TDesC16 @ 283 NONAME R3UNUSED ; TBBTupleName::TBBTupleName(TDesC16 const &)
+	__12TBBTupleNameRC7TDesC16ii @ 284 NONAME ; TBBTupleName::TBBTupleName(TDesC16 const &, int, int)
+	__12TCheckingXmlP17MNestedXmlHandlerP10CXmlParser @ 285 NONAME R3UNUSED ; TCheckingXml::TCheckingXml(MNestedXmlHandler *, CXmlParser *)
+	__13CContainerXmlP17MNestedXmlHandlerP10CXmlParserRP7HBufC16R7MBBDatai @ 286 NONAME ; CContainerXml::CContainerXml(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, MBBData &, int)
+	__14CBBGenericListRC7TDesC16N21P14MBBDataFactory @ 287 NONAME ; CBBGenericList::CBBGenericList(TDesC16 const &, TDesC16 const &, TDesC16 const &, MBBDataFactory *)
+	__16CBBGeneralHolderRC7TDesC16P14MBBDataFactoryP7MBBData @ 288 NONAME ; CBBGeneralHolder::CBBGeneralHolder(TDesC16 const &, MBBDataFactory *, MBBData *)
+	__16TBBComponentNameRC7TDesC16 @ 289 NONAME R3UNUSED ; TBBComponentName::TBBComponentName(TDesC16 const &)
+	__16TBBComponentNameRC7TDesC16ii @ 290 NONAME ; TBBComponentName::TBBComponentName(TDesC16 const &, int, int)
+	__17CPartContainerXmlP17MNestedXmlHandlerP10CXmlParserRP7HBufC16R15TBBCompoundDatai @ 291 NONAME ; CPartContainerXml::CPartContainerXml(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, TBBCompoundData &, int)
+	__6TBBAck @ 292 NONAME R3UNUSED ; TBBAck::TBBAck(void)
+	__6TBBXmlP17MNestedXmlHandlerP10CXmlParserRP7HBufC16R7MBBDatai @ 293 NONAME ; TBBXml::TBBXml(MNestedXmlHandler *, CXmlParser *, HBufC16 *&, MBBData &, int)
+	__8CBBTupleP14MBBDataFactory @ 294 NONAME R3UNUSED ; CBBTuple::CBBTuple(MBBDataFactory *)
+	__9CBBStringRC7TDesC16 @ 295 NONAME R3UNUSED ; CBBString::CBBString(TDesC16 const &)
+	__9MBBStreamRC7TDesC16R17MIncomingObserver @ 296 NONAME R3UNUSED ; MBBStream::MBBStream(TDesC16 const &, MIncomingObserver &)
+	__as__10TBBMD5HashRC10TBBMD5Hash @ 297 NONAME R3UNUSED ; TBBMD5Hash::operator=(TBBMD5Hash const &)
+	__as__12TBBErrorCodeRC12TBBErrorCode @ 298 NONAME R3UNUSED ; TBBErrorCode::operator=(TBBErrorCode const &)
+	__as__12TBBTupleMetaRC12TBBTupleMeta @ 299 NONAME R3UNUSED ; TBBTupleMeta::operator=(TBBTupleMeta const &)
+	__as__12TBBTupleNameRC10TTupleName @ 300 NONAME R3UNUSED ; TBBTupleName::operator=(TTupleName const &)
+	__as__12TBBTupleNameRC12TBBTupleName @ 301 NONAME R3UNUSED ; TBBTupleName::operator=(TBBTupleName const &)
+	__as__14CBBGenericListRC14CBBGenericList @ 302 NONAME R3UNUSED ; CBBGenericList::operator=(CBBGenericList const &)
+	__as__16TBBComponentNameRC14TComponentName @ 303 NONAME R3UNUSED ; TBBComponentName::operator=(TComponentName const &)
+	__as__8CBBTupleRC8CBBTuple @ 304 NONAME R3UNUSED ; CBBTuple::operator=(CBBTuple const &)
+	__eq__C10TBBMD5HashRC10TBBMD5Hash @ 305 NONAME R3UNUSED ; TBBMD5Hash::operator==(TBBMD5Hash const &) const
+	__eq__C10TTupleNameRC10TTupleName @ 306 NONAME R3UNUSED ; TTupleName::operator==(TTupleName const &) const
+	__eq__C12TBBErrorCodeRC12TBBErrorCode @ 307 NONAME R3UNUSED ; TBBErrorCode::operator==(TBBErrorCode const &) const
+	__eq__C12TBBTupleMetaRC12TBBTupleMeta @ 308 NONAME R3UNUSED ; TBBTupleMeta::operator==(TBBTupleMeta const &) const
+	__eq__C12TBBTupleNameRC12TBBTupleName @ 309 NONAME R3UNUSED ; TBBTupleName::operator==(TBBTupleName const &) const
+	__eq__C14TComponentNameRC14TComponentName @ 310 NONAME R3UNUSED ; TComponentName::operator==(TComponentName const &) const
+	__eq__C6TBBAckRC6TBBAck @ 311 NONAME R3UNUSED ; TBBAck::operator==(TBBAck const &) const
+	__eq__C8CBBTupleRC8CBBTuple @ 312 NONAME R3UNUSED ; CBBTuple::operator==(CBBTuple const &) const
+	__eq__C9TTypeNameRC9TTypeName @ 313 NONAME R3UNUSED ; TTypeName::operator==(TTypeName const &) const
+	__op10TErrorCode__C12TBBErrorCode @ 314 NONAME R3UNUSED ; TBBErrorCode::operator TErrorCode(void) const
+	__op10TErrorType__C12TBBErrorType @ 315 NONAME R3UNUSED ; TBBErrorType::operator TErrorType(void) const
+	__op10TStringArg__C14TComponentName @ 316 NONAME R3UNUSED ; TComponentName::operator TStringArg(void) const
+	__op10TStringArg__C9TTypeName @ 317 NONAME R3UNUSED ; TTypeName::operator TStringArg(void) const
+	AddItemL__14CBBGenericListP7HBufC16P7MBBData @ 318 NONAME R3UNUSED ; CBBGenericList::AddItemL(HBufC16 *, MBBData *)
+

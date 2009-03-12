@@ -1,0 +1,20 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextMediaPlugin","ContextMediaPlugin"},(0x200089F1),5,1,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\ContextMediaPlugin.dll"-"!:\sys\bin\ContextMediaPlugin.dll"
+{
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\ContextMediaPlugin.r01"
+	"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\ContextMediaPlugin.r09"
+}-"!:\resource\ContextMediaPlugin.rsc"

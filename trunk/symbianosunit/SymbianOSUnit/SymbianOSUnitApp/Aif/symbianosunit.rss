@@ -1,0 +1,14 @@
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+#include <aiftool.rh>
+
+RESOURCE AIF_DATA
+{				
+	app_uid=0x101FADF2;
+    num_icons=2;
+}
+
+// End of File

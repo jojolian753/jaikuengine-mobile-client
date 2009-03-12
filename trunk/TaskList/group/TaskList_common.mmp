@@ -1,0 +1,96 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+
+UID  0x100039CE CONTEXT_UID_TASKLIST
+#ifndef __S60V3__
+TARGET  TaskList.app
+TARGETPATH \system\apps\TaskList
+TARGETTYPE  app
+#else
+TARGET  TaskList.exe
+TARGETTYPE exe
+EPOCSTACKSIZE 0x5000
+#endif
+
+SOURCEPATH ..\src
+SOURCE  TaskListApp.cpp 
+SOURCE  TaskListAppUi.cpp
+SOURCE  TaskListDocument.cpp
+SOURCE  TaskListContainer.cpp
+
+#ifndef __S60V3__
+#ifndef __S80__
+RESOURCE ..\data\TaskList.rss
+#else
+RESOURCE ..\gs80\TaskList.rss
+#endif
+#else
+START RESOURCE ..\data\TaskList.rss
+TARGETPATH \resource\apps
+HEADER
+END RESOURCE
+#endif
+
+LANG     SC
+#ifndef __S60V3__
+RESOURCE ..\data\TaskList_caption.rss
+#endif
+
+USERINCLUDE . ..\inc
+
+SYSTEMINCLUDE   . \epoc32\include ..\..
+
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib 
+LIBRARY eikcoctl.lib avkon.lib bafl.lib 
+LIBRARY sysutil.lib
+#ifdef __S60V2__
+LIBRARY CommonDialogs.lib
+#endif
+LIBRARY efsrv.lib
+
+AIF TaskList.aif ..\aif TaskListaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp

@@ -1,0 +1,33 @@
+;
+; Installation file for contextcontacts application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"ContextMediaApp", "KontekstiMedia"},(0x10208123),4,28,0
+
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductId"}
+;
+; Four files to install
+;
+"\Symbian\6.1\Series60\Epoc32\release\thumb\urel\contextmediaapp.app"         -"!:\system\apps\contextmediaapp\contextmediaapp.app"
+{ 
+	"\Symbian\6.1\Series60\Epoc32\Release\thumb\urel\contextmediaapp.r01"
+	"\Symbian\6.1\Series60\Epoc32\Release\thumb\urel\contextmediaapp.r09"
+}-"!:\system\apps\contextmedia\contextmediaapp.rsc"
+{
+	"\Symbian\6.1\Series60\Epoc32\Release\thumb\urel\contextmediaapp_caption.r01" 
+	"\Symbian\6.1\Series60\Epoc32\Release\thumb\urel\contextmediaapp_caption.r09" 
+}-"!:\system\apps\contextmedia\contextmediaapp_caption.rsc"
+
+"\Symbian\6.1\Series60\Epoc32\Release\thumb\urel\contextmediaapp.aif"         -"!:\system\apps\contextmediaapp\contextmediaapp.aif"
+
+

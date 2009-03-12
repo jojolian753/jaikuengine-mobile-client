@@ -1,0 +1,6 @@
+PRJ_PLATFORMS
+WINSCW THUMB
+PRJ_MMPFILES
+BlackBoardData.mmp
+BlackBoardFactory.mmp
+//BlackBoard_test.mmp

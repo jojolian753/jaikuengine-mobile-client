@@ -1,0 +1,143 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+TARGET  dbtest.app
+TARGETTYPE  app
+UID  0x100039CE 0x10204B9C 
+TARGETPATH \system\apps\dbtest
+
+SRCDBG
+
+SOURCEPATH ..\src
+SOURCE  DbtestApp.cpp 
+SOURCE  DbtestAppUi.cpp
+SOURCE  DbtestDocument.cpp
+SOURCE  DbtestContainer.cpp
+SOURCE match.cpp
+SOURCE routes.cpp
+SOURCE stationary.cpp
+SOURCE routes_test.cpp
+SOURCE routes_test_data.cpp
+SOURCE load.cpp
+SOURCE cdb.cpp
+//SOURCE jabber.cpp
+SOURCE cert.cpp
+
+RESOURCE ..\data\dbtest.rss
+RESOURCE ..\data\dbtest_caption.rss
+
+SOURCEPATH ..\..\context_log\src
+SOURCE ftp.cpp
+SOURCE  transfer.cpp
+SOURCE  discover.cpp
+SOURCE  expect.cpp
+SOURCE log_base_impl.cpp
+SOURCE log_comm.cpp
+SOURCE http.cpp
+
+LANG     SC
+
+USERINCLUDE . ..\inc ..\..\context_log\inc ..\..\blackboard\inc ..\..\contextnetwork\inc ..\..\contextsensors\inc ..\..\blackboardclient\inc ..\..\contextcommon2\inc
+USERINCLUDE  ..\..\expat\symbian ..\..\expat\lib \epoc32\include\libc ..\..\contextcommon\inc ..\..
+
+SYSTEMINCLUDE   \epoc32\include \software\src\sendo_inc
+
+
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib 
+LIBRARY eikcoctl.lib avkon.lib
+LIBRARY gsmbas.lib etel.lib profileengine.lib ws32.lib
+LIBRARY gsmadv.lib
+// file ops
+LIBRARY charconv.lib efile.lib efsrv.lib
+// bluetooth
+LIBRARY bluetooth.lib BTEXTNOTIFIERS.LIB SDPAGENT.LIB OBEXCLIENTMTM.LIB
+LIBRARY SDPDATABASE.LIB esock.lib IROBEX.LIB 
+LIBRARY SENDUI.LIB 
+// pbk
+LIBRARY PbkEng.LIB
+// ringtone playes
+LIBRARY FILELIST.LIB
+// socket
+LIBRARY INSOCK.LIB
+//LIBRARY HTTPUTIL.LIB
+//LIBRARY FTPSESS.LIB
+// db
+LIBRARY EDBMS.LIB ESTOR.LIB
+LIBRARY bafl.lib
+// wap
+LIBRARY wapstkcli.lib GenConn.lib nifman.lib CapCodec.lib apengine.lib INTCONNINIT.lib
+LIBRARY commdb.lib
+// expat
+LIBRARY contextexpat.lib
+// system agent
+LIBRARY SYSAGT.LIB
+// notifies
+LIBRARY AKNNOTIFY.LIB
+// log
+LIBRARY LOGCLI.LIB
+LIBRARY contextcommon.lib
+LIBRARY bteng.lib
+
+START WINS      
+// ?wins_specific_information
+END
+
+START MARM
+// ?marm_specific_information
+END
+
+// Other possible keywords:
+/* 
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCEPATH   ?source_path
+SOURCE       ?color_depth ?source_bitmap_list
+END
+*/
+// DEFFILE ?filename
+
+AIF dbtest.aif ..\aif dbtestaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp
+

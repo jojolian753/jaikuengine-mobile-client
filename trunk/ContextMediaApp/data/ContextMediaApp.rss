@@ -1,0 +1,75 @@
+//  RESOURCE IDENTIFIER
+NAME    CMAP // 4 letter ID
+
+#include <eikon.rh>
+#include "contextmediaapp.hrh"
+#include "contextmediaui.hrh"
+#include "contextmediaapp.loc"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <recognizerview.hrh>
+
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf="ContextMediaApp"; }
+RESOURCE EIK_APP_INFO
+{
+    status_pane = r_contextmedia_status_pane;
+}
+
+RESOURCE STATUS_PANE_APP_MODEL r_contextmedia_status_pane
+{
+	panes=
+	{
+		SPANE_PANE
+		{
+			id = EEikStatusPaneUidNavi;
+			type = EAknCtNaviPane;
+			resource = r_contextmedia_navi_decorator;
+		},
+		SPANE_PANE
+		{   
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_cmapp_name;
+		}
+	};
+}
+
+RESOURCE NAVI_DECORATOR r_contextmedia_navi_decorator
+{
+	type = ENaviDecoratorControlTabGroup;
+	control = TAB_GROUP
+	{
+		tab_width = EAknTabWidthWithThreeLongTabs;  
+		active = 0; 
+		tabs = 
+		{
+			TAB
+			{
+				id = EVisualCodeTab;
+				txt = CM_VISUALCODE;
+			},
+			TAB
+			{
+				id = EThreadsByLastPostTab;
+				txt = CM_LAST_POST_THREADS;
+			},
+			TAB
+			{
+				id = EThreadsByTitleTab;
+				txt = CM_TITLE_THREADS;
+			},
+			TAB
+			{
+				id = EThreadsByAuthorTab;
+				txt = CM_AUTHOR_THREADS;
+			}
+		};
+	};
+}
+
+RESOURCE TITLE_PANE r_cmapp_name
+{
+	txt = CM_CAPTION;
+}

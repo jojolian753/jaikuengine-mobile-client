@@ -1,0 +1,22 @@
+; 
+;    Copyright (C) 2007 Jaiku Ltd
+;
+
+
+; JaikuStreamUi
+
+
+;Language - standard language definitions
+&EN,FI
+
+; standard SIS file header
+#{"JaikuStreamUi","JaikuStreamUi"},(0x2000AF41),1,0,0
+
+
+;Supports Series 60 v 0.9
+%{"Jaiku Ltd", "Jaiku Oy"}
+:"Jaiku"
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\JaikuStreamUi.dll"-"!:\sys\bin\JaikuStreamUi.dll"
+

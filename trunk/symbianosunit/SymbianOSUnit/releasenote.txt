@@ -1,0 +1,37 @@
+
+Version 1.02. (Penrillian 23/10/2006)
+-------------------------------------
+
+1. Added UIQ3 support.
+2. Added support for Series 60 3rd Edition.
+3. Externalised Symbian OS Unit project folder.
+
+Known issues:
+1. There is a memory leak (1 byte), which occurs when the TS_ASSERT fails
+   for the first time on Series 60 3rd Edition. After that there are no more leaks.
+   This is because of User::Leave(), which leaks a single byte.
+2. Application icon is not displayed properly on Series 60 3rd Edition hardware.
+
+
+
+Version 1.01. (Penrillian 17/05/2005)
+-------------------------------------
+
+1. Added support for Series 80 reference platform.
+2. Added a application icon.
+
+
+
+Version 1.00. (Penrillian 19/04/2005)
+-------------------------------------
+
+1. Added UIQ support.
+2. Now supports test suites.
+3. Added a tutorial document and project.
+4. Fixed the status bar update bug.
+5. Changed output log filename to SOSUnit.log.
+6. Support for logging added.
+7. Failing tests now halt to debugger.
+8. Added support for comparison of enums.
+9. Added support for comparison of descriptors.
+

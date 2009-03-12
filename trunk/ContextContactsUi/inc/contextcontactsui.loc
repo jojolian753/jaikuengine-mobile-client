@@ -1,0 +1,98 @@
+//#define ELanguage ELangEnglish
+
+#define CC_LOC_CONTACT_DETAILS                    "Contact Details"
+
+#define CC_LOC_WELCOME_INTRO  	                  "Follow these easy steps to set up Jaiku"
+			
+
+#define CC_LOC_WELCOME_NICK_TEXT                "We'll now ask for your Jaiku Screen name and password. Get your account at www.jaiku.com"
+
+#define CC_LOC_WELCOME_CONTACT_CARD_TEXT        "Define yourself in the contact list"
+#define CC_LOC_WELCOME_SELECT_FROM_CONTACTS     "Select from Contacts"
+#define CC_LOC_WELCOME_CREATE_NEW_CONTACT_CARD  "Create New Contact Card"
+
+
+#define CC_LOC_WELCOME_SHARE_CALENDAR_TEXT      "Do you want to share your calendar events?"
+#define CC_LOC_WELCOME_SHOW_TITLE_OF_EVENT      "Show title of event"
+#define CC_LOC_WELCOME_SHOW_BUSY_INSTEAD        "Show only \"Busy\""
+#define CC_LOC_WELCOME_DONT_SHARE_EVENTS        "Do not share my calendar"
+
+
+#define CC_LOC_WELCOME_BLUETOOTH_TEXT           "Jaiku can display who is nearby using Bluetooth. Do you want to share nearby people?"
+#define CC_LOC_WELCOME_BLUETOOTH_YES            "Show number of people"
+#define CC_LOC_WELCOME_BLUETOOTH_NO             "Do not share nearby people"
+
+#define CC_LOC_WELCOME_BATTERY_TEXT             "Jaiku can either conserve your battery or keep your presence always up-to-date. Please select:"
+#define CC_LOC_WELCOME_BATTERY_GOOD_BATTERY               "Better battery life"
+#define CC_LOC_WELCOME_BATTERY_GOOD_PERFORMANCE           "More up-to-date"
+
+
+#define CC_LOC_WELCOME_AP_SELECTION_TEXT        "Select internet access point:"
+#define CC_LOC_WELCOME_AP_SELECTION_ITEM        "Select access point"		
+#define CC_LOC_WELCOME_NO_APS_TEXT              "You don't have any access points. After setup, create one and set it in Jaiku (Options -> Jaiku -> Settings)"
+
+#define CC_LOC_WELCOME_AP_FAILED_TEXT "Jaiku couldn't connect to the Internet. Your operator might not allow full Internet access through the selected access point. What would you like to do?"
+
+#define CC_LOC_WELCOME_AP_SELECT_ANOTHER        "Select another access point"		
+#define CC_LOC_WELCOME_AP_SELECT_LATER          "Continue, I'll change it later"
+
+	
+
+#define CC_LOC_WELCOME_SETUP_COMPLETED_TITLE    "Congratulations"
+	
+#define CC_LOC_WELCOME_SETUP_COMPLETED_TEXT     "Jaiku setup is now complete.\nDo you want to add Jaiku to your Shortcuts?"
+#define CC_LOC_WELCOME_SETUP_COMPLETED_TEXT__NOSHORTCUT "Jaiku is now ready to start. When you want to launch Jaiku later, you will find it in the Installations folder."
+
+#define CC_LOC_WELCOME_LAUNCH_JAIKU__NOSHORTCUT     "Start Jaiku"
+	
+#define CC_LOC_WELCOME_ADD_SHORTCUT_TO_IDLE     "Yes, I'll add Jaiku now"
+
+#define CC_LOC_WELCOME_LAUNCH_JAIKU             "No, I'll add Jaiku later"
+
+
+#define CC_LOC_WELCOME_JAIKU_IS_READY_TITLE     "Locating Jaiku"
+#define CC_LOC_WELCOME_JAIKU_IS_READY           "Jaiku is now ready to start. When you want to launch Jaiku later, you will find it in the Installations folder."
+
+
+#define CC_LOC_WELCOME_ADD_JAIKU_TITLE          "Add Shortcut"
+
+
+#define CC_LOC_WELCOME_ADD_JAIKU_TEXT           "To add Jaiku to Active Standby, select \"Active standby apps.\" in Standby mode settings and define Jaiku for one of the available shortcuts.\nAfter this, go to Standby and start Jaiku from there."
+
+#define CC_LOC_WELCOME_TO_SETTINGS             "To Settings"
+
+
+#define CC_LOC_TESTING_ACCESS_POINT            "Testing access point ..."
+
+
+#define CC_LOC_DUMMY_CONTACT_ACTION_HEADING    "Define Contact Card"
+
+#define CC_LOC_SHOW_SCREEN_NAME                "Show Screen Name"
+
+#define CC_LOC_EDIT_SCREEN_NAME                "Edit Screen Name"
+
+
+#define CC_LOC_PRIVACY_STATEMENT_HEADER        "Please be aware"   
+
+// Softkey label for privacy statement 
+#define CC_LOC_ACCEPT                          "Accept"
+
+// Softkey label for privacy statement 
+#define CC_LOC_DECLINE                         "Decline"
+
+
+#define CC_LOC_YES           "Yes"
+#define CC_LOC_NO            "No"
+
+#define CC_LOC_CONNECT_TO_NETWORK           "To set you up, Jaiku will connect to the Internet. Are you ready to connect now?"
+#define CC_LOC_LAUNCH_JAIKU_ON_STARTUP      "Would you like Jaiku to start automatically in the background when the phone is switched on?"
+	
+#define CC_LOC_WELCOME_CONFIRM_NO_NETWORK_ACCESS "Jaiku needs to access the network to continue setup. Selecting No causes you to exit. Are you sure you want to exit?"
+
+#define CC_LOC_WELCOME_CONFIRM_NO_NETWORK_ACCESS_TITLE "Are you sure?"
+
+#define CC_LOC_VERSION_FMT "Version: %0N.%1N.%2N"
+
+#include "privacystatement.loc"
+
+

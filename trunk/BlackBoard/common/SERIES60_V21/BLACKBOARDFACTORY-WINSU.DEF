@@ -1,0 +1,3 @@
+EXPORTS
+	?CreateDataFactory@@YAPAVMBBDataFactory@@XZ @ 1 NONAME ; class MBBDataFactory * __cdecl CreateDataFactory(void)
+

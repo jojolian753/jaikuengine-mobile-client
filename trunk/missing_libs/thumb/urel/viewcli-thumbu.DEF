@@ -1,0 +1,29 @@
+;DLLNAME VIEWCLI[10003f33].DLL
+EXPORTS
+	"_._18CVwsSessionWrapper" @ 1 NONAME R3UNUSED
+	"AddView__18CVwsSessionWrapperRC10TVwsViewId" @ 2 NONAME R3UNUSED
+	"DeactivateActiveView__18CVwsSessionWrapper" @ 3 NONAME R3UNUSED
+	"NewLC__18CVwsSessionWrapper" @ 4 NONAME R3UNUSED
+	"NewLC__18CVwsSessionWrapperR26MVwsSessionWrapperObserver" @ 5 NONAME R3UNUSED
+	"NewL__18CVwsSessionWrapper" @ 6 NONAME R3UNUSED
+	"NewL__18CVwsSessionWrapperR26MVwsSessionWrapperObserver" @ 7 NONAME R3UNUSED
+	"QueueAsyncRequest__18CVwsSessionWrapper" @ 8 NONAME R3UNUSED
+	"RemoveView__C18CVwsSessionWrapperRC10TVwsViewId" @ 9 NONAME R3UNUSED
+	"RequestCustomMessage__C18CVwsSessionWrapperR5TDes8" @ 10 NONAME R3UNUSED
+	"StartApp__18CVwsSessionWrapperG4TUid" @ 11 NONAME R3UNUSED
+	"StartViewServer__18CVwsSessionWrapperR14MVwsAppStarter" @ 12 NONAME R3UNUSED
+	"ActivateView__18CVwsSessionWrapperRC10TVwsViewIdG4TUidRC6TDesC8" @ 13 NONAME
+	"NotifyNextActivation__18CVwsSessionWrapper" @ 14 NONAME R3UNUSED
+	"NotifyNextActivation__18CVwsSessionWrapperRC10TVwsViewId" @ 15 NONAME R3UNUSED
+	"NotifyNextDeactivation__18CVwsSessionWrapper" @ 16 NONAME R3UNUSED
+	"NotifyNextDeactivation__18CVwsSessionWrapperRC10TVwsViewId" @ 17 NONAME R3UNUSED
+	"SetSystemDefaultView__18CVwsSessionWrapperRC10TVwsViewId" @ 18 NONAME R3UNUSED
+	"SetSystemDefaultView__18CVwsSessionWrapperRC10TVwsViewIdi" @ 19 NONAME R3UNUSED
+	"ShutdownViewServer__18CVwsSessionWrapper" @ 20 NONAME R3UNUSED
+	"ActivateViewViaViewEvent__18CVwsSessionWrapperRC20TVwsViewIdAndMessage" @ 21 NONAME R3UNUSED
+	"SetDefaultView__C18CVwsSessionWrapperRC10TVwsViewId" @ 22 NONAME R3UNUSED
+	"SetDefaultView__C18CVwsSessionWrapperRC10TVwsViewIdi" @ 23 NONAME R3UNUSED
+	"CreateActivateViewEvent__18CVwsSessionWrapperRC10TVwsViewIdG4TUidRC6TDesC8" @ 24 NONAME
+	"SetClientRequestTimeOut__18CVwsSessionWrapperG27TTimeIntervalMicroSeconds32" @ 25 NONAME R3UNUSED
+	"SetServerEventTimeOut__18CVwsSessionWrapperG27TTimeIntervalMicroSeconds32" @ 26 NONAME R3UNUSED
+	"EnableServerEventTimeOut__18CVwsSessionWrapperi" @ 27 NONAME R3UNUSED

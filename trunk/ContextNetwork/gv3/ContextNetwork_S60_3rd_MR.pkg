@@ -1,0 +1,17 @@
+
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+
+
+
+#{"ContextNetwork","ContextNetwork"},(0x200084C3),5,1,0
+
+
+
+(0x101F7961), 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+"\symbian\9.1\S60_3rd_MR\epoc32\Release\gcce\urel\ContextNetwork.dll"-"!:\sys\bin\ContextNetwork.dll"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\contextNetwork.mbm"         -"!:\resource\contextNetwork.mbm"

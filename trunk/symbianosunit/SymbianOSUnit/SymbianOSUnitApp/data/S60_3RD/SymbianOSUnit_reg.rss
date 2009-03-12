@@ -1,0 +1,27 @@
+/*
+============================================================================
+ Name        : SymbianOSUnit_reg.rss
+ Author      : VM
+ Version     :
+ Copyright   : 2006 Penrillian
+ Web		 : www.penrillian.com
+ Description : This is the registration file for SymbianOSUnit.
+============================================================================
+*/
+
+#include <AppInfo.rh>
+#include <SymbianOSUnit.rsg>
+#include "context_uids.rh"
+
+UID2 KUidAppRegistrationResourceFile
+UID3 CONTEXT_UID_SYMBIANOSUNIT // application UID
+
+RESOURCE APP_REGISTRATION_INFO
+	{
+	app_file = "SymbianOSUnit"; 
+	localisable_resource_file = "\\Resource\\Apps\\SymbianOSUnit";
+	localisable_resource_id = R_LOCALISABLE_APP_INFO;
+	embeddability=KAppNotEmbeddable;
+	newfile=KAppDoesNotSupportNewFile;
+	}
+

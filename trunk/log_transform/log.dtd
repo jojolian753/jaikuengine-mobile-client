@@ -1,0 +1,56 @@
+<!--
+	log.dtd
+	DTD for Mobile phone high-level context data
+	(c) 2004 Mika Raento
+-->
+
+<!ELEMENT events (event*)>
+
+<!ENTITY % data "(location|profile|bluetooth|communication)">
+<!ELEMENT event (datetime, %data;)>
+
+<!ELEMENT datetime (#PCDATA)>
+<!-- dt == datatype, XML Schema names -->
+<!ATTLIST datetime dt CDATA #FIXED "datetime">
+
+<!ELEMENT location (stop | (start, location.value?) | location.value) >
+<!ELEMENT profile (stop | (start, profile.value?) | profile.value) >
+<!ELEMENT bluetooth (stop | (start, bluetooth.value?) | bluetooth.value) >
+
+<!ELEMENT communication ( stop | (start?, (comm.call|comm.sms), (comm.outgoing|comm.incoming),
+	comm.duration, comm.number, comm.contact_name? ) ) >
+
+<!ELEMENT location.value ( location.network, location.lac, location.cellid )>
+
+<!ELEMENT profile.value ( profile.id )>
+
+<!ELEMENT bluetooth.value ( bluetooth.device* ) >
+
+<!ELEMENT start EMPTY>
+<!ELEMENT stop EMPTY>
+
+<!ELEMENT location.network (#PCDATA) >
+<!ATTLIST location.network dt CDATA #FIXED "string">
+<!ELEMENT location.lac (#PCDATA)>
+<!ATTLIST location.lac dt CDATA #FIXED "integer">
+<!ELEMENT location.cellid (#PCDATA)>
+<!ATTLIST location.cellid dt CDATA #FIXED "integer">
+
+<!ELEMENT profile.id (#PCDATA)>
+<!ATTLIST profile.id dt CDATA #FIXED "integer">
+
+<!ELEMENT bluetooth.device (#PCDATA)>
+<!ATTLIST bluetooth.device dt CDATA #FIXED "string">
+
+<!ELEMENT comm.call EMPTY>
+<!ELEMENT comm.sms EMPTY>
+<!ELEMENT comm.incoming EMPTY>
+<!ELEMENT comm.outgoing EMPTY>
+<!-- duration in secnds ifor calls -->
+<!ELEMENT comm.duration (#PCDATA)>
+<!ATTLIST comm.duration dt CDATA #FIXED "integer">
+
+<!ELEMENT comm.number (#PCDATA)>
+<!ATTLIST comm.number dt CDATA #FIXED "integer">
+<!ELEMENT comm.contact_name (#PCDATA)>
+<!ATTLIST comm.contact_name dt CDATA #FIXED "integer">

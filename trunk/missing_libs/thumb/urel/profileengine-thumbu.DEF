@@ -1,0 +1,26 @@
+;DLLNAME PROFILEENGINE[100058fa].DLL
+EXPORTS
+	"_._11CProfileAPI" @ 1 NONAME
+	"GetProfileActiveName__11CProfileAPIG6TPtr16Pi" @ 2 NONAME
+	"GetProfileAlertFor__11CProfileAPIPt13CArrayFixFlat1ZlPii" @ 3 NONAME
+	"GetProfileMsgAlertTone__11CProfileAPIPt4TBuf1i256Pii" @ 4 NONAME
+	"GetProfileMultiData__11CProfileAPIR6TDes16T1RiN33Pt13CArrayFixFlat1ZlT3i" @ 5 NONAME
+	"GetProfileNameList__11CProfileAPIP12MDesC16ArrayQ210CProfileDb11TDbSortType" @ 6 NONAME
+	"GetProfileNameList__11CProfileAPIPt13CArrayFixFlat1ZQ210CProfileDb14TProfileStructQ210CProfileDb11TDbSortType" @ 7 NONAME
+	"GetProfileNotification__11CProfileAPIPii" @ 8 NONAME
+	"GetProfileSettingList__11CProfileAPIPt13CArrayFixFlat1ZQ210CProfileDb14TSettingStructi" @ 9 NONAME
+	"GetProfileSoundList__11CProfileAPIPt13CArrayFixFlat1ZQ210CProfileDb12TSoundStructi" @ 10 NONAME
+	"LookupQueryL__10CProfileDbPt13CArrayFixFlat1ZQ210CProfileDb14TProfileStructQ210CProfileDb11TDbSortType" @ 11 NONAME
+	"NewLC__10CProfileDb" @ 12 NONAME
+	"NewLC__11CProfileAPIi" @ 13 NONAME
+	"NewL__10CProfileDb" @ 14 NONAME
+	"NewL__11CProfileAPIi" @ 15 NONAME
+	"ProfileAlertForQueryL__10CProfileDbPt13CArrayFixFlat1ZlPiR6TDes16i" @ 16 NONAME
+	"ProfileSettingQueryL__10CProfileDbPt13CArrayFixFlat1ZQ210CProfileDb14TSettingStructi" @ 17 NONAME
+	"ProfileSoundQueryL__10CProfileDbPt13CArrayFixFlat1ZQ210CProfileDb12TSoundStructi" @ 18 NONAME
+	"ReadProfileL__10CProfileDbPt13CArrayFixFlat1ZQ210CProfileDb14TSettingStructPt13CArrayFixFlat1ZQ210CProfileDb12TSoundStructPt13CArrayFixFlat1ZlPiR6TDes16i" @ 19 NONAME
+	"SetProfileName__11CProfileAPIi" @ 20 NONAME
+	"SilentIndicator__11CProfileAPIRi" @ 21 NONAME
+	"WriteProfileL__10CProfileDbPQ210CProfileDb14TProfileStructR6TDes16Pt13CArrayFixFlat1ZQ210CProfileDb14TSettingStructPt13CArrayFixFlat1ZQ210CProfileDb12TSoundStructPt13CArrayFixFlat1ZlUs" @ 22 NONAME
+	"_._10CProfileDb" @ 23 NONAME
+	"E32Dll__F10TDllReason" @ 24 NONAME

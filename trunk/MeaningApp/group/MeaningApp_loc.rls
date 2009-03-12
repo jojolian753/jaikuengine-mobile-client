@@ -1,0 +1,11 @@
+// ====================================================================
+// File: MeaningApp_loc.rss
+// Created: 01/04/07
+// Author: 
+// Copyright (c): , All rights reserved
+// ====================================================================
+
+rls_string STRING_r_MeaningApp_icon_path "\\resource\\apps\\meaningapp_aif.mif"
+rls_string STRING_short_caption "Meaning"
+rls_string STRING_r_MeaningApp_caption "Meaning"
+

@@ -1,0 +1,61 @@
+#include "recognizer.loc"
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include "recognizerview.hrh"
+
+NAME CREC
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="Recognizer"; }
+
+RESOURCE AVKON_VIEW r_recognizer_view
+{
+    cba=r_own_ok_cancel;
+}
+
+RESOURCE CBA r_own_ok_cancel
+{
+	buttons =
+	{
+	AVKON_CBA_BUTTON
+		{
+			id = ERecognizerCaptureCode;
+			txt = "Ok";
+		},
+      AVKON_CBA_BUTTON
+		{
+			id = ERecognizerCancel;
+			txt = "Cancel";
+		}
+	 };
+  }
+  
+RESOURCE DIALOG r_wins_code_selection
+{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+		DLG_LINE
+		{
+			type = EAknCtQuery;
+			id = EGeneralQuery;
+			control= AVKON_DATA_QUERY
+			{
+				layout = ENumberLayout;
+				label = "Type the code as integer";
+				control = AVKON_INTEGER_EDWIN
+				{
+					min = 5;
+					max = 65000;
+				};
+			};
+		}
+	};
+}
+  RESOURCE TBUF R_CHOOSE_CODE {buf=REC_CHOOSE_CODE;}
+  RESOURCE TBUF R_CODE_SCREEN_MSG{buf=REC_CODE_SCREEN_MSG;}
+

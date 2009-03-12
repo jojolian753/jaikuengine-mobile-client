@@ -1,0 +1,193 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+#include <sdk_version.mmp>
+#include "..\..\context.mmp"
+
+TARGET  ContextMediaUi.dll
+TARGETTYPE  dll
+UID  0x1000008d CONTEXT_UID_CONTEXTMEDIAUI
+START ARMI
+TARGETPATH	  \system\libs
+END
+START THUMB
+TARGETPATH	  \system\libs
+END
+
+DEFFILENAME(ContextMediaUi)
+
+SOURCEPATH ..\src
+SOURCE  contextmediaappContainer.cpp
+SOURCE  contextmediaappView.cpp
+SOURCE  contextmediaappview2.cpp
+SOURCE  medialistbox.cpp
+SOURCE  videoengine.cpp
+SOURCE  audioengine.cpp
+SOURCE  cm_oldprompt.cpp
+SOURCE  popup_notifier.cpp
+SOURCE  dll.cpp
+SOURCE  cm_taglist.cpp
+SOURCE	cm_autotaglist.cpp
+
+LANG     01 09
+#ifndef __S60V3__
+SYSTEMRESOURCE ..\data\ContextMediaUi.rss
+#else
+START RESOURCE ..\data\ContextMediaUi.rss
+TARGETPATH \resource
+HEADER
+END RESOURCE
+#endif
+
+USERINCLUDE . ..\inc  
+USERINCLUDE ..\..\expat\lib   ..\..\ContextCommon\inc ..\..\ContextCommon2\inc ..\.. ..\..\blackboard\inc ..\..\contextmedia\inc ..\..\contextsensors\inc ..\..\recognizer\inc ..\..\visualcodesystem\inc ..\..\contextnetwork\inc ..\..\blackboardclient\inc ..\..\contextui\inc ..\..\contextcontacts\inc ..\..\contextnotifyclient\inc ..\..\ContextTransfer\inc
+USERINCLUDE ..\..\JaikuUiKit\inc
+
+SYSTEMINCLUDE   \epoc32\include \epoc32\include\mmf\common \epoc32\include\libc
+
+
+LIBRARY contextui.lib contextcommon2.lib blackboardclient.lib
+LIBRARY contexttransfer.lib
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib flogger.lib
+LIBRARY eikcoctl.lib avkon.lib bafl.lib
+LIBRARY etel.lib cntmodel.lib
+LIBRARY apgrfx.lib ws32.lib
+LIBRARY SENDUI.LIB etext.lib AKNNOTIFY.LIB
+LIBRARY edbms.lib
+LIBRARY EIKCDLG.LIB EIKDLG.LIB
+LIBRARY commdb.lib
+LIBRARY fbscli.lib
+LIBRARY estor.lib
+LIBRARY MediaClientImage.lib
+LIBRARY egul.lib
+LIBRARY eikctl.lib
+LIBRARY gdi.lib
+LIBRARY form.lib
+LIBRARY bitgdi.lib
+LIBRARY PBKENG.LIB PBKVIEW.LIB
+LIBRARY bcardeng.lib
+LIBRARY MediaClientAudio.lib
+LIBRARY efsrv.lib charconv.lib 
+
+#ifndef __S60V3__
+LIBRARY PAlbView.lib
+#endif
+
+
+//SMS MTM
+LIBRARY msgs.lib
+
+LIBRARY contextcommon.lib 
+LIBRARY contextsensors.lib contextsensordata.lib
+LIBRARY blackboarddata.lib
+
+LIBRARY contextmedia.lib 
+LIBRARY contextnetwork.lib contexttransfer.lib
+LIBRARY contextnotifyclient.lib
+LIBRARY contextmediadata.lib
+
+LIBRARY JaikuUiKit.lib
+
+LIBRARY apmime.lib
+
+#ifdef __S60V3__
+#ifndef WINS
+//LIBRARY mmfcontrollerframework.lib 
+#endif
+LIBRARY ecom.lib tagma.lib
+#endif
+
+START BITMAP contextmediaui_video.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+	
+	SOURCE c8 video.bmp
+END
+
+START BITMAP contextmediaui_audio.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+	
+	SOURCE c8 audio.bmp
+END
+
+START BITMAP contextmediaui_unknown.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+	
+	SOURCE c8 unknown.bmp
+END
+
+START BITMAP contextmediauitags.mbm
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+	
+	SOURCE 1  empty.bmp
+	SOURCE 1  unchecked.bmp
+	SOURCE 1  checked.bmp
+	SOURCE 1  disabled.bmp
+	SOURCE 1  ask.bmp
+END

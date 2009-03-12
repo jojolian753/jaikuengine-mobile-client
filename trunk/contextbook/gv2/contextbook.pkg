@@ -1,0 +1,31 @@
+;
+; Installation file for contextbook application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"ContextBook", "KontekstiKirja"},(0x101FBAD0),4,7,0
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductId"}
+;
+; Four files to install
+;
+"\Symbian\7.0s\Series60_v20\Epoc32\release\thumb\urel\contextbook.app"         -"!:\system\apps\contextbook\contextbook.app"
+{ 
+	"\symbian\7.0s\series60_v20\EPOC32\DATA\z\system\apps\contextbook\contextbook.r01"
+	"\symbian\7.0s\series60_v20\EPOC32\DATA\z\system\apps\contextbook\contextbook.r09"
+}-"!:\system\apps\contextbook\contextbook.rsc"
+{
+	"\symbian\7.0s\series60_v20\EPOC32\DATA\z\system\apps\contextbook\contextbook_caption.r01" 
+	"\symbian\7.0s\series60_v20\EPOC32\DATA\z\system\apps\contextbook\contextbook_caption.r09" 
+}-"!:\system\apps\contextbook\contextbook_caption.rsc"
+
+"\symbian\7.0s\series60_v20\EPOC32\DATA\z\system\apps\contextbook\contextbook.aif"         -"!:\system\apps\contextbook\contextbook.aif"
+

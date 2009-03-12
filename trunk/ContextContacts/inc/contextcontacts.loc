@@ -1,0 +1,13 @@
+#ifdef __WINS__
+#define CC_MBM "z:\\system\\data\\contextcontacts.mbm"
+#else
+#define CC_MBM "\\system\\apps\\contextcontacts\\contextcontacts.mbm"
+#endif 
+
+#ifdef LANGUAGE_01
+#include "contextcontacts.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextcontacts.l09"
+#endif
+

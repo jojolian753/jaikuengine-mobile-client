@@ -1,0 +1,7 @@
+#include <apcaptionfile.rh>
+
+RESOURCE CAPTION_DATA
+{
+  caption="JaikuDevHelper";
+  shortcaption="JaikuDevHelper";
+}

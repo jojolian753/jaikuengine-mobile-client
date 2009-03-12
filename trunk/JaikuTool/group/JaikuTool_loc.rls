@@ -1,0 +1,11 @@
+// ====================================================================
+// File: JaikuTool_loc.rss
+// Created: 01/04/07
+// Author: 
+// Copyright (c): , All rights reserved
+// ====================================================================
+
+rls_string STRING_r_JaikuTool_icon_path "\\resource\\apps\\jaikusettings_aif.mif"
+rls_string STRING_short_caption "Jaiku Tool"
+rls_string STRING_r_JaikuTool_caption "Jaiku Tool"
+

@@ -1,0 +1,3 @@
+EXPORTS
+	?NewL@CMediaRunner@@SAPAV1@PAVCAknViewAppUi@@PAVMPresenceMaintainer@@PAVTVwsViewId@@AAVi_status_notif@@AAVMSocketObserver@@@Z @ 1 NONAME ; class CMediaRunner * CMediaRunner::NewL(class CAknViewAppUi *, class MPresenceMaintainer *, class TVwsViewId *, class i_status_notif &, class MSocketObserver &)
+

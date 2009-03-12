@@ -1,0 +1,13 @@
+//  RESOURCE IDENTIFIER
+NAME    CLOM // 4 letter ID
+//  RESOURCE DEFINITIONS 
+
+#include <badef.rh>
+#include <uikon.rh>
+#include "context_log.loc"
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=CL_CAPTION; }
+
+#include "context_log_common.rss"

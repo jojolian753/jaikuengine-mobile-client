@@ -1,0 +1,32 @@
+;
+; Installation file for ContextContacts application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"ContextContact", "Osoitekirja"},(0x10204BAC),4,36,0
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+;
+; Four files to install
+;
+"\Symbian\6.1\series60\Epoc32\release\thumb\urel\contextcontacts.app"         -"!:\system\apps\contextcontacts\contextcontacts.app"
+{ 
+	"\symbian\6.1\series60\EPOC32\release\thumb\urel\contextcontacts.r01"
+	"\symbian\6.1\series60\EPOC32\release\thumb\urel\contextcontacts.r09"
+}-"!:\system\apps\contextcontacts\contextcontacts.rsc"
+{
+	"\symbian\6.1\series60\EPOC32\release\thumb\urel\contextcontacts_caption.r01" 
+	"\symbian\6.1\series60\EPOC32\release\thumb\urel\contextcontacts_caption.r09" 
+}-"!:\system\apps\contextcontacts\contextcontacts_caption.rsc"
+
+"\symbian\6.1\series60\epoc32\release\thumb\urel\contextcontacts.aif"         -"!:\system\apps\contextcontacts\contextcontacts.aif"
+"\symbian\6.1\series60\EPOC32\release\thumb\urel\contextcontacts.mbm"-"!:\system\data\contextcontacts.mbm"
+

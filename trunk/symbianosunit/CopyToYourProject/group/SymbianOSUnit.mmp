@@ -1,0 +1,26 @@
+/*
+* ============================================================================
+*  Name     : SymbianOSUnit.mmp
+*  Part of  : SymbianOSUnit
+*  Created  : 19/10/2006 by vm,sj
+*  Description:
+*     This file provides the template for a new project
+*
+*  Version  :
+*  Copyright: Penrillian. All rights reserved
+*  Web		: www.penrillian.com
+* ============================================================================
+*/
+
+//specify test source files and libraries alonbg with userincludes
+SOURCEPATH	..\test
+SOURCE      TestSource.cpp 
+
+USERINCLUDE	..\test
+
+//include SymbianOSUnit mmp file from proper directory depending on relative path and target platform
+
+#include "..\..\SymbianOSUnit\SymbianOSUnitApp\group\s60_3rd\SymbianOSUnit.source"
+
+
+

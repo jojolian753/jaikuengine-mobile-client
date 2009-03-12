@@ -1,0 +1,19 @@
+
+
+&EN,FI
+%{"University of Helsinki", "Helsingin yliopisto"}
+:"HY"
+#{"Meaning", "Merkitys"},(0x20006E42),4,36,0
+(0x101F7961), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\contextflickr.exe"         -"!:\sys\bin\contextflickr.exe"
+{
+	"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextflickr.r01"
+	"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextflickr.r09"
+}-"!:\resource\apps\contextflickr.rsc"
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\apps\contextflickr_aif.mif"         -"!:\resource\apps\contextflickr_aif.mif"
+"\symbian\9.1\S60_3rd_MR\EPOC32\DATA\z\resource\contextflickr.mbm"         -"!:\resource\contextflickr.mbm"
+{ 
+"\symbian\9.1\S60_3rd_MR\epoc32\release\winscw\udeb\z\private\10003a3f\apps\ContextFlickr_reg.r01"  
+"\symbian\9.1\S60_3rd_MR\epoc32\release\winscw\udeb\z\private\10003a3f\apps\ContextFlickr_reg.r09"  
+}
+-"!:\private\10003a3f\import\apps\ContextFlickr_reg.rsc"

@@ -1,0 +1,118 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#ifndef SETTINGS_H_INCLUDED
+#define SETTINGS_H_INCLUDED 1
+
+#include "db.h"
+#include "app_context.h"
+#include "symbian_tree.h"
+
+class MDefaultSettings {
+public:
+	virtual bool GetDefaultL(TInt Setting, TDes& Value) const = 0;
+	virtual bool GetDefaultL(TInt Setting, TDes8& Value) const = 0;
+	virtual bool GetDefaultL(TInt Setting, TInt& Value) const = 0;
+	virtual bool GetDefaultL(TInt Setting, TTime& Value) const = 0;
+};
+
+class TNoDefaults: public MDefaultSettings {
+private:
+	IMPORT_C virtual bool GetDefaultL(TInt Setting, TDes& Value) const;
+	IMPORT_C virtual bool GetDefaultL(TInt Setting, TDes8& Value) const;
+	IMPORT_C virtual bool GetDefaultL(TInt Setting, TInt& Value) const;
+	IMPORT_C virtual bool GetDefaultL(TInt Setting, TTime& Value) const;
+};
+
+class CSettings : public MContextBase, public MSettings, public CBase {
+public:
+	IMPORT_C static CSettings* NewL(MApp_context& Context, const MDefaultSettings& DefaultSettings,
+		const TDesC& SettingName=TPtrC(0,0), bool ReadOnly=false);
+	~CSettings();
+private:
+	virtual bool GetSettingL(TInt Setting, TDes& Value);
+	virtual bool GetSettingL(TInt Setting, TDes8& Value);
+	virtual bool GetSettingL(TInt Setting, TInt& Value);
+	virtual bool GetSettingL(TInt Setting, TTime& Value);
+	// virtual bool GetSettingL(TInt Setting, TBool& Value); TBool is typedeffed to int
+	virtual void WriteSettingL(TInt Setting, const TDesC& Value);
+	virtual void WriteSettingL(TInt Setting, const TDesC8& Value);
+	virtual void WriteSettingL(TInt Setting, const TInt& Value);
+	virtual void WriteSettingL(TInt Setting, const TTime& Value);
+	// virtual void WriteSettingL(TInt Setting, const TBool& Value); TBool is typedeffed to int
+	virtual void NotifyOnChange(TInt Setting, MSettingListener* Listener);
+	virtual void CancelNotifyOnChange(TInt Setting, MSettingListener* Listener);
+
+	CSettings(MApp_context& Context, const MDefaultSettings& DefaultSettings, bool ReadOnly);
+	void ConstructL(const TDesC& SettingName);
+
+	void NotifyOfChange(TInt Setting);
+
+	CDb *iDb;
+	CSingleColDb<TInt> *iIntStore;
+	CSingleColDb<TTime> *iTimeStore;
+	CSingleColDb<TDesC, TDes> *iDesStore;
+	CSingleColDb<TDesC8, TDes8> *iDes8Store;
+	CGenericIntMap*	iListeners;
+	bool		iReadOnly;
+	const MDefaultSettings& iDefaultSettings;
+};
+
+enum TSettingDatatype { EEmpty, EString, EString8, EBool, EInt, ETime, EAP, EEnum, EPublisher };
+
+struct TSettingItem {
+	TInt			iSettingNo;
+	TSettingDatatype	iDatatype;
+	const TText16*		iStringDefault;
+	TInt			iIntDefault;
+	TBool			iDefaultExists;
+};
+
+struct TSettingItemEnabled {
+	TInt			iSettingNo;
+	TBool			iEnabled;
+};
+
+#endif

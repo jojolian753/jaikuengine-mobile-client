@@ -1,0 +1,17 @@
+/*
+* ============================================================================
+*  Name     : bld.inf
+*  Part of  : Recognizer_v70s
+*  Created  : 22.06.2004 by Michael Rohs
+*  Description:
+*	 This file provides the information required for building the
+*    whole of a Recognizer_v70s.
+*  Version  :
+*  Copyright: (c) 2004 ETH Zurich
+* ============================================================================
+*/
+
+
+PRJ_MMPFILES
+Recognizer.mmp
+

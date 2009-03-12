@@ -1,0 +1,878 @@
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\LOCATEST.EXE', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\ntdll.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\kernel32.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\euser.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\user32.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\gdi32.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\econs.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ewsrv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\edisp.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ektran.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ekdata.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\hal.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\efsrv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\efile.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\CONTEXTCOMMON.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etel.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32root.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\comsdbgutil.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\charconv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\comsdbgsvr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\commsfw.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\cflog.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mbufmgr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\esock.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\flogger.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etext.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\estor.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\pbe.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\cryptography.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\hash.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\random.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\randsvr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\gdi.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\bafl.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\palette.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\linebreak.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\field.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\sendui.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\msgs.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\sysagt.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\edbms.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\aknnotify.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\CONTEXTEXPAT.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\estlib.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\redircli.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\estw32.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\commdb.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\dial.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\insock.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\apgrfx.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\apparc.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\apmime.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\fbscli.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\fntstr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\scdv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\bitgdi.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ws32.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\cone.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\egul.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\numberconversion.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\viewcli.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\viewsrv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mediaclientaudio.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mediaclientutility.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mmfcontrollerframework.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ecom.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\inetprotutil.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mmfstandardcustomcommands.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mmfdevsound.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mmfserverbaseclasses.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mmfaudiopolicyproxy.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mediaclient.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\BLACKBOARDDATA.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\PYTHON222.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\CONTEXTSENSORDATA.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\bluetooth.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\BLACKBOARDCLIENT.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\CONTEXTCOMMON2.DLL', Symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ekern.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\epbusm.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\epbusp.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\elocl.dll', Cannot find or open a required DBG file.
+AddProcess Locatest[00000000]0001
+NewThread Locatest[00000000]0001::Supervisor
+NewThread Locatest[00000000]0001::NULL
+NewThread Locatest[00000000]0001::KernelWindow
+'Locatest.exe': Loaded 'C:\Documents and Settings\mraento\Local Settings\Temp\IadHide5.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\advapi32.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\rpcrt4.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\MSCTF.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\msvcrt.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\mslbui.dll', Symbols loaded.
+Thread ID 0x108c is Main
+NewThread Locatest[00000000]0001::Main
+Thread ID 0xd50 is FileServer
+NewThread Locatest[00000000]0001::FileServer
+Thread ID 0x1600 is LoaderThread
+NewThread Locatest[00000000]0001::LoaderThread
+Thread ID 0xa6c is StartupThread
+NewThread Locatest[00000000]0001::StartupThread
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medata.pdd', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medata.pdd'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medata.pdd', No symbols loaded.
+AddLibrary medata[100000d9]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medint.pdd', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medint.pdd'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medint.pdd', No symbols loaded.
+AddLibrary medint[100000d8]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medlfs.pdd', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medlfs.pdd'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medlfs.pdd', No symbols loaded.
+AddLibrary medlfs[00000000]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medmmc.pdd', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medmmc.pdd'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\medmmc.pdd', No symbols loaded.
+AddLibrary medmmc[100000d9]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mednand.pdd', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mednand.pdd'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\mednand.pdd', No symbols loaded.
+AddLibrary mednand[101f9bcf]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\elocal.fsy', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\elocal.fsy'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\elocal.fsy', No symbols loaded.
+AddLibrary ELOCAL[100000d6]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\efat.fsy', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\efat.fsy'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\efat.fsy', No symbols loaded.
+AddLibrary EFAT[100000d6]
+RemoveThread StartupThread
+The thread 'Win32 Thread' (0xa6c) has exited with code 0 (0x0).
+Thread ID 0x308 is WindowServer
+NewThread Locatest[00000000]0001::WindowServer
+Thread ID 0x20c is NotifierServer
+NewThread Locatest[00000000]0001::NotifierServer
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\tnotifiers\agentshellnotifier.dll', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\tnotifiers\agentshellnotifier.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\tnotifiers\agentshellnotifier.dll', No symbols loaded.
+AddLibrary agentshellnotifier[101fd0ce]
+AddLibrary econs[100039e7]
+Thread ID 0x2f0 is FLogger server
+NewThread Locatest[00000000]0001::FLogger server
+AddLibrary FLOGGER[10004d0a]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\BLACKBOARDSERVER.DLL', Symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\BLACKBOARDSERVER.DLL'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\BLACKBOARDSERVER.DLL', Symbols loaded.
+AddLibrary BlackBoardServer[10204baf]
+Thread ID 0x1538 is myBlackBoardServerdc42a145
+NewThread Locatest[00000000]0001::myBlackBoardServerdc42a145
+AddLibrary c32root[101f7484]
+Thread ID 0x788 is Comsdbg server
+NewThread Locatest[00000000]0001::Comsdbg server
+Thread ID 0xfe4 is Comsdbg2
+NewThread Locatest[00000000]0001::Comsdbg2
+RootServer	event	a	4	DoStartC32("")
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32start.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32start.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32start.dll', No symbols loaded.
+AddLibrary C32start[101f7988]
+Thread ID 0x1718 is RootSrvEntry
+NewThread Locatest[00000000]0001::RootSrvEntry
+RootServer	event	a	4	StartC32 - Starting C32Start.exe
+RootServer	event	a	4	StartC32 - waiting for  C32Start.exe to complete init.
+RootServer	event	a	4	StartC32 - Published configuration sequence is 0.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32rootsrv.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32rootsrv.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\c32rootsrv.dll', No symbols loaded.
+AddLibrary c32rootsrv[101f7485]
+Thread ID 0x15b0 is RootSrvEntry
+NewThread Locatest[00000000]0001::RootSrvEntry
+RootServer	Code	a	f	CRootServer - Initializing
+RootServer	Code	a	f	RunRootServer - Entering Active Scheduler.
+RootServer	event	a	e	RRootServ::Connect: client 14
+RootServer	Code	a	f	CRootServer - NewSession
+RootServer	Code	a	f	CRootServer - AdjustMBufPool to 262144 bytes.
+RootServer	Code	a	f	CRootServerSession - Load request in LoadModuleL
+RootServer	Code	a	f	CRootServer - Lazy loading MBuf Manager. 262144 bytes in pool.
+RootServer	Code	a	f	CCommsProviderModule::ConstructL:CCommServer,c32.dll Pri:20 Stack:8192.
+AddLibrary c32[10003d33]
+RootServer	Code	a	f	CModuleBase::CreateThreadL: Loaded module library c32.dll.
+RootServer	Code	a	f	CModuleBase - Using configured ordinal: 87
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: Using Default Heap.
+Thread ID 0x55c is CCommServer
+NewThread Locatest[00000000]0001::CCommServer
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: Created thread for CCommServer.
+RootServer	Code	a	f	CRootServerSession - Registering handler
+RootServer	Code	a	f	CSessionHandlerLoadCPM - Setting up Handler
+RootServer	Code	a	f	CCommsProviderModule::Load: Resumed thread CCommServer.
+RootServer	Code	a	f	CRootServerSession - Load request in LoadModuleL
+RootServer	Code	a	f	CCommsProviderModule::ConstructL:CSocketServer,esocksvr.dll Pri:10 Stack:16384.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\esocksvr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\nifman.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\agentdialog.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logwrap.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logcli.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\esocksvr.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\nifman.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logwrap.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logcli.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\agentdialog.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\esocksvr.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\nifman.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\agentdialog.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logwrap.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\logcli.dll', No symbols loaded.
+AddLibrary esocksvr[101f7482]
+RootServer	Code	a	f	CModuleBase::CreateThreadL: Loaded module library esocksvr.dll.
+RootServer	Code	a	f	CModuleBase - Using configured ordinal: 1
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: New heap address 4e80000
+Thread ID 0x448 is CSocketServer
+NewThread Locatest[00000000]0001::CSocketServer
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: Created thread for CSocketServer.
+RootServer	Code	a	f	CRootServerSession - Registering handler
+RootServer	Code	a	f	CSessionHandlerLoadCPM - Setting up Handler
+RootServer	Code	a	f	CCommsProviderModule::Load: Resumed thread CSocketServer.
+RootServer	Code	a	f	CRootServerSession - Load request in LoadModuleL
+RootServer	Code	a	f	CCommsProviderModule::ConstructL:CTelServer,etel.dll Pri:0 Stack:12288.
+esock	esock.txt	a	11	--------------- Esock Started ---------------
+esock	esock.txt	a	11	ProtocolManager: Initialising.
+esock	esock.txt	a	11	ProtocolManager: Retrieve ESock inidata.
+esock	esock.txt	a	11	ProtocolManager: Protocol list is secpol,pfkey,crypto,irmux,tinytp,sms,tcp,udp,icmp,icmp6,ip,ip6,resolver,wap,sms
+esock	esock.txt	a	11	ProtocolManager: Loading PRTs and setting up protocols.
+AddLibrary etel[10003d46]
+RootServer	Code	a	f	CModuleBase::CreateThreadL: Loaded module library etel.dll.
+RootServer	Code	a	f	CModuleBase - Using configured ordinal: 233
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: New heap address 5010000
+Thread ID 0x126c is CTelServer
+NewThread Locatest[00000000]0001::CTelServer
+RootServer	Code	a	f	CCommsProviderModule::CreateThreadL: Created thread for CTelServer.
+RootServer	Code	a	f	CRootServerSession - Registering handler
+RootServer	Code	a	f	CSessionHandlerLoadCPM - Setting up Handler
+RootServer	Code	a	f	CCommsProviderModule::Load: Resumed thread CTelServer.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipsec6.prt', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\inhook6.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipsec6.prt'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\inhook6.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipsec6.prt', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\inhook6.dll', No symbols loaded.
+AddLibrary ipsec6[10000847]
+RootServer	Code	a	f	CCommsProviderModule::RunL name:CCommServer, state 2, status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM called BM::CreateModuleL(CCommServer)
+esock	esock.txt	a	11	Loading 'ipsec6.prt' [ret=0]
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipseccrypto.prt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipseccrypto.prt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipseccrypto.prt', No symbols loaded.
+AddLibrary ipseccrypto[1000089c]
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL CCommServer loaded sucessfully
+esock	esock.txt	a	11	Loading 'ipseccrypto.prt' [ret=0]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\irda.prt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\irda.prt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\irda.prt', No symbols loaded.
+AddLibrary irda[10003d54]
+RootServer	Code	a	f	CCommsProviderModule::RunL name:CTelServer, state 2, status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM called BM::CreateModuleL(CTelServer)
+esock	esock.txt	a	11	Loading 'irda.prt' [ret=0]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsprot.prt', No symbols loaded.
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL CTelServer loaded sucessfully
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\gsmu.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsu.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsprot.prt'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsu.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\gsmu.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsprot.prt', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\gsmu.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsu.dll', No symbols loaded.
+AddLibrary SMSPROT[10000899]
+esock	esock.txt	a	11	Loading 'SMSPROT.PRT' [ret=0]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\tcpip6.prt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\tcpip6.prt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\tcpip6.prt', No symbols loaded.
+AddLibrary tcpip6[1000088d]
+esock	esock.txt	a	11	Loading 'tcpip6.prt' [ret=0]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\wapprot.prt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\wapprot.prt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\wapprot.prt', No symbols loaded.
+AddLibrary WAPPROT[10003d5d]
+esock	esock.txt	a	11	Loading 'WAPPROT.PRT' [ret=0]
+esock	esock.txt	a	11	ProtocolManager: Finished initialising. Unloading all PRTs.
+esock	esock.txt	a	11	ProtocolManager: Done.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipsec6.prt'
+RemoveLibrary ipsec6[10000847]
+RootServer	Code	a	f	CCommsProviderModule::RunL name:CSocketServer, state 2, status 0
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\ipseccrypto.prt'
+RemoveLibrary ipseccrypto[1000089c]
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\irda.prt'
+RemoveLibrary irda[10003d54]
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsprot.prt'
+RemoveLibrary SMSPROT[10000899]
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\tcpip6.prt'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\inhook6.dll'
+RemoveLibrary tcpip6[1000088d]
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\wapprot.prt'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\smsu.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\gsmu.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll'
+RemoveLibrary WAPPROT[10003d5d]
+RootServer	Code	a	f	CSessionHandlerLoadCPM called BM::CreateModuleL(CSocketServer)
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL status 0
+RootServer	Code	a	f	CSessionHandlerLoadCPM::RunL CSocketServer loaded sucessfully
+RootServer	event	a	4	StartC32 - Published configuration sequence is 10.
+RootServer	Code	a	f	CRootServerSession - Load request in LoadModuleL
+RootServer	Code	a	f	CCommsProviderModule::ConstructL:PhBkSyncServer,phbksyncsvr.dll Pri:300 Stack:12288.
+RootServer	event	a	4	StartC32 - Root Server configured
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\phbksyncsvr.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\cntmodel.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\versit.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\conarc.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\phbksyncsvr.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\cntmodel.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\versit.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\conarc.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll'
+RemoveLibrary c32root[101f7484]
+Can't load phbksyncsvr.dll
+
+RootServer	Code	a	f	CModuleBase::CreateThreadL: Unable to load DLL phbksyncsvr.dll: -1.
+RootServer	Code	a	f	CCommsProviderModule::~CCommsProviderModule: removing PhBkSyncServer from RS List
+RootServer	Code	a	f	CCommsProviderModule::~CCommsProviderModule: PhBkSyncServer
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\BLACKBOARDFACTORY.DLL', Symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\BLACKBOARDFACTORY.DLL'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\BLACKBOARDFACTORY.DLL', Symbols loaded.
+AddLibrary BLACKBOARDFACTORY[1020811a]
+Thread ID 0x318 is DBMS server
+NewThread Locatest[00000000]0001::DBMS server
+AddLibrary EDBMS[10003b0e]
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\sysagx.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\sysagx.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\sysagx.dll', No symbols loaded.
+AddLibrary Sysagx[100055c6]
+Thread ID 0x464 is SystemAgent0x3024f123
+NewThread Locatest[00000000]0001::SystemAgent0x3024f123
+esock	esock.txt	a	4	RSocketServ 02098ad4:	Connect() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+Thread ID 0x1034 is MutextWait 434181324
+NewThread Locatest[00000000]0001::MutextWait 434181324
+MakeConnectionL, iap 1
+The thread 'Win32 Thread' (0x1034) has exited with code 0 (0x0).
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+esock	esock.txt	a	11	Loading extension 'Nifman'
+AddLibrary Nifman[10003d40]
+Nifman	Nifman.txt	a	11	--------------- Nifman Started ---------------
+Nifman	Nifman.txt	a	11	Detailed logging enabled
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\netcon.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelpckt.dll', Cannot find or open a required DBG file.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\netcon.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelpckt.dll'
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\netcon.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelmm.dll', No symbols loaded.
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\etelpckt.dll', No symbols loaded.
+AddLibrary NETCON[101f6cec]
+NetCon	NetCon.txt	a	11	--------------- Network Controller Started ---------------
+NetCon	NetCon.txt	a	11	Detailed logging enabled
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	CreateL - aConnection = 4e80e5c
+Notify of tuple [10208120 1]
+Notify of tuple [10208120 1]
+esock	esock.txt	a	4	RConnection 02098b08:	Start() with preferences, tid 4
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting explicit connection
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 1000, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 1
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Dialog Preference overriden to 3
+NetCon	NetCon.txt	a	11		IAP ID overriden to 1
+NetCon	NetCon.txt	a	11		Preferred Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Preferred Service Id = 2
+NetCon	NetCon.txt	a	11		Preferred Bearer Set = 3
+NetCon	NetCon.txt	a	11		Skipping bearer availability check
+NetCon	NetCon.txt	a	11		Available Bearer Set = 31
+NetCon	NetCon.txt	a	11		Selected service is available
+NetCon	NetCon.txt	a	11		Dialog box preference set to Do Not Prompt
+NetCon	NetCon.txt	a	11		Selected IAP Id = 1
+NetCon	NetCon.txt	a	11		Selected Location Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Type = 'ModemBearer'
+NetCon	NetCon.txt	a	11		Selected Bearer Id = 2
+NetCon	NetCon.txt	a	11		Selected Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Selected Service Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Set = 3
+NetCon	NetCon.txt	a	11		No existing agent connected to IAP 1
+NetCon	NetCon.txt	a	11		Creating a new instance of agent 'CSD.agt' for connection to IAP 1
+Nifman	Nifman.txt	a	11	Nif:			CreateAgentL(aAgentName = 'CSD.agt', aNewInstance = 1)
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL(aName = 'CSD.agt', aCreate = 1, aCreateNewInstance = 1)
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+AddLibrary CSD[10008b69]
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL() fullname = 'CSD::CSD'
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	ConstructL('CSD', aFactory 0x4e80600)
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'IAP\Id', aValue) returning error -18
+Nifman	Nifman.txt	a	11	CNifMan:		iAgents contains 1 CNifAgentRefs
+Nifman	Nifman.txt	a	11	Nif:			Created agent 'csd-Agent[0x04e85cb0]'
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e85cb0]' created for connection to IAP 1
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		SetOverridesL(aOverrideSettings = 0x04e824e0)
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		SetConnectionSettingsL(aSettings = 0x04e81d10)
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		New Connection Settings:
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iRank = 1
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iDirection = 1
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iDialogPref = 3
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iBearerSet = 3
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iIAPId = 1
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iServiceId = 2
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iServiceType = 'DialOutISP'
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iBearerId = 2
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iLocationId = 2
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:			iChargeCardId = 0
+NetCon	NetCon.txt	a	11		Added agent [0x04e85cb0] to Network 1 [0x04e8aa2c]
+NetCon	NetCon.txt	a	11		Request Complete with error 0
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aName = 'csd-Agent[0x04e85cb0]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL(aName = 'csd-Agent[0x04e85cb0]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL() returning CNifAgentRef[0x04e84db0]
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Open() - new reference count is 2
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Added observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Current number of observers is 1
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'IAP\Id', aValue = 1)
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'IAP\IAPNetwork', aValue = 1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Selected IAP 1, Network 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	SetUsageProfile(2)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Start(TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Start(aOverrides 0, TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'LastSessionClosedTimeout', aValue = 6)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Short timeout value set to 6 ticks
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'LastSocketClosedTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Medium timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		ReadInt(aField = 'LastSocketActivityTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Long timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	Connect(0)
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Sending progress (2650, 0) to session 4e81b94
+NETDIAL	NETDIAL.TXT	a	11	Script:	Opening Comm Port
+Nifman	Nifman.txt	a	11	MComm:			Opening CSY 'ECUART' Port 'COMM::0'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+AddLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	MComm:			Could not open Port 'COMM::0' (error is -1)
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+RemoveLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2650, error 0
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Completed Phase '捓湡匠牣灩tNifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	ConnectionComplete(2750, -1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Sending progress (2750, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	ConnectionComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	CallNotifyCb() op=2, err=-1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2750, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Error -1 occurred on connection at Stage 2750
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry connection using the next connection preference
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Set iOriginalConnError to -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e85cb0)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	DoNotify() op=2, err=-1
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	ConnectComplete(-1) iState=1
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	BindFailAll(-1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Sending progress (2001, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	Disconnect(-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2001, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Disconnect Complete
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	DisconnectComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	CallNotifyCb() op=3, err=0
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e85cb0)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e85cb0:	DoNotify() op=3, err=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	DisconnectComplete() iState=4
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Sending progress (0, 0) to session 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Close() - new reference count is 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection attempt 1:	Connection failed with error -1 - agent has now disconnected
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Removed observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Current number of observers is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Close() - new reference count is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	Destructor called
+Nifman	Nifman.txt	a	11	AgentRef 4e84db0:	BindFailAll(-13)
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e85cb0]' has disconnected with error 0
+Nifman	Nifman.txt	a	11	Agent 4e85cb0:		Deleting overrides at 4e824e0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting connection attempt 2
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+RemoveLibrary CSD[10008b69]
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 2
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Error - maximum number of connection attempts (1) reached
+NetCon	NetCon.txt	a	11		Request Complete with error -9
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aError = -9)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Max number of connection attempts (2) reached - giving up at stage 1000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error -34
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Error -34 occurred on connection at Stage 2000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Not going to retry connection because the maximum number of attempts has been reached
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Changing error -34 to iOriginalConnError (-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+esock	esock.txt	a	11	CInterface 04e80e58	Queued onto async destructor
+ConnectionOpener CheckedRunL state 4 status -1
+Opener error -1 (Retry)
+RemoveThread MutextWait 434181324
+esock	esock.txt	a	11	CInterface 04e80e58:	Running async destructor
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Destructor called
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+RemoveLibrary FLOGGER[10004d0a]
+RemoveThread FLogger server
+The thread 'Win32 Thread' (0x2f0) has exited with code 0 (0x0).
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\oleaut32.dll', Symbols loaded.
+'Locatest.exe': Loaded 'C:\WINDOWS\system32\ole32.dll', No symbols loaded.
+Conn retry
+esock	esock.txt	a	4	RConnection 02098b08:	Close() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Stop() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Stop(TConnStopType = 0) tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Close() tid 4
+Thread ID 0x125c is MutextWait 434181324
+NewThread Locatest[00000000]0001::MutextWait 434181324
+MakeConnectionL, iap 1
+The thread 'Win32 Thread' (0x125c) has exited with code 0 (0x0).
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	CreateL - aConnection = 4e80e5c
+Notify of tuple [10208120 1]
+Notify of tuple [10208120 1]
+esock	esock.txt	a	4	RConnection 02098b08:	Start() with preferences, tid 4
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting explicit connection
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 1000, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 1
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Dialog Preference overriden to 3
+NetCon	NetCon.txt	a	11		IAP ID overriden to 1
+NetCon	NetCon.txt	a	11		Preferred Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Preferred Service Id = 2
+NetCon	NetCon.txt	a	11		Preferred Bearer Set = 3
+NetCon	NetCon.txt	a	11		Skipping bearer availability check
+NetCon	NetCon.txt	a	11		Available Bearer Set = 31
+NetCon	NetCon.txt	a	11		Selected service is available
+NetCon	NetCon.txt	a	11		Dialog box preference set to Do Not Prompt
+NetCon	NetCon.txt	a	11		Selected IAP Id = 1
+NetCon	NetCon.txt	a	11		Selected Location Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Type = 'ModemBearer'
+NetCon	NetCon.txt	a	11		Selected Bearer Id = 2
+NetCon	NetCon.txt	a	11		Selected Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Selected Service Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Set = 3
+NetCon	NetCon.txt	a	11		No existing agent connected to IAP 1
+NetCon	NetCon.txt	a	11		Creating a new instance of agent 'CSD.agt' for connection to IAP 1
+Nifman	Nifman.txt	a	11	Nif:			CreateAgentL(aAgentName = 'CSD.agt', aNewInstance = 1)
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL(aName = 'CSD.agt', aCreate = 1, aCreateNewInstance = 1)
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+AddLibrary CSD[10008b69]
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL() fullname = 'CSD::CSD'
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	ConstructL('CSD', aFactory 0x4e80600)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\Id', aValue) returning error -18
+Nifman	Nifman.txt	a	11	CNifMan:		iAgents contains 1 CNifAgentRefs
+Nifman	Nifman.txt	a	11	Nif:			Created agent 'csd-Agent[0x04e876d4]'
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e876d4]' created for connection to IAP 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		SetOverridesL(aOverrideSettings = 0x04e824e0)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		SetConnectionSettingsL(aSettings = 0x04e81d10)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		New Connection Settings:
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iRank = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iDirection = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iDialogPref = 3
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iBearerSet = 3
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iIAPId = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iServiceId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iServiceType = 'DialOutISP'
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iBearerId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iLocationId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iChargeCardId = 0
+NetCon	NetCon.txt	a	11		Added agent [0x04e876d4] to Network 1 [0x04e8aa2c]
+NetCon	NetCon.txt	a	11		Request Complete with error 0
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aName = 'csd-Agent[0x04e876d4]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL(aName = 'csd-Agent[0x04e876d4]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL() returning CNifAgentRef[0x04e84b10]
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Open() - new reference count is 2
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Added observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Current number of observers is 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\Id', aValue = 1)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\IAPNetwork', aValue = 1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Selected IAP 1, Network 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	SetUsageProfile(2)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Start(TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Start(aOverrides 0, TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSessionClosedTimeout', aValue = 6)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Short timeout value set to 6 ticks
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSocketClosedTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Medium timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSocketActivityTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Long timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	Connect(0)
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2650, 0) to session 4e81b94
+NETDIAL	NETDIAL.TXT	a	11	Script:	Opening Comm Port
+Nifman	Nifman.txt	a	11	MComm:			Opening CSY 'ECUART' Port 'COMM::0'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+AddLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	MComm:			Could not open Port 'COMM::0' (error is -1)
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+RemoveLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2650, error 0
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Completed Phase '捓湡匠牣灩tNifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	ConnectionComplete(2750, -1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2750, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	ConnectionComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	CallNotifyCb() op=2, err=-1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2750, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Error -1 occurred on connection at Stage 2750
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry connection using the next connection preference
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Set iOriginalConnError to -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e876d4)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DoNotify() op=2, err=-1
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	ConnectComplete(-1) iState=1
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	BindFailAll(-1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2001, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	Disconnect(-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2001, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Disconnect Complete
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DisconnectComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	CallNotifyCb() op=3, err=0
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e876d4)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DoNotify() op=3, err=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	DisconnectComplete() iState=4
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (0, 0) to session 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Close() - new reference count is 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection attempt 1:	Connection failed with error -1 - agent has now disconnected
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Removed observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Current number of observers is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Close() - new reference count is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Destructor called
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	BindFailAll(-13)
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e876d4]' has disconnected with error 0
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		Deleting overrides at 4e824e0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting connection attempt 2
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+RemoveLibrary CSD[10008b69]
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 2
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Error - maximum number of connection attempts (1) reached
+NetCon	NetCon.txt	a	11		Request Complete with error -9
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aError = -9)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Max number of connection attempts (2) reached - giving up at stage 1000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error -34
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Error -34 occurred on connection at Stage 2000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Not going to retry connection because the maximum number of attempts has been reached
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Changing error -34 to iOriginalConnError (-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+esock	esock.txt	a	11	CInterface 04e80e58	Queued onto async destructor
+ConnectionOpener CheckedRunL state 4 status -1
+Opener error -1 (Retry)
+RemoveThread MutextWait 434181324
+esock	esock.txt	a	11	CInterface 04e80e58:	Running async destructor
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Destructor called
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+Conn retry
+esock	esock.txt	a	4	RConnection 02098b08:	Close() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Stop() tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Stop(TConnStopType = 0) tid 4
+esock	esock.txt	a	4	RConnection 02098b08:	Close() tid 4
+Thread ID 0xa60 is MutextWait 434181324
+NewThread Locatest[00000000]0001::MutextWait 434181324
+MakeConnectionL, iap 1
+The thread 'Win32 Thread' (0xa60) has exited with code 0 (0x0).
+esock	esock.txt	a	4	RConnection 02098b08:	Open() tid 4
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	CreateL - aConnection = 4e80e5c
+Notify of tuple [10208120 1]
+Notify of tuple [10208120 1]
+esock	esock.txt	a	4	RConnection 02098b08:	Start() with preferences, tid 4
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting explicit connection
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 1000, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 1
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Dialog Preference overriden to 3
+NetCon	NetCon.txt	a	11		IAP ID overriden to 1
+NetCon	NetCon.txt	a	11		Preferred Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Preferred Service Id = 2
+NetCon	NetCon.txt	a	11		Preferred Bearer Set = 3
+NetCon	NetCon.txt	a	11		Skipping bearer availability check
+NetCon	NetCon.txt	a	11		Available Bearer Set = 31
+NetCon	NetCon.txt	a	11		Selected service is available
+NetCon	NetCon.txt	a	11		Dialog box preference set to Do Not Prompt
+NetCon	NetCon.txt	a	11		Selected IAP Id = 1
+NetCon	NetCon.txt	a	11		Selected Location Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Type = 'ModemBearer'
+NetCon	NetCon.txt	a	11		Selected Bearer Id = 2
+NetCon	NetCon.txt	a	11		Selected Service Type = 'DialOutISP'
+NetCon	NetCon.txt	a	11		Selected Service Id = 2
+NetCon	NetCon.txt	a	11		Selected Bearer Set = 3
+NetCon	NetCon.txt	a	11		No existing agent connected to IAP 1
+NetCon	NetCon.txt	a	11		Creating a new instance of agent 'CSD.agt' for connection to IAP 1
+Nifman	Nifman.txt	a	11	Nif:			CreateAgentL(aAgentName = 'CSD.agt', aNewInstance = 1)
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL(aName = 'CSD.agt', aCreate = 1, aCreateNewInstance = 1)
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt', No symbols loaded.
+AddLibrary CSD[10008b69]
+Nifman	Nifman.txt	a	11	CNifMan:		DoFindOrCreateL() fullname = 'CSD::CSD'
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	ConstructL('CSD', aFactory 0x4e80600)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\Id', aValue) returning error -18
+Nifman	Nifman.txt	a	11	CNifMan:		iAgents contains 1 CNifAgentRefs
+Nifman	Nifman.txt	a	11	Nif:			Created agent 'csd-Agent[0x04e876d4]'
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e876d4]' created for connection to IAP 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		SetOverridesL(aOverrideSettings = 0x04e824e0)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		SetConnectionSettingsL(aSettings = 0x04e81d10)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		New Connection Settings:
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iRank = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iDirection = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iDialogPref = 3
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iBearerSet = 3
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iIAPId = 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iServiceId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iServiceType = 'DialOutISP'
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iBearerId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iLocationId = 2
+Nifman	Nifman.txt	a	11	Agent 4e876d4:			iChargeCardId = 0
+NetCon	NetCon.txt	a	11		Added agent [0x04e876d4] to Network 1 [0x04e8aa2c]
+NetCon	NetCon.txt	a	11		Request Complete with error 0
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aName = 'csd-Agent[0x04e876d4]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL(aName = 'csd-Agent[0x04e876d4]')
+Nifman	Nifman.txt	a	11	CNifMan:		FindByUniqueNameL() returning CNifAgentRef[0x04e84b10]
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Open() - new reference count is 2
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Added observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Current number of observers is 1
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\Id', aValue = 1)
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'IAP\IAPNetwork', aValue = 1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Selected IAP 1, Network 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	SetUsageProfile(2)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Start(TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Start(aOverrides 0, TAgentConnectType 0) iState=0
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSessionClosedTimeout', aValue = 6)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Short timeout value set to 6 ticks
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSocketClosedTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Medium timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		ReadInt(aField = 'LastSocketActivityTimeout', aValue = 600)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Long timeout value set to 600 ticks
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	Connect(0)
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2650, 0) to session 4e81b94
+NETDIAL	NETDIAL.TXT	a	11	Script:	Opening Comm Port
+Nifman	Nifman.txt	a	11	MComm:			Opening CSY 'ECUART' Port 'COMM::0'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+'Locatest.exe': Loaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy', No symbols loaded.
+AddLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	MComm:			Could not open Port 'COMM::0' (error is -1)
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\ecuart.csy'
+RemoveLibrary ECUART[00000000]
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2650, error 0
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Completed Phase '捓湡匠牣灩tNifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	ConnectionComplete(2750, -1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2750, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	ConnectionComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	CallNotifyCb() op=2, err=-1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2750, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Error -1 occurred on connection at Stage 2750
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry connection using the next connection preference
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Set iOriginalConnError to -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e876d4)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DoNotify() op=2, err=-1
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	ConnectComplete(-1) iState=1
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	BindFailAll(-1)
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (2001, -1) to session 4e81b94
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	Disconnect(-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2001, error -1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 1:	Going to retry the connection - sending KErrNone to ESOCK
+NETDIAL	NETDIAL.TXT	a	11	NetDial:	Disconnect Complete
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DisconnectComplete()
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	CallNotifyCb() op=3, err=0
+Nifman	Nifman.txt	a	11	StateMachAgent:		NotifyCbComplete(4e876d4)
+Nifman	Nifman.txt	a	11	StateMachAgent 4e876d4:	DoNotify() op=3, err=0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	DisconnectComplete() iState=4
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Sending progress (0, 0) to session 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Close() - new reference count is 1
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection attempt 1:	Connection failed with error -1 - agent has now disconnected
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Removed observer 4e81b94
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Current number of observers is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Close() - new reference count is 0
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	Destructor called
+Nifman	Nifman.txt	a	11	AgentRef 4e84b10:	BindFailAll(-13)
+NetCon	NetCon.txt	a	11		Agent 'csd-Agent[0x04e876d4]' has disconnected with error 0
+Nifman	Nifman.txt	a	11	Agent 4e876d4:		Deleting overrides at 4e824e0
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Starting connection attempt 2
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Requesting network controller agent selection
+NetCon	NetCon.txt	a	11		Added request [0x04e81cf8] to queue
+'Locatest.exe': Unloaded 'C:\symbian\7.0s\Series60_v21\Epoc32\release\wins\udeb\z\system\libs\csd.agt'
+RemoveLibrary CSD[10008b69]
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Some requests are queued
+NetCon	NetCon.txt	a	11	--------------- Starting to process request [0x04e81cf8] ---------------
+NetCon	NetCon.txt	a	11		Request type = Selection
+NetCon	NetCon.txt	a	11		Connection attempt = 2
+NetCon	NetCon.txt	a	11		Connection type = 0
+NetCon	NetCon.txt	a	11		Error - maximum number of connection attempts (1) reached
+NetCon	NetCon.txt	a	11		Request Complete with error -9
+NetCon	NetCon.txt	a	11	--------------- Finished processing request [0x04e81cf8] ---------------
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	SelectComplete(aError = -9)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Max number of connection attempts (2) reached - giving up at stage 1000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 2000, error -34
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Error -34 occurred on connection at Stage 2000
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Connection Attempt 2:	Not going to retry connection because the maximum number of attempts has been reached
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Changing error -34 to iOriginalConnError (-1)
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Progress change: stage 0, error 0
+esock	esock.txt	a	11	CInterface 04e80e58	Queued onto async destructor
+ConnectionOpener CheckedRunL state 4 status -1
+Opener error -1 (Retry)
+RemoveThread MutextWait 434181324
+esock	esock.txt	a	11	CInterface 04e80e58:	Running async destructor
+Nifman	Nifman.txt	a	11	Session 4e81b8c:	Destructor called
+NetCon	NetCon.txt	a	11		Not currently processing any request
+NetCon	NetCon.txt	a	11		Request queue is empty
+'Locatest.exe': Loaded 'C:\Program Files\Dell\QuickSet\dadkeyb.dll', No symbols loaded.
+The thread 'Win32 Thread' (0x1734) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xd50) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x308) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x1538) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x788) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0xfe4) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x15b0) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x55c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x448) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x1038) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x108c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x1600) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x20c) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x318) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x464) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x11f4) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x1718) has exited with code 0 (0x0).
+The thread 'Win32 Thread' (0x126c) has exited with code 0 (0x0).
+The program '[3680] LOCATEST.EXE: Native' has exited with code 0 (0x0).

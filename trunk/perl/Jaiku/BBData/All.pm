@@ -1,0 +1,37 @@
+package Jaiku::BBData::All;
+
+use Jaiku::BBData::Base;
+use Jaiku::BBData::Bool;
+use Jaiku::BBData::BuildInfo;
+use Jaiku::BBData::CellNaming;
+use Jaiku::BBData::ChannelPost;
+use Jaiku::BBData::Compound;
+use Jaiku::BBData::Factory;
+use Jaiku::BBData::FeedItem;
+use Jaiku::BBData::Int;
+use Jaiku::BBData::LongString;
+use Jaiku::BBData::MD5Hash;
+use Jaiku::BBData::Numbers;
+use Jaiku::BBData::SensorEvent;
+use Jaiku::BBData::SentInvite;
+use Jaiku::BBData::ServerMessage;
+use Jaiku::BBData::ShortString;
+use Jaiku::BBData::Simple;
+use Jaiku::BBData::StreamComment;
+use Jaiku::BBData::StreamData;
+use Jaiku::BBData::String8;
+use Jaiku::BBData::String;
+use Jaiku::BBData::Strings8;
+use Jaiku::BBData::Strings;
+use Jaiku::BBData::ThreadRequest;
+use Jaiku::BBData::Time;
+use Jaiku::BBData::TupleMeta;
+use Jaiku::BBData::Tuple;
+use Jaiku::BBData::TupleSubName;
+use Jaiku::BBData::Uid;
+use Jaiku::BBData::Uint;
+use Jaiku::BBData::UserGiven;
+use Jaiku::BBData::UserPic;
+use Jaiku::BBData::UUID;
+
+1;

@@ -1,0 +1,8 @@
+&EN,FI
+#{"BlackBoard", "BlackBoard"},(0x1020811C),1,1,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\contextcommon\gv2\contextcommon_build.SIS",(0x10200C6D)
+@"..\BlackBoard\gv2\BlackBoardData_build.SIS",(0x10204BAE)
+@"..\BlackBoard\gv2\BlackBoardFactory_build.SIS",(0x1020811A)
+@"..\BlackBoardServer\gv2\BlackBoardServer_build.SIS",(0x10204BAF)
+@"..\BlackBoardClient\gv2\BlackBoardClientTest_build.SIS",(0x1020811B)

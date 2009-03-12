@@ -1,0 +1,6 @@
+PRJ_PLATFORMS
+winscw gcce
+PRJ_MMPFILES
+contextmediadata.mmp
+contextmedia.mmp
+contextmediafactory.mmp

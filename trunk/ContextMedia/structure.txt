@@ -1,0 +1,26 @@
+Interactions between ContextMediaApp and
+CPostStorage/CCMNetwork
+
+both should be created at startup,
+CCMNetwork will periodically fetch new posts
+
+When seeing an previously unknown visualcode,
+call
+	CPostStorage::AddPlaceHolder(visualcode)
+and	CCMNetwork::FetchThread(visualcode, 0)
+
+CCMNetwork automatically fetches media files
+for new posts, but when selecting a thread or
+post the UI should call
+	CCMNetwork::FetchMedia
+for all interesting posts
+so that the currently showing media can be fetched first
+
+CCMNetwork automatically creates icons for new
+posts, but again the UI should call 
+	CCMNetwork::MakeIcon
+to prioritize the creation
+
+All notifications of new posts, media and icons
+will be through the MPostNotify interfaces registered
+via CPostStorate. 

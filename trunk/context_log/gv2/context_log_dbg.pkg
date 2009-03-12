@@ -1,0 +1,57 @@
+; 
+;    Copyright (C) 2004  Mika Raento - Renaud Petit
+;
+;    This program is free software; you can redistribute it and/or modify
+;    it under the terms of the GNU General Public License as published by
+;    the Free Software Foundation; either version 2 of the License, or
+;    (at your option) any later version.
+;
+;    This program is distributed in the hope that it will be useful,
+;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;    GNU General Public License for more details.
+;
+;    You should have received a copy of the GNU General Public License
+;    along with this program; if not, write to the Free Software
+;    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+;
+;
+;    email: mraento@cs.helsinki.fi - petit@cs.helsinki.fi 
+
+
+;
+; Installation file for context_log application
+;
+;Languages
+&EN,FI
+;
+; UID is the app's UID
+;
+#{"context_log", "KontekstiLoki"},(0x20006E42),4,101,0
+;
+;Supports Series 60 v 0.9
+;This line indicates that this installation is for the Series 60 platform v0.9
+;This line must appear _exactly_ as shown below in the sis file
+;If this line is missing or incorrect, the sis file will not be able
+;to be installed on Series 60 v0.9 platforms
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+;
+; Four files to install
+;
+"\Symbian\7.0s\Series60_v21\Epoc32\release\thumb\udeb\context_log.app"         -"!:\system\apps\context_log\context_log.app"
+{
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\context_log\context_log.r01"
+	"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\context_log\context_log.r09"
+}-"!:\system\apps\context_log\context_log.rsc"
+{
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\context_log\context_log_caption.r01" 
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\context_log\context_log_caption.r09" 
+}-"!:\system\apps\context_log\context_log_caption.rsc"
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\apps\context_log\context_log.aif"         -"!:\system\apps\context_log\context_log.aif"
+"\symbian\7.0s\Series60_v21\EPOC32\DATA\z\system\data\context_log.mbm"         -"!:\system\data\context_log.mbm"
+;"cellid_names.txt"							  -"!:\system\apps\context_log\cellid_names_inst.txt"
+;"bases.db"							  -"!:\system\apps\context_log\bases_inst.db"
+"..\install\silent.rng"							  -"!:\system\apps\context_log\silent.rng"
+"..\install\tone.rng"							  -"!:\system\apps\context_log\tone.rng"
+"..\install\gdbstub.ini"							  -"!:\gdbstub\gdbstub.ini"
+"..\install\service.obj" 						  -"!:\system\apps\context_log\service.obj"

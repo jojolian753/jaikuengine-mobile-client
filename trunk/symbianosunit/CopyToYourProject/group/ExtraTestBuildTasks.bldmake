@@ -1,0 +1,49 @@
+# Add-on makefile to do extra target building tasks
+# Copyright (c) Penrillian Ltd 2003-2006. All rights reserved
+# web: www.penrillian.com
+
+SISPATH = ..\..\symbianosunit\symbianosunitapp\install\<revelent folder name>
+SISTARGET=$(SISPATH)\SymbianOSUnit
+PKGFILEx=$(SISTARGET)$(CFG).pkg
+PKGFILE=$(PKGFILEx)
+INCDIR=..\test
+
+!if "$(PLATFORM)"=="GCCE" || "$(PLATFORM)"=="ARMI"
+CLEAN:
+	@del $(PKGFILE:pkg=sis)
+	-del $(INCDIR)\testdriver.h
+
+FINAL :
+	makesis $(PKGFILE)
+
+!else # Platform WINS
+CLEAN :
+	-del $(INCDIR)\testdriver.h
+
+FINAL :
+
+!endif
+
+MAKEFILE : $(INCDIR)\testdriver.h $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps\SymbianOSUnit_aif.mif
+
+$(INCDIR)\testdriver.h: $(INCDIR)\TestHeader.h
+	pushd . & cd $(INCDIR) & echo y | testgen.bat & popd
+
+$(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps\SymbianOSUnit_aif.mif :
+	if exist $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps copy /y ..\..\symbianosunit\symbianosunitapp\data\s60_3rd\SymbianOSUnit_aif.mif $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps
+
+# Boilerplate to stop errors:
+
+BLD : BUILD
+
+LIB : LIBRARY
+
+MAKMAKE : MAKEFILE
+
+SAVESPACE :
+
+RELEASABLES :
+
+BUILD CLEANEXPORT FREEZE LIBRARY LISTING MAKEFILE TARGET TIDY RESOURCE :
+
+CLEANMAKEFILE :

@@ -1,0 +1,5 @@
+1	component, bblistener
+2	tuple, bblistener stop (for testing)
+3	incoming bluetooth scans
+4	sent data count
+5	recv data count

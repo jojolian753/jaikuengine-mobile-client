@@ -1,0 +1,12 @@
+#ifdef __WINS__
+#define CC_MBM "z:\\system\\data\\contextmenu.mbm"
+#else
+#define CC_MBM "\\system\\apps\\contextmenu\\contextmenu.mbm"
+#endif 
+
+#ifdef LANGUAGE_01
+#include "contextmenu.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextmenu.l09"
+#endif

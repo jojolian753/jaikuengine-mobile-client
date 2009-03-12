@@ -1,0 +1,6 @@
+#include <startupitem.rh>
+RESOURCE STARTUP_ITEM_INFO cl_starter
+{
+executable_name = "!:\\sys\\bin\\cl_starter.exe";
+recovery = EStartupItemExPolicyNone;
+}

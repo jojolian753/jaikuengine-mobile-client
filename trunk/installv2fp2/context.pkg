@@ -1,0 +1,29 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,21,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\expat\symbianv2\expat_build.SIS",(0x101FAE0C)
+@"..\contextnotify\gv2\contextnotify_build.SIS",(0x10204BAA)
+@"..\contextnotifyclient\gv2\contextnotifyclient_build.SIS",(0x10204BAB)
+@"..\contextcommon\gv2\contextcommon_build.SIS",(0x10200C6D)
+@"..\contextserver\gv2\contextserver_build.SIS",(0x10200C6B)
+@"..\contextclient\gv2\contextclient_build.SIS",(0x10200C6C)
+@"..\BlackBoard\gv2\BlackBoardData_build.SIS",(0x10204BAE)
+@"..\BlackBoard\gv2\BlackBoardFactory_build.SIS",(0x1020811A)
+@"..\BlackBoardServer\gv2\BlackBoardServer_build.SIS",(0x10204BAF)
+@"..\BlackBoardClient\gv2\BlackBoardClient_build.SIS",(0x10208119)
+@"..\ContextSensors\gv2\ContextSensorData_build.SIS",(0x10208125)
+@"..\ContextSensors\gv2\ContextSensors_build.SIS",(0x1020811D)
+@"..\ContextSensors\gv2\ContextSensorData_build.SIS",(0x10208125)
+@"..\ContextSensors\gv2\ContextSensorFactory_build.SIS",(0x1020811E)
+@"..\ContextNetwork\gv2\ContextNetwork_build.SIS",(0x1020811F)
+@"..\ContextMedia\gv2\ContextMedia_build.SIS",(0x10208121)
+@"..\ContextMedia\gv2\ContextMediaFactory_build.SIS",(0x10208122)
+@"..\contextcommon2\gv2\contextcommon2_build.SIS",(0x10208120)
+@"..\contextui\gv2\contextui_build.SIS",(0x10208128)
+@"..\context_log\gv2\context_log_build.SIS",(0x101FBAD1)
+@"..\contextcontacts\gv2\contextcontacts_build.SIS",(0x101F4CCE)
+@"..\contextcalllog\gv2\contextcalllog_build.SIS",(0x101F4CD5)
+@"..\recognizer\libv2\recognizer_build.SIS",(0x10200C6E)
+@"..\contextmediaapp\gv2\contextmediaapp_build.SIS",(0x10208123)
+
+

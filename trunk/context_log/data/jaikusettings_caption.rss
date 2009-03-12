@@ -1,0 +1,10 @@
+#include "context_log.loc"
+#include <apcaptionfile.rh>
+
+NAME CLOC
+
+RESOURCE CAPTION_DATA
+{
+    caption=CL_CAPTION;
+    shortcaption=CL_CAPTION;
+}

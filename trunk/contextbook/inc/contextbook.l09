@@ -1,0 +1,17 @@
+#define ELanguage ELangFinnish
+
+#define CB_CAPTION		"KontekstiKirja"
+#define CB_RECENT_CALLS		"Soitetut puhelut"
+#define CB_JABBER_NICK		"Jabber tunnus"
+#define CB_CONTACTS		"Osoitekirja"
+#define CB_SEND_SMS		"Lähetä SMS"
+#define CB_CALL			"Soita"
+#define CB_EXIT			"Poistu"
+#define CB_CONTACT		"Nimi"
+#define CB_NICK			"Tunnus"
+#define CB_PREVIOUS		"Viim:"
+#define CB_EDITOR		"Muokkaa"
+#define CB_CREATE		"Uusi"
+#define CB_JABBER_NOT_AVAIL	"(Ei yhteyttä palveluun)"
+
+#define CB_SHOW_PRESENCE_DETAILS "Tilan yksityiskohdat"

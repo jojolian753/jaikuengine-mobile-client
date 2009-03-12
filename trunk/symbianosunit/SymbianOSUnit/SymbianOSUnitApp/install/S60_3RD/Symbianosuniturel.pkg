@@ -1,0 +1,18 @@
+;Symbianosunit.pkg
+;Copyright (c) Penrillian Ltd 2003-2006. All rights reserved.
+; Web: www.penrillian.com
+
+;Language - standard language definitions
+&EN
+
+#{"Symbianosunit"},(0xE01FADF2),1,01,0
+%{"SymbianOSUnit"}
+:"Penrillian"
+
+[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+"\Symbian\9.2\S60_3rd_FP1\Epoc32\release\gcce\urel\SymbianOSUnit.exe"        -"!:\sys\bin\SymbianOSUnit.exe"
+"\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\resource\apps\SymbianOSUnit.rsc"        -"!:\resource\apps\SymbianOSUnit.rsc"
+"\Symbian\9.2\S60_3rd_FP1\Epoc32\data\z\private\10003a3f\apps\SymbianOSUnit_reg.rsc"    -"!:\private\10003a3f\import\apps\SymbianOSUnit_reg.rsc"
+"..\..\symbianosunit\symbianosunitapp\data\s60_3rd\SymbianOsUnit_aif.mif" -"!:\resource\apps\SymbianOsUnit_aif.mif"
+

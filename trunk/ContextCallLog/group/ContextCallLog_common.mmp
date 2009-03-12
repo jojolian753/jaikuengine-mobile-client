@@ -1,0 +1,124 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include "..\..\context_uids.rh"
+TARGET  ContextCallLog.app
+TARGETTYPE  app
+UID  0x100039CE CONTEXT_UID_CONTEXTCALLLOG
+TARGETPATH \system\apps\ContextCallLog
+
+SOURCEPATH ..\src
+SOURCE  ContextCallLogApp.cpp 
+SOURCE  ContextCallLogAppUi.cpp
+SOURCE  ContextCallLogDocument.cpp
+SOURCE  ContextCallLogContainer.cpp
+SOURCE  ContextCallLogView.cpp
+SOURCE  call_log.cpp
+SOURCE  lookup_storage.cpp
+
+RESOURCE ..\data\ContextCallLog.rss
+RESOURCE ..\data\ContextCallLog_caption.rss
+
+LANG     01 09
+
+USERINCLUDE . ..\inc ..\..\ContextContacts\inc
+USERINCLUDE ..\..\expat\symbian ..\..\expat\lib ..\..\ContextCommon\inc ..\..\ContextClient\inc ..\.. ..\..\blackboard\inc ..\..\contextsensors\inc ..\..\contextui\inc ..\..\ContextCommon2\inc ..\..\blackboardclient\inc ..\..\contextcontactsui\inc
+
+SYSTEMINCLUDE \epoc32\include \epoc32\include\libc
+
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib flogger.lib
+LIBRARY eikcoctl.lib avkon.lib bafl.lib
+LIBRARY etel.lib cntmodel.lib
+LIBRARY apgrfx.lib ws32.lib
+LIBRARY SENDUI.LIB etext.lib AKNNOTIFY.LIB
+LIBRARY edbms.lib
+LIBRARY EIKCDLG.LIB EIKDLG.LIB contextexpat.lib 
+
+LIBRARY efsrv.lib charconv.lib 
+
+// phone book
+LIBRARY PBKENG.LIB PBKVIEW.LIB
+// log
+LIBRARY logcli.lib logwrap.lib
+//
+LIBRARY eikctl.lib
+
+// RSTREAM
+LIBRARY estor.lib
+
+//vCard engine
+LIBRARY bcardeng.lib
+
+// sharedData
+LIBRARY commonengine.lib
+
+//SMS MTM
+LIBRARY msgs.lib
+
+
+LIBRARY contextcommon.lib contextclient.lib egul.lib
+LIBRARY CONTEXTUI.LIB contextcontactsui.lib
+
+LIBRARY contextsensordata.lib blackboarddata.lib contextcommon2.lib
+LIBRARY blackboardclient.lib
+LIBRARY sysutil.lib
+
+START BITMAP contextcalllog.mbm
+	TARGETPATH \system\data
+	HEADER
+	SOURCEPATH ..\bitmaps
+	
+	SOURCE c8 missed.bmp
+	SOURCE 1  missed_mask.bmp
+	SOURCE c8 received.bmp
+	SOURCE 1  received_mask.bmp
+	SOURCE c8 dialled.bmp
+	SOURCE 1  dialled_mask.bmp
+	SOURCE 1  lookup.bmp
+END
+
+
+
+AIF ContextCallLog.aif ..\aif ContextCallLogaif.rss c8 context_pane_icon.bmp context_pane_icon_mask.bmp list_icon.bmp list_icon_mask.bmp

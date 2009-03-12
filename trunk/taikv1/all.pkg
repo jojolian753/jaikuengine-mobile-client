@@ -1,0 +1,21 @@
+&EN,FI
+#{"Context", "Konteksti"},(0x10204BA0),1,21,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID", "Series60ProductID"}
+@"..\expat\symbian\expat_build.SIS",(0x101FAE0C)
+@"..\contextnotify\group\contextnotify_build.SIS",(0x10204BAA)
+@"..\contextnotifyclient\group\contextnotifyclient_build.SIS",(0x10204BAB)
+@"..\contextcommon\group\contextcommon_build.SIS",(0x10200C6D)
+@"..\contextclient\group\contextclient_build.SIS",(0x10200C6C)
+@"..\BlackBoard\gv1\BlackBoardData_build.SIS",(0x10204BAE)
+@"..\BlackBoard\gv1\BlackBoardFactory_build.SIS",(0x1020811A)
+@"..\BlackBoardServer\gv1\BlackBoardServer_build.SIS",(0x10204BAF)
+@"..\BlackBoardClient\gv1\BlackBoardClient_build.SIS",(0x10208119)
+@"..\ContextSensors\gv1\ContextSensorData_build.SIS",(0x10208125)
+@"..\ContextSensors\gv1\ContextSensors_build.SIS",(0x1020811D)
+@"..\ContextSensors\gv1\ContextSensorFactory_build.SIS",(0x1020811E)
+@"..\ContextNetwork\gv1\ContextNetwork_build.SIS",(0x1020811F)
+@"..\contextcommon2\gv1\contextcommon2_build.SIS",(0x10208120)
+@"..\contextui\gv1\contextui_build.SIS",(0x10208128)
+@"..\context_log\taikv1\context_log_build.SIS",(0x101FBAD1)
+@"..\starter\group\starter_build.SIS",(0x101FBAD3)
+@"..\autostart\group\cl_autostart_build.SIS",(0x101FBAD2)

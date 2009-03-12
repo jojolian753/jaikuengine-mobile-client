@@ -1,0 +1,10 @@
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+rls_string STRING_r_SymbianOSUnit_text "SymbianOSUnit"
+
+rls_string STRING_r_SymbianOSUnit_close_cmd "Exit"
+rls_string STRING_r_SymbianOSUnit_run_all_cmd "Run All Suites"
+

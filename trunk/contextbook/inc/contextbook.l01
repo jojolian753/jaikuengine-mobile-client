@@ -1,0 +1,16 @@
+#define ELanguage ELangEnglish
+
+#define CB_CAPTION		"ContextBook"
+#define CB_RECENT_CALLS		"Recent calls"
+#define CB_JABBER_NICK		"Jabber nick"
+#define CB_CONTACTS		"Contacts"
+#define CB_SEND_SMS		"Send SMS"
+#define CB_CALL			"Call"
+#define CB_EXIT			"Exit"
+#define CB_CONTACT		"Contact"
+#define CB_NICK			"Nick"
+#define CB_PREVIOUS		"Prev:"
+#define CB_EDITOR		"Edit Contact"
+#define CB_CREATE		"Create New"
+#define CB_JABBER_NOT_AVAIL	"(Not connected to service)"
+#define CB_SHOW_PRESENCE_DETAILS "Presence details"

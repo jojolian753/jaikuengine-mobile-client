@@ -1,0 +1,56 @@
+# Add-on makefile to do extra target building tasks
+# Copyright (c) Penrillian Ltd 2003-2006. All rights reserved
+# web: www.penrillian.com
+
+SISPATH = ..\..\symbianosunit\SymbianOSUnit\symbianosunitapp\install\<revelent folder name>
+SISTARGET=$(SISPATH)\SymbianOSUnit
+PKGFILEx=$(SISTARGET)$(CFG).pkg
+PKGFILE=$(PKGFILEx)
+INCDIR=..\tests
+GENDIR=..\generated
+
+!if "$(PLATFORM)"=="GCCE" || "$(PLATFORM)"=="ARMI"
+CLEAN:
+	@del $(PKGFILE:pkg=sis)
+	@del $(INCDIR)\testdriver.h
+	-del $(GEGENR)\testdriver.h
+
+FINAL :
+	makesis $(PKGFILE)
+
+!else # Platform WINS
+CLEAN :
+	@del $(INCDIR)\testdriver.h
+	-del $(GENDIR)\testdriver.h
+
+FINAL :
+
+!endif
+
+MAKEFILE : $(GENDIR)\testdriver.h $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps\SymbianOSUnit_aif.mif
+
+HEADERS=$(INCDIR)\*.h
+$(GENDIR)\testdriver.h: symbianosunit.mmp $(HEADERS)
+	pushd . & cd $(INCDIR) & echo y | testgen.bat & popd
+
+$(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps\SymbianOSUnit_aif.mif :
+	if exist $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps copy /y ..\..\symbianosunit\SymbianOSUnit\symbianosunitapp\data\s60_3rd\SymbianOSUnit_aif.mif $(EPOCROOT)Epoc32\release\winscw\udeb\z\resource\apps
+
+# Boilerplate to stop errors:
+
+BLD : BUILD
+
+LIB : LIBRARY
+
+MAKMAKE : MAKEFILE
+
+SAVESPACE :
+
+RELEASABLES :
+
+RESOURCE :
+	xcopy /S /E /I /Y ..\tests\files $(EPOCROOT)Epoc32\winscw\c\unittestfiles
+
+BUILD CLEANEXPORT FREEZE LIBRARY LISTING MAKEFILE TARGET TIDY :
+
+CLEANMAKEFILE :

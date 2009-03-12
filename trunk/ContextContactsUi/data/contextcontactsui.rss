@@ -1,0 +1,366 @@
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+
+#include "contextui.hrh"
+#include "contextui.loc"
+#include "contextcommon.loc"
+
+// FIXME: double dependency!
+#include "contextcontactsui.hrh"
+#include "contextcontacts.hrh"
+#include "contextcontactsui.loc"
+#include "contextcontacts.loc"
+#include "context_log.loc"
+
+NAME CCUI
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf="ContextContactsUI"; }
+
+#define SETTING_DEFINES_ONLY 1
+#include "cl_settings.h"
+#include "local_defaults.h"
+
+
+RESOURCE TBUF R_NO { buf=CL_NO; }
+RESOURCE TBUF R_YES { buf=CL_YES; }
+
+
+
+RESOURCE AVKON_VIEW r_presencedetail_view
+{
+    cba     = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+}
+
+RESOURCE AVKON_VIEW r_presencedescription_view
+{
+    cba=R_AVKON_SOFTKEYS_BACK;
+}
+
+
+RESOURCE DIALOG r_fullstring_dialog
+{
+    flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+    buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+    items=
+    {
+        DLG_LINE
+        {
+           type = EAknCtPopupHeadingPane;
+           id = EAknMessageQueryHeaderId;
+           control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+           type = EAknCtMessageQuery;
+           id = EAknMessageQueryContentId;
+           control = AVKON_MESSAGE_QUERY
+           {
+           };
+         }
+    };
+    
+}
+
+
+
+RESOURCE TBUF R_TITLE {buf=CC_TITLE;}
+RESOURCE TBUF R_USER_GIVEN {buf=CL_CPT_SET_USER_GIVEN; }
+RESOURCE TBUF R_TIME_FOR_LAST {buf=CC_TIME_FOR_LAST;}
+RESOURCE TBUF R_TIME_LEFT_AGO {buf=CC_TIME_LEFT_AGO;} 
+RESOURCE TBUF R_PREVIOUS_LOCATION {buf=CC_PREVIOUS_LOCATION;}
+RESOURCE TBUF R_PREVIOUS_LOCATION_TEMPLATE {buf=CC_PREVIOUS_LOCATION_TEMPLATE;}
+RESOURCE TBUF R_CURRENT_LOCATION {buf=CC_CURRENT_LOCATION;}
+RESOURCE TBUF R_CURRENT_LOCATION_TEMPLATE {buf=CC_CURRENT_LOCATION_TEMPLATE;}
+RESOURCE TBUF R_CURRENT_PROFILE {buf=CC_CURRENT_PROFILE;}
+RESOURCE TBUF R_SPEAKER {buf=CC_SPEAKER;}
+RESOURCE TBUF R_VIBRATOR {buf=CC_VIBRATOR;}
+RESOURCE TBUF R_ON {buf=CC_ON;}
+RESOURCE TBUF R_SILENT {buf=CC_SILENT;}
+RESOURCE TBUF R_OFF {buf=CC_OFF;}
+RESOURCE TBUF R_USER_ACTIVE_TEMPLATE {buf=CC_USER_ACTIVE_TEMPLATE;}
+RESOURCE TBUF R_USER_INACTIVE_TEMPLATE {buf=CC_USER_INACTIVE_TEMPLATE;}
+RESOURCE TBUF R_OUT_OF_DATE {buf=CC_OUT_OF_DATE;}
+RESOURCE TBUF R_NO_INFO {buf=CC_NO_INFO;}
+RESOURCE TBUF R_SP_VOLUME {buf=CC_SP_VOLUME;}
+RESOURCE TBUF R_BT_NB {buf=CC_BT_NB;}
+RESOURCE TBUF R_BUDDIES_TEMPLATE {buf=CC_BUDDIES_TEMPLATE;}
+RESOURCE TBUF R_OTHERS_TEMPLATE {buf=CC_OTHERS_TEMPLATE;}
+RESOURCE TBUF R_PREVIOUS_CAPTION {buf=CC_PREVIOUS;}
+RESOURCE TBUF R_JABBER_NOT_AVAIL {buf=CC_JABBER_NOT_AVAIL;}
+RESOURCE TBUF R_USER_ACTIVITY {buf=CC_USER_ACTIVITY;}
+RESOURCE TBUF R_DESKTOP { buf=CC_DESKTOP; }
+RESOURCE TBUF R_LAPTOP { buf=CC_LAPTOP; }
+RESOURCE TBUF R_PDA { buf=CC_PDA; }
+RESOURCE TBUF R_AGO { buf=CC_AGO; }
+RESOURCE TBUF R_LOCATION_UNKNOWN { buf=CC_LOCATION_UNKNOWN; }
+RESOURCE TBUF R_PROFILE_UNKNOWN { buf=CC_PROFILE_UNKNOWN; }
+
+
+
+RESOURCE AVKON_LIST_QUERY r_dummy_contact_action_query
+{
+	flags = EGeneralQueryFlags;
+	softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items = 
+		{
+			AVKON_LIST_QUERY_DLG_LINE
+			{
+				control = AVKON_LIST_QUERY_CONTROL
+				{
+					listtype = EAknCtSinglePopupMenuListBox;
+					listbox = AVKON_LIST_QUERY_LIST
+					{
+						array_id = r_dummy_contact_options_array;
+					};
+					heading = CC_LOC_DUMMY_CONTACT_ACTION_HEADING;
+				};
+			}
+		};
+}
+
+RESOURCE ARRAY r_dummy_contact_options_array
+ {
+	 items = 
+ 		{
+ 			LBUF { txt = CC_LOC_WELCOME_SELECT_FROM_CONTACTS; },
+ 			LBUF { txt = CC_LOC_WELCOME_CREATE_NEW_CONTACT_CARD; }
+ 		};
+ }
+
+
+
+RESOURCE TBUF R_TEXT_YEARS  { buf = "yr"; }
+RESOURCE TBUF R_TEXT_MONTHS { buf = "mo"; }
+RESOURCE TBUF R_TEXT_WEEKS  { buf = "wk"; }
+RESOURCE TBUF R_TEXT_DAYS   { buf = "d"; }
+RESOURCE TBUF R_TEXT_HOURS  { buf = "h"; }
+RESOURCE TBUF R_TEXT_MINUTES { buf = "min"; }
+
+RESOURCE TBUF R_TEXT_YEAR  { buf = "yr"; }
+RESOURCE TBUF R_TEXT_MONTH { buf = "mo"; }
+RESOURCE TBUF R_TEXT_WEEK  { buf = "wk"; }
+RESOURCE TBUF R_TEXT_DAY   { buf = "d"; }
+RESOURCE TBUF R_TEXT_HOUR  { buf = "h"; }
+RESOURCE TBUF R_TEXT_MINUTE { buf = "min"; }
+
+RESOURCE TBUF R_TEXT_AGO { buf = "%S ago"; }
+RESOURCE TBUF R_TEXT_SINCE { buf = "For the last %S"; }
+
+RESOURCE TBUF R_TEXT_OVER_YEAR_AGO { buf = "over a year ago"; }
+RESOURCE TBUF R_TEXT_OVER_YEAR_SINCE { buf = "for a long time"; }
+
+RESOURCE TBUF R_TEXT_JUST_AGO { buf = "a moment ago"; }
+RESOURCE TBUF R_TEXT_JUST_SINCE { buf = ""; }
+
+
+RESOURCE DIALOG r_okcancel_message_dialog_with_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+		{
+        DLG_LINE
+        {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_yesno_message_dialog_with_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+		{
+        DLG_LINE
+        {
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			control = AVKON_HEADING
+           {
+           };
+        },
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_okcancel_query_dialog
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_CONFIRMATION_QUERY
+				{
+					layout = EConfirmationQueryLayout;
+					label = "";
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_yesno_query_dialog
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_CONFIRMATION_QUERY
+				{
+					layout = EConfirmationQueryLayout;
+					label = "";
+				};
+			}
+		};
+}
+
+
+RESOURCE DIALOG r_yesno_message_dialog_no_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+    {
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+RESOURCE DIALOG r_okcancel_message_dialog_no_header
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items=
+    {
+        DLG_LINE
+        {
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+    };
+    
+}
+
+
+// RESOURCE TBUF R_TEXT_WELCOME_AP_FAILED_TEXT    { buf=CC_LOC_WELCOME_AP_FAILED_TEXT; }
+// RESOURCE TBUF R_TEXT_WELCOME_AP_SELECT_ANOTHER { buf=CC_LOC_WELCOME_AP_SELECT_ANOTHER; }
+// RESOURCE TBUF R_TEXT_WELCOME_AP_SELECT_LATER   { buf=CC_LOC_WELCOME_AP_SELECT_LATER; }
+
+// Used in: About dialog
+RESOURCE TBUF R_TEXT_VERSION_FMT   { buf=CC_LOC_VERSION_FMT; }
+
+RESOURCE MENU_PANE r_authorviews_submenu
+    {
+		items=
+			{
+				MENU_ITEM { command=EContextContactsCmdPersonStream; txt="Feed"; },
+				MENU_ITEM { command=EContextContactsCmdDisplayRichPresence;  txt="Presence"; },
+				MENU_ITEM { command=EContextContactsCmdDisplayContactDetails; txt="Details"; }
+			};
+    }
+
+
+RESOURCE CBA r_cba_t9enabled_publish_cancel
+{
+	buttons = 
+	   	{
+		CBA_BUTTON { id=EAknSoftkeyOptions; txt = "Publish"; },
+		CBA_BUTTON { id=EAknSoftkeyCancel; txt = "Cancel"; }
+		} ;
+}
+
+
+RESOURCE DIALOG r_ccu_post_jaiku_dialog
+{
+	flags = EGeneralQueryFlags;
+	buttons = r_cba_t9enabled_publish_cancel;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EDataLayout;
+					control = EDWIN
+					{
+					};
+				};
+			}
+		};
+}
+
+RESOURCE DIALOG r_ccu_post_comment_dialog
+{
+	flags = EGeneralQueryFlags;
+	buttons = r_cba_t9enabled_publish_cancel;
+	items =
+		{
+			DLG_LINE
+			{
+				type = EAknCtQuery;
+				id = EGeneralQuery;
+				control = AVKON_DATA_QUERY
+				{
+					layout = EDataLayout;
+					control = EDWIN
+					{
+						lines = 4;
+					};
+				};
+			}
+		};
+} 
+
+
+
+RESOURCE TBUF R_TEXT_SECOND  { buf = "sec"; }
+RESOURCE TBUF R_TEXT_SECONDS { buf = "secs"; }

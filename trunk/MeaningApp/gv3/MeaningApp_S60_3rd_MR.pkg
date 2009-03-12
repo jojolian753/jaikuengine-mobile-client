@@ -1,0 +1,23 @@
+; MeaningApp.pkg
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"MeaningApp"},(0x200089EF),5,1,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"Jaiku Ltd"}
+
+;Unique Vendor name
+:"Jaiku"
+
+; Files to copy
+"\symbian\9.1\S60_3rd_MR\epoc32\release\gcce\urel\MeaningApp.exe"-"!:\sys\bin\MeaningApp.exe"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\private\10003a3f\apps\MeaningApp_reg.R01"-"!:\private\10003a3f\import\apps\MeaningApp_reg.R01"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\MeaningApp_loc.R01"-"!:\resource\apps\MeaningApp_loc.R01"
+"\symbian\9.1\S60_3rd_MR\epoc32\data\z\resource\apps\MeaningApp.R01"-"!:\resource\apps\MeaningApp.R01"
+"\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\apps\meaningapp_aif.mif"         -"!:\resource\apps\meaningapp_aif.mif"

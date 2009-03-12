@@ -1,0 +1,100 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#define CONTEXT_UID_CONTEXT_LOG 0x200084B3
+#define CONTEXT_UID_CL_AUTOSTART 0x200084B4
+#define CONTEXT_UID_STARTER 0x200084B5
+
+#define CONTEXT_UID_CONTEXTSERVER 0x200084B6
+#define CONTEXT_UID_CONTEXTCLIENT 0x200084B7
+#define CONTEXT_UID_CONTEXTCOMMON 0x200084B8
+
+#define CONTEXT_UID_CONTEXTNOTIFY 0x200084B9
+#define CONTEXT_UID_CONTEXTNOTIFYCLIENT 0x200084BA
+
+#define CONTEXT_UID_CONTEXTCONTACTS 0x200084BB
+#define CONTEXT_UID_BLACKBOARDDATA	0x200084BC
+#define CONTEXT_UID_BLACKBOARDSERVER	0x200084BD
+
+#define CONTEXT_UID_BLACKBOARDCLIENT	0x200084BE
+#define CONTEXT_UID_BLACKBOARDFACTORY	0x200084BF
+#define CONTEXT_UID_CONTEXTSENSORS	0x200084C1
+#define CONTEXT_UID_SENSORDATAFACTORY	0x200084C2
+#define CONTEXT_UID_CONTEXTNETWORK	0x200084C3
+#define CONTEXT_UID_CONTEXTCOMMON2	0x200084C4
+#define CONTEXT_UID_CONTEXTMEDIA	0x200084C5
+
+#define CONTEXT_UID_CONTEXTMEDIAFACTORY 0x200084C6
+#define CONTEXT_UID_CONTEXTSENSORDATA   0x200089E1
+#define CONTEXT_UID_CONTEXTUI		0x200089E2
+#define CONTEXT_UID_CONTEXTMEDIADATA	0x200089E3
+
+#define CONTEXT_UID_CONTEXTMEDIAUI	0x200089E4
+
+#define CONTEXT_UID_SETTINGS		0x200089E5
+#define CONTEXT_UID_SHUTTER		0x200089E6
+#define CONTEXT_UID_EXPAT		0x200089E7
+#define CONTEXT_UID_CONTEXTCONTACTSUI	0x200089E8
+#define CONTEXT_UID_CONTEXTCOMMSENSORS  0x200089E9
+#define CONTEXT_UID_CONTEXTSTARTER	0x200089EA
+#define CONTEXT_UID_CONTEXTWELCOME	0x200089EB
+#define CONTEXT_UID_JAIKUUIKIT      	0x200089EC
+#define CONTEXT_UID_JAIKUTOOL		0x200089ED
+
+#define CONTEXT_UID_SYMBIANOSUNIT	0x200089EE
+#define CONTEXT_UID_MEANINGAPP		0x200089EF
+
+#define CONTEXT_UID_CONTEXTTRANSFER	0x200089F0
+#define CONTEXT_UID_CONTEXTMEDIAPLUGIN	0x200089F1
+#define CONTEXT_UID_JAIKUCACHER		0x200089F2
+#define CONTEXT_UID_JAIKUCACHERCLIENT	0x200089F3
+
+#define CONTEXT_UID_CONTEXTWELCOMEUI	0x200089F4
+
+#define CONTEXT_UID_UILOFT           0x2000AF40
+#define CONTEXT_UID_JAIKUSTREAMUI    0x2000AF41
+#define CONTEXT_UID_CONTEXTPYTHON    0x2000AF42
+#define CONTEXT_UID_KEYEVENTSERVER   0x2000AF43
+#define CONTEXT_UID_KEYEVENTCLIENT   0x2000AF44

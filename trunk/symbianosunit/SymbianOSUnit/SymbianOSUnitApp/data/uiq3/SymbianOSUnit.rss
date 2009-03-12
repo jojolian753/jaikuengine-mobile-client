@@ -1,0 +1,139 @@
+/* 
+	Copyright (c) 2003-2006, Penrillian Ltd. All rights reserved 
+	Web: www.penrillian.com
+*/
+
+NAME SOSU
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <qikon.rh>
+#include <qikon.hrh>
+#include <uikon.rh>
+#include <uikon.hrh>
+
+#include <QikCommand.rh>
+
+#include "SymbianOSUnit.hrh"
+#include "SymbianOSUnit.rls"
+
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf = ""; }
+RESOURCE EIK_APP_INFO {	}
+
+RESOURCE QIK_VIEW_CONFIGURATIONS r_ui_configurations
+{
+	configurations =
+	{
+		QIK_VIEW_CONFIGURATION
+		{
+			ui_config_mode = KQikPenStyleTouchPortrait;
+			command_list = r_SymbianOSUnit_commands;
+			view = r_SymbianOSUnit_layout;
+		},
+		QIK_VIEW_CONFIGURATION
+		{
+			ui_config_mode = KQikPenStyleTouchLandscape;
+			command_list = r_SymbianOSUnit_commands;
+			view = r_SymbianOSUnit_layout;
+		},
+		QIK_VIEW_CONFIGURATION
+		{
+			ui_config_mode = KQikSoftkeyStyleTouchPortrait;
+			command_list = r_SymbianOSUnit_commands;
+			view = r_SymbianOSUnit_layout;
+		},
+		QIK_VIEW_CONFIGURATION
+		{
+			ui_config_mode = KQikSoftkeyStylePortrait;
+			command_list = r_SymbianOSUnit_commands;
+			view = r_SymbianOSUnit_layout;
+		},
+		QIK_VIEW_CONFIGURATION
+		{
+			ui_config_mode = KQikSoftkeyStyleSmallPortrait;
+			command_list = r_SymbianOSUnit_commands;
+			view = r_SymbianOSUnit_layout;
+		}
+	};
+}
+
+RESOURCE QIK_COMMAND_LIST r_SymbianOSUnit_commands
+{
+	items =
+	{
+	/**
+	This command shall only be visible in debug mode because it is only
+	used to find memory leaks during development of the application.
+		*/
+		QIK_COMMAND
+		{
+			id = ECmdRunTest;
+			type = EQikCommandTypeScreen;
+			text = STRING_r_SymbianOSUnit_run_all_cmd;
+			stateFlags = EQikCmdFlagDimmed;
+		},
+		QIK_COMMAND
+		{
+			id = EEikCmdExit;
+			type = EQikCommandTypeCancel;
+			text = STRING_r_SymbianOSUnit_close_cmd;
+		}
+		
+	};
+}
+
+RESOURCE QIK_VIEW r_SymbianOSUnit_layout
+{
+	pages = r_SymbianOSUnit_layout_pages;
+}
+
+RESOURCE QIK_VIEW_PAGES r_SymbianOSUnit_layout_pages
+{
+	pages =
+	{
+		QIK_VIEW_PAGE
+		{
+			page_id = ESymbianOSUnitViewPage;
+			page_content = r_SymbianOSUnit_page_control;
+		}
+	};
+}
+
+RESOURCE QIK_CONTAINER_SETTINGS r_SymbianOSUnit_page_control
+{
+	controls =
+	{
+		QIK_CONTAINER_ITEM_CD_LI
+		{
+			unique_handle = ESymbianOSUnitLabelCtrl;
+			type = EEikCtLabel;
+			control = LABEL
+			{
+				standard_font = EEikLabelFontLegend;
+				horiz_align = EEikLabelAlignHLeft;
+				txt = STRING_r_SymbianOSUnit_text;
+			};
+		},
+		QIK_CONTAINER_ITEM_CD_LI
+        {
+            unique_handle = ESymbianOSUnitProgressCtrl;
+            type = EEikCtProgInfo;
+            control = PROGRESSINFO
+			{
+				finalval = 1;
+				text_type = EEikProgressTextNone;
+			};
+        },
+		QIK_CONTAINER_ITEM_CD_LI
+        {
+            unique_handle = ESymbianOSUnitEdwinCtrl;
+            itemflags = EQikCtrlFlagIsEditInPlace;
+            type = EEikCtEdwin;
+            control = EDWIN
+			{
+				flags = EEikEdwinInclusiveSizeFixed | EEikEdwinReadOnly | EEikEdwinNoAutoSelection | EEikEdwinDisplayOnly;
+				lines = 20;
+			};
+        }
+	};
+}

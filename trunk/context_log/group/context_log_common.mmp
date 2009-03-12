@@ -1,0 +1,353 @@
+// Copyright (c) 2007-2009 Google Inc.
+// Copyright (c) 2006-2007 Jaiku Ltd.
+// Copyright (c) 2002-2006 Mika Raento and Renaud Petit
+//
+// This software is licensed at your choice under either 1 or 2 below.
+//
+// 1. MIT License
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// 2. Gnu General Public license 2.0
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+//
+//
+// This file is part of the JaikuEngine mobile client.
+
+#include <sdk_version.mmp>
+#include "..\..\scalableui_variant.mmp"
+#include "..\..\context_uids.rh"
+#include "..\..\contextvariant.hrh"
+
+// #ifndef __S60V3__
+// #ifndef FLICKR
+// #  ifndef CONTEXTLOCA
+// TARGET  context_log.app
+// TARGETPATH \system\apps\context_log
+// #  else
+// TARGET  contextloca.app
+// TARGETPATH \system\apps\contextloca
+// #  endif
+// #else
+// TARGET  contextflickr.app
+// TARGETPATH \system\apps\contextflickr
+// #endif
+// TARGETTYPE  app
+// #else
+// #ifndef FLICKR
+// #  ifndef CONTEXTLOCA
+// TARGET  context_log.exe
+// #  else
+// TARGET  contextloca.exe
+// #  endif
+// #else
+// TARGET  contextflickr.exe
+// #endif
+// TARGETTYPE exe
+// EPOCSTACKSIZE 0x5000
+// #endif
+
+#ifdef __S60V3__
+EPOCSTACKSIZE 0x5000
+MINIMAL_HEAP
+#endif
+
+UID  0x100039CE CONTEXT_UID_CONTEXT_LOG
+
+SRCDBG
+
+SOURCEPATH ..\src
+
+#ifndef CONTEXTJAIKU
+SOURCE  Context_logContainer.cpp
+SOURCE  transfer.cpp
+
+#if !defined(FLICKR) && !defined(CONTEXTLOCA)
+SOURCE  log_comm.cpp
+SOURCE  presence_publisher.cpp
+#if !defined(CONTEXTJAIKU)
+SOURCE  sms_status.cpp
+#endif
+SOURCE  bt_dev_ap_view.cpp
+SOURCE  dumper.cpp
+SOURCE  userview.cpp
+SOURCE  hideview.cpp
+SOURCE  app_local_settings.cpp
+#ifndef CONTEXTJAIKU
+SOURCE	bb_logger.cpp
+#endif
+#ifdef USE_CAMERA
+SOURCE  camera.cpp sms_snapshot.cpp
+#endif
+#  ifndef __S60V3__
+SOURCE  cdb.cpp
+#  endif
+#endif
+
+#ifndef CONTEXTLOCA
+SOURCE	cellnaming.cpp
+SOURCE  presencemaintainer.cpp
+#if !defined(__S60V2FP3__) && !defined(FLICKR)
+SOURCE  sleep.cpp
+#endif
+#endif
+
+SOURCE  screen.cpp
+SOURCE  statusview.cpp
+SOURCE  applogview.cpp
+#ifndef __S60V2FP3__
+SOURCE  keycapture.cpp
+#endif 
+SOURCE  btlist.cpp
+SOURCE  sensorrunner.cpp
+SOURCE  appuibase.cpp
+SOURCE  indep_watcher.cpp
+#else //CONTEXTJAIKU
+SOURCE	cellnaming.cpp
+SOURCE  presencemaintainer.cpp
+SOURCE  keycapture.cpp
+SOURCE  btlist.cpp
+SOURCE  sensorrunner.cpp
+SOURCE  indep_watcher.cpp
+SOURCE  sleep.cpp
+SOURCE  presence_publisher.cpp
+SOURCE  cl_connectionindicator.cpp
+#endif
+
+SOURCEPATH ..\src
+
+
+LANG     01 09
+
+USERINCLUDE . ..\inc
+USERINCLUDE ..\..\ContextClient\inc ..\..\ContextCommon\inc ..\..\expat\symbian ..\..\expat\lib ..\..\recognizer\inc ..\..\visualcodesystem\inc ..\.. ..\..\ContextNotifyClient\inc ..\..\ContextSensors\inc ..\..\blackboard\inc ..\..\blackboardclient\inc ..\..\ContextNetwork\inc ..\..\ContextServer\inc ..\..\ContextMedia\inc ..\..\contextui\inc ..\..\contextcommon2\inc ..\..\contextcontactsui\inc ..\..\ContextBlue\inc ..\..\ContextMediaPlugin\inc ..\..\ContextMediaUi\inc ..\..\contexttransfer\inc
+
+SYSTEMINCLUDE  \epoc32\include \epoc32\include\libc
+
+#ifndef CONTEXTJAIKU
+USERINCLUDE ..\..\blackboardremote\inc
+#endif
+#ifndef FLICKR
+#ifndef __S60V2FP3__
+USERINCLUDE ..\..\ContextCommSensors\inc
+#endif
+#endif
+
+
+#if defined(__S60V3__)  && __USE_PLUGIN_APIS__ && !defined(WINS)
+LIBRARY profileeng.lib
+#endif
+#ifdef WINS
+// so that these get compiled in the IDE
+#  ifndef __S60V3__
+LIBRARY blackboardfactory.lib contextmediafactory.lib
+#  else
+LIBRARY bbf200084BF.lib bbf200084C2.lib
+#  endif
+LIBRARY contextsensordata.lib 
+#endif
+
+#ifdef USE_CAMERA
+LIBRARY ECAM.LIB
+#endif
+
+// UI
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib 
+LIBRARY eikcoctl.lib avkon.lib AKNNOTIFY.LIB  apgrfx.lib ws32.lib 
+
+LIBRARY etel.lib
+#ifndef WINS
+// GSM
+#ifndef __S60V3__
+LIBRARY gsmbas.lib
+#endif
+#endif
+
+// LIBRARY flogger.lib
+// audio
+LIBRARY MediaClientAudio.lib 
+
+#ifndef WINS
+LIBRARY MEDIACLIENTAUDIOINPUTSTREAM.LIB
+LIBRARY logwrap.lib 
+// profile
+#endif
+
+// file ops
+LIBRARY charconv.lib  efsrv.lib
+//LIBRARY efile.lib
+// communication log
+LIBRARY logcli.lib
+LIBRARY bafl.lib 
+// bluetooth
+LIBRARY bluetooth.lib
+LIBRARY esock.lib 
+LIBRARY SENDUI.LIB 
+// db
+LIBRARY EDBMS.LIB ESTOR.LIB
+// screen access
+//LIBRARY bitgdi.lib gdi.lib
+// phone book
+//LIBRARY PBKENG.LIB cntmodel.lib 
+// SMS sending
+#ifndef __S60V3__
+LIBRARY send.lib  
+#endif
+//LIBRARY msgs.lib gsmu.lib
+//LIBRARY etext.lib
+// inet
+LIBRARY insock.lib
+// connection settings
+// LIBRARY commdb.lib
+// aknform
+// LIBRARY eikdlg.lib
+
+#if !defined(FLICKR) && !defined(CONTEXTLOCA)
+// presence
+LIBRARY contextclient.lib
+#if !defined(__S60V2FP3__)
+LIBRARY contextcommsensors.lib
+#endif
+LIBRARY contextcontactsui.lib
+#ifndef CONTEXTJAIKU
+LIBRARY blackboardremote.lib
+#endif
+LIBRARY commdb.lib
+#endif
+
+#if defined(CONTEXTLOCA)
+LIBRARY contextblue.lib
+LIBRARY blackboardremote.lib
+LIBRARY commdb.lib
+#endif
+#if !defined(FLICKR) && !defined(__S60V3__) && !defined(__S60V2FP3__)
+LIBRARY profileengine.lib 
+#endif
+
+// common
+LIBRARY contextcommon.lib
+// TGulBorder
+LIBRARY egul.lib
+// image utils
+// LIBRARY MediaClientImage.lib fbscli.lib 
+//expat
+//LIBRARY expat.lib
+LIBRARY contextui.lib
+
+#ifndef WINS
+// sms
+LIBRARY SMCM.LIB
+#endif
+
+LIBRARY contextnotifyclient.lib
+LIBRARY contextsensors.lib contextsensordata.lib
+LIBRARY	blackboarddata.lib blackboardclient.lib contextnetwork.lib 
+
+LIBRARY btextnotifiers.lib 
+// view activation
+#if !defined(__S60V2FP3__)
+LIBRARY viewcli.lib
+#endif
+
+#ifdef __S60V3__
+LIBRARY etel3rdparty.lib
+#endif
+
+#ifndef CONTEXTLOCA
+LIBRARY contextcommon2.lib
+#else
+LIBRARY contextcommon2.lib
+#endif
+
+//LIBRARY estlib.lib
+LIBRARY logwrap.lib 
+LIBRARY hal.lib
+
+#ifdef __S60V2__ 
+SYSTEMINCLUDE ..\..\no_sendo_inc
+//SYSTEMINCLUDE \epoc32\include\python
+
+LIBRARY  aknskins.lib
+LIBRARY sysutil.lib
+//LIBRARY python222.lib
+
+#if defined(MARM) && !defined(__S60V3__)
+LIBRARY ETELMM.LIB
+#endif
+#if defined(MARM)
+#if !defined(__S60V2FP3__) && !defined(__S60V3__)
+LIBRARY btregistry.lib
+#endif
+#endif
+
+#endif // __S60V2__
+
+#ifdef __S60V3__
+LIBRARY	ecom.lib tagma.lib form.lib
+LIBRARY FeatDiscovery.lib centralrepository.lib
+#endif
+
+#ifdef __SCALABLEUI_VARIANT__
+LIBRARY aknicon.lib
+#endif
+
+#ifndef FLICKR
+#  ifndef CONTEXTLOCA
+START BITMAP context_log.mbm
+#  else
+START BITMAP contextloca.mbm
+#  endif
+#else
+START BITMAP contextflickr.mbm
+#endif
+
+#ifndef __S60V3__
+	TARGETPATH \system\data
+#else
+	TARGETPATH \resource
+#endif
+	HEADER
+	SOURCEPATH ..\bitmaps
+
+	SOURCE 1 c.bmp
+	SOURCE 1 c_not.bmp
+	SOURCE 1 p.bmp
+	SOURCE 1 p_not.bmp
+	SOURCE 1 l.bmp
+	SOURCE 1 l_not.bmp
+	SOURCE 1 frozen.bmp
+#ifdef FLICKR
+	SOURCE c8 meaning.bmp
+#endif
+	SOURCE 1 m.bmp
+END
+

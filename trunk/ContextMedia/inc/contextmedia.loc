@@ -1,0 +1,8 @@
+#ifdef LANGUAGE_01
+#include "contextmedia.l01"
+#endif
+#ifdef LANGUAGE_09
+#include "contextmedia.l09"
+#endif
+
+// End of File
