@@ -460,7 +460,7 @@ RESOURCE AVKON_SETTING_PAGE r_cl_setting_nick
     number = SETTING_JABBER_NICK;
     label = CL_JABBER_NICK;
     type = EEikCtEdwin;
-    editor_resource_id = r_cl_setting_ed_shorttext;
+    editor_resource_id = r_cl_setting_ed_nick;
     }
 
 RESOURCE AVKON_SETTING_PAGE r_cl_setting_author
@@ -744,7 +744,19 @@ RESOURCE EDWIN r_cl_setting_ed_shorttext
 	avkon_flags = EAknEditorFlagDefault;
 
     }
-     
+
+RESOURCE EDWIN r_cl_setting_ed_nick
+    {
+    width = 39;  // to allow for @jaiku.com
+    lines = 1;
+    maxlength = 39;
+	default_case = EAknEditorLowerCase;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	special_character_table = R_AVKON_SPECIAL_CHARACTER_TABLE_DIALOG;
+	avkon_flags = EAknEditorFlagDefault;
+
+    }
+      
 RESOURCE EDWIN r_cl_setting_ed_num
 {
 	width = 50;
