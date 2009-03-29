@@ -364,7 +364,6 @@ void CAccessPointSelection::LeftSoftKeyL(TInt aIndex)
 void CAccessPointSelection::RightSoftKeyL(TInt aIndex) 
 {
 	CALLSTACKITEM_N(_CL("CAccessPointSelection"), _CL("RightSoftKeyL"));
-	ProcessSelectionL( aIndex );
 }
 
 

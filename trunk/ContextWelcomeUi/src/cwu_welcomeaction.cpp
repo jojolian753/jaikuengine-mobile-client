@@ -238,7 +238,7 @@ protected: // from MPageObserver
 		ProcessSelectionL( aIndex ); }
 	virtual void RightSoftKeyL(TInt aIndex) {
 		CALLSTACKITEM_N(_CL("CWelcomeSelectionAction"), _CL("RightSoftKey()"));
-		ProcessSelectionL( aIndex ); }
+	}
 	
 private:
 	CDesCArray* iSelections;
@@ -278,8 +278,7 @@ private: // from MPageObserver
 		ProcessSelectionL( aIndex ); }
 	void LeftSoftKeyL(TInt aIndex) { 
 		ProcessSelectionL( aIndex ); }
-	void RightSoftKeyL(TInt aIndex) {
-		ProcessSelectionL( aIndex ); }
+	void RightSoftKeyL(TInt aIndex) {}
 	
 private:	
 	HBufC* iText;
@@ -327,8 +326,7 @@ private: // from MPageObserver
 		ProcessSelectionL( aIndex ); }
 	void LeftSoftKeyL(TInt aIndex) { 
 		ProcessSelectionL( aIndex ); }
-	void RightSoftKeyL(TInt aIndex) {
-		ProcessSelectionL( aIndex ); }
+	void RightSoftKeyL(TInt aIndex) {}
 	
 private:	
 	HBufC* iText;
@@ -458,7 +456,6 @@ void CCalendarSettingsQuery::LeftSoftKeyL(TInt aIndex)
 void CCalendarSettingsQuery::RightSoftKeyL(TInt aIndex) 
 {
 	CALLSTACKITEM_N(_CL("CCalendarSettingsQuery"), _CL("RightSoftKeyL"));
-	ProcessSelectionL( aIndex );
 }
 
 
@@ -526,7 +523,6 @@ void CNickAndPasswordQuery::LeftSoftKeyL(TInt aIndex)
 
 void CNickAndPasswordQuery::RightSoftKeyL(TInt aIndex)
 {
-	ProcessSelectionL();
 }
 
 void CNickAndPasswordQuery::SelectedItemL(TInt aIndex)
@@ -820,7 +816,6 @@ void CFinalQuery::LeftSoftKeyL(TInt aIndex)
 void CFinalQuery::RightSoftKeyL(TInt aIndex) 
 {
 	CALLSTACKITEM_N(_CL("CFinalQuery"), _CL("RightSoftKeyL"));
-	ProcessSelectionL( aIndex );
 }
 
 

@@ -357,7 +357,6 @@ void CUserSelection::LeftSoftKeyL(TInt aIndex)
 void CUserSelection::RightSoftKeyL(TInt aIndex) 
 {
 	CALLSTACKITEM_N(_CL("CUserSelection"), _CL("RightSoftKeyL"));
-	ProcessSelectionL( aIndex );
 }
 
 

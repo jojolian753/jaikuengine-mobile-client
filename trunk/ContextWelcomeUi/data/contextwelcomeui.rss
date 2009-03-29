@@ -100,7 +100,7 @@ RESOURCE DIALOG r_welcome_nick_query
 					{
 						width = 5;
 						lines = 1;
-						maxlength = 50;
+						maxlength = 39;
 						default_case = EAknEditorLowerCase;
 					};
 				};
