@@ -192,6 +192,8 @@ class CLocalNotifyWindowImpl : public CLocalNotifyWindow,
 		if ( landscape ) {
 				if (cba == AknLayoutUtils::EAknCbaLocationLeft ) {
 					xpos=iPaneRect.iTl.iX+iScale;
+				} else if ( cba == AknLayoutUtils::EAknCbaLocationBottom ) {
+				  xpos=iPaneRect.iTl.iX + iPaneRect.Width() + 1;
 				}
 		}
 
