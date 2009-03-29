@@ -578,7 +578,7 @@ void CContextContactsAppUi::ConstructViewsL()
 		SetViewDependenciesL( *btView );
 		btView->SetParentViewL( iRichPresenceView->ViewId() );
 		AddViewL(btView.get());
-		btView.release();
+		iBuddyBTView = btView.release();
 	}
 
 	// Bluetooth laptops view
@@ -589,7 +589,7 @@ void CContextContactsAppUi::ConstructViewsL()
 		SetViewDependenciesL( *btView );
 		btView->SetParentViewL( iRichPresenceView->ViewId() );
 		AddViewL(btView.get());
-		btView.release();
+		iLaptopBTView = btView.release();
 	}
 
 	// Bluetooth pdas view
@@ -600,7 +600,7 @@ void CContextContactsAppUi::ConstructViewsL()
 		SetViewDependenciesL( *btView );
 		btView->SetParentViewL( iRichPresenceView->ViewId() );
 		AddViewL(btView.get());
-		btView.release();
+		iPDABTView = btView.release();
 	}
 
 	// Bluetooth desktops view
@@ -612,7 +612,7 @@ void CContextContactsAppUi::ConstructViewsL()
 		SetViewDependenciesL( *btView );
 		btView->SetParentViewL( iRichPresenceView->ViewId() );
 		AddViewL(btView.get());
-		btView.release();
+		iDesktopBTView = btView.release();
 	}
 	
 	// Connection error info view
@@ -1211,6 +1211,13 @@ void CContextContactsAppUi::HandleResourceChangeL( TInt aType )
 			if (iCommentsView) iCommentsView->HandleResourceChange( aType );
 			if (iSettingsView) iSettingsView->HandleResourceChange( aType );
 			if (iSettingsView2) iSettingsView2->HandleResourceChange( aType );
+			if (iErrorInfoView) iErrorInfoView->HandleResourceChange( aType );
+
+			if (iBuddyBTView) iBuddyBTView->HandleResourceChange( aType );
+			if (iLaptopBTView) iLaptopBTView->HandleResourceChange( aType );
+			if (iDesktopBTView) iDesktopBTView->HandleResourceChange( aType );
+			if (iPDABTView) iPDABTView->HandleResourceChange( aType );
+
 			CCoeControl* notify=CLocalNotifyWindow::Global();
 			if (notify) notify->HandleResourceChange( aType );
 		}

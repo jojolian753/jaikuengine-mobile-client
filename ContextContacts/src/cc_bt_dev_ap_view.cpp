@@ -133,6 +133,7 @@ private:
 	TUid Id() const;
 
 	void HandleCommandL(TInt aCommand);
+  void HandleResourceChange( TInt aType );
 
 private: // from CJaikuViewBase 
 	void RealDoActivateL(const TVwsViewId& aPrevViewId,
@@ -361,7 +362,6 @@ void CBTDevApContainer::ConstructL(CCoeControl& aParent, CBTDeviceList* aList)
 	iListBox->SetMopParent(this);
 	iListBox->ConstructL(this, EAknListBoxSelectionList);
 
-	iListBox->SetItemHeightL(20);
 	iListBox->View()->SetMatcherCursor(EFalse);
 
 	iListBox->Model()->SetItemTextArray(iDiscoverer->GetNameArray());
@@ -460,6 +460,14 @@ default:
 	}
 }
 
+void CBTDevApViewImpl::HandleResourceChange( TInt aType ) {
+  if ( aType == KEikDynamicLayoutVariantSwitch ) {
+    if ( iContainer ) {
+      TRect r = ClientRect();
+      iBgContainer->SetRect( r );
+    }
+  }
+}
 
 #include "ccu_utils.h"
 
@@ -493,7 +501,7 @@ void CBTDevApViewImpl::CreateContainerL()
 
 	if (!iContainer) {
 		iContainer=new (ELeave) CBTDevApContainer(AppContext(), iShowMove);
-		//iContainer->SetMopParent(this);
+		iContainer->SetMopParent(iBgContainer);
 		iContainer->ConstructL(*iBgContainer, iList);
 		iBgContainer->SetContentL( iContainer );
 	} 

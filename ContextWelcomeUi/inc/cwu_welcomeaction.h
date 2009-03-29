@@ -84,6 +84,7 @@ class CWelcomeAction : public CBase, public MContextBase
 
 	virtual void StartBackgroundActivitiesL() = 0;
 	virtual void ShowUiL(MWelcomeView& aView) = 0;
+  virtual void HandleOrientationChangeL() {}
 
  public:   
 	virtual ~CWelcomeAction();

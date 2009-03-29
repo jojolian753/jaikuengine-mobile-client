@@ -97,6 +97,7 @@ public:
 	IMPORT_C static CErrorInfoView* NewL();
 
 	virtual void ShowWithData(const MErrorInfo& aInfo) = 0;
+	virtual void HandleResourceChange( TInt aType ) = 0;
 };
 
 class CErrorInfoContainer : public CCoeControl 
