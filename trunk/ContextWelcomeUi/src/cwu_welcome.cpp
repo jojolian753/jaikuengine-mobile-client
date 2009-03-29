@@ -235,7 +235,12 @@ void CWelcomeControllerImpl::QuitWelcomeL(CWelcomeAction& /*aAction*/)
 
 void CWelcomeControllerImpl::HandleResourceChangeL( TInt aType )
 {
-	if ( View() ) View()->HandleResourceChangeL( aType );
+	if ( View() ) {
+          View()->HandleResourceChangeL( aType );
+        } else if (aType == KEikDynamicLayoutVariantSwitch) {
+
+          iActions[iStepIx]->HandleOrientationChangeL();
+        }
 }
 
 void CWelcomeControllerImpl::StartL()

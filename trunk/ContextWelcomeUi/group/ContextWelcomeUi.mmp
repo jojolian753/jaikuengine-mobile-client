@@ -116,6 +116,7 @@ LIBRARY cone.lib
 LIBRARY egul.lib
 LIBRARY eikcoctl.lib
 LIBRARY eikcore.lib
+LIBRARY eikdlg.lib
 LIBRARY euser.lib
 LIBRARY fbscli.lib 
 LIBRARY pbkeng.lib

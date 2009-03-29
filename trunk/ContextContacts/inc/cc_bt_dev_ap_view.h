@@ -59,6 +59,7 @@ class CBTDevApView: public CJaikuViewBase {
 							   TBool aShowMove=ETrue);
 	virtual void SetList(CBTDeviceList* aList) = 0;
 	virtual ~CBTDevApView() { }
+	virtual void HandleResourceChange( TInt aType ) = 0;
 };
 
 #endif

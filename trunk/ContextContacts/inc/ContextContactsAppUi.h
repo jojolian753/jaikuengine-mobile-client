@@ -208,6 +208,7 @@ class CContextContactsAppUi : public CAknViewAppUi, MCoeForegroundObserver,
 	class CUserPics* iUserPics;
 
 	class CBTDeviceList		*iBuddyBTs, *iLaptopBTs, *iDesktopBTs, *iPDABTs;
+	class CBTDevApView		*iBuddyBTView, *iLaptopBTView, *iDesktopBTView, *iPDABTView;
 
 	class CErrorInfoView* iErrorInfoView;
 	

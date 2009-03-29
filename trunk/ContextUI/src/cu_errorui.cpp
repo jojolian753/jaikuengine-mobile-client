@@ -321,6 +321,7 @@ private:
         void DoActivateL(const TVwsViewId& aPrevViewId,
 		TUid aCustomMessageId,
 		const TDesC8& aCustomMessage);
+	virtual void HandleResourceChange( TInt aType );
         void DoDeactivate();
 	void DynInitMenuPaneL(TInt aResourceId, CEikMenuPane* aMenuPane);
 	void OpenInSendL(TInt aCommand);
@@ -501,6 +502,15 @@ void CErrorInfoViewImpl::DoActivateL(const TVwsViewId& aPrevViewId,
 		}
 		AppUi()->AddToStackL( *this, iContainer );
         } 
+}
+
+void CErrorInfoViewImpl::HandleResourceChange( TInt aType ) {
+  if ( aType == KEikDynamicLayoutVariantSwitch ) {
+    if ( iContainer ) {
+      TRect r = ClientRect();
+      iContainer->SetRect( r );
+    }
+  }
 }
 
 void CErrorInfoViewImpl::DoDeactivate()

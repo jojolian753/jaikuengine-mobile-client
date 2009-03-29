@@ -990,9 +990,13 @@ public: // from CWelcomeAction
 		CALLSTACKITEM_N(_CL("CPrivacyStatement"), _CL("StartBackgroundActivitiesL"));
 	}
 
-	void ShowUiL(MWelcomeView& aView)
-	{
+	void ShowUiL(MWelcomeView& aView) {
 		CALLSTACKITEM_N(_CL("CPrivacyStatement"), _CL("ShowUiL"));
+		iAsync->TriggerAsync();
+	}
+	
+	void RunAsync() {
+		CALLSTACKITEM_N(_CL("CPrivacyStatement"), _CL("RunL"));
 
 		TInt acceptedPrivacyVersion = 0;		
 		Settings().GetSettingL(SETTING_ACCEPTED_PRIVACY_STMT_VERSION, acceptedPrivacyVersion);
@@ -1002,14 +1006,22 @@ public: // from CWelcomeAction
 				TPtrC text(*iText);
 				TPtrC header(*iHeader);
 				auto_ptr<CAknMessageQueryDialog> dlg( CAknMessageQueryDialog::NewL(text) );
-				dlg->SetHeaderTextL( header );		 
-				if ( dlg.release()->ExecuteLD( R_PRIVACYSTATEMENT_DIALOG ) )
+				dlg->SetHeaderTextL( header );
+				iDlg = dlg.get();
+				TBool result = dlg.release()->ExecuteLD( R_PRIVACYSTATEMENT_DIALOG );
+			  if (!iDlg) {
+			    iAsync->TriggerAsync();
+			    return;
+			  }
+				if (result)
 					{
+					  iDlg = NULL;
 						Settings().WriteSettingL(SETTING_ACCEPTED_PRIVACY_STMT_VERSION, KJaikuPrivacyStatementVersion);
 						NotifyActionReadyL();
 					}
 				else
 					{
+					  iDlg = NULL;
 						// do not write, keep old accepted version 
 						ProcessManagement::SetAutoStartEnabledL(Fs(), DataDir()[0], EFalse);
 						NotifyQuitWelcomeL();
@@ -1020,6 +1032,14 @@ public: // from CWelcomeAction
 				NotifyActionReadyL();
 			}
 	}
+  virtual void HandleOrientationChangeL() {
+    if (iDlg) {
+      CEikDialog* to_delete = iDlg;
+      iDlg = NULL;
+      delete to_delete;
+    }
+  }
+
 
 public:	
 	static CPrivacyStatement*  NewL()
@@ -1035,9 +1055,29 @@ public:
 		CALLSTACKITEMSTATIC_N(_CL("CPrivacyStatement"), _CL("~CPrivacyStatement"));
 		delete iText;
 		delete iHeader;
+		delete iAsync;
 	}
 	
 private:
+  class CTrigger : public CActive {
+   public:
+    CTrigger(CPrivacyStatement* statement) : CActive(CActive::EPriorityLow), iStatement(statement) {
+      CActiveScheduler::Add(this);
+    }
+    void RunL() {
+      iStatement->RunAsync();
+    }
+  	void DoCancel() {}
+  	void TriggerAsync() {
+  	  TRequestStatus* s = &iStatus;
+  	  *s = KRequestPending;
+  	  User::RequestComplete(s, KErrNone);
+  	  SetActive();
+  	}
+  	
+   private:
+    CPrivacyStatement* iStatement;
+  };
 	CPrivacyStatement()
 	{
 	}
@@ -1046,12 +1086,15 @@ private:
 		CALLSTACKITEMSTATIC_N(_CL("CPrivacyStatement"), _CL("ConstructL"));
 		iHeader = StringLoader::LoadL( R_TEXT_PRIVACY_STATEMENT_HEADER );
 		iText = StringLoader::LoadL( R_TEXT_PRIVACY_STATEMENT );
+		iAsync = new (ELeave) CTrigger(this);
 	}	
 	
 		
 private:
 	HBufC* iHeader;
 	HBufC* iText;
+	CEikDialog* iDlg;
+	CTrigger* iAsync;
 };
 
 
