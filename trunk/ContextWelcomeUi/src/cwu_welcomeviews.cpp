@@ -1198,7 +1198,7 @@ TKeyResponse CWelcomeSelectionPage::OfferKeyEventL(const TKeyEvent& aKeyEvent,TE
 				}
 			else if ( aKeyEvent.iCode == EKeyDevice1 )
  				{
-					iObserver->LeftSoftKeyL( iList->CurrentItemIndex() );
+					iObserver->RightSoftKeyL( iList->CurrentItemIndex() );
 					return EKeyWasConsumed;
 				}
 		}
