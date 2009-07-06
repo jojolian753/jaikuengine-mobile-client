@@ -249,7 +249,17 @@ EXPORT_C TInt ContextNotifyThreadFunction(TAny* aParam)
 }
 #endif
 
+#include <eikappui.h>
 #include <eikenv.h>
+
+// Need an AppUi if we have a CEikonEnv as it accesses one
+// unconditionally on some devices, at least the E71.
+class OurAppUi : public CEikAppUi {
+ public:
+  void ConstructL() {
+    BaseConstructL(ENoAppResourceFile | ENoScreenFurniture);
+  }
+};
 
 TInt CContextNotify::ThreadFunction(TAny* /*aNone*/)
 {
@@ -262,6 +272,9 @@ TInt CContextNotify::ThreadFunction(TAny* /*aNone*/)
 		PanicServer(ECreateTrapCleanup);
 	}
 	CC_TRAPD(err, eik->ConstructL(EFalse));
+
+  CEikAppUi* app_ui = new OurAppUi;
+	CC_TRAP(err, app_ui->ConstructL());
 
 	CC_TRAP(err, ThreadFunctionL());
 	if (err != KErrNone)
