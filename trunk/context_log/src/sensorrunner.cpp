@@ -838,6 +838,15 @@ void do_run_sensors(TAny* aPtr)
 IMPORT_C void AllocateContextCommonExceptionData();
 #endif
 
+// Need an AppUi if we have a CEikonEnv as it accesses one
+// unconditionally on some devices, at least the E71.
+class OurAppUi : public CEikAppUi {
+ public:
+  void ConstructL() {
+    BaseConstructL(ENoAppResourceFile | ENoScreenFurniture);
+  }
+};
+
 _LIT(KName, "SensorRunner");
 
 TInt CSensorRunner::RunSensorsInThread(TAny* aPtr)
@@ -852,6 +861,8 @@ TInt CSensorRunner::RunSensorsInThread(TAny* aPtr)
 			delete iEnv;
 			User::Leave(err);
 		}
+    CEikAppUi* app_ui = new OurAppUi;
+  	TRAP(err, app_ui->ConstructL());
 		iCreatedEnv=ETrue;
 	} else {
 		cl=CTrapCleanup::New();
