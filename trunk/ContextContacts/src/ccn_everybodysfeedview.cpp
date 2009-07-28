@@ -63,6 +63,7 @@
 #include "ccu_posterui.h"
 #include "ccu_feedfoundation.h"
 #include "ccu_activestate.h"
+#include "ccu_utils.h"
 #include "cu_common.h"
 #include "juik_keycodes.h"
 
@@ -113,6 +114,7 @@ public:
 		iCommentsView.SetParentViewL( ViewId() );
 		ActiveState().ActiveContact().ClearL();
 		CreateContainerL();
+  	StatusPaneUtils::SetTitlePaneTextL(_L("Jaiku"));
 	}
 			
 	void RealDoDeactivateL()

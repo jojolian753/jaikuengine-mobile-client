@@ -406,6 +406,7 @@ void CContextContactsView::RealDoActivateL(const TVwsViewId&, TUid, const TDesC8
 	}
 
 	CreateContainerL();
+	StatusPaneUtils::SetTitlePaneTextL(_L("Jaiku"));
 
 	exiting=false;
 }

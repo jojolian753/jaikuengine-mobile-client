@@ -62,7 +62,7 @@ const TInt CJabber::KDefaultPortNumber = 5224;
 const TInt CJabber::KCloseSessionTimeOut = 2;
 _LIT(KDefaultJabberRessource, "Context");
 _LIT(KDefaultServerName, "jaiku.com");
-_LIT(KDefaultHost, "dj.x.jaiku.com");
+_LIT(KDefaultHost, "jaiku-fe.mikie.iki.fi");
 
 _LIT(KContextNS, "http://www.cs.helsinki.fi/group/context");
 _LIT(KStream,"http://etherx.jabber.org/streams stream");

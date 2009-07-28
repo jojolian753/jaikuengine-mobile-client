@@ -66,23 +66,23 @@ if not exist %UNSIGNED% echo No file %UNSIGNED%
 set SISNAME=jaiku_armv5
 set UNSIGNED=%SISNAME%.SIS
 makesis %SISNAME%.pkg
-if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd_5.cer ..\devcert\jaiku.key
+if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd.cer ..\devcert\jaiku.key
 if not exist %UNSIGNED% echo No file %UNSIGNED%
 
 
 set SISNAME=errormessages
 set UNSIGNED=%SISNAME%.SIS
-if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd_5.cer ..\devcert\jaiku.key
+if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd.cer ..\devcert\jaiku.key
 if not exist %UNSIGNED% echo No file %UNSIGNED%
 
 set SISNAME=merkitys_armv5
 set UNSIGNED=%SISNAME%.SIS
 makesis %SISNAME%.pkg
-if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd_5.cer ..\devcert\jaiku.key
+if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd.cer ..\devcert\jaiku.key
 if not exist %UNSIGNED% echo No file %UNSIGNED%
 
 set SISNAME=picnic_armv5
 set UNSIGNED=%SISNAME%.SIS
 makesis %SISNAME%.pkg
-if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd_5.cer ..\devcert\jaiku.key
+if exist %UNSIGNED% signsis %UNSIGNED% %SISNAME%-signed.SIS ..\devcert\jaiku3rd.cer ..\devcert\jaiku.key
 if not exist %UNSIGNED% echo No file %UNSIGNED%

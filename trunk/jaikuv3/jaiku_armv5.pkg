@@ -68,5 +68,6 @@ ENDIF
 "\symbian\9.1\S60_3rd_MR\epoc32\DATA\z\resource\startup.rsc" - "c:\private\101f875a\import\[200084B3].RSC"
 ""-"c:\data\context\",FN
 ".\buildinfo.xml" - "c:\data\context\buildinfo.xml"
+"errrd"-"c:\resource\errrd"
 ""-"c:\Logs\context\",FN
 
