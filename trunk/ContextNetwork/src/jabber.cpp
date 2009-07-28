@@ -228,6 +228,7 @@ EXPORT_C void CJabber::ConnectL(const TDesC16 &u,
     } else if (iJabberStatus == ENotConnected) {
         CNetworkError::TryingConnectionL();
         if (iSuspended) iToSuspend=ETrue;
+        iSuspended = EFalse;
 
         iLastUpdateSent=TTime(0);
         delete iEngine; iEngine=0;
@@ -906,7 +907,6 @@ void  CJabber::EndElement(const XML_Char *name)
             SendPresenceInfoL(*iUserPresenceInfo);
         }
         if (iCustomProtocol && iToSuspend) {
-            iToSuspend=EFalse;
             iObserver.NotifyJabberStatus(MJabberObserver::EJabberPendingSuspend);
         }
         break;
