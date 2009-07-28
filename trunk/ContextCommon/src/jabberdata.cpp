@@ -347,8 +347,8 @@ EXPORT_C void CJabberData::UpdateFirstLastNameL(TInt aContactId,
 			 iTable.ColDes(EColLastName) != aLast )
 			{
 				iTable.UpdateL();
-				iTable.SetColL(EColFirstName, aFirst);
-				iTable.SetColL(EColLastName,  aLast);
+				iTable.SetColL(EColFirstName, aFirst.Left(50));
+				iTable.SetColL(EColLastName,  aLast.Left(50));
 				PutL();			
 			}
 	} 
@@ -538,8 +538,8 @@ void CJabberData::SetJabberNickImplL(TInt ContactId,
 
 		iTable.SetColL(EColNick, n);
 		iTable.SetColL(EColRelationReason, aReason);
-		if ( aFirstName.Length() ) iTable.SetColL(EColFirstName, aFirstName);
-		if ( aLastName.Length() )  iTable.SetColL(EColLastName,  aLastName);
+		if ( aFirstName.Length() ) iTable.SetColL(EColFirstName, aFirstName.Left(50));
+		if ( aLastName.Length() )  iTable.SetColL(EColLastName,  aLastName.Left(50));
 
 		PutL();
 	}
