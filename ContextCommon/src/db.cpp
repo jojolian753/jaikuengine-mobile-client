@@ -786,6 +786,10 @@ EXPORT_C void MDBStore::Rollback()
 EXPORT_C void MDBStore::PutL()
 {
 	CALLSTACKITEM_N(_CL("MDBStore"), _CL("PutL"));
+#ifdef __WINS__
+  TInt dummy;
+	TBreakItem b(GetContext(), dummy);
+#endif
 	iTable.PutL();
 	if (!iDb.InTransaction() && iUpdateCount>=COMPACT_BETWEEN_UPDATES) {
 		CALLSTACKITEM_N(_CL("MDBStore"), _CL("PutL.compact"));
