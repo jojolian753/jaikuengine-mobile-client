@@ -45,10 +45,50 @@
 
 #include "break.h"
 #ifdef __WINS__
+#include <basched.h>
 #include <e32base.h>
 #include "app_context.h"
 #include "app_context_impl.h"
 #include "callstack.h"
+
+TInt GetLeaveCode(TBreakItem* i) {
+#if defined(__LEAVE_EQUALS_THROW__)
+  // On OS versions 9 and above the parameter given to TRAP()
+  // is only filled once the stack has been unwound. To get the
+  // leave code during the unwind we walk up the stack to the
+  // User::Leave function and grab its argument.
+
+  // get address of real User::Leave code
+  // The address of the function is to the jump table
+  char* user_leave_p = (char*)&User::Leave;
+  // dereference the indirect jump address after the mov
+  // opcode (FF 25).
+  int user_leave = *(int*)*(int*)(user_leave_p + 2);
+  
+  // walk the stack
+  // Get current ebp (stack frame pointer)
+  int ebp_value = 0;
+  __asm {
+    mov [ebp_value], ebp;
+  }
+  int* current_fp = (int*)ebp_value;
+  while (true) {
+    // return address of caller is at stack frame +1
+    int ret_addr = *(current_fp + 1);
+    // go up one stack frame
+    current_fp = (int*)*((int *)current_fp);
+    // check if return address is within the User::Leave function
+    if (ret_addr > user_leave && ret_addr < user_leave + 200) {
+      // first argument is above the return address
+      return *(current_fp + 2);
+    }
+  }
+  // We won't reach here: should we not find the leave on the stack
+  // we'll crash.
+#else
+  return i->iError;
+#endif
+}
 
 void BreakOnAllLeaves2(void* aArg)
 {
@@ -56,10 +96,11 @@ void BreakOnAllLeaves2(void* aArg)
 #ifdef __LEAVE_EQUALS_THROW__
 	i->iPopped=ETrue;
 #endif
-	TInt error=i->iError;
+	TInt error=GetLeaveCode(i);
 	if (i->ctx) i->ctx->iCurrentBreakItem=i->iPreviousItem;
 	void *cname=&(i->iInClass);
-	if (error==KErrNoMemory) return;
+	if (error == KErrNoMemory) return;
+	if (error == KLeaveExit) return;
 	do {
 		if (error==i->iDontBreakOn) return;
 		i=i->iPreviousItem;
