@@ -385,6 +385,7 @@ public:
 	{
 		CALLSTACKITEM_N(_CL("CCommentIndicatorImpl"), _CL("Draw"));
 		CWindowGc& gc = SystemGc();
+                gc.SetBrushStyle(CGraphicsContext::ENullBrush);
 
 		TRect r = iMargin.InnerRect( Rect() );
 		

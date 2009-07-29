@@ -451,6 +451,7 @@ void CDrawerImpl::Draw(const TRect& serverRect)
 			gc->Clear();
 		}
 
+	gc->SetBrushStyle(CGraphicsContext::ENullBrush);
 	int xpos=0, i;
 	for (i=0; i<iIcons.Count(); i++) {
 		if (iIcons[i]!=0 && iMasks[i]!=0) {
