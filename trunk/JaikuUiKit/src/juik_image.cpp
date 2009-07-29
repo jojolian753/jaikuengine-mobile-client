@@ -166,10 +166,12 @@ void CJuikImage::Draw(const TRect& aRect) const
 	
 	TSize sourceSz = clip ? aligned.Size() : bmpSize;
 	TRect sourceR( TPoint(0,0), sourceSz );
-	if ( mask )
+	if ( mask ) {
+                gc.SetBrushStyle(CGraphicsContext::ENullBrush);
 		gc.BitBltMasked( aligned.iTl, bmp, sourceR, mask, ETrue);
-	else
+        } else {
 		gc.BitBlt( aligned.iTl, bmp, sourceR);	
+        }
 	
 //  	AknsDrawUtils::BackgroundBetweenRects( AknsUtils::SkinInstance(),
 // 										   AknsDrawUtils::ControlContext( this ),

@@ -219,6 +219,7 @@ class CLocalNotifyWindowImpl : public CLocalNotifyWindow,
 	void DrawOnGc(CWindowGc& gc, TPoint& aFromPos) {
 		TInt xpos=aFromPos.iX, ypos=aFromPos.iY;
 
+                gc.SetBrushStyle(CGraphicsContext::ENullBrush);
 		CList<TSlot>::Node	*i;
 		for (i=iSlots->iFirst; i; i=i->Next) {
 			ypos += 1;

@@ -274,6 +274,7 @@ public:
 		TSize edgeSize= TSize(sz.iWidth, Min(edgeH, sz.iHeight - brokenBottomH));
 		TPoint p = edgeTop;
 		TInt remainingH = edgeH;
+                aGc.SetBrushStyle(CGraphicsContext::ENullBrush);
 
 		if ( iDrawTail )
 			{
@@ -313,6 +314,7 @@ public:
 	{
 		CALLSTACKITEM_N(_CL("CBubbleRendererImpl"), _CL("DrawBubble"));
  		if ( aType == ENone ) return;
+                aGc.SetBrushStyle(CGraphicsContext::ENullBrush);
 		
 		TRect r = aRect;
 
@@ -615,6 +617,7 @@ public:
 	{
 		CALLSTACKITEM_N(_CL("CButtonRendererImpl"), _CL("DrawBubble"));
 		TRect r = aRect;
+                aGc.SetBrushStyle(CGraphicsContext::ENullBrush);
 		
 		TPoint tl = r.iTl;
 		TPoint tr = TPoint(r.iBr.iX, r.iTl.iY);
