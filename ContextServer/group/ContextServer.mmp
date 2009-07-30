@@ -57,9 +57,10 @@ DEFFILENAME(ContextServer)
 #endif
 
 #ifdef __S60V3__
-MINIMUM_HEAP
+MINIMAL_HEAP
 #endif
 
+EPOCSTACKSIZE 0x5000
 START ARMI
 TARGETPATH	  \system\programs
 END
