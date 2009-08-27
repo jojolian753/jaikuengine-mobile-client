@@ -844,7 +844,7 @@ public:
 			msg.Append(_L("/"));
 			msg.AppendNum(iComing);
 		}
-		msg.Append(_L(" comment(s)"));
+		msg.Append(_L(" item(s)"));
 		FetchingStatusL(msg);
 	}
 	virtual void FetchThreadL() {
@@ -881,8 +881,8 @@ public:
 			FetchingStatusL(_L("Already fetching comments"));
 		} else {
 			FetchingStatusL(_L("Going to fetch comments"));
-			iComing=-1;
-			iNew=0;
+			iComing = -1;
+			iNew = Count() - 1;
 		}
 		iFetched=ETrue;
 	}
