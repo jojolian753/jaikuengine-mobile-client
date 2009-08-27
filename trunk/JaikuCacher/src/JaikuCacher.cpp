@@ -556,7 +556,7 @@ TInt CJaikuCacher::ThreadFunction(TAny* /*aNone*/)
 	CC_TRAP(err, eik->ConstructL(EFalse));
 	*/
 
-	TRAP(err, ThreadFunctionL());
+	CC_TRAP2(err, ThreadFunctionL(), ::GetContext());
 	if (err != KErrNone)
 	{
 		PanicServer(ESrvCreateServer);
