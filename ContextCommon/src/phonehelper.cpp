@@ -196,6 +196,8 @@ EXPORT_C phonehelper::~phonehelper()
 	return lineinfo.iStatus;
 }*/
 
+// Concepts:
+// !Making a phone call!
 EXPORT_C TInt phonehelper::make_callL(const TDesC& aNumber)
 {
 	CALLSTACKITEM_N(_CL("phonehelper"), _CL("make_callL"));
@@ -411,5 +413,3 @@ EXPORT_C TBool phonehelper::mailbox_defined()
 	CleanupStack::PopAndDestroy(5); //dummy, session, entry
 	return mailbox_defined;
 }
-
-

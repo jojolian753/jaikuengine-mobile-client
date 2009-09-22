@@ -43,6 +43,9 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !Profile API!
+// !Getting current profile settings!
 #include "log_profile.h"
 #include "symbian_auto_ptr.h"
 #include <e32std.h>

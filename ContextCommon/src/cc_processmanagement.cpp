@@ -62,6 +62,9 @@
 #define LOG(x)
 #endif
 
+// Concepts:
+// !Killing applications and processes!
+// !Starting applications!
 namespace ProcessManagement 
 {
 	EXPORT_C void KillApplicationL(RWsSession& aWs, TUid aUid, TInt aRetryInterval )

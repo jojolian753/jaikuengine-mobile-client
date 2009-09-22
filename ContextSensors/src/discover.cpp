@@ -43,6 +43,10 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !Bluetooth scan!
+// !Own bluetooth MAC address!
+
 #include "discover.h"
 #include "cl_settings.h"
 
@@ -722,4 +726,3 @@ void CDiscoverImpl::SettingChanged(TInt /*Setting*/)
 		StartL();
 	}
 }
- 

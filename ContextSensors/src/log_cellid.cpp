@@ -43,6 +43,9 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !Getting the current cell-id!
+
 #include "log_cellid.h"
 #include "csd_cell.h"
 #include "cellmap.h"

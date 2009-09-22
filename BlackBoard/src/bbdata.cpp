@@ -289,6 +289,8 @@ CBBDataFactoryImpl::~CBBDataFactoryImpl()
 	iFs.Close();
 }
 
+// Concepts:
+// !Custom polymorphic dlls!
 MBBData* CBBDataFactoryImpl::CreateBBDataL(const TTypeName& aType, const TDesC& aName, MBBDataFactory* )
 {
 	CALLSTACKITEM_N(_CL("CBBDataFactoryImpl"), _CL("CreateBBDataL"));

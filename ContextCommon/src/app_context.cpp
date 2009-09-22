@@ -504,6 +504,8 @@ private:
 	TTestSupport	iTestSupport;
 };
 
+// Concepts:
+// !Low disk space notification!
 class CDiskSpaceNotifier: public CCheckedActive
 {
 public:
@@ -1810,6 +1812,9 @@ void CApp_contextImpl::ResetLastErrorInfo()
 	if (iLastErrorInfo) iLastErrorInfo->Release();
 	iLastErrorInfo=0;
 }
+
+// Concepts:
+// !Debug call stack!
 
 #if defined(__WINS__) && !defined(__S60V3__)
 void TCallStackItem::PopCleanupItem(void* aPtr) {
