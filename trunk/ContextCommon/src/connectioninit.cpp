@@ -43,6 +43,9 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !Opening a GPRS (data) connection!
+
 #pragma warning(disable: 4706)
 
 #include "ver.h"
@@ -584,6 +587,8 @@ void CConnectionOpener::CheckedRunL()
 		}
 		make_connection=ETrue;
 	}
+        // Concepts:
+        // !Detecting roaming!
 	if (current_state==WAITING_ON_MUTEX) {
 		TInt err=KErrNone;
 		current_state=IDLE;

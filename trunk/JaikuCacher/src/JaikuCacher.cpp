@@ -43,6 +43,9 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !Shared memory!
+
 #include "JaikuCacher.h"
 #include "JaikuCacherSession.h"
 #include "CacherCommon.h"
@@ -265,7 +268,8 @@ void WriteToCacheChunkL(CCacheChunk* aCacheChunk, void (RWriteStream::*f)( T ), 
 	User::LeaveIfError(err);
 }
 
-
+// Concepts:
+// !Accessing the phonebook (contacts database)!
 void CJaikuCacher::ReadFromDbL(TBool aForceSync)
 {
 	iContactsChangePending=EFalse;

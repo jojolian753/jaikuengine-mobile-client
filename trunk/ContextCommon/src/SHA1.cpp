@@ -43,6 +43,9 @@
 //
 // This file is part of the JaikuEngine mobile client.
 
+// Concepts:
+// !SHA1!
+
 #include "sha1.h"
 #include <e32base.h>
 #include <charconv.h>

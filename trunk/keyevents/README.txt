@@ -1,3 +1,6 @@
+Concepts:
+!Capturing keypresses!
+
 The keyevents library allows you to be notified whenever
 the user presses a key on an Symbian (tested on S60) device.
 From the client side you need a window group to construct
@@ -32,4 +35,5 @@ Caveats:
   things. The Jaiku build processes pkg files heavily before
   using them.
 
-Author: mikie@google.com (Mika Raento)
+Author: mikie@iki.fi (Mike Raento)
+

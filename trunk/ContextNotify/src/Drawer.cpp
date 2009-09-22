@@ -74,6 +74,7 @@ public:
 /*
  * Concepts:
  * !Drawing on top of Phone screen!
+ * !UI in EXE!
  */
 
 const TUid KUidPhone = { 0x100058b3 };

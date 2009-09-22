@@ -687,6 +687,9 @@ private:
 
 #include <eikenv.h>      // CEikonEnv
 
+// Concepts:
+// !Hiding a window group!
+// !Responding to phone shutdown / uninstall!
 class CMinimalTask : public CActive {
 public:
 	CMinimalTask() : CActive(EPriorityNormal) { }
