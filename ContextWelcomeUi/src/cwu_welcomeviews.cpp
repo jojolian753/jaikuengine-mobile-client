@@ -607,20 +607,33 @@ void CWelcomePageBase::RightSoftKeyL()
 	iObserver->RightSoftKeyL( KErrNotFound );
 }
 
+TBool CWelcomePageBase::IsE90() {
+	TSize e90size(800,352);
+	TBool e90 = EFalse;
+	CEikAppUi* appui = (CEikAppUi*)iEikonEnv->AppUi();
+	if (appui->ApplicationRect() == e90size) {
+	  e90 = ETrue;
+	}
+	return e90;
+}
+
 
 TKeyResponse CWelcomePageBase::OfferKeyEventL(const TKeyEvent& aKeyEvent,TEventCode aType)
 {
 	CALLSTACKITEM_N(_CL("CWelcomePageBase"), _CL("OfferKeyEventL"));
+	const TBool e90 = IsE90();
     if( aType == EEventKey )
 		{
  			if ( aKeyEvent.iCode == EKeyDevice0 )
  				{
- 					LeftSoftKeyL();
+ 					if (!e90) LeftSoftKeyL();
+ 					else RightSoftKeyL();
 					return EKeyWasConsumed;
 				}
 			else if ( aKeyEvent.iCode == EKeyDevice1 )
  				{
- 					RightSoftKeyL();
+ 					if (!e90) RightSoftKeyL();
+ 					else LeftSoftKeyL();
 					return EKeyWasConsumed;
 				}
 			else if ( aKeyEvent.iCode == EKeyDevice3)
@@ -1180,6 +1193,9 @@ void CWelcomeSelectionPage::RightSoftKeyL()
 TKeyResponse CWelcomeSelectionPage::OfferKeyEventL(const TKeyEvent& aKeyEvent,TEventCode aType)
 {
 	CALLSTACKITEM_N(_CL("CWelcomeSelectionPage"), _CL("OfferKeyEventL"));
+	const TBool e90 = IsE90();
+	const TInt left_softkey_code = !e90 ? EKeyDevice0 : EKeyDevice1;
+	const TInt right_softkey_code = !e90 ? EKeyDevice1 : EKeyDevice0;
     if( aType == EEventKey )
 		{
 			if ( aKeyEvent.iCode == EKeyDownArrow || aKeyEvent.iCode == EKeyUpArrow ) 
@@ -1191,12 +1207,12 @@ TKeyResponse CWelcomeSelectionPage::OfferKeyEventL(const TKeyEvent& aKeyEvent,TE
 					iObserver->SelectedItemL( iList->CurrentItemIndex() );
 					return EKeyWasConsumed;
 				}
- 			else if ( aKeyEvent.iCode == EKeyDevice0 )
+ 			else if ( aKeyEvent.iCode == left_softkey_code )
  				{
 					iObserver->LeftSoftKeyL( iList->CurrentItemIndex() );
 					return EKeyWasConsumed;
 				}
-			else if ( aKeyEvent.iCode == EKeyDevice1 )
+			else if ( aKeyEvent.iCode == right_softkey_code )
  				{
 					iObserver->RightSoftKeyL( iList->CurrentItemIndex() );
 					return EKeyWasConsumed;
