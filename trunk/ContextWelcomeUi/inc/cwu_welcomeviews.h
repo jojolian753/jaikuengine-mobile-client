@@ -148,6 +148,7 @@ class CWelcomePageBase : public CCoeControl, public MContextBase {
 	void Draw( const TRect& aRect ) const;
 	void DrawGraphicsL(CWindowGc& aGc, TInt aIndex, const TJuikLayoutItem& aParent, TBool aDoCenter=ETrue) const;
 	void DrawRectL(CWindowGc& aGc, const TRgb& aColor, const TJuikLayoutItem& aL) const;
+	TBool IsE90();
 
 
 	TInt CountComponentControls() const;
