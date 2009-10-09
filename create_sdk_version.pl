@@ -73,6 +73,10 @@ if ($EPOC =~ /6\.1\\series60/i) {
 	push(@defs, "__S60V2__");
 	push(@defs, "__S60V3__");
 	push(@defs, "__S60V3FP1__");
+} elsif ($EPOC =~ /3rd_FP2/i) {
+	push(@defs, "__S60V2__");
+	push(@defs, "__S60V3__");
+	push(@defs, "__S60V3FP1__");
 }
 
 open(MMP, "<$EPOC\\epoc32\\include\\sdk_version.mmp") || print STDERR "No previous sdk_version.mmp\n";

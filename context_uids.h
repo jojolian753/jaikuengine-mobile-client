@@ -80,7 +80,6 @@ const TUid KUidcontextcommon = { CONTEXT_UID_CONTEXTCOMMON };
 //const TUid KUidContextNote = { CONTEXT_UID_CONTEXTNOTE };
 //const TUid KUidContextFetch = { CONTEXT_UID_CONTEXTFETCH };
 //const TUid KUidContext = { CONTEXT_UID_CONTEXT };
-//const TUid KUidTaskList = { CONTEXT_UID_TASKLIST };
 const TUid KUidContextNotify = { CONTEXT_UID_CONTEXTNOTIFY };
 const TUid KUidContextNotifyClient = { CONTEXT_UID_CONTEXTNOTIFYCLIENT };
 const TUid KUidContextContacts = { CONTEXT_UID_CONTEXTCONTACTS };
@@ -161,5 +160,6 @@ const TUid KUidKeyEventsClient = { CONTEXT_UID_KEYEVENTCLIENT };
 const TUid KUidexpat = { CONTEXT_UID_EXPAT };
 const TUid KUidContextexpat = { CONTEXT_UID_EXPAT };
 
+const TUid KUidTaskList = { CONTEXT_UID_TASKLIST };
 
 #endif
