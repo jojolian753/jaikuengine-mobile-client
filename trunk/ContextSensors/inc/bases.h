@@ -121,6 +121,8 @@ public:
 	IMPORT_C static TInt RunBasesInThread(TAny* aPtr);
 private:
 	virtual void expired(CBase*);
+	void InnerConstructL(bool aConvertOnly, CCellMap* aCellMap=0);
+	void Destruct();
 
 	CGenericIntMap*	cell_hash;
 	TTime	previous_time;

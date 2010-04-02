@@ -257,7 +257,18 @@ void bases::rescale()
 	scale/=1024.0;
 }	
 
-EXPORT_C void bases::ConstructL(bool aConvertOnly, CCellMap* aCellMap)
+EXPORT_C void bases::ConstructL(bool aConvertOnly, CCellMap* aCellMap) {
+	TRAPD(err, bases::InnerConstructL(aConvertOnly, aCellMap));
+	if (err == KErrCorrupt) {
+	    Destruct();
+		TFileName database_filename;
+		database_filename.Format(_L("%S%S"), &DataDir(), &database_file);
+		User::LeaveIfError(BaflUtils::DeleteFile(Fs(), database_filename));
+		InnerConstructL(aConvertOnly, aCellMap);
+	}
+}
+
+void bases::InnerConstructL(bool aConvertOnly, CCellMap* aCellMap)
 {
 	CALLSTACKITEM_N(_CL("bases"), _CL("ConstructL"));
 
@@ -1001,22 +1012,27 @@ void bases::clear(bool deleting)
 	if (iCandidates) iCandidates->reset();
 }
 
-EXPORT_C bases::~bases() 
+EXPORT_C bases::~bases() {
+	Destruct();
+}
+
+void bases::Destruct() 
 {
 	CALLSTACKITEM_N(_CL("bases"), _CL("~bases"));
 
 	if (iConvertOnly) {
 		TInt err;
-		if (table_open) { CC_TRAP(err, table.Close()); }
+		if (table_open) { CC_TRAP(err, table.Close()); table_open = false; }
 		if (db_open) { 
 			CC_TRAP(err, db.Compact());
 			CC_TRAP(err, db.Close());
+			db_open = false;
 		}
-		delete store;
+		delete store; store = NULL;
 		return;
 	}
 
-	delete iTimer;
+	delete iTimer; iTimer = NULL;
 
 	TInt err;
 	if (current) {
@@ -1033,18 +1049,19 @@ EXPORT_C bases::~bases()
 
 	CC_TRAP(err, clear(true));
 
-	delete iCandidates;
-	delete iGraph;
-	delete iMerged;
+	delete iCandidates; iCandidates = NULL;
+	delete iGraph; iGraph = NULL;
+	delete iMerged; iMerged = NULL;
 
-	if (table_open) { CC_TRAP(err, table.Close()); }
+	if (table_open) { CC_TRAP(err, table.Close()); table_open = false; }
 	if (db_open) { 
 		CC_TRAP(err, db.Compact());
 		CC_TRAP(err, db.Close());
+		db_open = false;
 	}
-	delete store;
+	delete store; store = NULL;
 
-	delete cell_hash;
+	delete cell_hash; cell_hash = NULL;
 }
 
 

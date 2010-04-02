@@ -152,7 +152,15 @@ public: //
 			}
 		else
 			{
-				User::Leave( iStatus.Int() );
+#ifndef __WINS__
+		        User::Leave( iStatus.Int() );
+#else
+				iIMEI.Zero();
+				iIMEI.Append(_L("00000000000000"));
+				iState = EReady;
+				if ( iActiveSchedulerWait->IsStarted() )
+					iActiveSchedulerWait->AsyncStop();		        
+#endif
 			}
 	}
 	
